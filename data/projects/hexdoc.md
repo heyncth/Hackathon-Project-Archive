@@ -19,4 +19,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-From 1,305 national teams to one hardware grand-finale win: HEXDOC targets tunnel and cave excavation accidents with autonomous collision avoidance.
+## What it is
+
+HEXDOC is a robot that avoids collisions while moving through tunnels and caves. It targets construction and excavation work where the machine has to navigate without a clear line of sight.
+
+## The problem
+
+Tunnelling equipment operates in confined, dusty spaces where a collision can injure a worker or damage the machine. A human spotter is not always possible.
+
+## What makes it interesting
+
+Team Innovortex from LPU won the Hardware Edition of Smart India Hackathon 2023 in the Robotics and Drones category. The event asks teams to solve a stated industry problem, which is why the prototype is aimed at a specific job.
+
+## What you can learn
+
+A constrained environment is a good first market for autonomy. Tunnels remove the variables that make outdoor robots hard.
+
+## Limitations of this analysis
+
+The record does not describe the sensors, the avoidance logic, or any field test.

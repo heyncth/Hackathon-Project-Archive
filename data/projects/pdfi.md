@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-A weekend ETHGlobal project made the humble PDF executable for payments, taking a sponsor track prize in the process.
+## What it is
+
+PDFi turns static PDFs into interactive financial documents. Payments and transactions can be embedded in the file itself.
+
+## The problem
+
+A financial document, such as an invoice or a term sheet, is a dead file. Acting on it means leaving the document for a banking app.
+
+## What makes it interesting
+
+It won Best Finance App on Fern at ETHGlobal New York 2025. The PDF is a format every business already uses, which is why the demo lands.
+
+## What you can learn
+
+Attaching an action to a familiar artifact is a strong wedge. The user does not have to adopt a new workflow.
+
+## Limitations of this analysis
+
+The record does not describe the signing model, the chain integration, or the security of embedding transactions in a file.

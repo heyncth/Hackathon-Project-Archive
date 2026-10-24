@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-When ventilator supply chains broke in early 2020, hackathon teams worldwide built open emergency designs. OpenVent, from Infineon's hackathon, used a standard Ambu-bag as the actuator.
+## What it is
+
+OpenVent is an open-source ventilator design produced during Infineon Technologies' COVID-era hackathon in 2020. It uses an Ambu bag as the air source.
+
+## The problem
+
+Ventilators were scarce in early 2020. A design that can be built locally from common parts is a different response from waiting for a factory.
+
+## What makes it interesting
+
+It is one of several rapid-build emergency respiratory projects from that period. The Ambu-bag approach avoids designing a compressor and focuses on control and sensing.
+
+## What you can learn
+
+In an emergency, the supply chain is part of the design. A device built from available parts can matter more than a better device that cannot be manufactured.
+
+## Limitations of this analysis
+
+The record does not include test results, regulatory status, or whether the design was built and used. Open-source ventilation is a safety-critical claim.

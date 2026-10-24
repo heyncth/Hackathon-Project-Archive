@@ -16,4 +16,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Garden Buddies grew out of a specialized mental-health themed jam that Global Game Jam ran with DeepWell DTx rather than the main January event.
+## What it is
+
+Garden Buddies is a cozy game about tending a garden with a companion. It was made during the May Day Mental Health game jam in 2022, run by Global Game Jam with DeepWell DTx.
+
+## What makes it interesting
+
+It was featured at Wholesome Direct 2023 and shipped on Steam in October 2023. The jam had a mental-health brief, which shaped the pace and the subject matter.
+
+## What you can learn
+
+A themed jam can produce a game that would be hard to pitch otherwise. The constraint gives the team permission to make something quiet.
+
+## Limitations of this analysis
+
+The record does not describe the mechanics or how the mental-health brief was handled in design.

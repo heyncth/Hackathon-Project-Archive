@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Airocide adapted NASA's photocatalytic oxidation research into a consumer air purifier line, an example of rapid-build innovation culture bleeding from space programs into hardware products.
+## What it is
+
+Airocide is a line of air purifiers built on technology developed for spacecraft life support. The core process is catalytic oxidation, which breaks down organic gases rather than trapping them in a filter.
+
+## How the experience works
+
+Air passes through a catalyst bed, where volatile organic compounds are oxidized. The output is carbon dioxide and water vapor. Because the catalyst is not consumed, it does not need the replacement schedule of a particulate filter.
+
+## What makes it interesting
+
+The product is a technology transfer: research paid for by a space program became a consumer appliance. NASA's spinoff programs exist to make that path visible and repeatable.
+
+## What you can learn
+
+Dual-use research can produce a consumer product when the operating constraint is shared. A spacecraft and a sealed room both need air that does not accumulate trace gases.
+
+## Limitations of this analysis
+
+The record does not document the license, the underlying studies, or independent performance testing. Claims about health effects are outside what the linked source establishes.

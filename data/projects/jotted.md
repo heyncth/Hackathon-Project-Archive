@@ -20,4 +20,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-From 4,000+ applications down to one Global Final stage in Istanbul: Jotted's automated study tool took Red Bull Basement 2021's top student prize.
+## What it is
+
+Jotted is an automated study tool. It turns material into notes and review aids for students.
+
+## What makes it interesting
+
+Arizona State University students Brinlee Kidd and Sylvia Lopez won the Red Bull Basement 2021 Global Final in Istanbul with it. The competition rewards a clear student problem and a demo that a non-technical judge can understand.
+
+## What you can learn
+
+A student-built tool has an advantage: the builders are the users. That makes the first version honest about what actually helps.
+
+## Limitations of this analysis
+
+The record does not describe the product's features, its accuracy, or what happened after the competition.

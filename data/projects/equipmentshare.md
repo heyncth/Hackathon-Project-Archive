@@ -24,4 +24,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Brothers Jabbok and Willy Schlacks pitched a construction equipment sharing idea at Columbia Startup Weekend in 2014. The company later raised major venture rounds, went through Y Combinator, and completed a Nasdaq IPO as EQPT in January 2026.
+## What it is
+
+EquipmentShare is a construction equipment rental company with jobsite technology. Contractors rent machines and track them through the platform.
+
+## The problem
+
+Equipment rental is fragmented and local. A contractor with a short job needs a machine nearby, and the owner needs to know where it is.
+
+## What makes it interesting
+
+The idea started as a winning pitch at Columbia Startup Weekend in 2014. The company later listed on Nasdaq, which is a long way from a weekend demo.
+
+## What you can learn
+
+A marketplace can start with a spreadsheet and a phone. The software matters when the fleet is large enough that manual tracking fails.
+
+## Limitations of this analysis
+
+The record does not describe the telematics, the rental terms, or the path to public markets.

@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Swift, the messaging network behind most international bank transfers, ran a hackathon to explore blockchain interoperability. Chainlink took the top business slot.
+## What it is
+
+Chainlink for Swift is an integration between blockchain oracles and Swift's interbank messaging. It was selected as the winner of the Swift Hackathon 2025 Business Challenge.
+
+## The problem
+
+Financial institutions already move value over Swift. Blockchains hold assets that those institutions want to settle, but the two systems do not share a message format.
+
+## What makes it interesting
+
+Chainlink's co-founder presented the work at Sibos, the industry conference where interbank infrastructure gets discussed. A hackathon result reaching that stage is unusual.
+
+## What you can learn
+
+Integrating with existing rails beats replacing them. The winning design usually meets the institution where it already operates.
+
+## Limitations of this analysis
+
+The record does not describe the integration architecture, the assets involved, or whether any institution has adopted it.

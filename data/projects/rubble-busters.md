@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-SkyHack 2023's first-place drone used autonomous search and reporting to help find people in rubble - an example of a university hackathon aimed squarely at life-safety robotics.
+## What it is
+
+Rubble Busters is an autonomous drone system for disaster search. It navigates rubble and reports what it finds.
+
+## The problem
+
+After a collapse, the first hours are spent searching spaces too dangerous or too narrow for people. A drone can enter without endangering a responder.
+
+## What makes it interesting
+
+The team won first place at Kent State's 2023 SkyHack. The task is a full loop: navigate, detect, and report, not just fly.
+
+## What you can learn
+
+A search robot is judged on what it reports. Autonomy that finds nothing is a camera with extra steps.
+
+## Limitations of this analysis
+
+The record does not describe the sensors, the flight time, or any field exercise.

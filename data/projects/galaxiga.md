@@ -17,4 +17,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Galaxiga took a jam-born space shooter and polished it into a full Steam and mobile release, keeping the arcade DNA intact.
+## What it is
+
+Galaxiga is a retro space shooter built at a Global Game Jam and later released on mobile and Steam.
+
+## What makes it interesting
+
+The jam version established the arcade feel: fixed screen, waves of enemies, a score worth chasing. The commercial release added platforms and polish without changing the core.
+
+## What you can learn
+
+A genre with a known loop is a good jam choice. The audience already understands the controls, so the prototype can spend its 48 hours on feel.
+
+## Limitations of this analysis
+
+The record does not describe the weapon system, the level structure, or the porting work.

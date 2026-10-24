@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-The Ludum Dare prototype Dome Romantik won enough attention for Bippinbits to expand it into the full commercial release Dome Keeper.
+## What it is
+
+Dome Keeper is a mining and defense game. You dig for resources under a dome, then return to defend it when a wave arrives.
+
+## How the experience works
+
+The loop alternates between two modes. Underground, you choose what to mine and how far to push. On the surface, you spend what you gathered on defenses before the next attack.
+
+## What makes it interesting
+
+It started as Dome Romantik for Ludum Dare 48 in 2021, where it placed ninth overall. The commercial version kept the loop and added content and polish.
+
+## What you can learn
+
+The jam version already contained the tension: greed versus preparation. If that choice is interesting in 48 hours, it will hold for a full game.
+
+## Limitations of this analysis
+
+The record covers the jam placement and the release, not the upgrade design or the wave balancing.

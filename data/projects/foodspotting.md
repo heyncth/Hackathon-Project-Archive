@@ -21,4 +21,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Foodspotting treated dishes, not restaurants, as the unit of discovery. The Startup Weekend-born app was later acquired by OpenTable.
+## What it is
+
+Foodspotting was a visual guide to dishes. Instead of reviewing restaurants, users photographed specific dishes and recommended them.
+
+## The problem
+
+Restaurant reviews describe a place. Diners often want to know what a particular dish looks like before ordering it.
+
+## What makes it interesting
+
+It came out of the Startup Weekend circuit in 2009, founded by Alexa Andrzejewski. It was cited as a success story for the format and was acquired by OpenTable in 2015.
+
+## What you can learn
+
+Narrowing a review to one object makes the content comparable. A dish is easier to rate and photograph than a restaurant.
+
+## Limitations of this analysis
+
+The record does not cover the recommendation system, the acquisition terms, or the app's technical stack.

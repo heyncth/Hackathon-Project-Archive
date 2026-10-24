@@ -17,4 +17,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Ludum Dare 59's Officially Dead is the classic jam-to-Steam pipeline: top-100 finishes, then a commercial expansion under Erebus Games.
+## What it is
+
+Officially Dead is a fast zombie-survival action game made for Ludum Dare 59 in 2025. It is being expanded into a Steam release by Erebus Games.
+
+## What makes it interesting
+
+It ranked in the top 100 for humour and fun at the jam. A jam entry that is funny is easier to market than one that is merely polished.
+
+## What you can learn
+
+Tone is a differentiator in a crowded genre. A joke that lands in the first minute is worth more than a feature list.
+
+## Limitations of this analysis
+
+The record does not describe the combat or how the full release differs from the jam build.

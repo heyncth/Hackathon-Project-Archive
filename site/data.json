@@ -75,7 +75,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\n2plant is a planning app for farmers. It combines soil moisture and evapotranspiration data to estimate when a field is at risk and when planting is more likely to succeed.\n\n## What makes it interesting\n\nIt won the Galactic Impact award at NASA Space Apps 2024. The entry takes two ordinary agricultural measurements and turns them into a timing decision, which is the decision a smallholder actually has to make.\n\n## What you can learn\n\nA satellite dataset becomes useful when it answers a question with a date attached. \"Is the soil wet enough this week\" is a better product than a soil-moisture map.\n\n## Limitations of this analysis\n\nThe record has no demo link and no field validation. Accuracy, coverage, and whether the app was used outside the competition are unknown.\n",
       "description": "App using soil moisture and evapotranspiration data to manage farmer planting risk.",
       "domain": "climate",
       "event": {
@@ -100,7 +100,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\n42 QuakeHeroes is a deep neural network that finds seismic events in time-series data. It reads waveform recordings and marks where an event begins.\n\n## What makes it interesting\n\nIt won Best Use of Technology at NASA Space Apps 2024. Detection is traditionally handled with hand-tuned thresholds and analyst review, so treating it as a learning problem changes what the system needs: labelled examples instead of tuned filters.\n\n## What you can learn\n\nA model is a way to encode the judgement of the people who labelled the data. The quality of the labels sets the ceiling, not the architecture.\n\n## Limitations of this analysis\n\nThe record does not describe the network, the training data, or the detection accuracy. It is an award listing, not an engineering report.\n",
       "description": "Deep neural network that locates seismic events in time-series data.",
       "domain": "science",
       "event": {
@@ -128,7 +128,7 @@
       "authors": [
         "Max Inferno"
       ],
-      "body": "Anne Macmillan and Lukas Steinman's jam entry about putting things where they belong grew into a Max Inferno studio game published by Secret Mode across PC and consoles.\n",
+      "body": "## What it is\n\nA Little to the Left is a tidy-up puzzle game. Each scene is a household mess, and the puzzle is working out the order the objects belong in.\n\n## The problem\n\nSorting games usually tell you the rule. This one asks you to infer it from the objects, which makes the mess the puzzle rather than the obstacle.\n\n## What makes it interesting\n\nIt started as a 48-hour entry for GMTK Game Jam 2020, on the theme \"Out of Control\". Annie and Lukas formed MAX INFERNO in 2021 and released the full game in November 2022. The jam build is still playable as a demo.\n\n## What you can learn\n\nA jam forces one scene to work before you build fifty. If the first tidy-up is satisfying, the content pipeline is the only thing left.\n\n## Limitations of this analysis\n\nThe record covers the origin, studio, and release. It does not describe the level design process or how the team scaled the jam concept.\n",
       "description": "Cozy tidying puzzle game about sorting household messes; began as a GMTK Game Jam 2020 entry and became a multi-platform commercial release.",
       "domain": "games",
       "event": {
@@ -167,7 +167,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nA Normal Lost Phone is a narrative game played entirely through a found phone. You read messages, look at photos, and piece together who the owner was.\n\n## The problem\n\nStory games usually ask you to watch a character. A phone asks you to snoop, which is a more uncomfortable and more engaging position.\n\n## How the experience works\n\nThe phone is the interface. There is no map and no character to move. Progress comes from reading the apps and following the clues they contain.\n\n## What makes it interesting\n\nIt was built at Global Game Jam 2016 in Angoulême and later released on iOS, Android, and Steam. The interface was already familiar to every player, so the game needed no tutorial.\n\n## What you can learn\n\nUsing an interface people already know removes the cost of teaching it. The player spends their attention on the story instead of the controls.\n\n## Limitations of this analysis\n\nThe record does not cover the writing process, the fictional app design, or how the mobile and desktop versions differ.\n",
       "description": "Narrative game where players explore a found phone to uncover a personal story. Released on iOS, Android, and Steam.",
       "domain": "games",
       "event": {
@@ -194,7 +194,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nAccount Kit was a Facebook login product that verified a phone number without sending an SMS. Early tests reported a 97% success rate.\n\n## The problem\n\nSMS verification fails for reasons the developer cannot see: delayed messages, wrong country codes, shared phones, and carrier filtering. Each failure is a user who does not get into the app.\n\n## What makes it interesting\n\nIt came out of the Facebook Seattle Platform team hackathon in 2016. The interesting choice is the constraint: prove the number without relying on a text message arriving.\n\n## What you can learn\n\nWhen a verification step has a high failure rate, the fix may be a different channel rather than a better error message. Measure the step, then remove its weakest dependency.\n\n## Limitations of this analysis\n\nThe record does not explain the verification mechanism, the markets it targeted, or how the 97% figure was measured.\n",
       "description": "Phone-number login verification without SMS. Achieved 97% success rate in early tests.",
       "domain": "developer-tools",
       "event": {
@@ -254,7 +254,7 @@
       "authors": [
         "Soj Gamayon"
       ],
-      "body": "Smallholder farmers in the Philippines struggle to access credit because lenders cannot verify on-farm income. Agriconnect's weekend prototype connected farmers to a transparent credit marketplace, enough to take the global Red Bull Basement title in 2024.\n",
+      "body": "## What it is\n\nAgriconnect is a credit marketplace for smallholder farmers in the Philippines. The prototype used a blockchain-based marketplace to connect farmers with lenders.\n\n## The problem\n\nSmall farms often lack the paperwork and collateral that formal lenders require. A marketplace can turn farming activity into a record that a lender can evaluate.\n\n## What makes it interesting\n\nIt won Red Bull Basement 2024 globally for Soj Gamayon of the Philippines. The pitch was access to credit, not a new crop or a new sensor.\n\n## What you can learn\n\nFor smallholder finance, the bottleneck is often evidence rather than money. A product that produces a trustworthy record can be more useful than a loan app.\n\n## Limitations of this analysis\n\nThe record documents the award and the concept only. There is no evidence of lending volume, default rates, or whether blockchain was necessary to the model.\n",
       "description": "Startup addressing agricultural credit access in the Philippines; won Red Bull Basement 2024 with a blockchain-based farming credit marketplace prototype.",
       "domain": "fintech",
       "event": {
@@ -284,7 +284,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Airocide adapted NASA's photocatalytic oxidation research into a consumer air purifier line, an example of rapid-build innovation culture bleeding from space programs into hardware products.\n",
+      "body": "## What it is\n\nAirocide is a line of air purifiers built on technology developed for spacecraft life support. The core process is catalytic oxidation, which breaks down organic gases rather than trapping them in a filter.\n\n## How the experience works\n\nAir passes through a catalyst bed, where volatile organic compounds are oxidized. The output is carbon dioxide and water vapor. Because the catalyst is not consumed, it does not need the replacement schedule of a particulate filter.\n\n## What makes it interesting\n\nThe product is a technology transfer: research paid for by a space program became a consumer appliance. NASA's spinoff programs exist to make that path visible and repeatable.\n\n## What you can learn\n\nDual-use research can produce a consumer product when the operating constraint is shared. A spacecraft and a sealed room both need air that does not accumulate trace gases.\n\n## Limitations of this analysis\n\nThe record does not document the license, the underlying studies, or independent performance testing. Claims about health effects are outside what the linked source establishes.\n",
       "description": "NASA-derived air purification technology commercialized after Space Apps-adjacent open innovation work; turned spacecraft-grade catalytic oxidation into consumer air cleaners.",
       "domain": "healthcare",
       "event": {
@@ -314,7 +314,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "No expensive SDR rig required: this Space Apps 2014 entry turned an ordinary Android phone into a satellite ground station, earning Best Use of Hardware.\n",
+      "body": "## What it is\n\nAndroid Base Station turns a smartphone into a satellite ground station. The phone's radio receives open satellite data, and the app decodes it.\n\n## The problem\n\nGround stations are expensive equipment operated by institutions. A satellite that transmits open data still needs someone on the ground to listen.\n\n## What makes it interesting\n\nIt won Best Use of Hardware at NASA Space Apps 2014. The hardware was already in the participant's pocket; the project was mostly about proving the radio could do the job.\n\n## What you can learn\n\nBefore buying hardware, check what the device you own can already receive. A hackathon is a good place to test that boundary.\n\n## Limitations of this analysis\n\nThe record does not list supported satellites, the antenna setup, or the decoding chain. The project page is a competition entry, not a build guide.\n",
       "description": "Smartphone turned into a satellite ground station at NASA Space Apps 2014; won Best Use of Hardware for turning commodity phones into radio receivers for open satellite data.",
       "domain": "science",
       "event": {
@@ -347,7 +347,7 @@
       "authors": [
         "Nick Farquhar"
       ],
-      "body": "An unplanned weekend pitch about changing how property management shares profits became a funded startup. The founder left the University of Missouri to grow it after the win.\n",
+      "body": "## What it is\n\nAppreciate is a property management platform that shares profits with property owners. It won Columbia Startup Weekend 2022 and later raised a $750K seed round.\n\n## The problem\n\nProperty managers usually charge a fee regardless of how the property performs. Owners carry the downside while the manager collects either way.\n\n## What makes it interesting\n\nThe model ties the manager's revenue to the owner's result. That is a business-model change, not a feature, and it is the kind of decision a weekend pitch can communicate clearly.\n\n## What you can learn\n\nA pricing model can be the product. If your incentive is visibly different from the incumbent's, the pitch explains itself.\n\n## Limitations of this analysis\n\nThe record does not cover the size of the portfolio, the terms of the profit share, or how the seed round was used.\n",
       "description": "Profit-sharing property management platform for property owners that won Columbia Startup Weekend 2022 and raised a $750K seed round.",
       "domain": "web-mobile",
       "event": {
@@ -376,7 +376,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nArcobaleno turns astronomical images into sound. It maps two- and three-dimensional data to audio so that blind users can explore space imagery.\n\n## The problem\n\nAstronomy communication is almost entirely visual. A description of a nebula can tell you it is bright, but not where the brightness sits.\n\n## How the experience works\n\nImage properties such as position and intensity are mapped to sound parameters. Moving through the image changes what the listener hears, which gives spatial information without pixels.\n\n## What makes it interesting\n\nIt won the Global Connection Award at NASA Space Apps 2023. The project treats accessibility as a translation problem rather than a text alternative.\n\n## What you can learn\n\nSonification is not a fallback for images. It is a second channel that can carry information the visual version buries in color.\n\n## Limitations of this analysis\n\nThe record does not describe the sonification mapping or report testing with blind users. Both are essential to judging whether it works.\n",
       "description": "Sonifies 2D and 3D astronomical images so blind users can experience space imagery through sound.",
       "domain": "accessibility",
       "event": {
@@ -402,7 +402,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nAstrogenesis is an itinerary builder for planetary tourism. It assembles a trip concept from destination data and presents it as a plan.\n\n## What makes it interesting\n\nIt won Best Mission Concept at NASA Space Apps 2023. The entry reframes mission data as consumer planning, which is a different audience from the usual dashboard.\n\n## What you can learn\n\nThe same dataset can support a serious tool and a playful one. A tourism frame can teach a general audience where things are in the solar system.\n\n## Limitations of this analysis\n\nThe record does not include a demo link or describe the data sources. How the itineraries are generated is unknown.\n",
       "description": "Interactive planetary tourism itinerary builder.",
       "domain": "web-mobile",
       "event": {
@@ -427,7 +427,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nAstroSweepers is a concept for removing orbital debris. It proposes a way to clear space junk from busy orbits.\n\n## The problem\n\nDefunct satellites and fragments stay in orbit for decades. Each piece is a collision risk for working spacecraft.\n\n## What makes it interesting\n\nIt won the Galactic Impact award at NASA Space Apps 2025. Debris removal is hard for reasons beyond engineering: someone has to pay for it, and no one owns the junk.\n\n## What you can learn\n\nA cleanup project needs a business or treaty answer before it needs a spacecraft. The hard part is often who authorizes the removal.\n\n## Limitations of this analysis\n\nThe record does not describe the capture mechanism, the target orbit, or any prototype. It is an award listing for a concept.\n",
       "description": "Orbital debris cleanup concept for removing space junk.",
       "domain": "science",
       "event": {
@@ -456,7 +456,7 @@
         "Sophie Bolzer",
         "Nadine Szentivanyi"
       ],
-      "body": "Audvice is a full arc from student competition win to venture-backed company to acquisition, documented by Red Bull's own founder profile series.\n",
+      "body": "## What it is\n\nThe record for Audvice documents a trajectory rather than a product: a Red Bull Basement 2019 winner that later raised more than $3 million, worked with Fortune 500 companies, and was acquired.\n\n## What makes it interesting\n\nThe path is the point. A student competition entry became a funded company with enterprise customers and an exit, which is a much rarer outcome than a hackathon prize.\n\n## What you can learn\n\nA competition win is evidence that a team can pitch and ship under pressure. It is not evidence of a market, but it can open the door to the people who test one.\n\n## Limitations of this analysis\n\nThe record does not describe what Audvice did, its customers, or the acquisition terms. The product itself is not documented here.\n",
       "description": "Startup that won Red Bull Basement 2019; later raised more than $3 million in venture capital, worked with Fortune 500 companies, and was acquired.",
       "domain": "web-mobile",
       "event": {
@@ -489,7 +489,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nBeFit is a social fitness app that rewards exercise with NFTs. It was described at the time as BeReal for pushups.\n\n## The problem\n\nFitness apps struggle with retention. A reward that has resale value is one way to make a streak worth protecting.\n\n## What makes it interesting\n\nIt won Best of ETHDenver and the Impact track at ETHDenver 2024. The design borrows a social format and attaches a crypto incentive, which is a common pattern at Ethereum hackathons and a hard one to keep honest.\n\n## What you can learn\n\nAn incentive only works if the reward costs less than the behavior it buys. Token rewards tend to attract the people who value the token most, not the people who need the habit.\n\n## Limitations of this analysis\n\nThe record does not report user numbers, retention, or token economics. There is no evidence the incentive worked.\n",
       "description": "Social fitness app that rewards exercise with NFTs. Described as BeReal for pushups.",
       "domain": "social",
       "event": {
@@ -584,7 +584,7 @@
       "authors": [
         "DANG!"
       ],
-      "body": "DANG! turned a weekend GMTK jam entry about throwing and chasing a boomerang into a full Devolver-published shooter. The studio later closed in 2023 after failing to fund its next game.\n",
+      "body": "## What it is\n\nBoomerang X is a first-person shooter built around one weapon: a boomerang that teleports you to wherever it lands.\n\n## How the experience works\n\nYou throw the boomerang, then recall it. Movement and combat use the same object, so positioning is the attack. The arena is designed around the arcs the boomerang can take.\n\n## What makes it interesting\n\nIt started as a 48-hour GMTK Game Jam entry and shipped through Devolver Digital in July 2021. A single verb carried both traversal and combat, which is why the jam version could demonstrate the whole game.\n\n## What you can learn\n\nIf one mechanic can serve two systems, the prototype already contains the design. The rest is content.\n\n## Limitations of this analysis\n\nThe record covers the jam origin and the release, not the level design or how the team tuned the boomerang.\n",
       "description": "Momentum-based first-person shooter built around a single teleporting boomerang; started as a 48-hour GMTK Game Jam entry and shipped via Devolver Digital in 2021.",
       "domain": "games",
       "event": {
@@ -622,7 +622,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "The original Ludum Dare entry was titled Rambros. Developer Free Lives expanded it into a full commercial release with local and online co-op.\n",
+      "body": "## What it is\n\nBroforce is a side-scrolling run-and-gun game built on action-movie archetypes. The roster is a set of parody heroes, each with a distinct weapon.\n\n## What makes it interesting\n\nIt grew out of a Ludum Dare 23 prototype called Rambros in 2012. The commercial game kept the destructible environments and the parody tone and added more heroes and levels.\n\n## What you can learn\n\nA jam prototype with a strong hook can scale through content rather than systems. If the first ten minutes work, the next hundred are production.\n\n## Limitations of this analysis\n\nThe record documents the prototype origin, not the level design, the engine, or the console ports.\n",
       "description": "Side-scrolling run-and-gun action game starring hyper-masculine action movie homages, born from a Ludum Dare prototype called Rambros.",
       "domain": "games",
       "event": {
@@ -681,7 +681,7 @@
       "authors": [
         "Leda Entertainment"
       ],
-      "body": "Bullion is less about a single prototype and more about jam matchmaking: a 2016 Global Game Jam pairing that turned into a long-running studio project with outside recognition years later.\n",
+      "body": "## What it is\n\nBullion is a game concept that began at Global Game Jam 2016 and was later developed with Leda Entertainment. It was recognized at the Big Indie Pitch in 2022.\n\n## What makes it interesting\n\nThe origin is a collaboration. Coder Ben Pritchard met 3D artist Matthew Isteed at his first Global Game Jam, and the pair kept working together after the weekend.\n\n## What you can learn\n\nA game jam is a matchmaking event as much as a production sprint. The team you meet can matter more than the prototype you finish.\n\n## Limitations of this analysis\n\nThe record does not describe the game's mechanics, release status, or the Big Indie Pitch result beyond the recognition.\n",
       "description": "Project where a coder and a 3D artist met at Global Game Jam 2016 and later developed the concept with Leda Entertainment, recognized at Big Indie Pitch in 2022.",
       "domain": "games",
       "event": {
@@ -714,7 +714,7 @@
       "authors": [
         "Giorgos Mendrinos"
       ],
-      "body": "Caius turned a hackathon pitch about reading road networks from satellite context into a company. It mapped uncharted forest trails for the Region of Epirus and spun out Druiter as its consumer-facing product.\n",
+      "body": "## What it is\n\nCaius is an AI mapping system that identifies road and trail networks from imagery. It turns unpaved and unmapped routes into data.\n\n## The problem\n\nRural roads and trails are often missing from official maps. That gap makes delivery, emergency response, and planning harder than they need to be.\n\n## What makes it interesting\n\nIt began as a CASSINI Hackathon concept, moved into ESA BIC Greece and Startab, and produced a consumer app in 2025. The competition was the start of an incubation path, not the end of the project.\n\n## What you can learn\n\nA hackathon entry can be the first milestone in a funding application. Treat the demo as evidence for the next step, not the finished product.\n\n## Limitations of this analysis\n\nThe record does not describe the model, its accuracy, or which regions are covered.\n",
       "description": "AI-based mapping system that automatically identifies road and trail networks; grew from a CASSINI Hackathon concept into a rural digitisation startup with ESA incubation and a 2025 consumer app.",
       "domain": "other",
       "event": {
@@ -808,7 +808,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Swift, the messaging network behind most international bank transfers, ran a hackathon to explore blockchain interoperability. Chainlink took the top business slot.\n",
+      "body": "## What it is\n\nChainlink for Swift is an integration between blockchain oracles and Swift's interbank messaging. It was selected as the winner of the Swift Hackathon 2025 Business Challenge.\n\n## The problem\n\nFinancial institutions already move value over Swift. Blockchains hold assets that those institutions want to settle, but the two systems do not share a message format.\n\n## What makes it interesting\n\nChainlink's co-founder presented the work at Sibos, the industry conference where interbank infrastructure gets discussed. A hackathon result reaching that stage is unusual.\n\n## What you can learn\n\nIntegrating with existing rails beats replacing them. The winning design usually meets the institution where it already operates.\n\n## Limitations of this analysis\n\nThe record does not describe the integration architecture, the assets involved, or whether any institution has adopted it.\n",
       "description": "Blockchain oracle integration selected as winner of the Swift Hackathon 2025 Business Challenge; Chainlink co-founder showcased the work at Sibos.",
       "domain": "fintech",
       "event": {
@@ -842,7 +842,7 @@
       "authors": [
         "Vasco Singh"
       ],
-      "body": "ChatEDU began as a cram-session tool for a Vanderbilt algorithms exam inside a Microsoft student AI hackathon. The team incorporated feedback from students across multiple universities, won several hackathons, and pursued it as a paid study product.\n",
+      "body": "## What it is\n\nChatEDU is a study assistant that turns course material into answers, practice sets, and flashcards. It accepts PDFs, slides, notes, and lecture video.\n\n## The problem\n\nStudents often have the material but not enough practice questions. Making them by hand is slow, and generic question banks do not match the course.\n\n## How the experience works\n\nA student uploads the material and asks questions. Answers cite the source passage, and the same content can be turned into practice problems or cards.\n\n## What makes it interesting\n\nFour Vanderbilt undergraduates built it for a Microsoft AI hackathon in 2023 because they lacked practice material for an algorithms final. It took first place for the Technical Project Prize.\n\n## What you can learn\n\nThe best hackathon project often solves the builder's own week. You already know the user, the workflow, and whether the result is good.\n\n## Limitations of this analysis\n\nThe record does not report answer accuracy or how the citations are verified. Both matter more than the feature list for a study tool.\n",
       "description": "Study assistant that turns PDFs, slides, notes and lecture video into citation-grounded chat, practice sets and flashcards; built by Vanderbilt students for a Microsoft AI hackathon.",
       "domain": "education",
       "event": {
@@ -876,7 +876,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nConnected Earth Museum is a virtual museum about the climate, hosted by an AI guide. It presents climate data as 3D and 2D exhibits.\n\n## What makes it interesting\n\nIt won the Art and Technology award at NASA Space Apps 2024. The entry treats a dataset as an exhibition, with a host and a route through the material.\n\n## What you can learn\n\nA guided narrative can make scientific data approachable without simplifying it. The host does the work a curator would.\n\n## Limitations of this analysis\n\nThe record does not link a demo or describe the AI host. Whether the exhibits are accurate or the guide stays grounded is unknown.\n",
       "description": "AI-hosted immersive virtual climate museum with 3D and 2D visualizations.",
       "domain": "media-arts",
       "event": {
@@ -902,7 +902,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nDeadAss is a wearable that detects emergencies and acts on the wearer's behalf. It can secure funds and contact the right people when the wearer cannot.\n\n## The problem\n\nAn emergency response usually needs three things at once: detection, a decision, and money. A person in danger may be able to supply none of them.\n\n## What makes it interesting\n\nIt won the AI Hardware category at ETHGlobal Bangkok 2024. Combining a wearable with on-chain funds is unusual: the device has to act without a confirmation step.\n\n## What you can learn\n\nA system that acts for the user must define what happens when it is wrong. False positives are a design problem, not an edge case.\n\n## Limitations of this analysis\n\nThe record does not describe the sensors, the detection threshold, or any false-positive testing.\n",
       "description": "AI wearable that detects emergencies and secures funds and contacts when the wearer is in danger.",
       "domain": "hardware",
       "event": {
@@ -931,7 +931,7 @@
       "authors": [
         "Team Gummy"
       ],
-      "body": "Jam entries often stall at the prototype. Die in Dungeon used its Spooktober entry as a vertical slice, then built out a full roguelike around it for Steam.\n",
+      "body": "## What it is\n\nDie in Dungeon is a roguelike built for the Spooktober game jam in 2022 and later expanded into a Steam release.\n\n## What makes it interesting\n\nThe jam prototype did the two things a store page needs: it looked like a finished game, and its demo attracted enough wishlists to justify the full build.\n\n## What you can learn\n\nA jam build can double as market research. Wishlist numbers tell you whether to spend a year on the idea before you spend it.\n\n## Limitations of this analysis\n\nThe record does not describe the combat, the progression, or how much of the jam code survived into the release.\n",
       "description": "Roguelike built for the Spooktober game jam; expanded into a full Steam release with a demo that drew large wishlist numbers.",
       "domain": "games",
       "event": {
@@ -965,7 +965,7 @@
         "Matt Hall",
         "John Watkinson"
       ],
-      "body": "Docracy treated legal templates like  code: community-submitted contracts you could fork, review and sign. The Disrupt hackathon win led to institutional seed funding.\n",
+      "body": "## What it is\n\nDocracy was an open-source platform for legal documents, described at the time as GitHub for contracts. Users could publish, compare, and reuse agreements.\n\n## The problem\n\nStandard contracts were locked inside law firms and template sites. Small companies needed the same documents but could not afford the drafting.\n\n## What makes it interesting\n\nIt won a TechCrunch Disrupt hackathon in May 2011 and raised $650,000 from First Round Capital months later. The pitch was simple enough to land in a weekend.\n\n## What you can learn\n\nBorrowing a metaphor from a known tool is a fast way to explain a new one. \"GitHub for contracts\" does more work than a feature list.\n\n## Limitations of this analysis\n\nThe record does not cover the licensing model, the quality of the documents, or why the company wound down.\n",
       "description": "Open-source legal document platform billed as a GitHub for contracts; won a TechCrunch Disrupt hackathon and raised a $650K seed round.",
       "domain": "web-mobile",
       "event": {
@@ -998,7 +998,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "The Ludum Dare prototype Dome Romantik won enough attention for Bippinbits to expand it into the full commercial release Dome Keeper.\n",
+      "body": "## What it is\n\nDome Keeper is a mining and defense game. You dig for resources under a dome, then return to defend it when a wave arrives.\n\n## How the experience works\n\nThe loop alternates between two modes. Underground, you choose what to mine and how far to push. On the surface, you spend what you gathered on defenses before the next attack.\n\n## What makes it interesting\n\nIt started as Dome Romantik for Ludum Dare 48 in 2021, where it placed ninth overall. The commercial version kept the loop and added content and polish.\n\n## What you can learn\n\nThe jam version already contained the tension: greed versus preparation. If that choice is interesting in 48 hours, it will hold for a full game.\n\n## Limitations of this analysis\n\nThe record covers the jam placement and the release, not the upgrade design or the wave balancing.\n",
       "description": "Mining-and-defense roguelite where players dig for resources under a dome while defending against waves of enemies.",
       "domain": "games",
       "event": {
@@ -1029,7 +1029,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nDremel is a system for interactive ad-hoc analysis over very large datasets. It stores data in a columnar format and evaluates queries across many machines.\n\n## The problem\n\nAnalysts wanted answers in seconds from tables too large for one machine. Batch systems could do the work but not at the speed of a question.\n\n## What makes it interesting\n\nIt started as a Google 20% project in 2006 and became the foundation for BigQuery. The design choice that mattered was treating a query as a tree that can be pushed down to many servers, rather than moving the data to one.\n\n## What you can learn\n\nInteractive analysis is an architecture decision, not a UI one. If the query cannot be split, no interface will make it fast.\n\n## Limitations of this analysis\n\nThe record does not cover the paper's design details, the query language, or the path from internal system to Cloud product.\n",
       "description": "Interactive ad-hoc analysis over big data. Became the foundation for Google BigQuery.",
       "domain": "developer-tools",
       "event": {
@@ -1055,7 +1055,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Junction 2025's scale - 300 teams, 1,500 hackers - makes a top-5 finish a strong signal. DroneStalker tracked and predicted drone paths with live computer vision in one weekend.\n",
+      "body": "## What it is\n\nDroneStalker is a real-time drone tracking and prediction system. It estimates where a drone is and where it is heading.\n\n## What makes it interesting\n\nIt placed in the top five of 300 teams at Junction 2025 in Espoo, Finland, with 1,500 participants. Tracking a small moving object in real time is a perception and latency problem, not a dashboard problem.\n\n## What you can learn\n\nA prediction is only useful if it arrives before the object moves. Latency is part of the model's accuracy.\n\n## Limitations of this analysis\n\nThe record does not describe the sensors, the model, or the tracking range.\n",
       "description": "Real-time drone tracking and prediction system; winner at Junction 2025, Europe's largest hackathon, placing top 5 of 300 teams and 1,500 participants in Espoo, Finland.",
       "domain": "robotics",
       "event": {
@@ -1110,7 +1110,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Founder Tallis Gomes pivoted from a bus-tracking idea to a taxi-hailing app at Startup Weekend Rio 2011. The team won the event and later raised significant venture funding before acquisition by Cabify.\n",
+      "body": "## What it is\n\nEasy Taxi was a ride-hailing app for Latin America and other emerging markets. It connected passengers with taxi drivers rather than private cars.\n\n## The problem\n\nHailing a taxi on the street was slow, unpredictable, and unsafe in many cities. A dispatch app could make the wait visible.\n\n## What makes it interesting\n\nThe concept was first presented at Startup Weekend Rio 2011 and won the competition. The company then expanded across Latin America before the global ride-hailing platforms arrived.\n\n## What you can learn\n\nWorking with existing taxi fleets is a different business from creating a new fleet. It trades control for supply on day one.\n\n## Limitations of this analysis\n\nThe record covers the origin and expansion, not the dispatch system, the driver economics, or the company's eventual outcome.\n",
       "description": "Mobile ride-hailing app that connected passengers with taxi drivers across Latin America and other emerging markets.",
       "domain": "web-mobile",
       "event": {
@@ -1179,7 +1179,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nEco-Metropolis is a city-building game that uses real environmental data. Players grow a city while the simulation responds to actual conditions.\n\n## What makes it interesting\n\nIt won Most Inspirational at NASA Space Apps 2024. A game is a way to let someone experience a dataset as consequences rather than as a chart.\n\n## What you can learn\n\nIf your data describes a trade-off, let the user make the trade. A simulation teaches the constraint faster than an explainer.\n\n## Limitations of this analysis\n\nThe record does not link a build or describe which datasets feed the simulation.\n",
       "description": "City-building sustainability game that uses real environmental data.",
       "domain": "education",
       "event": {
@@ -1204,7 +1204,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nEnergy Shock is a fast action game built at Global Game Jam 2018. It was named PC Gamer's best free game of the week and later entered Steam Early Access.\n\n## What makes it interesting\n\nThe jam build was good enough to be recommended as a free game, which gave the team an audience before the commercial version existed.\n\n## What you can learn\n\nA finished small build is a marketing asset. Releasing it free can do more for a project than holding it back until launch.\n\n## Limitations of this analysis\n\nThe record does not describe the mechanics or how the Early Access version changed the jam design.\n",
       "description": "Fast-paced action game. Named PC Gamer best free game of the week at the jam; later entered Steam Early Access.",
       "domain": "games",
       "event": {
@@ -1231,7 +1231,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nENSPin keeps files referenced by ENS names available on IPFS. It pins the content so the link does not break when the original host stops serving it.\n\n## The problem\n\nA name that resolves to content is only useful if the content still exists. Pinning is the difference between a permanent record and a dead link.\n\n## What makes it interesting\n\nIt won first place in the ENS Infrastructure category at ETHGlobal Taipei 2025. The project works on the unglamorous half of decentralization: persistence.\n\n## What you can learn\n\nNaming and storage are separate problems. A naming system does not guarantee that anyone keeps the file.\n\n## Limitations of this analysis\n\nThe record does not describe the pinning service, the cost model, or how it decides what to keep.\n",
       "description": "Automatically pins ENS-linked IPFS files for permanent persistence.",
       "domain": "developer-tools",
       "event": {
@@ -1264,7 +1264,7 @@
         "Jabbok Schlacks",
         "Willy Schlacks"
       ],
-      "body": "Brothers Jabbok and Willy Schlacks pitched a construction equipment sharing idea at Columbia Startup Weekend in 2014. The company later raised major venture rounds, went through Y Combinator, and completed a Nasdaq IPO as EQPT in January 2026.\n",
+      "body": "## What it is\n\nEquipmentShare is a construction equipment rental company with jobsite technology. Contractors rent machines and track them through the platform.\n\n## The problem\n\nEquipment rental is fragmented and local. A contractor with a short job needs a machine nearby, and the owner needs to know where it is.\n\n## What makes it interesting\n\nThe idea started as a winning pitch at Columbia Startup Weekend in 2014. The company later listed on Nasdaq, which is a long way from a weekend demo.\n\n## What you can learn\n\nA marketplace can start with a spreadsheet and a phone. The software matters when the fleet is large enough that manual tracking fails.\n\n## Limitations of this analysis\n\nThe record does not describe the telematics, the rental terms, or the path to public markets.\n",
       "description": "Construction equipment rental and jobsite technology company that began as a Columbia Startup Weekend winning idea and later listed on Nasdaq.",
       "domain": "other",
       "event": {
@@ -1302,7 +1302,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "The 48-hour prototype won Ludum Dare 24. Developer Nicolas Cannasse co-founded Shiro Games and expanded it into a full commercial title released in 2013.\n",
+      "body": "## What it is\n\nEvoland is an action-adventure game where the game itself evolves. Each upgrade unlocks a new visual style or mechanic, moving from monochrome Game Boy graphics to 3D.\n\n## What makes it interesting\n\nIt won the \"Evolution\" theme at Ludum Dare 24 in 2012, chosen from more than 1,400 entries. The theme and the mechanic were the same thing, which is why the prototype read as a complete idea.\n\n## What you can learn\n\nWhen the theme can become the mechanic, the jam entry explains itself. The constraint is the design.\n\n## Limitations of this analysis\n\nThe record covers the jam win and the commercial release, not the engine or how the graphical stages were produced.\n",
       "description": "Action-adventure game where players unlock graphical and mechanical upgrades that evolve the game from monochrome Game Boy style to full 3D.",
       "domain": "games",
       "event": {
@@ -1367,7 +1367,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nLive Faces was a live-streaming prototype built at a Facebook hackathon in 2012. It demonstrated broadcasting from the platform and is credited as an influence on Facebook Live.\n\n## What makes it interesting\n\nA hackathon demo can become a product direction years later. The prototype proved the interaction before the infrastructure and the business case existed.\n\n## What you can learn\n\nSome prototypes are arguments, not products. Their job is to make a decision possible, and they succeed when someone remembers them at the right moment.\n\n## Limitations of this analysis\n\nThe record does not describe the streaming stack, the audience, or how directly it influenced the shipped product.\n",
       "description": "Live-streaming demo prototype that helped inspire the creation of Facebook Live.",
       "domain": "media-arts",
       "event": {
@@ -1430,7 +1430,7 @@
       "authors": [
         "Alexa Andrzejewski"
       ],
-      "body": "Foodspotting treated dishes, not restaurants, as the unit of discovery. The Startup Weekend-born app was later acquired by OpenTable.\n",
+      "body": "## What it is\n\nFoodspotting was a visual guide to dishes. Instead of reviewing restaurants, users photographed specific dishes and recommended them.\n\n## The problem\n\nRestaurant reviews describe a place. Diners often want to know what a particular dish looks like before ordering it.\n\n## What makes it interesting\n\nIt came out of the Startup Weekend circuit in 2009, founded by Alexa Andrzejewski. It was cited as a success story for the format and was acquired by OpenTable in 2015.\n\n## What you can learn\n\nNarrowing a review to one object makes the content comparable. A dish is easier to rate and photograph than a restaurant.\n\n## Limitations of this analysis\n\nThe record does not cover the recommendation system, the acquisition terms, or the app's technical stack.\n",
       "description": "Visual food discovery app that emerged from the Startup Weekend ecosystem; became a widely covered example of hackathon-to-startup success.",
       "domain": "web-mobile",
       "event": {
@@ -1464,7 +1464,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Museum hackathons are underrated media-arts venues. Frame turned a phone camera into an at-the-wall framing tool at the Walters Art Museum's first Art Bytes weekend.\n",
+      "body": "## What it is\n\nFrame is a museum app that lets a visitor photograph an artwork and get information about it. It was a co-winner at the Walters Art Museum's first Art Bytes hackathon in 2012.\n\n## The problem\n\nMuseum labels are fixed to walls. A visitor who wants context for a piece has to find the right plaque or wait for a tour.\n\n## How the experience works\n\nThe visitor takes a photo. The app matches the artwork and returns information about it, using the phone as the label.\n\n## What makes it interesting\n\nIt shared the top prize with Tanzaku, another entry from the same event. Both projects used the phone as the interface to the collection rather than building a separate guide.\n\n## What you can learn\n\nA museum already has the content. The hack is the lookup, not the encyclopedia.\n\n## Limitations of this analysis\n\nThe record does not describe the matching method or whether the app was deployed at the museum.\n",
       "description": "Smartphone app that frames museum artworks by photo; co-winner of the first Walters Art Museum Art Bytes hackathon in 2012 with Tanzaku, taking a $1,000 prize.",
       "domain": "media-arts",
       "event": {
@@ -1559,7 +1559,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Galaxiga took a jam-born space shooter and polished it into a full Steam and mobile release, keeping the arcade DNA intact.\n",
+      "body": "## What it is\n\nGalaxiga is a retro space shooter built at a Global Game Jam and later released on mobile and Steam.\n\n## What makes it interesting\n\nThe jam version established the arcade feel: fixed screen, waves of enemies, a score worth chasing. The commercial release added platforms and polish without changing the core.\n\n## What you can learn\n\nA genre with a known loop is a good jam choice. The audience already understands the controls, so the prototype can spend its 48 hours on feel.\n\n## Limitations of this analysis\n\nThe record does not describe the weapon system, the level structure, or the porting work.\n",
       "description": "Space shooter built during a Global Game Jam; expanded into a polished mobile and Steam release with retro arcade aesthetics.",
       "domain": "games",
       "event": {
@@ -1589,7 +1589,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Phil Hassey won Ludum Dare 8 in 2006 with the prototype. It grew into a multiplatform series with iOS and web releases.\n",
+      "body": "## What it is\n\nGalcon is a real-time strategy game played with one click. You select a planet, then send a fleet to another; numbers decide the outcome.\n\n## The problem\n\nReal-time strategy usually means build orders and tech trees. Galcon removes both, leaving only the decision of where to send ships and when.\n\n## What makes it interesting\n\nIt entered Ludum Dare 8 in 2006 and won four first places. The design fits on one screen and one input, which is why it later worked on phones.\n\n## What you can learn\n\nRemoving a layer from a genre can create a new one. The strategy survives without the economy.\n\n## Limitations of this analysis\n\nThe record covers the jam result and the 2006 release, not the AI or the multiplayer netcode.\n",
       "description": "Real-time strategy game where players flood planets with fleets using a simple one-click interface.",
       "domain": "games",
       "event": {
@@ -1620,7 +1620,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Garden Buddies grew out of a specialized mental-health themed jam that Global Game Jam ran with DeepWell DTx rather than the main January event.\n",
+      "body": "## What it is\n\nGarden Buddies is a cozy game about tending a garden with a companion. It was made during the May Day Mental Health game jam in 2022, run by Global Game Jam with DeepWell DTx.\n\n## What makes it interesting\n\nIt was featured at Wholesome Direct 2023 and shipped on Steam in October 2023. The jam had a mental-health brief, which shaped the pace and the subject matter.\n\n## What you can learn\n\nA themed jam can produce a game that would be hard to pitch otherwise. The constraint gives the team permission to make something quiet.\n\n## Limitations of this analysis\n\nThe record does not describe the mechanics or how the mental-health brief was handled in design.\n",
       "description": "Cozy game made during the May Day Mental Health game jam run by Global Game Jam with DeepWell DTx in 2022; featured at Wholesome Direct 2023 and shipped on Steam in October 2023.",
       "domain": "games",
       "event": {
@@ -1725,7 +1725,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Deconstructeam built the original in the Ludum Dare jam window. The expanded commercial version launched on Steam, GOG, and Humble in June 2014.\n",
+      "body": "## What it is\n\nGods Will Be Watching is a point-and-click thriller. A stranded crew faces impossible choices with too few resources.\n\n## The problem\n\nSurvival games often let you optimize your way out. This one makes every option cost someone, which turns resource management into an ethical decision.\n\n## What makes it interesting\n\nIt started as a Ludum Dare 26 entry in 2013, made in 72 hours, and was later expanded into a full game. The original jam version is still playable.\n\n## What you can learn\n\nA prototype that makes the player uncomfortable is doing something right. The discomfort is the hook, and it survives the production.\n\n## Limitations of this analysis\n\nThe record does not describe the scenario design or how the expanded version changed the jam's choices.\n",
       "description": "Point-and-click thriller where a stranded crew faces impossible ethical choices with limited resources.",
       "domain": "games",
       "event": {
@@ -1825,7 +1825,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nGreetings from Earth is an interactive visualization that treats the ocean as a climate garden. Users explore the sea as a system that needs tending.\n\n## What makes it interesting\n\nIt won the Galactic Impact award at NASA Space Apps 2023. The metaphor does the teaching: a garden implies care and seasons, which a temperature chart does not.\n\n## What you can learn\n\nMetaphor is a compression scheme. A good one carries relationships the audience already understands.\n\n## Limitations of this analysis\n\nThe record does not link the visualization or describe the datasets behind it.\n",
       "description": "Interactive ocean-as-climate-garden visualization.",
       "domain": "climate",
       "event": {
@@ -1890,7 +1890,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nG.R.O.W. is a mapping tool for wildfire recovery. It gives residents and planners a view of damage and recovery work in their area.\n\n## The problem\n\nAfter a fire, information is scattered across agencies and spreadsheets. People who lost property need one place to see what happened and what is next.\n\n## What makes it interesting\n\nIt won the Local Impact award at NASA Space Apps 2024. The entry targets a specific community rather than a global audience, which is why a local award fits.\n\n## What you can learn\n\nA recovery tool has to be usable by people under stress. Fewer layers and clearer labels beat more data.\n\n## Limitations of this analysis\n\nThe record does not link the tool or describe its data sources or deployment.\n",
       "description": "User-friendly GIS mapping tool for wildfire recovery and observation.",
       "domain": "civic-tech",
       "event": {
@@ -1915,7 +1915,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "TUM's robo.innovate 2025 crowned GROWBOT champion for turning tree care into a data-driven robotic workflow.\n",
+      "body": "## What it is\n\nGROWBOT is a robot-assisted system for optimizing tree growth. It collects data about a tree and automates some of the care.\n\n## The problem\n\nTree planting gets attention; keeping saplings alive is the harder part. Growth depends on water, soil, and timing that a volunteer cannot monitor continuously.\n\n## What makes it interesting\n\nIt was named Hackathon Champion at robo.innovate 2025 in Munich, with a €2,500 prize. The project pairs a physical robot with a data loop rather than treating planting as a one-time act.\n\n## What you can learn\n\nA hardware project needs a maintenance story. A robot that tends trees has to survive the weather it is built for.\n\n## Limitations of this analysis\n\nThe record does not describe the robot, the sensors, or any field trial.\n",
       "description": "Robot-assisted tree growth optimization system; named Hackathon Champion at robo.innovate 2025 in Munich with a €2,500 prize.",
       "domain": "robotics",
       "event": {
@@ -1945,7 +1945,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nHerCode Space is a NASA Space Apps 2025 winner in the Women and Space theme category.\n\n## What makes it interesting\n\nThe award recognizes a project built around women in space, a theme the competition added to widen who sees themselves in the data.\n\n## What you can learn\n\nA themed category is a curation decision. It tells entrants which problems the organizers think are under-addressed.\n\n## Limitations of this analysis\n\nThe record names the award but does not describe the project, its data, or its team. There is nothing here to evaluate beyond the recognition.\n",
       "description": "Space Apps 2025 winner in the Women/Space theme category.",
       "domain": "social",
       "event": {
@@ -1972,7 +1972,7 @@
       "authors": [
         "Team Innovortex, LPU"
       ],
-      "body": "From 1,305 national teams to one hardware grand-finale win: HEXDOC targets tunnel and cave excavation accidents with autonomous collision avoidance.\n",
+      "body": "## What it is\n\nHEXDOC is a robot that avoids collisions while moving through tunnels and caves. It targets construction and excavation work where the machine has to navigate without a clear line of sight.\n\n## The problem\n\nTunnelling equipment operates in confined, dusty spaces where a collision can injure a worker or damage the machine. A human spotter is not always possible.\n\n## What makes it interesting\n\nTeam Innovortex from LPU won the Hardware Edition of Smart India Hackathon 2023 in the Robotics and Drones category. The event asks teams to solve a stated industry problem, which is why the prototype is aimed at a specific job.\n\n## What you can learn\n\nA constrained environment is a good first market for autonomy. Tunnels remove the variables that make outdoor robots hard.\n\n## Limitations of this analysis\n\nThe record does not describe the sensors, the avoidance logic, or any field test.\n",
       "description": "Collision-avoidance robot for construction and excavation in tunnels and caves; won Smart India Hackathon 2023 Hardware Edition Student Innovation in Robotics and Drones.",
       "domain": "robotics",
       "event": {
@@ -2066,7 +2066,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nHoneyPause is a marketplace for security reviews of on-chain projects. It connects protocol teams with auditors and white-hat researchers.\n\n## The problem\n\nSmart contracts hold funds from the day they deploy. A team that wants a review has to find a reviewer, agree on scope, and trust the result, often under time pressure.\n\n## What makes it interesting\n\nIt won Best of ETHDenver 2024. The project is infrastructure for trust rather than another application, which is a harder pitch in a hackathon full of demos.\n\n## What you can learn\n\nA two-sided marketplace has to solve the cold start for the scarce side. Here that is the auditor's time, not the protocol's demand.\n\n## Limitations of this analysis\n\nThe record does not describe the escrow model, the reputation system, or whether any audits were completed.\n",
       "description": "White-hat security marketplace for on-chain projects, connecting auditors with protocol teams.",
       "domain": "fintech",
       "event": {
@@ -2091,7 +2091,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nImmersive Rehab is a virtual reality platform for rehabilitation. It targets neurological conditions where movement practice is part of recovery.\n\n## The problem\n\nRepetitive exercises are boring, and bored patients stop. VR can make the repetition tolerable and give the therapist data.\n\n## What makes it interesting\n\nIt was featured by Red Bull Basement. The project sits at the intersection of two hard markets, clinical validation and consumer hardware, which is why so few rehabilitation products reach patients.\n\n## What you can learn\n\nIn clinical VR, the therapist is a user too. A product that ignores their workflow will not be adopted, however good the headset demo is.\n\n## Limitations of this analysis\n\nThe record does not describe the exercises, the clinical evidence, or the regulatory path.\n",
       "description": "Virtual reality rehabilitation platform for neurological conditions.",
       "domain": "healthcare",
       "event": {
@@ -2114,7 +2114,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Immortal's Way is one of Global Game Jam's own spotlighted success stories: a 2024 jam prototype that survived the leap to a finished Steam release.\n",
+      "body": "## What it is\n\nImmortal's Way is a game first created at Global Game Jam 2024 and later expanded into a full Steam release.\n\n## What makes it interesting\n\nThe jam prototype established the setting and the core loop. The commercial version kept the concept and built the content around it.\n\n## What you can learn\n\nA jam is a cheap way to test whether a world is worth spending a year in. If the team still likes it on Monday, the idea has legs.\n\n## Limitations of this analysis\n\nThe record does not describe the mechanics or how much of the jam build survived.\n",
       "description": "Game first created at Global Game Jam 2024 that was later expanded into a full commercial release on Steam.",
       "domain": "games",
       "event": {
@@ -2142,7 +2142,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Brothers Sowmay and Samyak Jain built a prototype that collapsed MakerDAO's 12-step loan process into one action. They won ETHIndia 2018 and grew the project into a major DeFi infrastructure platform.\n",
+      "body": "## What it is\n\nInstaDApp is a middleware layer for decentralized finance. It gives users one interface for lending protocols such as MakerDAO instead of separate positions in each.\n\n## The problem\n\nEach DeFi protocol has its own interface and its own way of managing collateral. A user with positions in several places has to watch all of them separately.\n\n## What makes it interesting\n\nBrothers Sowmay and Samyak Jain built it at ETHIndia 2018 in Bengaluru and won the hackathon. The product became a way to manage a portfolio of positions rather than a single protocol.\n\n## What you can learn\n\nAbstraction over competing protocols is a durable position. The user wants the outcome, not loyalty to one venue.\n\n## Limitations of this analysis\n\nThe record does not describe the smart contract architecture or how the platform handled risk across protocols.\n",
       "description": "Decentralized finance middleware platform that simplifies interactions with lending protocols like MakerDAO through a unified interface.",
       "domain": "fintech",
       "event": {
@@ -2177,7 +2177,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Student teams pitched an AI programming tutor at Georgia Tech's Klaus Startup Challenge and walked away with a seven-figure valuation offer the same day.\n",
+      "body": "## What it is\n\nInstructAI is a generative-AI tutor for programming. It helps a student work through code rather than handing over the answer.\n\n## The problem\n\nIntroductory programming is where students get stuck, and one teaching assistant cannot watch every editor. A tutor that responds in the moment changes how long a beginner stays blocked.\n\n## What makes it interesting\n\nGeorgia Tech students built it and won the 2024 Klaus Startup Challenge, which came with a $100,000 seed offer at a $1 million valuation.\n\n## What you can learn\n\nA university is a controlled market for an education product. You can test with real courses before you sell to a district.\n\n## Limitations of this analysis\n\nThe record does not describe the tutoring model, its accuracy, or any learning-outcome study.\n",
       "description": "Generative-AI programming tutor built by Georgia Tech students; won the 2024 Klaus Startup Challenge with a $100K seed offer at a $1M valuation.",
       "domain": "education",
       "event": {
@@ -2212,7 +2212,7 @@
         "Dhruv Roongta",
         "Sahibpreet Singh"
       ],
-      "body": "A team of first-year Georgia Tech CS majors built JARVIS over a Cal Hacks weekend after a visually impaired family member inspired the idea. The multi-award winning prototype describes nearby people and cues rather than only text.\n",
+      "body": "## What it is\n\nJARVIS is an assistant app for blind and visually impaired users. It uses computer vision to describe surroundings and non-verbal cues.\n\n## The problem\n\nA white cane tells you what is directly in front of you. It does not tell you whether someone is smiling, whether a room is crowded, or who is speaking.\n\n## What makes it interesting\n\nGeorgia Tech first-year computer science students built it at Cal Hacks 10.0 in 2023 and won Best Hack for Health, along with prizes for Zilliz and GitHub. The project pairs a vision model with a conversational interface.\n\n## What you can learn\n\nAccessibility tools benefit from a familiar output channel. Speech is already how a phone assistant works, so the new capability fits an existing habit.\n\n## Limitations of this analysis\n\nThe record does not report recognition accuracy, latency, or testing with blind users.\n",
       "description": "AI assistant app that uses computer vision to describe surroundings and non-verbal cues for blind and visually impaired users; won Best Hack for Health at Cal Hacks 10.0.",
       "domain": "accessibility",
       "event": {
@@ -2250,7 +2250,7 @@
         "Brinlee Kidd",
         "Sylvia Lopez"
       ],
-      "body": "From 4,000+ applications down to one Global Final stage in Istanbul: Jotted's automated study tool took Red Bull Basement 2021's top student prize.\n",
+      "body": "## What it is\n\nJotted is an automated study tool. It turns material into notes and review aids for students.\n\n## What makes it interesting\n\nArizona State University students Brinlee Kidd and Sylvia Lopez won the Red Bull Basement 2021 Global Final in Istanbul with it. The competition rewards a clear student problem and a demo that a non-technical judge can understand.\n\n## What you can learn\n\nA student-built tool has an advantage: the builders are the users. That makes the first version honest about what actually helps.\n\n## Limitations of this analysis\n\nThe record does not describe the product's features, its accuracy, or what happened after the competition.\n",
       "description": "Automated study tool by Arizona State University students Brinlee Kidd and Sylvia Lopez; won the Red Bull Basement 2021 Global Final in Istanbul.",
       "domain": "education",
       "event": {
@@ -2314,7 +2314,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nLandsat Connect is a web app for following Landsat satellites. It shows surface reflectance data and notifies users when a satellite passes over an area.\n\n## The problem\n\nLandsat data is open but not approachable. A researcher or land manager has to know which scene to request and when it was captured.\n\n## What makes it interesting\n\nIt won Best Mission Concept at NASA Space Apps 2024. The pass notification turns an archive into a subscription, which is the difference between data being available and being used.\n\n## What you can learn\n\nNotifications are a product feature, not a nicety. A dataset that changes on a schedule is more useful when it tells you the schedule.\n\n## Limitations of this analysis\n\nThe record does not link the app or describe the data pipeline.\n",
       "description": "Web app tracking Landsat satellites with surface reflectance data and pass notifications.",
       "domain": "science",
       "event": {
@@ -2339,7 +2339,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nLaunchRock built pre-launch landing pages that collected email addresses before a product shipped.\n\n## The problem\n\nA team with no product still needs a way to measure interest. A landing page with a signup form is the cheapest test of demand.\n\n## What makes it interesting\n\nIt placed second at Startup Weekend Philadelphia in 2011, raised seed funding, and was acquired about three years after launch. The product was a page and a form, which is a small surface for a company.\n\n## What you can learn\n\nSell the waitlist before you build the product. If nobody signs up, you saved a year.\n\n## Limitations of this analysis\n\nThe record does not describe the page builder, the pricing, or the acquisition.\n",
       "description": "Pre-launch landing page builder for collecting emails before product launch. Seed funded, acquired approximately three years after launch.",
       "domain": "web-mobile",
       "event": {
@@ -2364,7 +2364,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nLAVA AQUA X is a portable electric washing machine designed to use less water. It was built by the team LYLO.\n\n## The problem\n\nLaundry is a large share of household water use, and portable machines often trade efficiency for size.\n\n## What makes it interesting\n\nIt won the Global Workshop at Red Bull Basement 2020. The project treats water use as a design constraint from the start rather than an afterthought.\n\n## What you can learn\n\nA sustainability claim needs a measurable baseline. The winning pitch is stronger when it states liters per load, not \"less water\".\n\n## Limitations of this analysis\n\nThe record does not include the water savings, the prototype status, or any testing.\n",
       "description": "Portable electric washing machine designed for water conservation. Built by team LYLO.",
       "domain": "hardware",
       "event": {
@@ -2393,7 +2393,7 @@
         "Antoine Balaresque",
         "Henry Bradlow"
       ],
-      "body": "Lily is a cautionary wild-idea entry: a garage/lab drone that captured imaginations with a slick pre-order video, took about $34 million in customer pre-orders, then failed to ship and filed for bankruptcy in 2017 while facing a San Francisco DA lawsuit over the promotional footage.\n",
+      "body": "## What it is\n\nLily Robotics proposed a throw-and-shoot camera drone that follows its owner. The first prototype was built in the UC Berkeley Robotics Laboratory.\n\n## The problem\n\nA follow-me camera lets one person film themselves doing something active. Handheld footage and tripods both fail when the subject is moving.\n\n## What makes it interesting\n\nThe company took about $34 million in pre-orders, then shut down in January 2017 after failing to raise manufacturing funds. The gap between a lab demo and a shippable product is the story.\n\n## What you can learn\n\nA pre-order is a promise with a date attached. Selling before the manufacturing path is proven converts customer enthusiasm into a liability.\n\n## Limitations of this analysis\n\nThe record does not cover the fraud allegations in detail, the refund process, or the engineering state at shutdown.\n",
       "description": "UC Berkeley robotics-lab prototype for a throw-and-shoot follow-me camera drone that drew huge pre-orders, then collapsed amid fraud allegations and bankruptcy.",
       "domain": "robotics",
       "evidence": [
@@ -2432,7 +2432,7 @@
       "authors": [
         "Four Quarters"
       ],
-      "body": "The four-person Russian studio Four Quarters submitted a barely playable loop prototype to Ludum Dare 45 in 2019. They expanded it into Loop Hero, published by Devolver Digital in 2021 to strong sales and reviews.\n",
+      "body": "## What it is\n\nLoop Hero is an idle role-playing game. A hero walks an endless loop while the player places terrain and enemies around the path.\n\n## How the experience works\n\nThe hero moves automatically and fights what the loop produces. The player's decisions happen outside the walk: which tiles to place, which resources to keep, when to return to camp.\n\n## What makes it interesting\n\nThe first version was a Ludum Dare 45 entry in 2019 that only had the walking loop. Four Quarters built the rest and released through Devolver.\n\n## What you can learn\n\nA prototype can be one system. If watching a character walk is already interesting, the game has a foundation.\n\n## Limitations of this analysis\n\nThe record does not describe the tile system or how the team balanced the idle loop.\n",
       "description": "Idle-RPG about a hero walking an endless loop against monsters, grown from a non-playable Ludum Dare 2019 prototype into Four Quarters' Devolver-published hit.",
       "domain": "games",
       "event": {
@@ -2467,7 +2467,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nLoot Crate was a subscription box for geek and gamer merchandise. Each month shipped a themed collection of items.\n\n## The problem\n\nFandom merchandise was scattered across stores and conventions. A curated box turns discovery into a recurring purchase.\n\n## What makes it interesting\n\nIt started at Startup Weekend Los Angeles in 2012 and grew to millions of subscribers. The business depended on licensing and logistics, not on software.\n\n## What you can learn\n\nA subscription is a promise about next month. The churn risk sits in the second box, not the first.\n\n## Limitations of this analysis\n\nThe record does not cover the box economics, the licensing deals, or the company's later decline.\n",
       "description": "Geek and gamer subscription box service with millions of subscribers.",
       "domain": "web-mobile",
       "event": {
@@ -2494,7 +2494,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nLovers in a Dangerous Spacetime is a couch co-op game. Players move around a circular ship and man its turrets, engines, and shields.\n\n## How the experience works\n\nThe ship has stations, and there are more stations than players. Coordination means deciding who leaves which post and when, which turns movement inside the ship into the puzzle.\n\n## What makes it interesting\n\nIt started at Global Game Jam 2012 in Toronto and later released on major consoles. The jam version established the shared-ship idea.\n\n## What you can learn\n\nA co-op design is interesting when players cannot do everything at once. Scarcity of attention is the mechanic.\n\n## Limitations of this analysis\n\nThe record does not describe the ship systems or the porting work.\n",
       "description": "Couch co-op space brawler where players man turrets on a circular ship. Released on all major consoles.",
       "domain": "games",
       "event": {
@@ -2524,7 +2524,7 @@
       "authors": [
         "1 Simple Idea"
       ],
-      "body": "A game-jam music prototype grew into a multi-platform commercial puzzle-adventure, one of the cleaner jam-to-Arcade pipelines on record.\n",
+      "body": "## What it is\n\nLullaby of Life is a musical exploration game. The player uses sound and rhythm to move through its world.\n\n## What makes it interesting\n\nIt began as a Global Game Jam 2016 entry and later shipped on Apple Arcade and Steam. The jam scope suited a mechanic that is easier to feel than to explain.\n\n## What you can learn\n\nA mechanic built on sound needs a short demo. Players understand it in seconds or not at all.\n\n## Limitations of this analysis\n\nThe record does not describe the interaction or how the game expanded beyond the jam.\n",
       "description": "Musical exploration game that started as a Global Game Jam prototype and later shipped on Apple Arcade and Steam.",
       "domain": "games",
       "event": {
@@ -2554,7 +2554,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nLunarTech Ensemble is a website and immersive game that visualizes Apollo lunar seismic data.\n\n## The problem\n\nThe Apollo seismometers recorded moonquakes for years, but the data sits in archives that few people explore.\n\n## What makes it interesting\n\nIt won Best Use of Science at NASA Space Apps 2023. Turning a seismic record into something a person can move through is a way to make an old dataset legible.\n\n## What you can learn\n\nOld missions still hold unused data. A new interface can be the contribution, without a new instrument.\n\n## Limitations of this analysis\n\nThe record does not link the experience or describe how the seismic data is mapped.\n",
       "description": "Website and immersive game visualizing Apollo lunar seismic data.",
       "domain": "science",
       "event": {
@@ -2579,7 +2579,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "MedLink is a rare civic-hackathon-to-White-House pipeline: a student build at SF State's Day of Civic Hacking earned national recognition for open government work.\n",
+      "body": "## What it is\n\nMedLink is a healthcare connectivity app built at San Francisco State University's civic hackathon in 2014. It was featured at a White House Champions of Change event for open government and civic hacking.\n\n## The problem\n\nHealth information is split between clinics, insurers, and patients. A civic hackathon is one way to prototype a bridge when the institutions cannot agree on one.\n\n## What makes it interesting\n\nThe White House recognition is unusual for a student hackathon project. It shows that a small prototype can serve as a policy story, not just a product.\n\n## What you can learn\n\nCivic technology often succeeds as a demonstration. The prototype makes an argument that procurement cannot.\n\n## Limitations of this analysis\n\nThe record does not describe the app's features, its data sources, or whether it was deployed.\n",
       "description": "Healthcare connectivity app developed at SF State's civic hackathon; featured at a White House Champions of Change event for open government and civic hacking.",
       "domain": "healthcare",
       "event": {
@@ -2608,7 +2608,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "ETHGlobal Bangkok 2024 ran the largest prize pool in the event's history. Metaloot's Flow game launchpad made the top-10 cut from roughly 713 submissions.\n",
+      "body": "## What it is\n\nMetaloot is a launchpad that connects games to the Flow blockchain. It gives game teams a way to launch on-chain assets and reach players.\n\n## What makes it interesting\n\nIt was named a winner among ten finalists at ETHGlobal Bangkok 2024, competing for a $750,000 prize pool. The project targets game studios rather than end users, which is a different distribution problem.\n\n## What you can learn\n\nInfrastructure for creators only works if the creators already have players. The launchpad is a multiplier, not a source of demand.\n\n## Limitations of this analysis\n\nThe record does not describe the launch mechanics, the Flow integration, or any games that used it.\n",
       "description": "Launchpad connecting games to the Flow blockchain; named a top winner at the ETHGlobal Bangkok 2024 hackathon following Devcon.",
       "domain": "fintech",
       "event": {
@@ -2638,7 +2638,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Mike Tholfsen and team built the prototype at a Microsoft company-wide hackathon. After winning against 3,000+ entries, it became Immersive Reader, shipped in Word, OneNote, Outlook, Teams, and Edge, and now serves millions of students worldwide.\n",
+      "body": "## What it is\n\nImmersive Reader is an accessibility feature in Microsoft Office. It reads text aloud, breaks it into syllables, and adjusts spacing and contrast for readers with dyslexia and other learning differences.\n\n## The problem\n\nStandard document views assume a reader who can track lines and decode text easily. Small typographic changes can make the difference between reading and giving up.\n\n## What makes it interesting\n\nIt started as Learning Tools and won a Microsoft company-wide hackathon in 2015, beating more than 3,000 other entrants. It later shipped inside Office, where millions of people already read.\n\n## What you can learn\n\nDistribution decides whether an accessibility feature helps anyone. Building it into the tool people already use beats shipping a separate app.\n\n## Limitations of this analysis\n\nThe record does not describe the reading science behind the feature or its measured impact.\n",
       "description": "Accessibility tool built into Microsoft Office that helps people with dyslexia and learning differences read and write more effectively.",
       "domain": "accessibility",
       "event": {
@@ -2669,7 +2669,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Museum Wakes samples thousands of real Met artifacts and weaves them into a unique four-act mystery where visitors talk to ancient gods in real-time voice - an unusually ambitious weekend media-arts build.\n",
+      "body": "## What it is\n\nMuseum Wakes is a narrative mystery experienced by voice inside a museum. It turns a collection into an interactive story.\n\n## How the experience works\n\nThe visitor speaks with the guide and moves through the galleries. The story draws on the museum's own collection data, so the exhibits are the set.\n\n## What makes it interesting\n\nIt was built at the Gemini 3 NYC Hackathon in February 2026 and uses 8,390 artifacts from the Met's Egyptian Wing through the Met Open API, with live generative responses.\n\n## What you can learn\n\nA museum already has the content and the space. The hack is the layer that makes a visitor look at both differently.\n\n## Limitations of this analysis\n\nThe record does not describe how the generated narration is kept factually grounded. That is the main risk in a museum context.\n",
       "description": "AI-powered narrative mystery transforming the Met's Egyptian Wing into an interactive voice experience; built at the Gemini 3 NYC Hackathon in February 2026.",
       "domain": "media-arts",
       "event": {
@@ -2727,7 +2727,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Built during the NASA Space Apps Challenge 2021 by a team led by Yoseline Angel Lopez. After winning, the prototype was adopted by Colombia's Ministry of Agriculture. Angel Lopez is now an assistant research scientist at NASA Goddard.\n",
+      "body": "## What it is\n\nThis is a web-app prototype that connects smallholder farmers with local buyers and monitors agricultural land use with satellite imagery. It was built at NASA Space Apps Colombia in 2021.\n\n## The problem\n\nA small farm sells into a local chain with little visibility. Satellite land-use data can show what is growing and where, which helps both the farmer and the buyer plan.\n\n## What makes it interesting\n\nThe prototype was adopted by Colombia's Ministry of Agriculture. A weekend build reaching a ministry is rare, and it happened because the team solved a problem the ministry already had.\n\n## What you can learn\n\nPublic adoption is a distribution channel. If a government body can use the prototype, it can also fund the next version.\n\n## Limitations of this analysis\n\nThe record does not describe the adoption terms, the number of farmers reached, or the current state of the tool.\n",
       "description": "Web-app prototype connecting smallholder farmers with local buyers and monitoring agricultural land-use via satellite imagery.",
       "domain": "climate",
       "event": {
@@ -2754,7 +2754,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nNeutun Labs built a seizure monitoring platform on a smartwatch. The watch detects seizure-like activity and logs it for the wearer and their clinician.\n\n## The problem\n\nSeizures are often unwitnessed. A patient's own report is unreliable, and a diary misses events that happen during sleep.\n\n## What makes it interesting\n\nIt won the Pebble prize for best smartwatch app at Hack the North 2014 and continued development after the event. The project used a consumer watch rather than custom medical hardware.\n\n## What you can learn\n\nA general-purpose device can be a clinical sensor if the signal is good enough. That trade changes the cost and the adoption path.\n\n## Limitations of this analysis\n\nThe record does not describe the detection algorithm, its sensitivity, or any regulatory clearance.\n",
       "description": "Seizure monitoring smartwatch platform. Won the Pebble prize for best smartwatch app and continued development after the hackathon.",
       "domain": "healthcare",
       "event": {
@@ -2779,7 +2779,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nNo Humanity is a multiplayer survival game built to be extremely difficult. It has drawn more than 20 million players across platforms.\n\n## What makes it interesting\n\nIt started at a Global Game Jam. Difficulty became the marketing: a game that most players cannot finish produces clips, complaints, and streams.\n\n## What you can learn\n\nFrustration is a shareable emotion. If the failure is fair and funny, players will advertise the game for you.\n\n## Limitations of this analysis\n\nThe record does not describe the mechanics, the platforms, or how retention held after the initial spike.\n",
       "description": "Extremely difficult multiplayer survival game. Over 20 million players across platforms.",
       "domain": "games",
       "event": {
@@ -2836,7 +2836,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nODIN is a marketplace for smart contract circuit breakers, bonded through EigenLayer. Protocols can buy protection that triggers when a contract misbehaves.\n\n## The problem\n\nA bug in a deployed contract can drain funds before a team can react. An automatic stop is only credible if someone has money at stake on the trigger being correct.\n\n## What makes it interesting\n\nIt won Best of ETHDenver 2024. Bonding the breaker to an economic stake is the design idea: the protection is only as good as the collateral behind it.\n\n## What you can learn\n\nSecurity claims need a cost for being wrong. A guarantee with no skin in the game is a promise.\n\n## Limitations of this analysis\n\nThe record does not describe the trigger conditions, the collateral terms, or whether any protocol used it.\n",
       "description": "Smart contract circuit breaker marketplace bonded to EigenLayer for on-chain security.",
       "domain": "fintech",
       "event": {
@@ -2862,7 +2862,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Ludum Dare 59's Officially Dead is the classic jam-to-Steam pipeline: top-100 finishes, then a commercial expansion under Erebus Games.\n",
+      "body": "## What it is\n\nOfficially Dead is a fast zombie-survival action game made for Ludum Dare 59 in 2025. It is being expanded into a Steam release by Erebus Games.\n\n## What makes it interesting\n\nIt ranked in the top 100 for humour and fun at the jam. A jam entry that is funny is easier to market than one that is merely polished.\n\n## What you can learn\n\nTone is a differentiator in a crowded genre. A joke that lands in the first minute is worth more than a feature list.\n\n## Limitations of this analysis\n\nThe record does not describe the combat or how the full release differs from the jam build.\n",
       "description": "Fast-paced zombie-survival action game from Ludum Dare 59; being expanded into a full commercial Steam release by Erebus Games.",
       "domain": "games",
       "event": {
@@ -2968,7 +2968,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "When ventilator supply chains broke in early 2020, hackathon teams worldwide built open emergency designs. OpenVent, from Infineon's hackathon, used a standard Ambu-bag as the actuator.\n",
+      "body": "## What it is\n\nOpenVent is an open-source ventilator design produced during Infineon Technologies' COVID-era hackathon in 2020. It uses an Ambu bag as the air source.\n\n## The problem\n\nVentilators were scarce in early 2020. A design that can be built locally from common parts is a different response from waiting for a factory.\n\n## What makes it interesting\n\nIt is one of several rapid-build emergency respiratory projects from that period. The Ambu-bag approach avoids designing a compressor and focuses on control and sensing.\n\n## What you can learn\n\nIn an emergency, the supply chain is part of the design. A device built from available parts can matter more than a better device that cannot be manufactured.\n\n## Limitations of this analysis\n\nThe record does not include test results, regulatory status, or whether the design was built and used. Open-source ventilation is a safety-critical claim.\n",
       "description": "Open-source ventilator design produced during Infineon Technologies' COVID-era hackathon; one of several rapid-build emergency respiratory device projects in 2020.",
       "domain": "healthcare",
       "event": {
@@ -2998,7 +2998,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nPathSense is an indoor navigation app for blind and low-vision users. It provides spoken guidance through buildings where GPS does not work.\n\n## The problem\n\nOutdoor navigation is solved by satellite positioning. Indoors, a user needs a map and a position, and neither is usually available.\n\n## What makes it interesting\n\nIt was a finalist at Hack the North 2024. The project targets the last few meters, which is where wayfinding actually fails.\n\n## What you can learn\n\nIndoor positioning is an infrastructure problem before it is an app problem. Someone has to map the building.\n\n## Limitations of this analysis\n\nThe record does not describe the positioning method or any user testing.\n",
       "description": "AI indoor navigation for vision-impaired users with voice guidance.",
       "domain": "accessibility",
       "event": {
@@ -3023,7 +3023,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "A weekend ETHGlobal project made the humble PDF executable for payments, taking a sponsor track prize in the process.\n",
+      "body": "## What it is\n\nPDFi turns static PDFs into interactive financial documents. Payments and transactions can be embedded in the file itself.\n\n## The problem\n\nA financial document, such as an invoice or a term sheet, is a dead file. Acting on it means leaving the document for a banking app.\n\n## What makes it interesting\n\nIt won Best Finance App on Fern at ETHGlobal New York 2025. The PDF is a format every business already uses, which is why the demo lands.\n\n## What you can learn\n\nAttaching an action to a familiar artifact is a strong wedge. The user does not have to adopt a new workflow.\n\n## Limitations of this analysis\n\nThe record does not describe the signing model, the chain integration, or the security of embedding transactions in a file.\n",
       "description": "Turns static PDFs into live financial tools with embedded cryptocurrency transactions; won Best Finance App at ETHGlobal New York 2025.",
       "domain": "fintech",
       "event": {
@@ -3057,7 +3057,7 @@
         "Aggro Crab",
         "Landfall Games"
       ],
-      "body": "Two indie studios jammed a co-op climbing game in February and shipped a multi-million seller the same year. Proof that the jam pipeline can still print hits.\n",
+      "body": "## What it is\n\nPeak is a cooperative climbing game with physics-driven movement. Players climb a mountain together and need each other to get up.\n\n## What makes it interesting\n\nAggro Crab and Landfall jammed it in early 2025 and shipped it months later. It sold over 2 million copies on Steam.\n\n## What you can learn\n\nA co-op game spreads through pairs of players. The purchase is social, so the game has to be funny before it is good.\n\n## Limitations of this analysis\n\nThe record does not describe the climbing systems or how the jam version changed before release.\n",
       "description": "Physics co-op climbing game jammed in early 2025 by Aggro Crab and Landfall; shipped on Steam months later and sold over 2 million copies.",
       "domain": "games",
       "event": {
@@ -3087,7 +3087,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nPlease, Don't Touch Anything is a puzzle game about a console with one button and a note telling you not to press it. Each press changes the room and the puzzle.\n\n## What makes it interesting\n\nFour Quarters developed it after a jam prototype. The premise is a single forbidden action, which is enough to carry a short game and a lot of curiosity.\n\n## What you can learn\n\nA prohibition is a prompt. Telling the player not to do something is often more effective than telling them what to do.\n\n## Limitations of this analysis\n\nThe record does not describe the puzzle tree or the number of endings.\n",
       "description": "Puzzle box game about a mysterious button and a forbidden console. Developed by Four Quarters after a jam prototype.",
       "domain": "games",
       "event": {
@@ -3113,7 +3113,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "A weekend AR retail demo took Disrupt SF 2016's hackathon grand prize, predating the mainstream AR shopping wave by years.\n",
+      "body": "## What it is\n\nPointshop Space is an augmented-reality shopping prototype. It places products in the user's space so they can be viewed before purchase.\n\n## The problem\n\nOnline shopping hides scale. A photo does not tell you whether a chair fits the room or how a jacket hangs.\n\n## What makes it interesting\n\nIt won the grand prize at the TechCrunch Disrupt San Francisco 2016 Hackathon. AR was new on phones that year, and the demo used the device's camera rather than a headset.\n\n## What you can learn\n\nA demo that changes what the judge sees in the room beats a slide. The stage becomes the product surface.\n\n## Limitations of this analysis\n\nThe record does not describe the tracking method or any retail partnership.\n",
       "description": "Augmented-reality shopping prototype that won the TechCrunch Disrupt San Francisco 2016 Hackathon grand prize.",
       "domain": "web-mobile",
       "event": {
@@ -3142,7 +3142,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Daniel Mullins turned the jam prototype into a full 2.5-hour commercial game released on Steam in January 2016.\n",
+      "body": "## What it is\n\nPony Island is a puzzle game disguised as a broken arcade machine. The machine is run by the devil, and the game keeps breaking its own rules.\n\n## What makes it interesting\n\nDaniel Mullins developed it primarily during Ludum Dare 31 in December 2014, in 48 hours, on the theme \"Entire Game on One Screen\". It later became a Steam release.\n\n## What you can learn\n\nThe metafictional trick only works if the underlying game is playable. The joke is layered on a real loop, not instead of one.\n\n## Limitations of this analysis\n\nThe record does not describe the puzzle design or how the commercial version expanded the jam.\n",
       "description": "Metafictional puzzle game disguised as a broken arcade machine designed by the devil.",
       "domain": "games",
       "event": {
@@ -3268,7 +3268,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "In the 2020 COVID-19 global Space Apps sprint, Project Prometheus took the top worldwide award for a low-cost open ventilator design aimed at crisis-strapped hospitals.\n",
+      "body": "## What it is\n\nProject Prometheus is a low-cost ventilator and respiratory support design built for the NASA Space Apps 2020 COVID-19 challenge. It was selected as the overall global winner.\n\n## The problem\n\nThe pandemic created a shortage of respiratory equipment, especially in places that could not buy from the usual manufacturers.\n\n## What makes it interesting\n\nThe project is a design response, not a software demo. Space Apps normally produces data tools, and this entry used the event to address a hardware crisis.\n\n## What you can learn\n\nA hackathon can coordinate a design effort, but it cannot certify a medical device. The value is in the open design and the people who pick it up.\n\n## Limitations of this analysis\n\nThe record does not report testing, regulatory review, or deployment. Safety-critical claims need evidence beyond a competition result.\n",
       "description": "COVID-era NASA Space Apps global winner building low-cost open ventilator and respiratory support designs for crisis conditions.",
       "domain": "healthcare",
       "event": {
@@ -3298,7 +3298,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nProof of Picture detects AI-generated images using C2PA provenance data. It is aimed at newsrooms checking images before publication.\n\n## The problem\n\nA generated image can look like a photograph. A newsroom needs a way to check origin without trusting the file's own metadata.\n\n## What makes it interesting\n\nIt won the AI and C2PA category at ETH Warsaw 2023. The project leans on a standard for content credentials rather than a classifier alone, which is a more durable bet.\n\n## What you can learn\n\nProvenance is only useful if the camera or editor signs at capture. Detection without adoption is a partial fix.\n\n## Limitations of this analysis\n\nThe record does not describe the verification flow or how it handles images with no credentials.\n",
       "description": "C2PA-based detection of AI-generated images to combat news misinformation.",
       "domain": "social",
       "event": {
@@ -3324,7 +3324,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nPulseGrip is a motorized hand assist for people with paralysis. It reads muscle signals and closes the hand.\n\n## The problem\n\nGrip is one of the first functions lost after a spinal injury or nerve damage, and it is needed for almost every daily task.\n\n## What makes it interesting\n\nIt was a finalist at Hack the North 2024. The device uses EMG, so the user's remaining muscle signal becomes the control input.\n\n## What you can learn\n\nAssistive hardware should use the signal the body still produces. Asking for a new input method adds friction to every use.\n\n## Limitations of this analysis\n\nThe record does not describe the grip force, the fit, or any user trial.\n",
       "description": "EMG-powered hand-closing motor assistive device for people with paralysis.",
       "domain": "accessibility",
       "event": {
@@ -3349,7 +3349,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nPush Protocol is a decentralized notification layer for Web3 applications. It lets a wallet or app receive messages without polling a chain.\n\n## The problem\n\nOn-chain applications have no native way to reach a user. A transaction confirmation or a liquidation warning has to be discovered by refreshing.\n\n## What makes it interesting\n\nIt started at ETHGlobal 2020 and later raised $10 million. Notifications are unglamorous infrastructure, which is why they are a durable position once apps integrate.\n\n## What you can learn\n\nEvery application stack needs a messaging layer. Owning the default channel is more valuable than owning one app.\n\n## Limitations of this analysis\n\nThe record does not describe the protocol design or how spam and cost are handled.\n",
       "description": "Decentralized push notification protocol for Web3 applications. Raised $10 million in funding.",
       "domain": "web-mobile",
       "event": {
@@ -3376,7 +3376,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Disrupt Berlin 2017's hackathon grand prize went to a frictionless insurance checkout: insure a camera for a ski week in a few phone taps.\n",
+      "body": "## What it is\n\nQuick Insurance is a mobile prototype for buying short-term coverage on a valuable item with a few taps.\n\n## The problem\n\nInsurance is sold in annual policies with forms and agents. A person who needs cover for an afternoon, a bicycle, or a camera has no easy option.\n\n## What makes it interesting\n\nIt won the Grand Prize and €4,200 at the TechCrunch Disrupt Berlin 2017 Hackathon. The demo was the purchase flow, which is the part incumbents make painful.\n\n## What you can learn\n\nIn insurance, distribution and paperwork are the product. Shortening the flow is the innovation.\n\n## Limitations of this analysis\n\nThe record does not describe underwriting, claims, or whether the product launched.\n",
       "description": "Tap-to-insure mobile prototype for short-term valuable-item coverage; won the TechCrunch Disrupt Berlin 2017 Hackathon Grand Prize and €4,200.",
       "domain": "fintech",
       "event": {
@@ -3406,7 +3406,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nRainmaker: The Beautiful Flood is a puzzle game. It started at Global Game Jam 2014 and later reached the App Store, where it was featured by Apple.\n\n## What makes it interesting\n\nThe jam entry became a mobile release with an Apple feature. A puzzle game is a good fit for a phone, and the jam scope kept the design small.\n\n## What you can learn\n\nA feature placement is a distribution event. Designing for a platform's editorial taste can matter as much as the mechanic.\n\n## Limitations of this analysis\n\nThe record does not describe the puzzle mechanics or the game's performance after launch.\n",
       "description": "Puzzle game featuring Apple Best New Game global feature and",
       "domain": "games",
       "event": {
@@ -3432,7 +3432,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nResonant Exoplanets is an AI system for detecting exoplanets. It looks for the signals that a planet leaves in observations of its star.\n\n## What makes it interesting\n\nIt won Best Use of Technology at NASA Space Apps 2025. Detection is a needle-in-haystack problem, which is why machine learning fits the data.\n\n## What you can learn\n\nIn discovery work, the cost of a false positive is an astronomer's time. A model should rank candidates, not declare planets.\n\n## Limitations of this analysis\n\nThe record does not describe the data, the model, or its precision.\n",
       "description": "AI-based exoplanet detection system.",
       "domain": "science",
       "event": {
@@ -3457,7 +3457,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Solo designer Paul Rabbitte prototyped the core skater-shooter concept at the GMTK Game Jam. Studio Roll7 (OlliOlli) turned it into a BAFTA-winning commercial release in August 2022.\n",
+      "body": "## What it is\n\nRollerdrome is a third-person shooter that mixes rollerskating with gunplay. The player performs tricks and fights in an arena sport.\n\n## How the experience works\n\nMovement is the defense: skating fast and tricking keeps the player alive while aiming. The arena is built for loops and ramps rather than cover.\n\n## What makes it interesting\n\nPaul Rabbitte conceived it during a 48-hour Game Maker's Toolkit jam in 2017, and it later became a full release. The jam version proved that skating and shooting could share one control scheme.\n\n## What you can learn\n\nTwo verbs that normally conflict can be the hook. If the prototype makes the conflict fun, the design is already there.\n\n## Limitations of this analysis\n\nThe record does not describe the combat tuning or how the jam concept became a commercial game.\n",
       "description": "Third-person action-shooter that blends rollerskating tricks with gunplay in a dystopian retrofuture arena sport.",
       "domain": "games",
       "event": {
@@ -3484,7 +3484,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Jeremy Johnston built the prototype during GGJ 2023 (theme: Roots). After eleven months of polish it shipped free on itch.io, then got a full Steam remake in January 2025.\n",
+      "body": "## What it is\n\nThe Roottrees are Dead is a deduction game. The player researches a 1998 candy-company inheritance and fills in a family tree.\n\n## How the experience works\n\nClues arrive through documents, photos, and records. The player cross-references names and dates, then places each person in the tree.\n\n## What makes it interesting\n\nJeremy Johnston built it for Global Game Jam 2023 in under a week, released it as a free browser game, and later rebuilt it with hand-drawn art for Steam.\n\n## What you can learn\n\nA deduction game needs a truth behind the puzzle. The solver should be able to prove an answer, not guess it.\n\n## Limitations of this analysis\n\nThe record does not describe the clue design or the changes made for the commercial release.\n",
       "description": "Deduction puzzle game where players research a 1998 candy-company inheritance to fill in an intricate family tree.",
       "domain": "games",
       "event": {
@@ -3519,7 +3519,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nROSS is an art access tool for blind users. It conveys visual content through touch, temperature, and sound.\n\n## The problem\n\nA museum audio guide describes a painting in words. That tells you what the guide noticed, not what is in front of you.\n\n## What makes it interesting\n\nIt was a finalist at Hack the North 2025. Using temperature as a channel is unusual and gives the user a sense that is not already occupied by audio.\n\n## What you can learn\n\nAccessibility design is often a mapping problem. The question is which senses are free and which properties fit them.\n\n## Limitations of this analysis\n\nThe record does not describe the hardware or any testing with blind users.\n",
       "description": "Art access tool for blind users that conveys visual content through touch, temperature, and sound.",
       "domain": "accessibility",
       "event": {
@@ -3544,7 +3544,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "SkyHack 2023's first-place drone used autonomous search and reporting to help find people in rubble - an example of a university hackathon aimed squarely at life-safety robotics.\n",
+      "body": "## What it is\n\nRubble Busters is an autonomous drone system for disaster search. It navigates rubble and reports what it finds.\n\n## The problem\n\nAfter a collapse, the first hours are spent searching spaces too dangerous or too narrow for people. A drone can enter without endangering a responder.\n\n## What makes it interesting\n\nThe team won first place at Kent State's 2023 SkyHack. The task is a full loop: navigate, detect, and report, not just fly.\n\n## What you can learn\n\nA search robot is judged on what it reports. Autonomy that finds nothing is a camera with extra steps.\n\n## Limitations of this analysis\n\nThe record does not describe the sensors, the flight time, or any field exercise.\n",
       "description": "Autonomous search-and-report drone system; won first place at Kent State's 2023 SkyHack for disaster rubble navigation.",
       "domain": "robotics",
       "event": {
@@ -3720,7 +3720,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nSekai is a story-building platform that uses AI to help people create and remix interactive stories. It runs on Story Protocol, which handles licensing of the underlying intellectual property.\n\n## The problem\n\nA collaborative story has an ownership problem. If several people contribute characters and worlds, nobody can easily license what they made or get paid when someone else builds on it.\n\n## What makes it interesting\n\nIt won Best of ETHDenver 2024. The project pairs a consumer-facing creative tool with on-chain licensing, which is harder than either piece alone.\n\n## What you can learn\n\nCreative tools need a reason to be on a chain. Here the reason is attribution and licensing, not payments for their own sake.\n\n## Limitations of this analysis\n\nThe record does not describe the AI pipeline, the licensing terms, or how a contributor's share is calculated.\n",
       "description": "AI-interactive story-building platform built on Story Protocol for IP licensing.",
       "domain": "media-arts",
       "event": {
@@ -3749,7 +3749,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nSelene is a web application that maps moonquakes in interactive 3D. It plots seismic events from the Apollo missions on a model of the Moon.\n\n## The problem\n\nThe Apollo seismometers returned years of data, but it lives in archives formatted for specialists. A map is a faster way to see where the Moon moved.\n\n## What makes it interesting\n\nIt won the Galactic Impact award at NASA Space Apps 2022. The project is an interface over public data, which is a category Space Apps rewards.\n\n## What you can learn\n\nThe same dataset can support several products. A visualization is a legitimate contribution when the raw archive is effectively unusable.\n\n## Limitations of this analysis\n\nThe record does not link the app or describe how the seismic events are geolocated.\n",
       "description": "Interactive 3D moonquake mapping web application.",
       "domain": "science",
       "event": {
@@ -3804,7 +3804,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nShotgun King: The Final Checkmate is a roguelike chess variant. The player commands the black king, who has a shotgun instead of a full army.\n\n## How the experience works\n\nEach floor presents a white chess formation. The king moves as a king, shoots in a line, and picks up cards that change the rules between runs.\n\n## What makes it interesting\n\nIt was the top-rated entry at Ludum Dare 50 in 2022 and later released on Steam. The premise is one sentence long, which is why it spread.\n\n## What you can learn\n\nA familiar ruleset is free tutorial. Players already know how chess pieces move, so the joke lands without explanation.\n\n## Limitations of this analysis\n\nThe record does not describe the card system or how the balance changed for release.\n",
       "description": "Chess variant roguelike where one side gets a shotgun. Top-rated entry at Ludum Dare 50.",
       "domain": "games",
       "event": {
@@ -3863,7 +3863,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nSkyShield identifies risk zones for satellites from near-Earth objects and meteor streams. It updates in real time as orbital data changes.\n\n## The problem\n\nSatellite operators need to know when debris or a meteor stream will cross an orbit. The information exists, but it is spread across sources and hard to act on.\n\n## What makes it interesting\n\nIt won Best Use of Science at NASA Space Apps 2024. The product is a risk map, which turns open orbital data into a decision surface.\n\n## What you can learn\n\nFor operational users, a map beats a table. The value is in the aggregation, not the raw data.\n\n## Limitations of this analysis\n\nThe record does not describe the data sources or the update rate.\n",
       "description": "Identifies satellite risk zones from near-Earth objects and meteor streams in real time.",
       "domain": "science",
       "event": {
@@ -4048,7 +4048,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nStarflock tracks how wildfire smoke disperses chemically, using airborne measurement data.\n\n## The problem\n\nSmoke from a large fire travels far and changes composition as it goes. Communities downwind need to know what is arriving, not only where the fire is.\n\n## What makes it interesting\n\nIt won Best Use of Data at NASA Space Apps 2022. The project follows a plume rather than a fire perimeter, which is a different question from most wildfire tools.\n\n## What you can learn\n\nAir quality is a transport problem. The interesting data is often between the source and the sensor.\n\n## Limitations of this analysis\n\nThe record does not describe the measurement sources or the dispersion model.\n",
       "description": "Tracks chemical dispersion of wildfire smoke using airborne data.",
       "domain": "climate",
       "event": {
@@ -4073,7 +4073,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nSTARWHAL is a local multiplayer game where narwhals duel with space lances. It supports up to four players on one screen.\n\n## How the experience works\n\nMovement is momentum-based and hard to control. The fun comes from the collision of a clumsy body with a sharp point, which is why matches are short and loud.\n\n## What makes it interesting\n\nIt was created at the Carleton Ottawa site of Global Game Jam 2013, then released commercially and played over a million times across platforms.\n\n## What you can learn\n\nSilly physics is a low-cost way to make a local multiplayer game memorable. The comedy is in the control, not the art.\n\n## Limitations of this analysis\n\nThe record does not describe the porting work or the level design.\n",
       "description": "Local multiplayer game where narwhals fight with space lances. Over 1 million plays across platforms.",
       "domain": "games",
       "event": {
@@ -4100,7 +4100,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nStorm Prophet is a machine learning model that predicts geomagnetic storm levels. It reads solar wind data from the DSCOVR satellite.\n\n## The problem\n\nA geomagnetic storm can disrupt satellites, GPS, and power grids. Forecasters need lead time, and the solar wind gives only about an hour.\n\n## What makes it interesting\n\nIt won Best Use of Data at NASA Space Apps 2023. The project uses an LSTM on a time series, which is a sensible fit for a signal that unfolds over time.\n\n## What you can learn\n\nIn forecasting, the baseline matters more than the model. A prediction is useful only if it beats the current operational method.\n\n## Limitations of this analysis\n\nThe record does not report accuracy or comparison against existing forecasts.\n",
       "description": "LSTM model that predicts geomagnetic storm levels from DSCOVR satellite data.",
       "domain": "science",
       "event": {
@@ -4155,7 +4155,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nThe Street View Trike is a pedicab with a camera mast, built to capture Street View imagery where cars cannot go, such as parks and cultural sites.\n\n## The problem\n\nStreet View covered roads. It could not cover a footpath, a palace courtyard, or a university campus, and those places were a large part of what users searched for.\n\n## What makes it interesting\n\nDan Ratner built it during a Google workshop weekend as a 20% project in 2008. It became a full fleet rather than a one-off demo.\n\n## What you can learn\n\nA data-collection product is limited by its vehicle. Changing the vehicle changes which world is addressable.\n\n## Limitations of this analysis\n\nThe record does not describe the camera rig or the scale of the fleet.\n",
       "description": "Pedicab camera rig for capturing Street View imagery in parks and cultural sites. Weekend build led to a full fleet.",
       "domain": "hardware",
       "event": {
@@ -4214,7 +4214,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nSuperfluid is a protocol for streaming money on-chain. Payments flow per second instead of arriving as discrete transfers.\n\n## The problem\n\nSalaries, subscriptions, and vesting are all continuous in concept and discrete in practice. A monthly transfer is an approximation that creates friction and disputes.\n\n## What makes it interesting\n\nIt started at ETHOnline 2020 and became a widely used DeFi primitive. Streaming is a base layer that other applications can build on, which is why it persisted.\n\n## What you can learn\n\nChanging the unit of a payment changes the products built on it. Per-second money makes a different set of applications possible.\n\n## Limitations of this analysis\n\nThe record does not describe the settlement mechanics or the gas model.\n",
       "description": "Money streaming protocol for continuous payments, subscriptions, and salaries on-chain.",
       "domain": "fintech",
       "event": {
@@ -4341,7 +4341,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nTakeOne is a robotic film studio. It plans shots, moves the camera and lighting, and edits the footage.\n\n## The problem\n\nA small production has a crew problem. A single operator can hold a camera or a light, not both, and coverage is what separates a professional look from a home video.\n\n## What makes it interesting\n\nIt was a finalist at Hack the North 2026. The project treats the whole shoot as one system, from planning to edit, rather than automating a single camera move.\n\n## What you can learn\n\nRobotics in creative work is a workflow problem. The robot has to fit the way a shoot already runs.\n\n## Limitations of this analysis\n\nThe record does not describe the hardware or the planning model.\n",
       "description": "AI-powered robotic film studio that plans shots, moves camera and lighting, and edits footage.",
       "domain": "media-arts",
       "event": {
@@ -4423,7 +4423,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nTerra Nil is a reverse city builder. The player restores a wasteland into a working ecosystem, then removes their own machinery and leaves.\n\n## How the experience works\n\nBuildings purify soil and water and reintroduce species. Once the biome sustains itself, the player recycles the equipment, which is the opposite of a normal builder's ending.\n\n## What makes it interesting\n\nIt began as a Ludum Dare 2019 prototype and later released commercially, including on Netflix Games.\n\n## What you can learn\n\nInverting a genre's goal changes the whole emotional register. The win condition is the absence of the player's work.\n\n## Limitations of this analysis\n\nThe record does not describe the ecology model or how the jam version changed.\n",
       "description": "Reverse city builder about ecosystem restoration. Released on Netflix Games.",
       "domain": "games",
       "event": {
@@ -4484,7 +4484,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nThe Box is decentralized physical infrastructure for peer-to-peer package delivery. It combines custom hardware with on-chain coordination.\n\n## The problem\n\nA package moves through a courier network that the sender does not control. A peer-to-peer option could use capacity that already exists, such as a neighbor already driving that route.\n\n## What makes it interesting\n\nIt won the Hardware and IoT DePIN category at ETHGlobal Brussels 2024. The project is a physical device plus a protocol, which is a much harder demo than software alone.\n\n## What you can learn\n\nDePIN projects live or die on the hardware cost. A box that has to be manufactured and shipped changes the economics of the network.\n\n## Limitations of this analysis\n\nThe record does not describe the lock mechanism, the chain integration, or any pilot.\n",
       "description": "Decentralized physical infrastructure for peer-to-peer package delivery with custom hardware.",
       "domain": "hardware",
       "event": {
@@ -4510,7 +4510,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nThe King is Watching is a roguelite where production only happens while the king is looking. Crops grow and miners work under his gaze, and stop when he looks away.\n\n## How the experience works\n\nThe player decides where to direct attention. Since one gaze cannot cover the whole kingdom, every run is a choice about what to neglect.\n\n## What makes it interesting\n\nIt was a top-rated entry at Ludum Dare 54 and later sold over 600,000 copies on Steam with tinybuild publishing.\n\n## What you can learn\n\nA single restriction can be the whole design. \"Only while watched\" generates every decision without extra systems.\n\n## Limitations of this analysis\n\nThe record does not describe how the attention meter is tuned or what the full release added.\n",
       "description": "Roguelite where crops and miners produce only while the king watches. Sold 600k+ copies on Steam.",
       "domain": "games",
       "event": {
@@ -4693,7 +4693,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nTripLingo is a translation app for travelers. It combines phrasebooks, slang, and a live translator.\n\n## The problem\n\nA phrasebook gives you correct sentences you will not hear back. A traveler needs to understand the reply, including the informal speech a textbook omits.\n\n## What makes it interesting\n\nIt started at Startup Weekend Atlanta and grew into a company. The product treated slang and culture as part of the language problem.\n\n## What you can learn\n\nTranslation is two problems, speaking and understanding. Most early apps solved only the first.\n\n## Limitations of this analysis\n\nThe record does not describe the translation stack or the company's later status.\n",
       "description": "Traveler translation app with phrasebooks, slang, and live translator features.",
       "domain": "web-mobile",
       "event": {
@@ -4833,7 +4833,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nThe Voyager Transponder is a 200-gigabit optical transponder prototype. Network engineers built it at a Facebook hackathon in 2016.\n\n## The problem\n\nLong-haul optical links are expensive because the equipment is proprietary and specialized. A cheaper, open design could lower the cost of backbone capacity.\n\n## What makes it interesting\n\nThe prototype contributed to the Telecom Infra Project, an effort to open up telecom hardware. A hackathon build feeding a industry consortium is an unusual path.\n\n## What you can learn\n\nInternal hackathons can seed external standards work. The prototype becomes an argument for a different supply chain.\n\n## Limitations of this analysis\n\nThe record does not describe the prototype's performance or what happened to the design.\n",
       "description": "200G optical transponder prototype built by network engineers at a hackathon. Contributed to the Telecom Infra Project.",
       "domain": "hardware",
       "event": {
@@ -4984,7 +4984,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nWhat's New? is a machine learning pipeline that estimates the probability of a Carrington-class solar storm.\n\n## The problem\n\nA storm of that size would damage satellites and grids. It is rare, so any estimate has to handle a heavily imbalanced dataset.\n\n## What makes it interesting\n\nIt won Best Use of Science at NASA Space Apps 2022. The project frames the task as a probability rather than a yes-or-no forecast, which suits a rare event.\n\n## What you can learn\n\nRare-event prediction needs a calibration story. A model that says \"probably not\" every day is right most days and useless.\n\n## Limitations of this analysis\n\nThe record does not describe the features, the training data, or the model's calibration.\n",
       "description": "Machine learning pipeline predicting the probability of a Carrington-class solar storm.",
       "domain": "science",
       "event": {
@@ -5042,7 +5042,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nWorkflow is a visual automation app for iOS. Users chain actions into a script and run it with one tap.\n\n## The problem\n\nPhones can do many things, but each task requires a sequence of app switches. Automation lets a user define the sequence once.\n\n## What makes it interesting\n\nAri Weinstein started it after MHacks 2014 at the University of Michigan. Apple acquired it in 2016 and turned it into Shortcuts.\n\n## What you can learn\n\nA hackathon project can become a platform feature. The acquisition was a shortcut to distribution no independent app could match.\n\n## Limitations of this analysis\n\nThe record does not describe the app's action model or the terms of the acquisition.\n",
       "description": "Visual automation app for iOS. Acquired by Apple in 2016 and became Shortcuts.",
       "domain": "web-mobile",
       "event": {
@@ -5217,7 +5217,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nzkPow is a zero-knowledge system for proving work reputation without revealing the underlying data.\n\n## The problem\n\nA reputation score is only useful if it can be checked. Sharing the raw history to prove it exposes information the person may not want to disclose.\n\n## What makes it interesting\n\nIt won the ZK and Privacy category at ETH Porto 2023. The project separates the claim from the evidence, which is the core promise of a proof system.\n\n## What you can learn\n\nPrivacy is a feature of verification, not its opposite. A proof that reveals nothing can be more convincing than a document that reveals everything.\n\n## Limitations of this analysis\n\nThe record does not describe the circuit, the reputation model, or the cost of proving.\n",
       "description": "Zero-knowledge proof system for selective disclosure of work reputation without revealing underlying data.",
       "domain": "fintech",
       "event": {

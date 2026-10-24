@@ -15,4 +15,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Solo designer Paul Rabbitte prototyped the core skater-shooter concept at the GMTK Game Jam. Studio Roll7 (OlliOlli) turned it into a BAFTA-winning commercial release in August 2022.
+## What it is
+
+Rollerdrome is a third-person shooter that mixes rollerskating with gunplay. The player performs tricks and fights in an arena sport.
+
+## How the experience works
+
+Movement is the defense: skating fast and tricking keeps the player alive while aiming. The arena is built for loops and ramps rather than cover.
+
+## What makes it interesting
+
+Paul Rabbitte conceived it during a 48-hour Game Maker's Toolkit jam in 2017, and it later became a full release. The jam version proved that skating and shooting could share one control scheme.
+
+## What you can learn
+
+Two verbs that normally conflict can be the hook. If the prototype makes the conflict fun, the design is already there.
+
+## Limitations of this analysis
+
+The record does not describe the combat tuning or how the jam concept became a commercial game.

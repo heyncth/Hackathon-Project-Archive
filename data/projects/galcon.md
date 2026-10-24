@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Phil Hassey won Ludum Dare 8 in 2006 with the prototype. It grew into a multiplatform series with iOS and web releases.
+## What it is
+
+Galcon is a real-time strategy game played with one click. You select a planet, then send a fleet to another; numbers decide the outcome.
+
+## The problem
+
+Real-time strategy usually means build orders and tech trees. Galcon removes both, leaving only the decision of where to send ships and when.
+
+## What makes it interesting
+
+It entered Ludum Dare 8 in 2006 and won four first places. The design fits on one screen and one input, which is why it later worked on phones.
+
+## What you can learn
+
+Removing a layer from a genre can create a new one. The strategy survives without the economy.
+
+## Limitations of this analysis
+
+The record covers the jam result and the 2006 release, not the AI or the multiplayer netcode.

@@ -18,4 +18,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Bullion is less about a single prototype and more about jam matchmaking: a 2016 Global Game Jam pairing that turned into a long-running studio project with outside recognition years later.
+## What it is
+
+Bullion is a game concept that began at Global Game Jam 2016 and was later developed with Leda Entertainment. It was recognized at the Big Indie Pitch in 2022.
+
+## What makes it interesting
+
+The origin is a collaboration. Coder Ben Pritchard met 3D artist Matthew Isteed at his first Global Game Jam, and the pair kept working together after the weekend.
+
+## What you can learn
+
+A game jam is a matchmaking event as much as a production sprint. The team you meet can matter more than the prototype you finish.
+
+## Limitations of this analysis
+
+The record does not describe the game's mechanics, release status, or the Big Indie Pitch result beyond the recognition.

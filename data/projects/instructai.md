@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Student teams pitched an AI programming tutor at Georgia Tech's Klaus Startup Challenge and walked away with a seven-figure valuation offer the same day.
+## What it is
+
+InstructAI is a generative-AI tutor for programming. It helps a student work through code rather than handing over the answer.
+
+## The problem
+
+Introductory programming is where students get stuck, and one teaching assistant cannot watch every editor. A tutor that responds in the moment changes how long a beginner stays blocked.
+
+## What makes it interesting
+
+Georgia Tech students built it and won the 2024 Klaus Startup Challenge, which came with a $100,000 seed offer at a $1 million valuation.
+
+## What you can learn
+
+A university is a controlled market for an education product. You can test with real courses before you sell to a district.
+
+## Limitations of this analysis
+
+The record does not describe the tutoring model, its accuracy, or any learning-outcome study.

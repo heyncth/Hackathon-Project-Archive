@@ -16,4 +16,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Immortal's Way is one of Global Game Jam's own spotlighted success stories: a 2024 jam prototype that survived the leap to a finished Steam release.
+## What it is
+
+Immortal's Way is a game first created at Global Game Jam 2024 and later expanded into a full Steam release.
+
+## What makes it interesting
+
+The jam prototype established the setting and the core loop. The commercial version kept the concept and built the content around it.
+
+## What you can learn
+
+A jam is a cheap way to test whether a world is worth spending a year in. If the team still likes it on Monday, the idea has legs.
+
+## Limitations of this analysis
+
+The record does not describe the mechanics or how much of the jam build survived.

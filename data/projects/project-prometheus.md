@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-In the 2020 COVID-19 global Space Apps sprint, Project Prometheus took the top worldwide award for a low-cost open ventilator design aimed at crisis-strapped hospitals.
+## What it is
+
+Project Prometheus is a low-cost ventilator and respiratory support design built for the NASA Space Apps 2020 COVID-19 challenge. It was selected as the overall global winner.
+
+## The problem
+
+The pandemic created a shortage of respiratory equipment, especially in places that could not buy from the usual manufacturers.
+
+## What makes it interesting
+
+The project is a design response, not a software demo. Space Apps normally produces data tools, and this entry used the event to address a hardware crisis.
+
+## What you can learn
+
+A hackathon can coordinate a design effort, but it cannot certify a medical device. The value is in the open design and the people who pick it up.
+
+## Limitations of this analysis
+
+The record does not report testing, regulatory review, or deployment. Safety-critical claims need evidence beyond a competition result.

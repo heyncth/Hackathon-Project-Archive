@@ -21,4 +21,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Lily is a cautionary wild-idea entry: a garage/lab drone that captured imaginations with a slick pre-order video, took about $34 million in customer pre-orders, then failed to ship and filed for bankruptcy in 2017 while facing a San Francisco DA lawsuit over the promotional footage.
+## What it is
+
+Lily Robotics proposed a throw-and-shoot camera drone that follows its owner. The first prototype was built in the UC Berkeley Robotics Laboratory.
+
+## The problem
+
+A follow-me camera lets one person film themselves doing something active. Handheld footage and tripods both fail when the subject is moving.
+
+## What makes it interesting
+
+The company took about $34 million in pre-orders, then shut down in January 2017 after failing to raise manufacturing funds. The gap between a lab demo and a shippable product is the story.
+
+## What you can learn
+
+A pre-order is a promise with a date attached. Selling before the manufacturing path is proven converts customer enthusiasm into a liability.
+
+## Limitations of this analysis
+
+The record does not cover the fraud allegations in detail, the refund process, or the engineering state at shutdown.

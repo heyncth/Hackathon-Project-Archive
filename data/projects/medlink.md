@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-MedLink is a rare civic-hackathon-to-White-House pipeline: a student build at SF State's Day of Civic Hacking earned national recognition for open government work.
+## What it is
+
+MedLink is a healthcare connectivity app built at San Francisco State University's civic hackathon in 2014. It was featured at a White House Champions of Change event for open government and civic hacking.
+
+## The problem
+
+Health information is split between clinics, insurers, and patients. A civic hackathon is one way to prototype a bridge when the institutions cannot agree on one.
+
+## What makes it interesting
+
+The White House recognition is unusual for a student hackathon project. It shows that a small prototype can serve as a policy story, not just a product.
+
+## What you can learn
+
+Civic technology often succeeds as a demonstration. The prototype makes an argument that procurement cannot.
+
+## Limitations of this analysis
+
+The record does not describe the app's features, its data sources, or whether it was deployed.

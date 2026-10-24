@@ -19,4 +19,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-A game-jam music prototype grew into a multi-platform commercial puzzle-adventure, one of the cleaner jam-to-Arcade pipelines on record.
+## What it is
+
+Lullaby of Life is a musical exploration game. The player uses sound and rhythm to move through its world.
+
+## What makes it interesting
+
+It began as a Global Game Jam 2016 entry and later shipped on Apple Arcade and Steam. The jam scope suited a mechanic that is easier to feel than to explain.
+
+## What you can learn
+
+A mechanic built on sound needs a short demo. Players understand it in seconds or not at all.
+
+## Limitations of this analysis
+
+The record does not describe the interaction or how the game expanded beyond the jam.

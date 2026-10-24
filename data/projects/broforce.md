@@ -15,4 +15,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-The original Ludum Dare entry was titled Rambros. Developer Free Lives expanded it into a full commercial release with local and online co-op.
+## What it is
+
+Broforce is a side-scrolling run-and-gun game built on action-movie archetypes. The roster is a set of parody heroes, each with a distinct weapon.
+
+## What makes it interesting
+
+It grew out of a Ludum Dare 23 prototype called Rambros in 2012. The commercial game kept the destructible environments and the parody tone and added more heroes and levels.
+
+## What you can learn
+
+A jam prototype with a strong hook can scale through content rather than systems. If the first ten minutes work, the next hundred are production.
+
+## Limitations of this analysis
+
+The record documents the prototype origin, not the level design, the engine, or the console ports.

@@ -19,4 +19,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Jeremy Johnston built the prototype during GGJ 2023 (theme: Roots). After eleven months of polish it shipped free on itch.io, then got a full Steam remake in January 2025.
+## What it is
+
+The Roottrees are Dead is a deduction game. The player researches a 1998 candy-company inheritance and fills in a family tree.
+
+## How the experience works
+
+Clues arrive through documents, photos, and records. The player cross-references names and dates, then places each person in the tree.
+
+## What makes it interesting
+
+Jeremy Johnston built it for Global Game Jam 2023 in under a week, released it as a free browser game, and later rebuilt it with hand-drawn art for Steam.
+
+## What you can learn
+
+A deduction game needs a truth behind the puzzle. The solver should be able to prove an answer, not guess it.
+
+## Limitations of this analysis
+
+The record does not describe the clue design or the changes made for the commercial release.

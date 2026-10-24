@@ -17,4 +17,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Junction 2025's scale - 300 teams, 1,500 hackers - makes a top-5 finish a strong signal. DroneStalker tracked and predicted drone paths with live computer vision in one weekend.
+## What it is
+
+DroneStalker is a real-time drone tracking and prediction system. It estimates where a drone is and where it is heading.
+
+## What makes it interesting
+
+It placed in the top five of 300 teams at Junction 2025 in Espoo, Finland, with 1,500 participants. Tracking a small moving object in real time is a perception and latency problem, not a dashboard problem.
+
+## What you can learn
+
+A prediction is only useful if it arrives before the object moves. Latency is part of the model's accuracy.
+
+## Limitations of this analysis
+
+The record does not describe the sensors, the model, or the tracking range.

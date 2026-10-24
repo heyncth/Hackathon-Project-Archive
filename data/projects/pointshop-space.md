@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-A weekend AR retail demo took Disrupt SF 2016's hackathon grand prize, predating the mainstream AR shopping wave by years.
+## What it is
+
+Pointshop Space is an augmented-reality shopping prototype. It places products in the user's space so they can be viewed before purchase.
+
+## The problem
+
+Online shopping hides scale. A photo does not tell you whether a chair fits the room or how a jacket hangs.
+
+## What makes it interesting
+
+It won the grand prize at the TechCrunch Disrupt San Francisco 2016 Hackathon. AR was new on phones that year, and the demo used the device's camera rather than a headset.
+
+## What you can learn
+
+A demo that changes what the judge sees in the room beats a slide. The stage becomes the product surface.
+
+## Limitations of this analysis
+
+The record does not describe the tracking method or any retail partnership.

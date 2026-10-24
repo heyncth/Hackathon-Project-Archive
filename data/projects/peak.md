@@ -20,4 +20,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Two indie studios jammed a co-op climbing game in February and shipped a multi-million seller the same year. Proof that the jam pipeline can still print hits.
+## What it is
+
+Peak is a cooperative climbing game with physics-driven movement. Players climb a mountain together and need each other to get up.
+
+## What makes it interesting
+
+Aggro Crab and Landfall jammed it in early 2025 and shipped it months later. It sold over 2 million copies on Steam.
+
+## What you can learn
+
+A co-op game spreads through pairs of players. The purchase is social, so the game has to be funny before it is good.
+
+## Limitations of this analysis
+
+The record does not describe the climbing systems or how the jam version changed before release.

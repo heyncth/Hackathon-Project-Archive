@@ -15,4 +15,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Built during the NASA Space Apps Challenge 2021 by a team led by Yoseline Angel Lopez. After winning, the prototype was adopted by Colombia's Ministry of Agriculture. Angel Lopez is now an assistant research scientist at NASA Goddard.
+## What it is
+
+This is a web-app prototype that connects smallholder farmers with local buyers and monitors agricultural land use with satellite imagery. It was built at NASA Space Apps Colombia in 2021.
+
+## The problem
+
+A small farm sells into a local chain with little visibility. Satellite land-use data can show what is growing and where, which helps both the farmer and the buyer plan.
+
+## What makes it interesting
+
+The prototype was adopted by Colombia's Ministry of Agriculture. A weekend build reaching a ministry is rare, and it happened because the team solved a problem the ministry already had.
+
+## What you can learn
+
+Public adoption is a distribution channel. If a government body can use the prototype, it can also fund the next version.
+
+## Limitations of this analysis
+
+The record does not describe the adoption terms, the number of farmers reached, or the current state of the tool.

@@ -23,4 +23,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-A team of first-year Georgia Tech CS majors built JARVIS over a Cal Hacks weekend after a visually impaired family member inspired the idea. The multi-award winning prototype describes nearby people and cues rather than only text.
+## What it is
+
+JARVIS is an assistant app for blind and visually impaired users. It uses computer vision to describe surroundings and non-verbal cues.
+
+## The problem
+
+A white cane tells you what is directly in front of you. It does not tell you whether someone is smiling, whether a room is crowded, or who is speaking.
+
+## What makes it interesting
+
+Georgia Tech first-year computer science students built it at Cal Hacks 10.0 in 2023 and won Best Hack for Health, along with prizes for Zilliz and GitHub. The project pairs a vision model with a conversational interface.
+
+## What you can learn
+
+Accessibility tools benefit from a familiar output channel. Speech is already how a phone assistant works, so the new capability fits an existing habit.
+
+## Limitations of this analysis
+
+The record does not report recognition accuracy, latency, or testing with blind users.

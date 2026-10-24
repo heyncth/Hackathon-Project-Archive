@@ -23,4 +23,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Anne Macmillan and Lukas Steinman's jam entry about putting things where they belong grew into a Max Inferno studio game published by Secret Mode across PC and consoles.
+## What it is
+
+A Little to the Left is a tidy-up puzzle game. Each scene is a household mess, and the puzzle is working out the order the objects belong in.
+
+## The problem
+
+Sorting games usually tell you the rule. This one asks you to infer it from the objects, which makes the mess the puzzle rather than the obstacle.
+
+## What makes it interesting
+
+It started as a 48-hour entry for GMTK Game Jam 2020, on the theme "Out of Control". Annie and Lukas formed MAX INFERNO in 2021 and released the full game in November 2022. The jam build is still playable as a demo.
+
+## What you can learn
+
+A jam forces one scene to work before you build fifty. If the first tidy-up is satisfying, the content pipeline is the only thing left.
+
+## Limitations of this analysis
+
+The record covers the origin, studio, and release. It does not describe the level design process or how the team scaled the jam concept.

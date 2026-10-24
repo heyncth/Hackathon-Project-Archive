@@ -19,4 +19,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Smallholder farmers in the Philippines struggle to access credit because lenders cannot verify on-farm income. Agriconnect's weekend prototype connected farmers to a transparent credit marketplace, enough to take the global Red Bull Basement title in 2024.
+## What it is
+
+Agriconnect is a credit marketplace for smallholder farmers in the Philippines. The prototype used a blockchain-based marketplace to connect farmers with lenders.
+
+## The problem
+
+Small farms often lack the paperwork and collateral that formal lenders require. A marketplace can turn farming activity into a record that a lender can evaluate.
+
+## What makes it interesting
+
+It won Red Bull Basement 2024 globally for Soj Gamayon of the Philippines. The pitch was access to credit, not a new crop or a new sensor.
+
+## What you can learn
+
+For smallholder finance, the bottleneck is often evidence rather than money. A product that produces a trustworthy record can be more useful than a loan app.
+
+## Limitations of this analysis
+
+The record documents the award and the concept only. There is no evidence of lending volume, default rates, or whether blockchain was necessary to the model.

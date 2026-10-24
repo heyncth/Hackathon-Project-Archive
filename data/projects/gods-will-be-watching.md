@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Deconstructeam built the original in the Ludum Dare jam window. The expanded commercial version launched on Steam, GOG, and Humble in June 2014.
+## What it is
+
+Gods Will Be Watching is a point-and-click thriller. A stranded crew faces impossible choices with too few resources.
+
+## The problem
+
+Survival games often let you optimize your way out. This one makes every option cost someone, which turns resource management into an ethical decision.
+
+## What makes it interesting
+
+It started as a Ludum Dare 26 entry in 2013, made in 72 hours, and was later expanded into a full game. The original jam version is still playable.
+
+## What you can learn
+
+A prototype that makes the player uncomfortable is doing something right. The discomfort is the hook, and it survives the production.
+
+## Limitations of this analysis
+
+The record does not describe the scenario design or how the expanded version changed the jam's choices.

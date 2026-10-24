@@ -22,4 +22,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Audvice is a full arc from student competition win to venture-backed company to acquisition, documented by Red Bull's own founder profile series.
+## What it is
+
+The record for Audvice documents a trajectory rather than a product: a Red Bull Basement 2019 winner that later raised more than $3 million, worked with Fortune 500 companies, and was acquired.
+
+## What makes it interesting
+
+The path is the point. A student competition entry became a funded company with enterprise customers and an exit, which is a much rarer outcome than a hackathon prize.
+
+## What you can learn
+
+A competition win is evidence that a team can pitch and ship under pressure. It is not evidence of a market, but it can open the door to the people who test one.
+
+## Limitations of this analysis
+
+The record does not describe what Audvice did, its customers, or the acquisition terms. The product itself is not documented here.

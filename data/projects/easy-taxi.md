@@ -19,4 +19,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Founder Tallis Gomes pivoted from a bus-tracking idea to a taxi-hailing app at Startup Weekend Rio 2011. The team won the event and later raised significant venture funding before acquisition by Cabify.
+## What it is
+
+Easy Taxi was a ride-hailing app for Latin America and other emerging markets. It connected passengers with taxi drivers rather than private cars.
+
+## The problem
+
+Hailing a taxi on the street was slow, unpredictable, and unsafe in many cities. A dispatch app could make the wait visible.
+
+## What makes it interesting
+
+The concept was first presented at Startup Weekend Rio 2011 and won the competition. The company then expanded across Latin America before the global ride-hailing platforms arrived.
+
+## What you can learn
+
+Working with existing taxi fleets is a different business from creating a new fleet. It trades control for supply on day one.
+
+## Limitations of this analysis
+
+The record covers the origin and expansion, not the dispatch system, the driver economics, or the company's eventual outcome.

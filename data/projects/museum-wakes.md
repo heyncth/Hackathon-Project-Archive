@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Museum Wakes samples thousands of real Met artifacts and weaves them into a unique four-act mystery where visitors talk to ancient gods in real-time voice - an unusually ambitious weekend media-arts build.
+## What it is
+
+Museum Wakes is a narrative mystery experienced by voice inside a museum. It turns a collection into an interactive story.
+
+## How the experience works
+
+The visitor speaks with the guide and moves through the galleries. The story draws on the museum's own collection data, so the exhibits are the set.
+
+## What makes it interesting
+
+It was built at the Gemini 3 NYC Hackathon in February 2026 and uses 8,390 artifacts from the Met's Egyptian Wing through the Met Open API, with live generative responses.
+
+## What you can learn
+
+A museum already has the content and the space. The hack is the layer that makes a visitor look at both differently.
+
+## Limitations of this analysis
+
+The record does not describe how the generated narration is kept factually grounded. That is the main risk in a museum context.

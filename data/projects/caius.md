@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Caius turned a hackathon pitch about reading road networks from satellite context into a company. It mapped uncharted forest trails for the Region of Epirus and spun out Druiter as its consumer-facing product.
+## What it is
+
+Caius is an AI mapping system that identifies road and trail networks from imagery. It turns unpaved and unmapped routes into data.
+
+## The problem
+
+Rural roads and trails are often missing from official maps. That gap makes delivery, emergency response, and planning harder than they need to be.
+
+## What makes it interesting
+
+It began as a CASSINI Hackathon concept, moved into ESA BIC Greece and Startab, and produced a consumer app in 2025. The competition was the start of an incubation path, not the end of the project.
+
+## What you can learn
+
+A hackathon entry can be the first milestone in a funding application. Treat the demo as evidence for the next step, not the finished product.
+
+## Limitations of this analysis
+
+The record does not describe the model, its accuracy, or which regions are covered.

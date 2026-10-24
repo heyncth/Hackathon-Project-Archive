@@ -21,4 +21,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-The four-person Russian studio Four Quarters submitted a barely playable loop prototype to Ludum Dare 45 in 2019. They expanded it into Loop Hero, published by Devolver Digital in 2021 to strong sales and reviews.
+## What it is
+
+Loop Hero is an idle role-playing game. A hero walks an endless loop while the player places terrain and enemies around the path.
+
+## How the experience works
+
+The hero moves automatically and fights what the loop produces. The player's decisions happen outside the walk: which tiles to place, which resources to keep, when to return to camp.
+
+## What makes it interesting
+
+The first version was a Ludum Dare 45 entry in 2019 that only had the walking loop. Four Quarters built the rest and released through Devolver.
+
+## What you can learn
+
+A prototype can be one system. If watching a character walk is already interesting, the game has a foundation.
+
+## Limitations of this analysis
+
+The record does not describe the tile system or how the team balanced the idle loop.

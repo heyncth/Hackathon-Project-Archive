@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-No expensive SDR rig required: this Space Apps 2014 entry turned an ordinary Android phone into a satellite ground station, earning Best Use of Hardware.
+## What it is
+
+Android Base Station turns a smartphone into a satellite ground station. The phone's radio receives open satellite data, and the app decodes it.
+
+## The problem
+
+Ground stations are expensive equipment operated by institutions. A satellite that transmits open data still needs someone on the ground to listen.
+
+## What makes it interesting
+
+It won Best Use of Hardware at NASA Space Apps 2014. The hardware was already in the participant's pocket; the project was mostly about proving the radio could do the job.
+
+## What you can learn
+
+Before buying hardware, check what the device you own can already receive. A hackathon is a good place to test that boundary.
+
+## Limitations of this analysis
+
+The record does not list supported satellites, the antenna setup, or the decoding chain. The project page is a competition entry, not a build guide.

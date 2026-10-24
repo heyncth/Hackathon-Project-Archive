@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-TUM's robo.innovate 2025 crowned GROWBOT champion for turning tree care into a data-driven robotic workflow.
+## What it is
+
+GROWBOT is a robot-assisted system for optimizing tree growth. It collects data about a tree and automates some of the care.
+
+## The problem
+
+Tree planting gets attention; keeping saplings alive is the harder part. Growth depends on water, soil, and timing that a volunteer cannot monitor continuously.
+
+## What makes it interesting
+
+It was named Hackathon Champion at robo.innovate 2025 in Munich, with a €2,500 prize. The project pairs a physical robot with a data loop rather than treating planting as a one-time act.
+
+## What you can learn
+
+A hardware project needs a maintenance story. A robot that tends trees has to survive the weather it is built for.
+
+## Limitations of this analysis
+
+The record does not describe the robot, the sensors, or any field trial.

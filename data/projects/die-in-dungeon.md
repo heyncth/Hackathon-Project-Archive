@@ -19,4 +19,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Jam entries often stall at the prototype. Die in Dungeon used its Spooktober entry as a vertical slice, then built out a full roguelike around it for Steam.
+## What it is
+
+Die in Dungeon is a roguelike built for the Spooktober game jam in 2022 and later expanded into a Steam release.
+
+## What makes it interesting
+
+The jam prototype did the two things a store page needs: it looked like a finished game, and its demo attracted enough wishlists to justify the full build.
+
+## What you can learn
+
+A jam build can double as market research. Wishlist numbers tell you whether to spend a year on the idea before you spend it.
+
+## Limitations of this analysis
+
+The record does not describe the combat, the progression, or how much of the jam code survived into the release.

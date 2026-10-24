@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Mike Tholfsen and team built the prototype at a Microsoft company-wide hackathon. After winning against 3,000+ entries, it became Immersive Reader, shipped in Word, OneNote, Outlook, Teams, and Edge, and now serves millions of students worldwide.
+## What it is
+
+Immersive Reader is an accessibility feature in Microsoft Office. It reads text aloud, breaks it into syllables, and adjusts spacing and contrast for readers with dyslexia and other learning differences.
+
+## The problem
+
+Standard document views assume a reader who can track lines and decode text easily. Small typographic changes can make the difference between reading and giving up.
+
+## What makes it interesting
+
+It started as Learning Tools and won a Microsoft company-wide hackathon in 2015, beating more than 3,000 other entrants. It later shipped inside Office, where millions of people already read.
+
+## What you can learn
+
+Distribution decides whether an accessibility feature helps anyone. Building it into the tool people already use beats shipping a separate app.
+
+## Limitations of this analysis
+
+The record does not describe the reading science behind the feature or its measured impact.
