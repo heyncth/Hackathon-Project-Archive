@@ -4,7 +4,7 @@ Context and rules for working on this repository. Read this before changing proj
 
 ## Purpose and boundaries
 
-A curated, browsable GitHub archive of notable hackathon projects. Not a database, not a web app, not an AI platform.
+A curated, browsable GitHub archive of notable and wild rapid-build / origin-story projects — hackathons, game jams, hack weeks, Startup Weekend, internal sprints, and similar. Event linkage is preferred but optional when the origin story is strong and evidence-backed. Not a database, not a web app, not an AI platform.
 
 Never build: websites, backends, autonomous research agents, scheduled discovery/crawlers, ingestion pipelines, ranking engines, automatic award inference, or mandatory online link checking in CI.
 

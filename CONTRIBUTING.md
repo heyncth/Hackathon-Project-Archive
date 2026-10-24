@@ -6,11 +6,13 @@ This archive is curated. Entries are added on request and only after human revie
 
 A project qualifies if it:
 
-- Was built at, or demonstrably originated from, a hackathon, game jam, hack week, or comparable rapid-build event.
-- Has lasting technical, educational, practical, or social value. Winners and non-winners both qualify.
-- Has credible public evidence establishing its identity and connection to the event. A public source repository is welcome but not required.
+- Is a notable, wild, or surprising idea with a documented origin story — preferably a hackathon, game jam, hack week, internal build sprint, Startup Weekend, or comparable rapid-build event, but strong non-event origin stories are also eligible.
+- Has lasting technical, educational, practical, social, or cautionary value. Winners and non-winners both qualify; spectacular failures with clear evidence qualify as cautionary tales.
+- Has credible public evidence establishing its identity and (when claimed) its connection to the event. A public source repository is welcome but not required.
 
-It does not qualify if the only evidence is a single low-quality mention, a repository creation date, or popularity metrics (GitHub stars, upvotes) with no event connection.
+`event` is optional in the schema. Omit it when the origin is real but not a formal event (lab prototype, internal research build, weekend side project). Do not invent an event to force eligibility.
+
+It does not qualify if the only evidence is a single low-quality mention, a repository creation date, or popularity metrics (GitHub stars, upvotes) with no credible origin story.
 
 ## Evidence rules
 
@@ -32,7 +34,7 @@ name: My Project          # required
 description: One or two sentences on what it is.   # required
 domain: games             # required, must be in data/taxonomy.json
 tags: [game-jam, unity]   # optional, lowercase kebab-case, max 8
-event:                    # optional, but required for archive eligibility
+event:                    # optional; omit for non-event origin stories
   name: Some Hackathon    # required if `event` is present
   organizer: Org Name     # optional
   year: 2019              # optional, 1900-2100
