@@ -59,6 +59,52 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "App using soil moisture and evapotranspiration data to manage farmer planting risk.",
+      "domain": "climate",
+      "event": {
+        "award": "Galactic Impact",
+        "name": "NASA Space Apps Challenge",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2024 Galactic Impact award",
+          "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
+        }
+      ],
+      "id": "2plant",
+      "name": "2plant",
+      "tags": [
+        "agriculture",
+        "weather",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Deep neural network that locates seismic events in time-series data.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Technology",
+        "name": "NASA Space Apps Challenge",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2024 Best Use of Technology award",
+          "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
+        }
+      ],
+      "id": "42-quakeheroes",
+      "name": "42 QuakeHeroes",
+      "tags": [
+        "seismic",
+        "ai-ml",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "Max Inferno"
       ],
@@ -94,6 +140,81 @@
         "puzzle",
         "cozy",
         "commercial"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Narrative game where players explore a found phone to uncover a personal story. Released on iOS, Android, and Steam.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2016",
+        "organizer": "Angoulême site"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ 2016 Angoulême origin and platform releases",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "a-normal-lost-phone",
+      "links": {
+        "official": "https://lostphonegame.com/"
+      },
+      "name": "A Normal Lost Phone",
+      "tags": [
+        "game-jam",
+        "narrative",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Phone-number login verification without SMS. Achieved 97% success rate in early tests.",
+      "domain": "developer-tools",
+      "event": {
+        "name": "Facebook Seattle Hackathon",
+        "organizer": "Facebook",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "Facebook Seattle Platform team hackathon 2016",
+          "url": "https://engineering.fb.com/2016/12/29/developer-tools/favorite-hacks-of-2016/"
+        }
+      ],
+      "id": "account-kit",
+      "name": "Account Kit",
+      "tags": [
+        "authentication",
+        "facebook",
+        "internal-hack-week"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Contextual advertising platform for publishers. Generated approximately 15% of Google revenue within two years of launch.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Google 20% Time",
+        "organizer": "Google",
+        "year": 2003
+      },
+      "evidence": [
+        {
+          "supports": "Google 20% project origin, Susan Wojcicki, revenue contribution",
+          "url": "https://en.wikipedia.org/wiki/20%25_Project"
+        }
+      ],
+      "id": "adsense",
+      "links": {
+        "official": "https://adsense.google.com/"
+      },
+      "name": "AdSense",
+      "notes": "Started by Susan Wojcicki as a 20% project, launched June 2003",
+      "tags": [
+        "advertising",
+        "google",
+        "internal-hack-week"
       ],
       "verified_at": "2026-10-24"
     },
@@ -215,6 +336,76 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Sonifies 2D and 3D astronomical images so blind users can experience space imagery through sound.",
+      "domain": "accessibility",
+      "event": {
+        "award": "Global Connection Award",
+        "name": "NASA Space Apps Challenge",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2023 Global Connection Award",
+          "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
+        }
+      ],
+      "id": "arcobaleno",
+      "name": "Arcobaleno",
+      "tags": [
+        "accessibility",
+        "astronomy",
+        "nasa-space-apps",
+        "audio"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Interactive planetary tourism itinerary builder.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "Best Mission Concept",
+        "name": "NASA Space Apps Challenge",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2023 Best Mission Concept award",
+          "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
+        }
+      ],
+      "id": "astrogenesis",
+      "name": "Astrogenesis",
+      "tags": [
+        "space",
+        "web-mobile",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Orbital debris cleanup concept for removing space junk.",
+      "domain": "science",
+      "event": {
+        "award": "Galactic Impact",
+        "name": "NASA Space Apps Challenge",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2025 Galactic Impact award",
+          "url": "https://www.spaceappschallenge.org/2025/awards/global-winners/"
+        }
+      ],
+      "id": "astrosweepers",
+      "name": "AstroSweepers",
+      "tags": [
+        "space",
+        "debris",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "Sophie Bolzer",
         "Nadine Szentivanyi"
@@ -246,6 +437,87 @@
         "red-bull-basement",
         "startup",
         "exit"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Social fitness app that rewards exercise with NFTs. Described as BeReal for pushups.",
+      "domain": "social",
+      "event": {
+        "award": "Best of ETHDenver and Impact track winner",
+        "name": "ETHDenver",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "ETHDenver 2024 awards",
+          "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
+        }
+      ],
+      "id": "befit",
+      "links": {
+        "official": "https://befit.xyz/"
+      },
+      "name": "BeFit",
+      "tags": [
+        "web3",
+        "fitness",
+        "nft",
+        "ethereum"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Interactive biological data visualization library. In 2014 Google Summer of Code, all five students became core developers and designed version 2.0.",
+      "domain": "science",
+      "event": {
+        "name": "Google Summer of Code",
+        "organizer": "Google",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "GSoC 2014, five students became core devs, v2.0 design",
+          "url": "https://opensource.googleblog.com/2016/08/from-google-summer-of-code-to-game-of.html"
+        }
+      ],
+      "id": "biojs",
+      "links": {
+        "official": "https://biojs.io/"
+      },
+      "name": "BioJS",
+      "tags": [
+        "bioinformatics",
+        "visualization",
+        "open-source",
+        "gsoc"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Physically based render engine built into Blender. Creator Brecht Van Lommel worked on Blender via early Google Summer of Code.",
+      "domain": "media-arts",
+      "event": {
+        "name": "Google Summer of Code",
+        "organizer": "Google",
+        "year": 2009
+      },
+      "evidence": [
+        {
+          "supports": "GSoC connection, Brecht Van Lommel, 100+ Blender projects funded",
+          "url": "https://www.blendernation.com/2019/09/30/see-the-neat-new-blender-features-from-google-summer-of-code-2019/"
+        }
+      ],
+      "id": "blender-cycles",
+      "links": {
+        "official": "https://www.blender.org/features/rendering/"
+      },
+      "name": "Blender Cycles",
+      "tags": [
+        "rendering",
+        "blender",
+        "open-source",
+        "gsoc"
       ],
       "verified_at": "2026-10-24"
     },
@@ -309,6 +581,30 @@
         "action",
         "side-scroller",
         "co-op"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Fast modular Android build system used at Facebook. Prototype built in one hackathon.",
+      "domain": "developer-tools",
+      "event": {
+        "name": "Camp Hack-a-Thona",
+        "organizer": "Facebook",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Hack-a-Thona July 2012 prototype origin",
+          "url": "https://engineering.fb.com/2013/05/14/android/buck-how-we-build-android-apps-at-facebook/"
+        }
+      ],
+      "id": "buck-build-system",
+      "name": "Buck",
+      "tags": [
+        "android",
+        "build-tools",
+        "facebook",
+        "internal-hack-week"
       ],
       "verified_at": "2026-10-24"
     },
@@ -409,6 +705,29 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Rainbow profile picture filter. 26 million users in the first weekend. Intern hackathon project shipped globally in 72 hours.",
+      "domain": "social",
+      "event": {
+        "name": "Facebook Hackathon",
+        "organizer": "Facebook",
+        "year": 2015
+      },
+      "evidence": [
+        {
+          "supports": "Facebook hackathon origin, 26M users, 72-hour ship",
+          "url": "https://engineering.fb.com/2015/07/02/android/72-hours-to-launch-celebrate-pride/"
+        }
+      ],
+      "id": "celebrate-pride",
+      "name": "Celebrate Pride",
+      "tags": [
+        "facebook",
+        "lgbtq",
+        "internal-hack-week"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Blockchain oracle integration selected as winner of the Swift Hackathon 2025 Business Challenge; Chainlink co-founder showcased the work at Sibos.",
       "domain": "fintech",
       "event": {
@@ -469,6 +788,54 @@
         "study-tools",
         "edtech",
         "microsoft-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "AI-hosted immersive virtual climate museum with 3D and 2D visualizations.",
+      "domain": "media-arts",
+      "event": {
+        "award": "Art and Technology",
+        "name": "NASA Space Apps Challenge",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2024 Art and Technology award",
+          "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
+        }
+      ],
+      "id": "connected-earth-museum",
+      "name": "Connected Earth Museum",
+      "tags": [
+        "climate",
+        "ai-ml",
+        "virtual-museum",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "AI wearable that detects emergencies and secures funds and contacts when the wearer is in danger.",
+      "domain": "hardware",
+      "event": {
+        "award": "AI Hardware winner",
+        "name": "ETHGlobal Bangkok",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "ETHGlobal Bangkok 2024 AI Hardware winner",
+          "url": "https://www.recursive.so/hackathons"
+        }
+      ],
+      "id": "deadass",
+      "name": "DeadAss",
+      "tags": [
+        "web3",
+        "hardware",
+        "ai-ml",
+        "wearable"
       ],
       "verified_at": "2026-10-24"
     },
@@ -569,6 +936,30 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Interactive ad-hoc analysis over big data. Became the foundation for Google BigQuery.",
+      "domain": "developer-tools",
+      "event": {
+        "name": "Google 20% Time",
+        "organizer": "Google",
+        "year": 2006
+      },
+      "evidence": [
+        {
+          "supports": "Google 20% project origin and BigQuery connection",
+          "url": "https://en.wikipedia.org/wiki/20%25_Project"
+        }
+      ],
+      "id": "dremel",
+      "name": "Dremel",
+      "notes": "Built by Andrey Gubarev as a 20% project",
+      "tags": [
+        "bigdata",
+        "google",
+        "internal-hack-week"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Real-time drone tracking and prediction system; winner at Junction 2025, Europe's largest hackathon, placing top 5 of 300 teams and 1,500 participants in Espoo, Finland.",
       "domain": "robotics",
       "event": {
@@ -593,6 +984,29 @@
         "drone",
         "computer-vision",
         "hackathon-winner"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Customer communication platform. First African company accepted into 500 Startups.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Startup Weekend Accra",
+        "organizer": "GEN-Ghana",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Startup Weekend Accra 2011 origin and 500 Startups acceptance",
+          "url": "https://www.gengh.org/impact-stories/launched-at-startup-weekend-dropifi-takes-on-silicon-valley"
+        }
+      ],
+      "id": "dropifi",
+      "name": "Dropifi",
+      "tags": [
+        "saas",
+        "customer-service",
+        "startup-weekend"
       ],
       "verified_at": "2026-10-24"
     },
@@ -658,6 +1072,81 @@
         "hardware",
         "sustainability",
         "student-innovation"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "City-building sustainability game that uses real environmental data.",
+      "domain": "education",
+      "event": {
+        "award": "Most Inspirational",
+        "name": "NASA Space Apps Challenge",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2024 Most Inspirational award",
+          "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
+        }
+      ],
+      "id": "eco-metropolis",
+      "name": "Eco-Metropolis",
+      "tags": [
+        "gaming",
+        "climate",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Fast-paced action game. Named PC Gamer best free game of the week at the jam; later entered Steam Early Access.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2018",
+        "organizer": "China and CiGA Chengdu site"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ 2018 origin, PC Gamer recognition, Steam release",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "energy-shock",
+      "links": {
+        "official": "https://store.steampowered.com/app/852980/Energy_Shock/"
+      },
+      "name": "Energy Shock",
+      "tags": [
+        "game-jam",
+        "action",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Automatically pins ENS-linked IPFS files for permanent persistence.",
+      "domain": "developer-tools",
+      "event": {
+        "award": "1st place ENS Infrastructure",
+        "name": "ETHGlobal Taipei",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "ETHGlobal Taipei 2025 first place ENS Infrastructure award",
+          "url": "https://apu.edu.my/news/apubccs-enspin-clinches-top-prize-ethglobal-taipei-2025"
+        }
+      ],
+      "id": "enspin",
+      "links": {
+        "official": "https://enspin.dev/"
+      },
+      "name": "ENSPin",
+      "tags": [
+        "web3",
+        "ens",
+        "ipfs",
+        "ethereum"
       ],
       "verified_at": "2026-10-24"
     },
@@ -756,6 +1245,30 @@
         "social-network",
         "engagement",
         "web"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Live-streaming demo prototype that helped inspire the creation of Facebook Live.",
+      "domain": "media-arts",
+      "event": {
+        "name": "Facebook Hackathon",
+        "organizer": "Facebook",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "2012 hackathon prototype connection to Facebook Live",
+          "url": "https://www.fastcompany.com/40422805/the-story-behind-the-hackathon-project-that-helped-inspire-the-creation-of-facebook-live"
+        }
+      ],
+      "id": "facebook-live-precursor",
+      "name": "Live Faces (Facebook Live precursor)",
+      "notes": "Precursor prototype, not the final Facebook Live product",
+      "tags": [
+        "streaming",
+        "facebook",
+        "internal-hack-week"
       ],
       "verified_at": "2026-10-24"
     },
@@ -994,6 +1507,34 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Open-source network analysis and visualization tool. Described as Photoshop for network data. Google Summer of Code from 2009 to 2011 accelerated its growth.",
+      "domain": "science",
+      "event": {
+        "name": "Google Summer of Code",
+        "organizer": "Google",
+        "year": 2009
+      },
+      "evidence": [
+        {
+          "supports": "GSoC 2009-2011 participation and community growth",
+          "url": "https://opensource.googleblog.com/2012/03/gephi-how-3-years-of-google-summer-of.html"
+        }
+      ],
+      "id": "gephi",
+      "links": {
+        "official": "https://gephi.org/",
+        "source": "https://github.com/gephi/gephi"
+      },
+      "name": "Gephi",
+      "tags": [
+        "visualization",
+        "open-source",
+        "graph",
+        "gsoc"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "Sam Zaid",
         "Jessica Scorpio",
@@ -1064,6 +1605,32 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "News aggregator built from Krishna Bharat's hobby project. Entered beta September 2002.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Google 20% Time",
+        "organizer": "Google",
+        "year": 2002
+      },
+      "evidence": [
+        {
+          "supports": "Google 20% project origin, Krishna Bharat, 2002 beta",
+          "url": "https://en.wikipedia.org/wiki/20%25_Project"
+        }
+      ],
+      "id": "google-news",
+      "links": {
+        "official": "https://news.google.com/"
+      },
+      "name": "Google News",
+      "tags": [
+        "news",
+        "google",
+        "internal-hack-week"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "Torkel Ödegaard"
       ],
@@ -1095,6 +1662,29 @@
         "dashboards",
         "open-source",
         "monitoring"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Interactive ocean-as-climate-garden visualization.",
+      "domain": "climate",
+      "event": {
+        "award": "Galactic Impact",
+        "name": "NASA Space Apps Challenge",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2023 Galactic Impact award",
+          "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
+        }
+      ],
+      "id": "greetings-from-earth",
+      "name": "Greetings from Earth",
+      "tags": [
+        "climate",
+        "visualization",
+        "nasa-space-apps"
       ],
       "verified_at": "2026-10-24"
     },
@@ -1137,6 +1727,29 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "User-friendly GIS mapping tool for wildfire recovery and observation.",
+      "domain": "civic-tech",
+      "event": {
+        "award": "Local Impact",
+        "name": "NASA Space Apps Challenge",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2024 Local Impact award",
+          "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
+        }
+      ],
+      "id": "grow-wildfire-recovery",
+      "name": "G.R.O.W.",
+      "tags": [
+        "wildfire",
+        "gis",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Robot-assisted tree growth optimization system; named Hackathon Champion at robo.innovate 2025 in Munich with a €2,500 prize.",
       "domain": "robotics",
       "event": {
@@ -1161,6 +1774,28 @@
         "agriculture",
         "robotics",
         "hackathon-champion"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Space Apps 2025 winner in the Women/Space theme category.",
+      "domain": "social",
+      "event": {
+        "name": "NASA Space Apps Challenge",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2025 winner",
+          "url": "https://www.spaceappschallenge.org/2025/awards/global-winners/"
+        }
+      ],
+      "id": "hercode-space",
+      "name": "HerCode Space",
+      "tags": [
+        "space",
+        "diversity",
+        "nasa-space-apps"
       ],
       "verified_at": "2026-10-24"
     },
@@ -1192,6 +1827,103 @@
         "robot",
         "construction",
         "hardware"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "PHP to C++ compiler that reduced CPU usage by approximately 50%. Open-sourced in February 2010.",
+      "domain": "developer-tools",
+      "event": {
+        "name": "Facebook Hackathon",
+        "organizer": "Facebook",
+        "year": 2010
+      },
+      "evidence": [
+        {
+          "supports": "Facebook hackathon origin, Haiping Zhao, CPU savings",
+          "url": "https://techcrunch.com/2010/02/02/facebook-hiphop-presentation/"
+        }
+      ],
+      "id": "hiphop-for-php",
+      "name": "HipHop for PHP",
+      "notes": "Built by Haiping Zhao",
+      "tags": [
+        "php",
+        "compiler",
+        "facebook",
+        "internal-hack-week"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Metroidvania set in a ruined insect kingdom. Team Cherry's jam prototype seeded the full game.",
+      "domain": "games",
+      "event": {
+        "award": "Theme \"Ten seconds\" entry",
+        "name": "Ludum Dare 27",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Ludum Dare 27 origin and Team Cherry development history",
+          "url": "https://gamemaker.io/en/blog/best-game-jam-games"
+        }
+      ],
+      "id": "hollow-knight",
+      "links": {
+        "official": "https://hollowknightgame.com/",
+        "source": "https://github.com/teamcherry/HollowKnight"
+      },
+      "name": "Hollow Knight",
+      "tags": [
+        "game-jam",
+        "metroidvania",
+        "indie",
+        "unity"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "White-hat security marketplace for on-chain projects, connecting auditors with protocol teams.",
+      "domain": "fintech",
+      "event": {
+        "award": "Best of ETHDenver",
+        "name": "ETHDenver",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "ETHDenver 2024 Best of ETHDenver award",
+          "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
+        }
+      ],
+      "id": "honeypause",
+      "name": "HoneyPause",
+      "tags": [
+        "web3",
+        "security",
+        "ethereum"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Virtual reality rehabilitation platform for neurological conditions.",
+      "domain": "healthcare",
+      "event": {
+        "name": "Red Bull Basement"
+      },
+      "evidence": [
+        {
+          "supports": "Red Bull Basement featured project",
+          "url": "https://www.redbull.com/my-en/videos/soj-gamayon-in-la-and-silicon-valley"
+        }
+      ],
+      "id": "immersive-rehab",
+      "name": "Immersive Rehab",
+      "tags": [
+        "vr",
+        "rehabilitation",
+        "red-bull-basement"
       ],
       "verified_at": "2026-10-24"
     },
@@ -1384,6 +2116,75 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Web app tracking Landsat satellites with surface reflectance data and pass notifications.",
+      "domain": "science",
+      "event": {
+        "award": "Best Mission Concept",
+        "name": "NASA Space Apps Challenge",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2024 Best Mission Concept award",
+          "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
+        }
+      ],
+      "id": "landsat-connect",
+      "name": "Landsat Connect",
+      "tags": [
+        "earth-observation",
+        "web-mobile",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Pre-launch landing page builder for collecting emails before product launch. Seed funded, acquired approximately three years after launch.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "2nd place",
+        "name": "Startup Weekend Philadelphia",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Startup Weekend Philadelphia 2011 second place and subsequent acquisition",
+          "url": "https://www.inc.com/articles/201111/companies-that-launched-in-three-days-startup-weekend.html"
+        }
+      ],
+      "id": "launchrock",
+      "name": "LaunchRock",
+      "tags": [
+        "marketing",
+        "landing-page",
+        "startup-weekend"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Portable electric washing machine designed for water conservation. Built by team LYLO.",
+      "domain": "hardware",
+      "event": {
+        "award": "Global Workshop winner",
+        "name": "Red Bull Basement",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "Red Bull Basement 2020 Global Workshop winner",
+          "url": "https://www.redbull.com/int-en/event-series/basement/red-bull-basement-past-winners"
+        }
+      ],
+      "id": "lava-aqua-x",
+      "name": "LAVA AQUA X",
+      "tags": [
+        "water",
+        "sustainability",
+        "red-bull-basement"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "Antoine Balaresque",
         "Henry Bradlow"
@@ -1457,6 +2258,56 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Geek and gamer subscription box service with millions of subscribers.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Startup Weekend Los Angeles",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Startup Weekend LA 2012 origin",
+          "url": "https://medium.com/startup-weekend-derby/5-startups-who-used-startup-weekend-as-a-launchpad-for-success-fa380463177e"
+        }
+      ],
+      "id": "loot-crate",
+      "links": {
+        "official": "https://www.lootcrate.com/"
+      },
+      "name": "Loot Crate",
+      "tags": [
+        "subscription",
+        "retail",
+        "startup-weekend"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Couch co-op space brawler where players man turrets on a circular ship. Released on all major consoles.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2012",
+        "organizer": "Toronto site"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ 2012 Toronto origin and commercial release",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "lovers-in-a-dangerous-spacetime",
+      "links": {
+        "official": "https://loversinadangerousspacetime.com/"
+      },
+      "name": "Lovers in a Dangerous Spacetime",
+      "tags": [
+        "game-jam",
+        "co-op",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "1 Simple Idea"
       ],
@@ -1484,6 +2335,29 @@
         "music",
         "puzzle",
         "apple-arcade"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Website and immersive game visualizing Apollo lunar seismic data.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Science",
+        "name": "NASA Space Apps Challenge",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2023 Best Use of Science award",
+          "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
+        }
+      ],
+      "id": "lunartech-ensemble",
+      "name": "LunarTech Ensemble",
+      "tags": [
+        "astronomy",
+        "visualization",
+        "nasa-space-apps"
       ],
       "verified_at": "2026-10-24"
     },
@@ -1601,6 +2475,31 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Fungal transformation platformer where the player is a growing, splitting organism. IGF Excellence in Design shortlist.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2012",
+        "organizer": "NYU site"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ 2012 NYU origin and IGF recognition",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "mushroom-11",
+      "links": {
+        "official": "https://mushroom11game.com/"
+      },
+      "name": "Mushroom 11",
+      "tags": [
+        "game-jam",
+        "platformer",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Web-app prototype connecting smallholder farmers with local buyers and monitoring agricultural land-use via satellite imagery.",
       "domain": "climate",
       "event": {
@@ -1622,6 +2521,54 @@
         "agriculture",
         "satellite",
         "open-data"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Seizure monitoring smartwatch platform. Won the Pebble prize for best smartwatch app and continued development after the hackathon.",
+      "domain": "healthcare",
+      "event": {
+        "award": "Pebble prize for best smartwatch app",
+        "name": "Hack the North",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "Hack the North 2014 Pebble prize win",
+          "url": "https://betakit.com/collaboration-trumps-competition-at-hackthenorth/"
+        }
+      ],
+      "id": "neutun-labs",
+      "name": "Neutun Labs",
+      "tags": [
+        "wearable",
+        "health",
+        "college-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Extremely difficult multiplayer survival game. Over 20 million players across platforms.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ origin and player count",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "no-humanity",
+      "links": {
+        "official": "https://nohumanitygame.com/"
+      },
+      "name": "No Humanity",
+      "notes": "Origin at Global Game Jam, developed by SweatyChair Studio",
+      "tags": [
+        "game-jam",
+        "multiplayer",
+        "indie"
       ],
       "verified_at": "2026-10-24"
     },
@@ -1650,6 +2597,30 @@
         "safety",
         "mobile",
         "social-good"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Smart contract circuit breaker marketplace bonded to EigenLayer for on-chain security.",
+      "domain": "fintech",
+      "event": {
+        "award": "Best of ETHDenver",
+        "name": "ETHDenver",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "ETHDenver 2024 Best of ETHDenver award",
+          "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
+        }
+      ],
+      "id": "odin",
+      "name": "ODIN",
+      "tags": [
+        "web3",
+        "security",
+        "ethereum",
+        "eigenlayer"
       ],
       "verified_at": "2026-10-24"
     },
@@ -1776,6 +2747,29 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "AI indoor navigation for vision-impaired users with voice guidance.",
+      "domain": "accessibility",
+      "event": {
+        "name": "Hack the North",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Hack the North 2024 finalist",
+          "url": "https://museum.hackthenorth.com/"
+        }
+      ],
+      "id": "pathsense",
+      "name": "PathSense",
+      "tags": [
+        "accessibility",
+        "ai-ml",
+        "navigation",
+        "college-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Turns static PDFs into live financial tools with embedded cryptocurrency transactions; won Best Finance App at ETHGlobal New York 2025.",
       "domain": "fintech",
       "event": {
@@ -1832,6 +2826,30 @@
         "co-op",
         "indie",
         "steam"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Puzzle box game about a mysterious button and a forbidden console. Developed by Four Quarters after a jam prototype.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare"
+      },
+      "evidence": [
+        {
+          "supports": "Four Quarters jam origin",
+          "url": "https://www.vice.com/en/article/how-the-loop-hero-devs-pitched-a-hit-game-thats-impossible-to-describe/"
+        }
+      ],
+      "id": "please-dont-touch-anything",
+      "links": {
+        "official": "https://store.steampowered.com/app/370310/Please_Dont_Touch_Anything/"
+      },
+      "name": "Please, Don't Touch Anything",
+      "tags": [
+        "game-jam",
+        "puzzle",
+        "indie"
       ],
       "verified_at": "2026-10-24"
     },
@@ -1953,6 +2971,31 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Browser extension that lets users highlight, copy, edit, and translate text inside images.",
+      "domain": "ai-ml",
+      "event": {
+        "name": "HackMIT",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "HackMIT 2013 origin",
+          "url": "https://en.wikipedia.org/wiki/HackMIT"
+        }
+      ],
+      "id": "project-naptha",
+      "links": {
+        "official": "https://www.projectnaptha.com/"
+      },
+      "name": "Project Naptha",
+      "tags": [
+        "browser-extension",
+        "ocr",
+        "college-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "COVID-era NASA Space Apps global winner building low-cost open ventilator and respiratory support designs for crisis conditions.",
       "domain": "healthcare",
       "event": {
@@ -1981,6 +3024,78 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "C2PA-based detection of AI-generated images to combat news misinformation.",
+      "domain": "social",
+      "event": {
+        "award": "AI/C2PA winner",
+        "name": "ETH Warsaw",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "ETH Warsaw 2023 AI/C2PA winner",
+          "url": "https://www.recursive.so/hackathons"
+        }
+      ],
+      "id": "proof-of-picture",
+      "name": "Proof of Picture",
+      "tags": [
+        "web3",
+        "ai-ml",
+        "misinformation",
+        "c2pa"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "EMG-powered hand-closing motor assistive device for people with paralysis.",
+      "domain": "accessibility",
+      "event": {
+        "name": "Hack the North",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Hack the North 2024 finalist",
+          "url": "https://museum.hackthenorth.com/"
+        }
+      ],
+      "id": "pulsegrip",
+      "name": "PulseGrip",
+      "tags": [
+        "accessibility",
+        "emg",
+        "hardware",
+        "college-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Decentralized push notification protocol for Web3 applications. Raised $10 million in funding.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "ETHGlobal",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "ETHGlobal 2020 origin and funding round",
+          "url": "https://bizthon.hashnode.dev/from-hackathon-to-unicorn-real-stories-of-web3-projects-that-made-it-big"
+        }
+      ],
+      "id": "push-protocol",
+      "links": {
+        "official": "https://push.org/"
+      },
+      "name": "Push Protocol",
+      "tags": [
+        "web3",
+        "notifications",
+        "ethereum"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Tap-to-insure mobile prototype for short-term valuable-item coverage; won the TechCrunch Disrupt Berlin 2017 Hackathon Grand Prize and €4,200.",
       "domain": "fintech",
       "event": {
@@ -2005,6 +3120,53 @@
         "insurance",
         "mobile",
         "hackathon-winner"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Puzzle game featuring Apple Best New Game global feature and",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2014"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ 2014 origin, Apple feature, and App Store rankings",
+          "url": "https://www.richardfu.net/dev-story-behind-rainmaker-the-beautiful-flood/"
+        }
+      ],
+      "id": "rainmaker",
+      "links": {
+        "official": "https://www.richardfu.net/rainmaker/"
+      },
+      "name": "Rainmaker: The Beautiful Flood",
+      "tags": [
+        "game-jam",
+        "puzzle",
+        "mobile"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "AI-based exoplanet detection system.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Technology",
+        "name": "NASA Space Apps Challenge",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2025 Best Use of Technology award",
+          "url": "https://www.spaceappschallenge.org/2025/awards/global-winners/"
+        }
+      ],
+      "id": "resonant-exoplanets",
+      "name": "Resonant Exoplanets",
+      "tags": [
+        "astronomy",
+        "ai-ml",
+        "nasa-space-apps"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2063,6 +3225,29 @@
         "puzzle",
         "detective",
         "research"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Art access tool for blind users that conveys visual content through touch, temperature, and sound.",
+      "domain": "accessibility",
+      "event": {
+        "name": "Hack the North",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Hack the North 2025 finalist",
+          "url": "https://museum.hackthenorth.com/"
+        }
+      ],
+      "id": "ross-remote-operated-semantic-sketching",
+      "name": "ROSS - Remote Operated Semantic Sketching",
+      "tags": [
+        "accessibility",
+        "art",
+        "sensory",
+        "college-hackathon"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2177,6 +3362,31 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Split-screen first-person shooter where all players are invisible, so you must cheat by looking at their screens. Released on Steam, PS4, Xbox One.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2014",
+        "organizer": "Melbourne site"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ 2014 Melbourne origin and console releases",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "screencheat",
+      "links": {
+        "official": "https://screencheatgame.com/"
+      },
+      "name": "Screencheat",
+      "tags": [
+        "game-jam",
+        "local-multiplayer",
+        "fps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Free point-and-click adventure where a gamedev intern infiltrates a corporation that controls the entire gaming industry.",
       "domain": "games",
       "event": {
@@ -2202,6 +3412,56 @@
         "point-and-click",
         "adventure",
         "satire"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "AI-interactive story-building platform built on Story Protocol for IP licensing.",
+      "domain": "media-arts",
+      "event": {
+        "award": "Best of ETHDenver",
+        "name": "ETHDenver",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "ETHDenver 2024 Best of ETHDenver award",
+          "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
+        }
+      ],
+      "id": "sekai",
+      "links": {
+        "official": "https://sekai.co/"
+      },
+      "name": "Sekai",
+      "tags": [
+        "web3",
+        "ai-ml",
+        "storytelling",
+        "ethereum"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Interactive 3D moonquake mapping web application.",
+      "domain": "science",
+      "event": {
+        "award": "Galactic Impact",
+        "name": "NASA Space Apps Challenge",
+        "year": 2022
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2022 Galactic Impact award",
+          "url": "https://www.spaceappschallenge.org/blog/2022-global-winners/"
+        }
+      ],
+      "id": "selene",
+      "name": "Selene",
+      "tags": [
+        "astronomy",
+        "web-mobile",
+        "nasa-space-apps"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2234,6 +3494,32 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Chess variant roguelike where one side gets a shotgun. Top-rated entry at Ludum Dare 50.",
+      "domain": "games",
+      "event": {
+        "award": "Top-rated entry",
+        "name": "Ludum Dare 50",
+        "year": 2022
+      },
+      "evidence": [
+        {
+          "supports": "Ludum Dare 50 top-rated placement",
+          "url": "https://ldj.am/games"
+        }
+      ],
+      "id": "shotgun-king",
+      "links": {
+        "official": "https://store.steampowered.com/app/1968320/Shotgun_King_The_Final_Checkmate/"
+      },
+      "name": "Shotgun King: The Final Checkmate",
+      "tags": [
+        "game-jam",
+        "roguelite",
+        "chess"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Hardware plus mobile app that monitors shower flow rate and gamifies shorter showers against friends; won the TechCrunch Disrupt SF 2014 hackathon grand prize.",
       "domain": "hardware",
       "event": {
@@ -2258,6 +3544,29 @@
         "water",
         "gamification",
         "techcrunch-disrupt"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Identifies satellite risk zones from near-Earth objects and meteor streams in real time.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Science",
+        "name": "NASA Space Apps Challenge",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2024 Best Use of Science award",
+          "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
+        }
+      ],
+      "id": "skyshield",
+      "name": "SkyShield",
+      "tags": [
+        "space",
+        "safety",
+        "nasa-space-apps"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2384,6 +3693,102 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Connected robot toys including the BB-8 droid. Raised over $120 million.",
+      "domain": "hardware",
+      "event": {
+        "name": "Startup Weekend Boulder",
+        "year": 2010
+      },
+      "evidence": [
+        {
+          "supports": "Startup Weekend Boulder 2010 origin and funding",
+          "url": "https://startupweekend.boston/alumni"
+        }
+      ],
+      "id": "sphero",
+      "links": {
+        "official": "https://www.sphero.com/"
+      },
+      "name": "Sphero",
+      "tags": [
+        "robotics",
+        "consumer",
+        "startup-weekend"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Tracks chemical dispersion of wildfire smoke using airborne data.",
+      "domain": "climate",
+      "event": {
+        "award": "Best Use of Data",
+        "name": "NASA Space Apps Challenge",
+        "year": 2022
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2022 Best Use of Data award",
+          "url": "https://www.spaceappschallenge.org/blog/2022-global-winners/"
+        }
+      ],
+      "id": "starflock",
+      "name": "Starflock",
+      "tags": [
+        "wildfire",
+        "data",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Local multiplayer game where narwhals fight with space lances. Over 1 million plays across platforms.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2013",
+        "organizer": "Carleton Ottawa site"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ 2013 origin and commercial success",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "starwhal",
+      "links": {
+        "official": "https://starwhal.com/"
+      },
+      "name": "STARWHAL",
+      "tags": [
+        "game-jam",
+        "local-multiplayer",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "LSTM model that predicts geomagnetic storm levels from DSCOVR satellite data.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Data",
+        "name": "NASA Space Apps Challenge",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2023 Best Use of Data award",
+          "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
+        }
+      ],
+      "id": "storm-prophet",
+      "name": "Storm Prophet",
+      "tags": [
+        "space-weather",
+        "ai-ml",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "RESP Biosensor wearable for real-time lung health monitoring; team formed at a 2016 Independence Blue Cross and Thomas Jefferson University health hackathon, later received FDA 510(k) clearance.",
       "domain": "healthcare",
       "event": {
@@ -2408,6 +3813,30 @@
         "health-hackathon",
         "fda",
         "lung-health"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Pedicab camera rig for capturing Street View imagery in parks and cultural sites. Weekend build led to a full fleet.",
+      "domain": "hardware",
+      "event": {
+        "name": "Google Workshops",
+        "organizer": "Google",
+        "year": 2008
+      },
+      "evidence": [
+        {
+          "supports": "Google workshop origin, Dan Ratner, weekend build",
+          "url": "https://googleblog.blogspot.com/2011/04/google-workshops-place-for-googlers-to.html"
+        }
+      ],
+      "id": "street-view-trike",
+      "name": "Street View Trike",
+      "notes": "Built by Dan Ratner in a 20% project and workshop weekend hack",
+      "tags": [
+        "maps",
+        "google",
+        "internal-hack-week"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2439,6 +3868,32 @@
         "internal-tools",
         "ai",
         "enterprise"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Money streaming protocol for continuous payments, subscriptions, and salaries on-chain.",
+      "domain": "fintech",
+      "event": {
+        "name": "ETHOnline",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "ETHOnline 2020 origin",
+          "url": "https://bizthon.hashnode.dev/from-hackathon-to-unicorn-real-stories-of-web3-projects-that-made-it-big"
+        }
+      ],
+      "id": "superfluid",
+      "links": {
+        "official": "https://www.superfluid.finance/"
+      },
+      "name": "Superfluid",
+      "tags": [
+        "web3",
+        "defi",
+        "ethereum",
+        "payments"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2532,6 +3987,29 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "AI-powered robotic film studio that plans shots, moves camera and lighting, and edits footage.",
+      "domain": "media-arts",
+      "event": {
+        "name": "Hack the North",
+        "year": 2026
+      },
+      "evidence": [
+        {
+          "supports": "Hack the North 2026 finalist",
+          "url": "https://museum.hackthenorth.com/"
+        }
+      ],
+      "id": "takeone",
+      "name": "TakeOne",
+      "tags": [
+        "robotics",
+        "ai-ml",
+        "film",
+        "college-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Cloud-based contact center platform that lets businesses handle customer calls over the internet instead of traditional phone systems.",
       "domain": "web-mobile",
       "event": {
@@ -2585,6 +4063,31 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Reverse city builder about ecosystem restoration. Released on Netflix Games.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare",
+        "year": 2019
+      },
+      "evidence": [
+        {
+          "supports": "Ludum Dare prototype origin",
+          "url": "https://itch.io/games/top-sellers/tag-ludum-dare"
+        }
+      ],
+      "id": "terra-nil",
+      "links": {
+        "official": "https://www.terraformgame.com/"
+      },
+      "name": "Terra Nil",
+      "tags": [
+        "game-jam",
+        "strategy",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "Matteo Nitto",
         "Dario Fazio"
@@ -2613,6 +4116,55 @@
         "typing",
         "action",
         "ggj"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Decentralized physical infrastructure for peer-to-peer package delivery with custom hardware.",
+      "domain": "hardware",
+      "event": {
+        "award": "Hardware IoT DePIN winner",
+        "name": "ETHGlobal Brussels",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "ETHGlobal Brussels 2024 Hardware IoT DePIN winner",
+          "url": "https://www.recursive.so/hackathons"
+        }
+      ],
+      "id": "the-box",
+      "name": "The Box",
+      "tags": [
+        "web3",
+        "hardware",
+        "depin",
+        "logistics"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Roguelite where crops and miners produce only while the king watches. Sold 600k+ copies on Steam.",
+      "domain": "games",
+      "event": {
+        "award": "Top-rated entry",
+        "name": "Ludum Dare 54"
+      },
+      "evidence": [
+        {
+          "supports": "Ludum Dare 54 origin, tinybuild publishing, sales figures",
+          "url": "https://gamemaker.io/en/blog/the-king-is-watching-tinybuild"
+        }
+      ],
+      "id": "the-king-is-watching",
+      "links": {
+        "official": "https://store.steampowered.com/app/2401630/The_King_is_Watching/"
+      },
+      "name": "The King is Watching",
+      "tags": [
+        "game-jam",
+        "roguelite",
+        "indie"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2679,6 +4231,31 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Multiplayer archer combat game. First commercial release of Maddy Thorson, who later made Celeste.",
+      "domain": "games",
+      "event": {
+        "name": "Vancouver Full Indie Game Jam",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Game jam origin and Maddy Thorson connection",
+          "url": "https://gamemaker.io/en/blog/best-game-jam-games"
+        }
+      ],
+      "id": "towerfall",
+      "links": {
+        "official": "https://towerfall-game.com/"
+      },
+      "name": "TowerFall",
+      "tags": [
+        "game-jam",
+        "local-multiplayer",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "description": "Relaxing exploration-trading game where players fly an airship across a world discovering towns and trading goods.",
       "domain": "games",
       "event": {
@@ -2734,6 +4311,30 @@
         "project-management",
         "collaboration",
         "kanban"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Traveler translation app with phrasebooks, slang, and live translator features.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Startup Weekend Atlanta"
+      },
+      "evidence": [
+        {
+          "supports": "Startup Weekend Atlanta origin",
+          "url": "https://www.inc.com/articles/201111/companies-that-launched-in-three-days-startup-weekend.html"
+        }
+      ],
+      "id": "triplingo",
+      "links": {
+        "official": "https://www.triplingo.com/"
+      },
+      "name": "TripLingo",
+      "tags": [
+        "travel",
+        "translation",
+        "startup-weekend"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2842,6 +4443,30 @@
         "crowdsourcing",
         "open-source",
         "maps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "200G optical transponder prototype built by network engineers at a hackathon. Contributed to the Telecom Infra Project.",
+      "domain": "hardware",
+      "event": {
+        "name": "Facebook Hackathon",
+        "organizer": "Facebook",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "Facebook 2016 hackathon, Telecom Infra Project contribution",
+          "url": "https://engineering.fb.com/2016/12/29/developer-tools/favorite-hacks-of-2016/"
+        }
+      ],
+      "id": "voyager-transponder",
+      "name": "Voyager Transponder",
+      "tags": [
+        "networking",
+        "optical",
+        "facebook",
+        "internal-hack-week"
       ],
       "verified_at": "2026-10-24"
     },
@@ -2963,6 +4588,29 @@
       "verified_at": "2026-10-24"
     },
     {
+      "description": "Machine learning pipeline predicting the probability of a Carrington-class solar storm.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Science",
+        "name": "NASA Space Apps Challenge",
+        "year": 2022
+      },
+      "evidence": [
+        {
+          "supports": "Space Apps 2022 Best Use of Science award",
+          "url": "https://www.spaceappschallenge.org/blog/2022-global-winners/"
+        }
+      ],
+      "id": "whats-new-solar-storm",
+      "name": "What's New?",
+      "tags": [
+        "space-weather",
+        "ai-ml",
+        "nasa-space-apps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
       "authors": [
         "Marinos"
       ],
@@ -2990,6 +4638,32 @@
         "crisis",
         "twilio",
         "mobile"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Visual automation app for iOS. Acquired by Apple in 2016 and became Shortcuts.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "MHacks",
+        "organizer": "University of Michigan",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "MHacks 2014 origin, Ari Weinstein, Apple acquisition",
+          "url": "https://medium.com/rough-draft-ventures/from-rough-draft-to-forbes-a-flashback-to-forbes-under-30-honorees-first-photos-products-e1a40589bce1"
+        }
+      ],
+      "id": "workflow-shortcuts",
+      "links": {
+        "official": "https://apps.apple.com/app/shortcuts/id913512399"
+      },
+      "name": "Workflow",
+      "tags": [
+        "ios",
+        "automation",
+        "college-hackathon"
       ],
       "verified_at": "2026-10-24"
     },
@@ -3126,6 +4800,30 @@
         "automation",
         "apis",
         "saas"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Zero-knowledge proof system for selective disclosure of work reputation without revealing underlying data.",
+      "domain": "fintech",
+      "event": {
+        "award": "ZK/Privacy winner",
+        "name": "ETH Porto",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "ETH Porto 2023 ZK/Privacy winner",
+          "url": "https://www.recursive.so/hackathons"
+        }
+      ],
+      "id": "zkpow",
+      "name": "zkPow",
+      "tags": [
+        "web3",
+        "zk",
+        "privacy",
+        "ethereum"
       ],
       "verified_at": "2026-10-24"
     }

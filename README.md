@@ -44,9 +44,9 @@ python -m pytest             # run the test suite
 ## Stats
 
 <!-- BEGIN GENERATED STATS -->
-**101 projects** across 16 domains · 59 with documented awards
+**171 projects** across 16 domains · 91 with documented awards
 
-Games (32) · Web & Mobile (14) · Fintech (9) · Healthcare (6) · Developer Tools (5) · Robotics (5) · Education (4) · Science (4) · Other (4) · Civic Tech (3) · Climate & Environment (3) · Media & Arts (3) · Social Impact (3) · Accessibility (2) · AI & Machine Learning (2) · Hardware (2)
+Games (46) · Web & Mobile (23) · Science (15) · Fintech (13) · Developer Tools (10) · Hardware (8) · Healthcare (8) · Media & Arts (8) · Social Impact (7) · Accessibility (6) · Climate & Environment (6) · Education (5) · Robotics (5) · Civic Tech (4) · Other (4) · AI & Machine Learning (3)
 <!-- END GENERATED STATS -->
 
 ## License
