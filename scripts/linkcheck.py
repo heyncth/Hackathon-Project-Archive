@@ -32,11 +32,11 @@ def check_url(url: str, timeout: float) -> str:
             if exc.code == 405 and method == "HEAD":
                 continue  # server dislikes HEAD, try GET
             if 400 <= exc.code < 500:
-                return f"BROKEN ({exc.code}) — likely invalid"
-            return f"unreachable ({exc.code}) — may be temporary"
+                return f"BROKEN ({exc.code}) - likely invalid"
+            return f"unreachable ({exc.code}) - may be temporary"
         except (URLError, TimeoutError, OSError) as exc:
             reason = getattr(exc, "reason", exc)
-            return f"unreachable ({reason}) — may be temporary"
+            return f"unreachable ({reason}) - may be temporary"
     return "unreachable (no response)"
 
 
@@ -71,7 +71,7 @@ def main() -> int:
                 broken += 1
 
     print(f"\nchecked {checked} URL(s); {broken} definitely broken (4xx)")
-    print("note: 'unreachable' results are inconclusive — do not delete records based on them")
+    print("note: 'unreachable' results are inconclusive - do not delete records based on them")
     return 0
 
 

@@ -179,7 +179,7 @@ function render() {
     let meta = '';
     if (p.event) {
       const bits = [p.event.name, p.event.organizer, p.event.year].filter(Boolean);
-      meta = bits.map(esc).join(' — ');
+      meta = bits.map(esc).join(' - ');
     }
 
     const official = p.links && p.links.official

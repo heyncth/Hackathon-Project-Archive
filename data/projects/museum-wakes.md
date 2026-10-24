@@ -17,4 +17,4 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Museum Wakes samples thousands of real Met artifacts and weaves them into a unique four-act mystery where visitors talk to ancient gods in real-time voice—an unusually ambitious weekend media-arts build.
+Museum Wakes samples thousands of real Met artifacts and weaves them into a unique four-act mystery where visitors talk to ancient gods in real-time voice - an unusually ambitious weekend media-arts build.

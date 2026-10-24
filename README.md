@@ -2,25 +2,25 @@
 
 Notable hackathon projects, with evidence.
 
-A curated archive of projects built at hackathons, game jams, internal hack weeks, and similar rapid-build events — from weekend prototypes to products used by millions.
+A curated archive of projects built at hackathons, game jams, internal hack weeks, and similar rapid-build events. From weekend prototypes to products used by millions.
 
-**[Browse the archive →](https://heyncth.github.io/Hackathon-Project-Archive/)**
+**[Browse the archive](https://heyncth.github.io/Hackathon-Project-Archive/)**
 
 ## What you'll find
 
 Each entry answers:
 
 - **What** the project is and does
-- **Where** it was built — the hackathon, game jam, or internal hack event, when verifiable
+- **Where** it was built: the hackathon, game jam, or internal hack event, when verifiable
 - **Any awards or distinctions**, only when backed by evidence
 - **Links** to official pages, source code, demos, and videos when they exist
-- **Evidence** — public sources backing the claims in the entry
+- **Evidence**: public sources backing the claims in the entry
 
 Award winners are included, and so are notable non-winners and lesser-known projects with genuine merit. If a detail is unknown, it is left out rather than guessed. A missing field means the information was not verified, not that the project lacked it.
 
 ## Browse
 
-**[→ heyncth.github.io/Hackathon-Project-Archive](https://heyncth.github.io/Hackathon-Project-Archive/)**
+**[heyncth.github.io/Hackathon-Project-Archive](https://heyncth.github.io/Hackathon-Project-Archive/)**
 
 Search and filter by domain, year, tags, and award status.
 
@@ -30,7 +30,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for eligibility, evidence requirements, a
 
 ## Data
 
-Project data lives in `data/projects/*.md` (YAML frontmatter + optional notes). The site and stats below are generated — never edit them by hand.
+Project data lives in `data/projects/*.md` (YAML frontmatter + optional notes). The site and stats below are generated. Never edit them by hand.
 
 ```bash
 pip install -r requirements-dev.txt
@@ -51,4 +51,4 @@ Games (32) · Web & Mobile (14) · Fintech (9) · Healthcare (6) · Developer To
 
 ## License
 
-MIT — see [LICENSE](LICENSE). Project names and linked resources remain the property of their respective owners; this repository only catalogs them with attribution.
+MIT. See [LICENSE](LICENSE). Project names and linked resources remain the property of their respective owners. This repository catalogs them with attribution.

@@ -40,6 +40,7 @@ def build_site(repo: RepoData) -> Path:
         encoding="utf-8",
     )
     (site / "index.html").write_text(_HTML, encoding="utf-8")
+    (site / ".nojekyll").write_text("", encoding="utf-8")
     return site
 
 
@@ -47,7 +48,7 @@ def check_site(repo: RepoData) -> str | None:
     site = repo.root / SITE_DIR
     index = site / "index.html"
     data = site / "data.json"
-    if not index.exists() or not data.exists():
+    if not index.exists() or not data.exists() or not (site / ".nojekyll").exists():
         return "site/ missing: run 'python -m archive generate'"
     expected = json.dumps(
         _payload(repo),
@@ -243,7 +244,7 @@ function render() {
     let meta = '';
     if (p.event) {
       const bits = [p.event.name, p.event.organizer, p.event.year].filter(Boolean);
-      meta = bits.map(esc).join(' — ');
+      meta = bits.map(esc).join(' - ');
     }
 
     const official = p.links && p.links.official

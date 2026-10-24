@@ -17,4 +17,4 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-SkyHack 2023's first-place drone used autonomous search and reporting to help find people in rubble—an example of a university hackathon aimed squarely at life-safety robotics.
+SkyHack 2023's first-place drone used autonomous search and reporting to help find people in rubble - an example of a university hackathon aimed squarely at life-safety robotics.

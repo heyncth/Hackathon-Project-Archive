@@ -17,4 +17,4 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Junction 2025's scale—300 teams, 1,500 hackers—makes a top-5 finish a strong signal. DroneStalker tracked and predicted drone paths with live computer vision in one weekend.
+Junction 2025's scale - 300 teams, 1,500 hackers - makes a top-5 finish a strong signal. DroneStalker tracked and predicted drone paths with live computer vision in one weekend.

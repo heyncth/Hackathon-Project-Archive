@@ -1,12 +1,12 @@
 # Contributing
 
-This archive is curated. Entries are added on request and only after human review — there is no automated ingestion or scheduled discovery.
+This archive is curated. Entries are added on request and only after human review - there is no automated ingestion or scheduled discovery.
 
 ## What belongs here
 
 A project qualifies if it:
 
-- Is a notable, wild, or surprising idea with a documented origin story — preferably a hackathon, game jam, hack week, internal build sprint, Startup Weekend, or comparable rapid-build event, but strong non-event origin stories are also eligible.
+- Is a notable, wild, or surprising idea with a documented origin story - preferably a hackathon, game jam, hack week, internal build sprint, Startup Weekend, or comparable rapid-build event, but strong non-event origin stories are also eligible.
 - Has lasting technical, educational, practical, social, or cautionary value. Winners and non-winners both qualify; spectacular failures with clear evidence qualify as cautionary tales.
 - Has credible public evidence establishing its identity and (when claimed) its connection to the event. A public source repository is welcome but not required.
 
@@ -16,7 +16,7 @@ It does not qualify if the only evidence is a single low-quality mention, a repo
 
 ## Evidence rules
 
-- Every factual claim — event participation, year, award, authors — needs at least one evidence URL in the `evidence` field.
+- Every factual claim - event participation, year, award, authors - needs at least one evidence URL in the `evidence` field.
 - Prefer primary sources: official event pages, Devpost, organizer announcements, original project pages or repos, reputable press.
 - Never invent awards, dates, authors, technical details, or URLs. If a detail is unknown, omit the field. Omission means "unverified", not "none".
 - Do not infer an event year from a repository creation date.
@@ -24,7 +24,7 @@ It does not qualify if the only evidence is a single low-quality mention, a repo
 
 ## Adding a project
 
-1. Create `data/projects/<id>.md` — `<id>` is kebab-case and must match the `id` field (e.g. `superhot-prototype.md`).
+1. Create `data/projects/<id>.md` - `<id>` is kebab-case and must match the `id` field (e.g. `superhot-prototype.md`).
 2. Fill the YAML frontmatter:
 
 ```yaml
@@ -38,7 +38,7 @@ event:                    # optional; omit for non-event origin stories
   name: Some Hackathon    # required if `event` is present
   organizer: Org Name     # optional
   year: 2019              # optional, 1900-2100
-  award: Winner           # optional — only if evidence-backed
+  award: Winner           # optional - only if evidence-backed
 links:                    # optional
   official: https://...
   source: https://...
@@ -58,7 +58,7 @@ verified_at: 2026-01-01   # optional, last time you checked the evidence
 
 ## Choosing a domain and tags
 
-- `domain` is the single primary category — pick from `data/taxonomy.json`. If nothing fits, use `other`; propose a taxonomy change in your PR description rather than inventing a domain.
+- `domain` is the single primary category - pick from `data/taxonomy.json`. If nothing fits, use `other`; propose a taxonomy change in your PR description rather than inventing a domain.
 - `tags` describe technologies, use cases, or themes (e.g. `game-jam`, `open-source`). Lowercase kebab-case, max 8.
 
 ## Running the tools
@@ -66,13 +66,13 @@ verified_at: 2026-01-01   # optional, last time you checked the evidence
 ```bash
 pip install -r requirements-dev.txt
 python -m archive validate   # must pass
-python -m archive generate   # regenerate the README index
-python -m archive check      # CI runs this; fails if index is stale
+python -m archive generate   # build site + update README stats
+python -m archive check      # CI runs this; fails if README or site is stale
 python -m pytest             # test suite (offline)
 python scripts/linkcheck.py  # optional, online; never run as a gate
 ```
 
-Link checking is best-effort. A timeout or 5xx does not mean a resource is gone — do not delete or "fix" records based on a single failed request.
+Link checking is best-effort. A timeout or 5xx does not mean a resource is gone - do not delete or "fix" records based on a single failed request.
 
 ## Updating existing entries
 
@@ -80,4 +80,4 @@ Edit the existing `.md` file in place. Keep the same `id`. Add evidence for any 
 
 ## Review
 
-Maintainers review additions for evidence quality, domain fit, and duplicates before they become part of the archive. Pull requests are welcome; maintainers may also add entries directly — either way, validation and human review come first.
+Maintainers review additions for evidence quality, domain fit, and duplicates before they become part of the archive. Pull requests are welcome; maintainers may also add entries directly - either way, validation and human review come first.

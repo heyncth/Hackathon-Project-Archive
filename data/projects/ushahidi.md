@@ -26,4 +26,4 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Built in a few days by an ad hoc group of technologists — a crisis-response rapid build rather than a formally organized hackathon.
+Built in a few days by an ad hoc group of technologists - a crisis-response rapid build rather than a formally organized hackathon.
