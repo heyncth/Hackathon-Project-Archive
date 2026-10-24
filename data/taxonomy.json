@@ -1,0 +1,22 @@
+{
+  "domains": [
+    { "id": "accessibility", "name": "Accessibility" },
+    { "id": "ai-ml", "name": "AI & Machine Learning" },
+    { "id": "civic-tech", "name": "Civic Tech" },
+    { "id": "climate", "name": "Climate & Environment" },
+    { "id": "developer-tools", "name": "Developer Tools" },
+    { "id": "education", "name": "Education" },
+    { "id": "fintech", "name": "Fintech" },
+    { "id": "games", "name": "Games" },
+    { "id": "hardware", "name": "Hardware" },
+    { "id": "healthcare", "name": "Healthcare" },
+    { "id": "media-arts", "name": "Media & Arts" },
+    { "id": "robotics", "name": "Robotics" },
+    { "id": "science", "name": "Science" },
+    { "id": "social", "name": "Social Impact" },
+    { "id": "web-mobile", "name": "Web & Mobile" },
+    { "id": "other", "name": "Other" }
+  ],
+  "tag_pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+  "max_tags_per_project": 8
+}
