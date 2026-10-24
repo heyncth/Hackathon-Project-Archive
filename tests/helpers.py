@@ -51,8 +51,8 @@ README_TEMPLATE = textwrap.dedent(
 
     Intro text.
 
-    <!-- BEGIN GENERATED PROJECT INDEX -->
-    <!-- END GENERATED PROJECT INDEX -->
+    <!-- BEGIN GENERATED STATS -->
+    <!-- END GENERATED STATS -->
 
     Outro text.
     """

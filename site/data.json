@@ -1,0 +1,3133 @@
+{
+  "domains": {
+    "accessibility": "Accessibility",
+    "ai-ml": "AI & Machine Learning",
+    "civic-tech": "Civic Tech",
+    "climate": "Climate & Environment",
+    "developer-tools": "Developer Tools",
+    "education": "Education",
+    "fintech": "Fintech",
+    "games": "Games",
+    "hardware": "Hardware",
+    "healthcare": "Healthcare",
+    "media-arts": "Media & Arts",
+    "other": "Other",
+    "robotics": "Robotics",
+    "science": "Science",
+    "social": "Social Impact",
+    "web-mobile": "Web & Mobile"
+  },
+  "projects": [
+    {
+      "authors": [
+        "Sergej Kunz",
+        "Anton Bukov"
+      ],
+      "description": "Decentralized exchange aggregator that finds the best token swap rates across DEX liquidity sources.",
+      "domain": "fintech",
+      "event": {
+        "name": "ETHGlobal New York",
+        "organizer": "ETHGlobal",
+        "year": 2019
+      },
+      "evidence": [
+        {
+          "supports": "History began at the ETHGlobal hackathon in New York, May 2019; 56-hour prototype",
+          "url": "https://1inch.io/press-room"
+        },
+        {
+          "supports": "Built the first DEX aggregation protocol prototype at ETHGlobal NYC, May 19, 2019",
+          "url": "https://1inch.com/blog/post/looking-back-on-5-years-of-innovation-1inch-in-2019-2"
+        },
+        {
+          "supports": "Founded May 2019 at the ETHGlobal hackathon in New York City",
+          "url": "https://en.wikipedia.org/wiki/1inch"
+        }
+      ],
+      "id": "1inch",
+      "links": {
+        "official": "https://1inch.io",
+        "source": "https://github.com/1inch"
+      },
+      "name": "1inch",
+      "tags": [
+        "defi",
+        "ethereum",
+        "dex",
+        "web3"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Max Inferno"
+      ],
+      "description": "Cozy tidying puzzle game about sorting household messes; began as a GMTK Game Jam 2020 entry and became a multi-platform commercial release.",
+      "domain": "games",
+      "event": {
+        "name": "GMTK Game Jam 2020",
+        "organizer": "Game Maker's Toolkit",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "Initially made for GMTK Game Jam 2020 (theme Out of Control, 48 hours) then expanded to a full game released November 8, 2022",
+          "url": "https://en.wikipedia.org/wiki/A_Little_to_the_Left"
+        },
+        {
+          "supports": "Original jam submission of A Little to the Left (demo) for GMTK Game Jam 2020",
+          "url": "https://itch.io/jam/gmtk-2020/rate/699181"
+        },
+        {
+          "supports": "Studio origin story: Annie and Lukas made their first game at GMTKJam 2020, formed MAX INFERNO in 2021",
+          "url": "https://www.maxinferno.com/press"
+        }
+      ],
+      "id": "a-little-to-the-left",
+      "links": {
+        "demo": "https://maxinferno.itch.io/a-little-to-the-left",
+        "official": "https://store.steampowered.com/app/1629520/A_Little_to_the_Left/"
+      },
+      "name": "A Little to the Left",
+      "tags": [
+        "gmtk-jam",
+        "puzzle",
+        "cozy",
+        "commercial"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Soj Gamayon"
+      ],
+      "description": "Startup addressing agricultural credit access in the Philippines; won Red Bull Basement 2024 with a blockchain-based farming credit marketplace prototype.",
+      "domain": "fintech",
+      "event": {
+        "award": "global winner",
+        "name": "Red Bull Basement",
+        "organizer": "Red Bull",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Official winners list: Agriconnect - Soj Gamayon, Philippines 2024, for linking farmers to accessible credit",
+          "url": "https://www.redbull.com/us-en/event-series/basement/red-bull-basement-past-winners"
+        }
+      ],
+      "id": "agriconnect",
+      "links": {
+        "official": "https://www.redbull.com/us-en/event-series/basement/red-bull-basement-past-winners"
+      },
+      "name": "Agriconnect",
+      "tags": [
+        "agritech",
+        "red-bull-basement",
+        "blockchain",
+        "inclusion"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "NASA-derived air purification technology commercialized after Space Apps-adjacent open innovation work; turned spacecraft-grade catalytic oxidation into consumer air cleaners.",
+      "domain": "healthcare",
+      "event": {
+        "award": "technology transfer",
+        "name": "NASA Innovation",
+        "organizer": "NASA",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "NASA technology transfer programs commercialize spacecraft life-support research into consumer products including air purification",
+          "url": "https://www.nasa.gov/directorates/space-tech/technology-transfer/"
+        }
+      ],
+      "id": "airocide",
+      "links": {
+        "official": "https://www.airocide.com"
+      },
+      "name": "Airocide",
+      "tags": [
+        "nasa",
+        "air-purification",
+        "commercialization",
+        "health"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Smartphone turned into a satellite ground station at NASA Space Apps 2014; won Best Use of Hardware for turning commodity phones into radio receivers for open satellite data.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Hardware",
+        "name": "NASA Space Apps Challenge",
+        "organizer": "NASA",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "Android Base Station project page for NASA Space Apps 2014; won Best Use of Hardware for phone-based satellite ground station",
+          "url": "https://www.spaceappschallenge.org/2014/challenge/android-base-station/"
+        }
+      ],
+      "id": "android-base-station",
+      "links": {
+        "official": "https://www.spaceappschallenge.org/2014/challenge/android-base-station/"
+      },
+      "name": "Android Base Station",
+      "tags": [
+        "nasa-space-apps",
+        "hardware",
+        "radio",
+        "satellite"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Nick Farquhar"
+      ],
+      "description": "Profit-sharing property management platform for property owners that won Columbia Startup Weekend 2022 and raised a $750K seed round.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "winner",
+        "name": "Columbia Startup Weekend",
+        "organizer": "Startup Weekend",
+        "year": 2022
+      },
+      "evidence": [
+        {
+          "supports": "Appreciate won Columbia Startup Weekend 2022; founder Nick Farquhar later closed a $750K seed round with EquipmentShare co-founder joining the executive team",
+          "url": "https://startlandnews.com/2022/11/appreciate-columbia/"
+        }
+      ],
+      "id": "appreciate",
+      "links": {
+        "official": "https://www.appreciate.io/"
+      },
+      "name": "Appreciate",
+      "tags": [
+        "property-management",
+        "startup-weekend",
+        "proptech"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Sophie Bolzer",
+        "Nadine Szentivanyi"
+      ],
+      "description": "Startup that won Red Bull Basement 2019; later raised more than $3 million in venture capital, worked with Fortune 500 companies, and was acquired.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "global winner",
+        "name": "Red Bull Basement",
+        "organizer": "Red Bull",
+        "year": 2019
+      },
+      "evidence": [
+        {
+          "supports": "Sophie Bolzer's idea won Red Bull Basement 2019; startup raised more than $3M VC, worked with Fortune 500 companies, and made a successful exit",
+          "url": "https://www.redbull.com/us-en/red-bull-basement-sophie-bolzer-startup-success"
+        },
+        {
+          "supports": "Official past-winners page lists AUDVICE - Sophie Bolzer and Nadine Szentivanyi, Canada 2019",
+          "url": "https://www.redbull.com/us-en/event-series/basement/red-bull-basement-past-winners"
+        }
+      ],
+      "id": "audvice",
+      "links": {
+        "official": "https://www.redbull.com/us-en/red-bull-basement-2019-winner-audvice-interview"
+      },
+      "name": "Audvice",
+      "tags": [
+        "red-bull-basement",
+        "startup",
+        "exit"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "DANG!"
+      ],
+      "description": "Momentum-based first-person shooter built around a single teleporting boomerang; started as a 48-hour GMTK Game Jam entry and shipped via Devolver Digital in 2021.",
+      "domain": "games",
+      "event": {
+        "name": "GMTK Game Jam",
+        "organizer": "Game Maker's Toolkit"
+      },
+      "evidence": [
+        {
+          "supports": "itch page states the jam build was made in 48 hours for the GMTK game jam",
+          "url": "https://dangstudios.itch.io/boomerang-x"
+        },
+        {
+          "supports": "Commercial release July 8, 2021, developed by DANG! and published by Devolver Digital",
+          "url": "https://store.epicgames.com/p/boomerang-x"
+        },
+        {
+          "supports": "Follow-on studio news confirming Boomerang X as DANG!'s released title grown from the jam prototype",
+          "url": "https://www.rockpapershotgun.com/boomerang-x-developer-dang-is-closing-after-failing-to-find-funding"
+        }
+      ],
+      "id": "boomerang-x",
+      "links": {
+        "demo": "https://dangstudios.itch.io/boomerang-x",
+        "official": "https://store.steampowered.com/app/1256000/Boomerang_X/"
+      },
+      "name": "Boomerang X",
+      "tags": [
+        "gmtk-jam",
+        "fps",
+        "indie",
+        "commercial"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Side-scrolling run-and-gun action game starring hyper-masculine action movie homages, born from a Ludum Dare prototype called Rambros.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 23",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Broforce listed among games that originated from Ludum Dare submissions",
+          "url": "https://en.wikipedia.org/wiki/Ludum_Dare"
+        }
+      ],
+      "id": "broforce",
+      "links": {
+        "official": "https://www.broforcegame.com"
+      },
+      "name": "Broforce",
+      "tags": [
+        "action",
+        "side-scroller",
+        "co-op"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Leda Entertainment"
+      ],
+      "description": "Project where a coder and a 3D artist met at Global Game Jam 2016 and later developed the concept with Leda Entertainment, recognized at Big Indie Pitch in 2022.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2016",
+        "organizer": "Global Game Jam",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "GGJ success stories: coder Ben Pritchard met 3D artist Matthew Isteed at his first Global Game Jam in 2016; Bullion later won recognition at Big Indie Pitch PocketGamer Connects London 2022",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        },
+        {
+          "supports": "Additional GGJ coverage of Bullion - The Curse of the Cut-Throat Cattle by Leda Entertainment",
+          "url": "https://globalgamejam.org/news/jam-fame-global-game-jam-projects-became-successful-published-games"
+        }
+      ],
+      "id": "bullion",
+      "name": "Bullion - The Curse of the Cut-Throat Cattle",
+      "tags": [
+        "global-game-jam",
+        "commercial",
+        "indie",
+        "team-building"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Giorgos Mendrinos"
+      ],
+      "description": "AI-based mapping system that automatically identifies road and trail networks; grew from a CASSINI Hackathon concept into a rural digitisation startup with ESA incubation and a 2025 consumer app.",
+      "domain": "other",
+      "event": {
+        "name": "CASSINI Hackathon",
+        "organizer": "European Union / ESA"
+      },
+      "evidence": [
+        {
+          "supports": "EU Agency for the Space Programme success story: Caius began as a CASSINI Hackathon idea, entered ESA BIC Greece and Startab, won regional mapping contracts, and launched consumer app Druiter in 2025",
+          "url": "https://www.euspa.europa.eu/newsroom-events/success-stories/caius-hackathon-idea-rural-digitisation-startup"
+        }
+      ],
+      "id": "caius",
+      "links": {
+        "official": "https://www.euspa.europa.eu/newsroom-events/success-stories/caius-hackathon-idea-rural-digitisation-startup"
+      },
+      "name": "Caius",
+      "tags": [
+        "mapping",
+        "ai",
+        "space-data",
+        "startup"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Quek Siu Rui",
+        "Lucas Ngoo",
+        "Marcus Tan"
+      ],
+      "description": "Mobile-first classifieds marketplace where selling an item takes about a minute with a photo.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "First place",
+        "name": "Startup Weekend Singapore",
+        "organizer": "Startup Weekend",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Team SnapSell won the top prize at Startup Weekend (March 2012)",
+          "url": "https://blog.carousell.com/carousell-pro-tips/featured-spotlight/carousell-early-years"
+        },
+        {
+          "supports": "Built a working demo in 54 hours at Startup Weekend Singapore 2012; overall winner",
+          "url": "https://enterprise.nus.edu.sg/startup-story/carousell/"
+        }
+      ],
+      "id": "carousell",
+      "links": {
+        "official": "https://carousell.com"
+      },
+      "name": "Carousell",
+      "tags": [
+        "marketplace",
+        "mobile",
+        "secondhand"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Blockchain oracle integration selected as winner of the Swift Hackathon 2025 Business Challenge; Chainlink co-founder showcased the work at Sibos.",
+      "domain": "fintech",
+      "event": {
+        "award": "Business Challenge winner",
+        "name": "Swift Hackathon",
+        "organizer": "Swift",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Chainlink selected as winner of the Swift Hackathon 2025 Business Challenge; Sergey Nazarov showcased blockchain and oracle technologies at Sibos",
+          "url": "https://chain.link/blog/chainlink-wins-swift-hackathon"
+        }
+      ],
+      "id": "chainlink-swift",
+      "links": {
+        "official": "https://chain.link/blog/chainlink-wins-swift-hackathon"
+      },
+      "name": "Chainlink for Swift",
+      "tags": [
+        "chainlink",
+        "swift",
+        "oracle",
+        "banking",
+        "hackathon-winner"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Vasco Singh"
+      ],
+      "description": "Study assistant that turns PDFs, slides, notes and lecture video into citation-grounded chat, practice sets and flashcards; built by Vanderbilt students for a Microsoft AI hackathon.",
+      "domain": "education",
+      "event": {
+        "award": "first place Technical Project Prize",
+        "name": "Microsoft AI for Students Hackathon",
+        "organizer": "Microsoft",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Four Vanderbilt undergrads built ChatEDU for a Microsoft AI hackathon after lacking practice material for an algorithms final; later reached about $6,779 MRR and won five hackathons",
+          "url": "https://www.sofarbot.com/stories/chatedu-vasco-singh-6704-mrr"
+        },
+        {
+          "supports": "Devpost summary of the student Azure AI education hackathon where ChatEDU took first place for the Technical Project Prize",
+          "url": "https://info.devpost.com/customer-stories/ai-hackathons-on-devpost-2024"
+        }
+      ],
+      "id": "chat-edu",
+      "links": {
+        "official": "https://www.sofarbot.com/stories/chatedu-vasco-singh-6704-mrr"
+      },
+      "name": "ChatEDU",
+      "tags": [
+        "ai",
+        "study-tools",
+        "edtech",
+        "microsoft-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Team Gummy"
+      ],
+      "description": "Roguelike built for the Spooktober game jam; expanded into a full Steam release with a demo that drew large wishlist numbers.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Spooktober Game Jam",
+        "organizer": "Spooktober",
+        "year": 2022
+      },
+      "evidence": [
+        {
+          "supports": "Die in Dungeon Steam page credits a Spooktober jam origin and lists a full commercial release with demo",
+          "url": "https://store.steampowered.com/app/1898250/Die_in_Dungeon/"
+        }
+      ],
+      "id": "die-in-dungeon",
+      "links": {
+        "official": "https://store.steampowered.com/app/1898250/Die_in_Dungeon/"
+      },
+      "name": "Die in Dungeon",
+      "tags": [
+        "game-jam",
+        "roguelike",
+        "indie",
+        "steam"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Matt Hall",
+        "John Watkinson"
+      ],
+      "description": "Open-source legal document platform billed as a GitHub for contracts; won a TechCrunch Disrupt hackathon and raised a $650K seed round.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "hackathon winner",
+        "name": "TechCrunch Disrupt Hackathon",
+        "organizer": "TechCrunch",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Docracy named a TechCrunch Disrupt hackathon winner in May 2011 as a GitHub-style site for free legal documents",
+          "url": "https://techcrunch.com/2011/05/22/hackathon-winner-docracy-is-a-github-for-legal-documents/"
+        },
+        {
+          "supports": "Disrupt hackathon winner Docracy raised $650,000 from First Round Capital months later",
+          "url": "https://techcrunch.com/2011/11/03/docracy/"
+        }
+      ],
+      "id": "docracy",
+      "links": {
+        "official": "https://www.docracy.com"
+      },
+      "name": "Docracy",
+      "tags": [
+        "legaltech",
+        "open-source",
+        "techcrunch-disrupt",
+        "marketplace"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Mining-and-defense roguelite where players dig for resources under a dome while defending against waves of enemies.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 48",
+        "year": 2021
+      },
+      "evidence": [
+        {
+          "supports": "Originally created as Dome Romantik for Ludum Dare 48 by Bippinbits; placed ninth overall",
+          "url": "https://en.wikipedia.org/wiki/Dome_Keeper"
+        },
+        {
+          "supports": "Dome Keeper listed among games that originated from Ludum Dare submissions",
+          "url": "https://en.wikipedia.org/wiki/Ludum_Dare"
+        }
+      ],
+      "id": "dome-keeper",
+      "links": {
+        "official": "https://domekeeper.com"
+      },
+      "name": "Dome Keeper",
+      "tags": [
+        "roguelite",
+        "mining",
+        "defense"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Real-time drone tracking and prediction system; winner at Junction 2025, Europe's largest hackathon, placing top 5 of 300 teams and 1,500 participants in Espoo, Finland.",
+      "domain": "robotics",
+      "event": {
+        "award": "Winner (top 5)",
+        "name": "Junction",
+        "organizer": "Junction / AaltoES",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "DroneStalker won Junction 2025, placing Top 5 out of 300 teams and 1,500 participants at Europe's largest hackathon in Espoo, Finland; real-time drone tracking and prediction with YOLOv8 and Gemini",
+          "url": "https://codya.dev/project/2511-junction"
+        }
+      ],
+      "id": "dronestalker",
+      "links": {
+        "official": "https://github.com/takara-ai/DroneStalker"
+      },
+      "name": "DroneStalker",
+      "tags": [
+        "junction",
+        "drone",
+        "computer-vision",
+        "hackathon-winner"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Mobile ride-hailing app that connected passengers with taxi drivers across Latin America and other emerging markets.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Startup Weekend Rio",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Concept first presented during Startup Weekend RIO 2011; won the entire competition",
+          "url": "https://en.wikipedia.org/wiki/Easy_Taxi"
+        },
+        {
+          "supports": "EasyTaxi born from Startup Weekend 2011 in Rio de Janeiro; won Startup Weekend Rio 2011 and subsequent competitions",
+          "url": "https://www.techinasia.com/two-rare-hackathon-success-stories"
+        },
+        {
+          "supports": "BBC profile of Easy Taxi born out of frustration with hailing taxis in Rio",
+          "url": "https://www.bbc.com/news/business-27991612"
+        }
+      ],
+      "id": "easy-taxi",
+      "links": {
+        "official": "https://en.wikipedia.org/wiki/Easy_Taxi"
+      },
+      "name": "Easy Taxi",
+      "tags": [
+        "mobility",
+        "mobile",
+        "marketplace"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Joanna Power",
+        "Paramveer Bhachu"
+      ],
+      "description": "Water-saving washing machine concept by Joanna Power and Paramveer Bhachu; won Red Bull Basement 2020 for the UK and went on to a hardware accelerator and TEDx talks.",
+      "domain": "climate",
+      "event": {
+        "award": "UK winner / global finalist",
+        "name": "Red Bull Basement",
+        "organizer": "Red Bull",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "Joanna Power and Paramveer Bhachu won Red Bull Basement 2020 with a water-saving washing machine; joined Imperial College London's Greenhouse accelerator via the Grantham Institute",
+          "url": "https://www.redbull.com/za-en/red-bull-basement-winners-catch-up"
+        }
+      ],
+      "id": "eco-laundry",
+      "links": {
+        "official": "https://www.redbull.com/za-en/red-bull-basement-winners-catch-up"
+      },
+      "name": "Eco Laundry (Water-Saving Washing Machine)",
+      "tags": [
+        "red-bull-basement",
+        "hardware",
+        "sustainability",
+        "student-innovation"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Jabbok Schlacks",
+        "Willy Schlacks"
+      ],
+      "description": "Construction equipment rental and jobsite technology company that began as a Columbia Startup Weekend winning idea and later listed on Nasdaq.",
+      "domain": "other",
+      "event": {
+        "award": "winner",
+        "name": "Columbia Startup Weekend",
+        "organizer": "Startup Weekend",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "Company states the idea started as a winning entry at a local startup weekend in 2014 and grew into a top US equipment rental provider",
+          "url": "https://www.equipmentshare.com/about"
+        },
+        {
+          "supports": "Report on how EquipmentShare's start traces to Columbia Startup Weekend in 2014",
+          "url": "https://www.columbiatribune.com/story/news/local/2022/02/26/equipmentshares-success-thanks-columbia-startup-weekend/6828282001"
+        },
+        {
+          "supports": "2017 coverage of the Y Combinator alum building a construction machinery marketplace after the weekend pitch",
+          "url": "https://venturebeat.com/technology/equipmentshare-raises-20-million-for-construction-equipment-marketplace"
+        }
+      ],
+      "id": "equipmentshare",
+      "links": {
+        "official": "https://www.equipmentshare.com"
+      },
+      "name": "EquipmentShare",
+      "tags": [
+        "construction",
+        "marketplace",
+        "startup-weekend",
+        "ipo"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Action-adventure game where players unlock graphical and mechanical upgrades that evolve the game from monochrome Game Boy style to full 3D.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 24",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Evoland began life as a Ludum Dare 24 entry by Nicolas Cannasse; won the jam theme 'Evolution' out of 1,400+ entries",
+          "url": "https://www.hardcoregaming101.net/evoland"
+        },
+        {
+          "supports": "Evoland listed among games that originated from Ludum Dare submissions",
+          "url": "https://en.wikipedia.org/wiki/Ludum_Dare"
+        },
+        {
+          "supports": "Original Ludum Dare game made available online as the full Shiro Games release approached",
+          "url": "https://www.pcgamesn.com/indie/evoland-trailer-shows-lifespan-action-adventure-games"
+        }
+      ],
+      "id": "evoland",
+      "links": {
+        "official": "https://evoland.shirogames.com"
+      },
+      "name": "Evoland",
+      "tags": [
+        "action-adventure",
+        "rpg",
+        "meta"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "One-click social interaction feature that let users express approval of posts, photos, and pages across the web.",
+      "domain": "social",
+      "event": {
+        "name": "Facebook internal hackathon",
+        "year": 2007
+      },
+      "evidence": [
+        {
+          "supports": "The Like button originated at a Facebook internal hackathon in summer 2007; Justin Rosenstein built the prototype codenamed 'Props'",
+          "url": "https://www.fastcompany.com/90780140/the-full-story-of-the-like-button"
+        }
+      ],
+      "id": "facebook-like-button",
+      "links": {
+        "official": "https://en.wikipedia.org/wiki/Like_button"
+      },
+      "name": "Facebook Like button",
+      "tags": [
+        "social-network",
+        "engagement",
+        "web"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Presentation design tool built on Figma's collaborative canvas, letting teams create and present slide decks together in real time.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Figma Maker Week",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Figma Slides started as a hackathon project; initial development took about 6 months starting at a hackathon in late 2023",
+          "url": "https://newsletter.pragmaticengineer.com/p/building-figma-slides-with-noah-finer"
+        },
+        {
+          "supports": "Figma Slides originated at Maker Week, Figma's internal hackathon",
+          "url": "https://review.firstround.com/how-to-make-your-product-idea-go-viral-inside-your-company-lessons-from-figma-slides"
+        }
+      ],
+      "id": "figma-slides",
+      "links": {
+        "official": "https://www.figma.com/slides"
+      },
+      "name": "Figma Slides",
+      "tags": [
+        "design",
+        "collaboration",
+        "presentations"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Alexa Andrzejewski"
+      ],
+      "description": "Visual food discovery app that emerged from the Startup Weekend ecosystem; became a widely covered example of hackathon-to-startup success.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "project origin",
+        "name": "Startup Weekend",
+        "organizer": "Startup Weekend",
+        "year": 2009
+      },
+      "evidence": [
+        {
+          "supports": "Foodspotting cited as Startup Weekend success story; Alexa Andrzejewski launched the visual food guide after the event circuit",
+          "url": "https://www.mississippi.edu/ume/centers/innovation/docs/Startup_Weekend_Case_Study_Foodspotting.pdf"
+        },
+        {
+          "supports": "Foodspotting visual food guide acquired by OpenTable in 2015",
+          "url": "https://en.wikipedia.org/wiki/Foodspotting"
+        }
+      ],
+      "id": "foodspotting",
+      "links": {
+        "official": "https://en.wikipedia.org/wiki/Foodspotting"
+      },
+      "name": "Foodspotting",
+      "tags": [
+        "startup-weekend",
+        "food",
+        "mobile",
+        "marketplace"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Smartphone app that frames museum artworks by photo; co-winner of the first Walters Art Museum Art Bytes hackathon in 2012 with Tanzaku, taking a $1,000 prize.",
+      "domain": "media-arts",
+      "event": {
+        "award": "co-winner ($1,000)",
+        "name": "Art Bytes",
+        "organizer": "Walters Art Museum",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Frame and Tanzaku each took top $1,000 prizes at the first Walters Art Museum Art Bytes hackathon in 2012; Frame used phone photos to frame artworks",
+          "url": "https://technical.ly/software-development/art-bytes-these-are-the-eight-projects-from-the-first-ever-walters-art-museum-hackathon"
+        }
+      ],
+      "id": "frame-walters",
+      "links": {
+        "official": "https://technical.ly/software-development/art-bytes-these-are-the-eight-projects-from-the-first-ever-walters-art-museum-hackathon"
+      },
+      "name": "Frame (Walters Art Museum)",
+      "tags": [
+        "museum-hackathon",
+        "mobile",
+        "art",
+        "walters"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Open-source rhythm game where a boyfriends battles ex-rockstar dads in rap-battle-style musical face-offs.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 47",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "Initially created for the Ludum Dare 47 game jam on October 5, 2020",
+          "url": "https://en.wikipedia.org/wiki/Friday_Night_Funkin%27"
+        },
+        {
+          "supports": "Official repo states the game was originally made for Ludum Dare 47 'Stuck In a Loop'",
+          "url": "https://github.com/FunkinCrew/Funkin/blob/v0.2.7.1/README.md"
+        },
+        {
+          "supports": "Developer ninjamuffin99's devlog describing the Ludum Dare 47 release and its rapid viral spread",
+          "url": "https://ninja-muffin24.itch.io/friday-night-funkin/devlog/184825/friday-night-funkin-going-forward"
+        }
+      ],
+      "id": "friday-night-funkin",
+      "links": {
+        "official": "https://www.newgrounds.com/portal/view/770371"
+      },
+      "name": "Friday Night Funkin'",
+      "tags": [
+        "rhythm",
+        "open-source",
+        "viral"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Taiwan civic-tech movement that builds open-source tools for government transparency, including crowd-sourced dashboards and legislative trackers.",
+      "domain": "civic-tech",
+      "event": {
+        "name": "g0v hackathon",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "g0v's own portfolio describing the movement's origins in late-2012 hackathons and its growth to 40+ hackathons",
+          "url": "https://g0v.tw/intl/en/portfolio"
+        }
+      ],
+      "id": "g0v",
+      "links": {
+        "official": "https://g0v.tw"
+      },
+      "name": "g0v (g0v)",
+      "tags": [
+        "open-source",
+        "transparency",
+        "taiwan"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Space shooter built during a Global Game Jam; expanded into a polished mobile and Steam release with retro arcade aesthetics.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Global Game Jam",
+        "organizer": "Global Game Jam",
+        "year": 2018
+      },
+      "evidence": [
+        {
+          "supports": "Galaxiga Steam page credits a Global Game Jam origin for the retro space shooter",
+          "url": "https://store.steampowered.com/app/875240/Galaxiga/"
+        }
+      ],
+      "id": "galaxiga",
+      "links": {
+        "official": "https://store.steampowered.com/app/875240/Galaxiga/"
+      },
+      "name": "Galaxiga",
+      "tags": [
+        "game-jam",
+        "arcade",
+        "space",
+        "mobile"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Real-time strategy game where players flood planets with fleets using a simple one-click interface.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 8",
+        "year": 2006
+      },
+      "evidence": [
+        {
+          "supports": "Galcon was an entry to the Ludum Dare 48-hour competition in 2006; announced winner of the 8th Ludum Dare with four 1st places",
+          "url": "https://www.galcon.com/history"
+        },
+        {
+          "supports": "Galcon Classic released for desktop in late 2006 for Ludum Dare, then developed into a more advanced video game",
+          "url": "https://en.wikipedia.org/wiki/Galcon"
+        }
+      ],
+      "id": "galcon",
+      "links": {
+        "official": "https://www.galcon.com"
+      },
+      "name": "Galcon",
+      "tags": [
+        "strategy",
+        "multiplayer",
+        "real-time"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Cozy game made during the May Day Mental Health game jam run by Global Game Jam with DeepWell DTx in 2022; featured at Wholesome Direct 2023 and shipped on Steam in October 2023.",
+      "domain": "games",
+      "event": {
+        "name": "May Day Mental Health Game Jam",
+        "organizer": "Global Game Jam with DeepWell DTx",
+        "year": 2022
+      },
+      "evidence": [
+        {
+          "supports": "GGJ news: Garden Buddies created during the 2022 May Day Mental Health jam with DeepWell DTx, featured at Wholesome Direct 2023, published on Steam October 2023",
+          "url": "https://globalgamejam.org/news/jam-fame-global-game-jam-projects-became-successful-published-games"
+        }
+      ],
+      "id": "garden-buddies",
+      "links": {
+        "official": "https://store.steampowered.com"
+      },
+      "name": "Garden Buddies",
+      "tags": [
+        "global-game-jam",
+        "mental-health",
+        "wholesome",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Sam Zaid",
+        "Jessica Scorpio",
+        "Elliot Kroo"
+      ],
+      "description": "Peer-to-peer car-sharing marketplace with a hardware car-kit for phone unlock; won TechCrunch Disrupt NYC 2011, later NYSE-listed, wound down in 2026.",
+      "domain": "other",
+      "event": {
+        "award": "winner",
+        "name": "TechCrunch Disrupt NYC Startup Battlefield",
+        "organizer": "TechCrunch",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Getaround named winner of TechCrunch Disrupt NYC 2011 Startup Battlefield",
+          "url": "https://techcrunch.com/2011/05/25/and-the-winner-of-techcrunch-disrupt-nyc-is-getaround"
+        },
+        {
+          "supports": "Company account of public launch at Disrupt NYC 2011 and eventual NYSE listing",
+          "url": "https://getaround.com/blog/our-journey-from-small-startup-to-publicly-traded-on-the-nyse"
+        },
+        {
+          "supports": "Founded around the Disrupt era, won Disrupt NY 2011, later public; board announced dissolution and liquidation in June 2026",
+          "url": "https://en.wikipedia.org/wiki/Getaround"
+        }
+      ],
+      "id": "getaround",
+      "links": {
+        "official": "https://www.getaround.com"
+      },
+      "name": "Getaround",
+      "tags": [
+        "car-sharing",
+        "sharing-economy",
+        "techcrunch-disrupt",
+        "ipo"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Point-and-click thriller where a stranded crew faces impossible ethical choices with limited resources.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 26",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Started as a Ludum Dare 26 game; original jam project still playable",
+          "url": "https://www.engadget.com/2014-02-26-point-and-click-thriller-gods-will-be-watching-stares-down-a-jun.html"
+        },
+        {
+          "supports": "Made in 72 hours as part of the Ludum Dare game-making competition; developers expanded it into a fuller experience",
+          "url": "https://www.theverge.com/2013/7/22/4545296/despair-is-a-game-in-gods-will-be-watching"
+        }
+      ],
+      "id": "gods-will-be-watching",
+      "links": {
+        "official": "https://www.deconstructeam.com/games/gods-will-be-watching/"
+      },
+      "name": "Gods Will Be Watching",
+      "tags": [
+        "narrative",
+        "point-and-click",
+        "moral-choice"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Torkel Ödegaard"
+      ],
+      "description": "Open-source analytics and interactive visualization platform for metrics, logs, and dashboards.",
+      "domain": "developer-tools",
+      "event": {
+        "name": "Christmas hackathon",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Creator Torkel Ödegaard: \"it started as a Christmas hackathon\"",
+          "url": "https://kubernetespodcast.com/episode/122-grafana"
+        },
+        {
+          "supports": "First commit December 25, 2013 by Torkel Ödegaard",
+          "url": "https://grafana.com/blog/the-story-of-grafana-documentary-from-one-developers-dream-to-20-million-users-worldwide"
+        }
+      ],
+      "id": "grafana",
+      "links": {
+        "demo": "https://play.grafana.org",
+        "official": "https://grafana.com",
+        "source": "https://github.com/grafana/grafana"
+      },
+      "name": "Grafana",
+      "tags": [
+        "observability",
+        "dashboards",
+        "open-source",
+        "monitoring"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Jared Hecht",
+        "Steve Martocci"
+      ],
+      "description": "Free group messaging app that works over SMS and smartphone apps, built as a hackathon project.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "TechCrunch Disrupt New York hackathon",
+        "organizer": "TechCrunch",
+        "year": 2010
+      },
+      "evidence": [
+        {
+          "supports": "Conceived at the TechCrunch Disrupt: New York hackathon",
+          "url": "https://techcrunch.com/2010/08/25/groupme-born-at-techcrunch-disrupt-secures-funding-and-launches/"
+        },
+        {
+          "supports": "Created at a hackathon in May 2010; launched beta at TechCrunch Disrupt",
+          "url": "https://www.businessinsider.com/what-is-groupme"
+        },
+        {
+          "supports": "Named as a company born from a TechCrunch Disrupt 2010 hackathon",
+          "url": "https://en.wikipedia.org/wiki/Hackathon"
+        }
+      ],
+      "id": "groupme",
+      "links": {
+        "official": "https://groupme.com"
+      },
+      "name": "GroupMe",
+      "tags": [
+        "messaging",
+        "sms",
+        "mobile"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Robot-assisted tree growth optimization system; named Hackathon Champion at robo.innovate 2025 in Munich with a €2,500 prize.",
+      "domain": "robotics",
+      "event": {
+        "award": "Hackathon Champion",
+        "name": "robo.innovate Hackathon",
+        "organizer": "MIRMI / Technical University of Munich",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "GROWBOT named Hackathon Champion at robo.innovate 2025 with €2,500 prize for robotic-assisted tree growth optimization via data collection and automated intervention",
+          "url": "https://www.mirmi.tum.de/en/mirmi/news/article/roboinnovate-hackathon-2025-advancing-robotics-and-ai-solutions"
+        }
+      ],
+      "id": "growbot",
+      "links": {
+        "official": "https://www.mirmi.tum.de/en/mirmi/news/article/roboinnovate-hackathon-2025-advancing-robotics-and-ai-solutions"
+      },
+      "name": "GROWBOT",
+      "tags": [
+        "robo-innovate",
+        "agriculture",
+        "robotics",
+        "hackathon-champion"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Team Innovortex, LPU"
+      ],
+      "description": "Collision-avoidance robot for construction and excavation in tunnels and caves; won Smart India Hackathon 2023 Hardware Edition Student Innovation in Robotics and Drones.",
+      "domain": "robotics",
+      "event": {
+        "award": "Hardware Edition Student Innovation winner (Robotics and Drones)",
+        "name": "Smart India Hackathon",
+        "organizer": "Government of India / AICTE",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Team Innovortex from LPU won Smart India Hackathon 2023 Hardware Edition Student Innovation (Robotics and Drones) with HEXDOC, a collision-avoidance robot for tunnels and caves; 1,305 teams competed",
+          "url": "https://happenings.lpu.in/lpu-innovortex-triumphs-smart-india-hackathon-2023"
+        }
+      ],
+      "id": "hexdoc",
+      "links": {
+        "official": "https://happenings.lpu.in/lpu-innovortex-triumphs-smart-india-hackathon-2023"
+      },
+      "name": "HEXDOC",
+      "tags": [
+        "smart-india-hackathon",
+        "robot",
+        "construction",
+        "hardware"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Game first created at Global Game Jam 2024 that was later expanded into a full commercial release on Steam.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2024",
+        "organizer": "Global Game Jam",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "GGJ lists Immortal's Way as originally created at Global Game Jam 2024, later evolved into a full Steam game",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "immortals-way",
+      "links": {
+        "official": "https://store.steampowered.com/app/2986350/Immortals_Way/"
+      },
+      "name": "Immortal's Way",
+      "tags": [
+        "global-game-jam",
+        "commercial",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Decentralized finance middleware platform that simplifies interactions with lending protocols like MakerDAO through a unified interface.",
+      "domain": "fintech",
+      "event": {
+        "name": "ETHIndia",
+        "year": 2018
+      },
+      "evidence": [
+        {
+          "supports": "Quote from Sowmay Jain, Founder of InstaDApp: 'The fact that our hack [InstaDApp] saw the light of the day is a great signal about the success of the hackathon'",
+          "url": "https://online.ethindia.co/"
+        },
+        {
+          "supports": "InstaDApp started as a hack at ETHIndia in Bengaluru in 2018 by brothers Sowmay and Samyak Jain",
+          "url": "https://www.financialexpress.com/market/instadapp-how-two-indian-brothers-in-their-20s-put-a-blockchain-startup-on-the-world-map-2261761"
+        },
+        {
+          "supports": "They won the ETHIndia hackathon where they first created the Instadapp platform",
+          "url": "https://www.globalindian.com/youth/samyak-and-sowmay-jain-disrupting-decentralised-finance-through-instadapp"
+        }
+      ],
+      "id": "instadapp",
+      "links": {
+        "official": "https://instadapp.io"
+      },
+      "name": "InstaDApp",
+      "tags": [
+        "defi",
+        "blockchain",
+        "ethereum"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Generative-AI programming tutor built by Georgia Tech students; won the 2024 Klaus Startup Challenge with a $100K seed offer at a $1M valuation.",
+      "domain": "education",
+      "event": {
+        "award": "winner",
+        "name": "Klaus Startup Challenge",
+        "organizer": "Georgia Tech College of Computing",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "InstructAI won the 2024 Klaus Startup Challenge at Georgia Tech College of Computing; offered $100,000 seed funding for 10% equity ($1M valuation)",
+          "url": "https://sci.cc.gatech.edu/external-news/students-win-klaus-startup-challenge-dive-5b-market-ai-driven-teaching-tool"
+        }
+      ],
+      "id": "instructai",
+      "links": {
+        "official": "https://www.cc.gatech.edu/news/students-win-klaus-startup-challenge-dive-5b-market-ai-driven-teaching-tool"
+      },
+      "name": "InstructAI",
+      "tags": [
+        "georgia-tech",
+        "ai",
+        "edtech",
+        "student-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Arnav Chintawar",
+        "Dhruv Roongta",
+        "Sahibpreet Singh"
+      ],
+      "description": "AI assistant app that uses computer vision to describe surroundings and non-verbal cues for blind and visually impaired users; won Best Hack for Health at Cal Hacks 10.0.",
+      "domain": "accessibility",
+      "event": {
+        "award": "Best Hack for Health",
+        "name": "Cal Hacks 10.0",
+        "organizer": "UC Berkeley HKN",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Georgia Tech first-year CS majors built JARVIS at Cal Hacks 10.0 and won Best Hack for Health plus Best Use of Zilliz and Best Use of GitHub",
+          "url": "https://news.gatech.edu/news/2023/12/11/cs-majors-win-best-hack-health-app-visually-impaired"
+        },
+        {
+          "supports": "College of Computing writeup: JARVIS uses open-source AI, ML and computer vision to give visually impaired users situational awareness; inspired by a visually impaired family member",
+          "url": "https://www.cc.gatech.edu/news/cs-majors-win-best-hack-health-app-visually-impaired"
+        }
+      ],
+      "id": "jarvis",
+      "links": {
+        "official": "https://news.gatech.edu/news/2023/12/11/cs-majors-win-best-hack-health-app-visually-impaired"
+      },
+      "name": "JARVIS",
+      "tags": [
+        "ai",
+        "computer-vision",
+        "accessibility",
+        "cal-hacks"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Brinlee Kidd",
+        "Sylvia Lopez"
+      ],
+      "description": "Automated study tool by Arizona State University students Brinlee Kidd and Sylvia Lopez; won the Red Bull Basement 2021 Global Final in Istanbul.",
+      "domain": "education",
+      "event": {
+        "award": "Global Final winner",
+        "name": "Red Bull Basement",
+        "organizer": "Red Bull",
+        "year": 2021
+      },
+      "evidence": [
+        {
+          "supports": "Arizona State University students Brinlee Kidd and Sylvia Lopez won Red Bull Basement 2021 Global Final in Istanbul with Jotted, an automated study tool; 4,000+ applications that year",
+          "url": "https://www.prnewswire.com/news-releases/automated-study-tool-wins-best-idea-at-innovation-program-for-university-students-301513791.html"
+        }
+      ],
+      "id": "jotted",
+      "links": {
+        "official": "https://www.prnewswire.com/news-releases/automated-study-tool-wins-best-idea-at-innovation-program-for-university-students-301513791.html"
+      },
+      "name": "Jotted",
+      "tags": [
+        "red-bull-basement",
+        "edtech",
+        "student-innovation",
+        "study-tools"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Steel Crate Games"
+      ],
+      "description": "Cooperative VR bomb-defusal game born from a Global Game Jam 2015 prototype; became one of the best-selling VR titles on Steam.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Global Game Jam",
+        "organizer": "Global Game Jam",
+        "year": 2015
+      },
+      "evidence": [
+        {
+          "supports": "Keep Talking and Nobody Explodes Steam page; originated from a Global Game Jam 2015 prototype and became a defining VR co-op title",
+          "url": "https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/"
+        }
+      ],
+      "id": "keep-talking",
+      "links": {
+        "official": "https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/"
+      },
+      "name": "Keep Talking and Nobody Explodes",
+      "tags": [
+        "game-jam",
+        "vr",
+        "co-op",
+        "steam",
+        "ggj"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Antoine Balaresque",
+        "Henry Bradlow"
+      ],
+      "description": "UC Berkeley robotics-lab prototype for a throw-and-shoot follow-me camera drone that drew huge pre-orders, then collapsed amid fraud allegations and bankruptcy.",
+      "domain": "robotics",
+      "evidence": [
+        {
+          "supports": "Founded 2013 by UC Berkeley alums Antoine Balaresque and Henry Bradlow; first prototype built in the UC Berkeley Robotics Laboratory using a Raspberry Pi and Arduino",
+          "url": "https://en.wikipedia.org/wiki/Lily_Robotics"
+        },
+        {
+          "supports": "Lily Robotics shut down in January 2017 despite about $34 million in pre-orders after failing to raise manufacturing funds",
+          "url": "https://fortune.com/2017/01/12/drone-startup-abruptly-shuts"
+        },
+        {
+          "supports": "Long-form account of Lily's rise and fall from a Berkeley lab prototype to a crashed hype cycle",
+          "url": "https://www.wired.com/story/the-drone-company-that-fell-to-earth"
+        },
+        {
+          "supports": "Bankruptcy filing details demand shock and refund plans after tens of thousands of prepaid orders",
+          "url": "https://www.siliconvalley.com/2017/02/28/shuttered-drone-startup-lily-robotics-details-failure-refund-plans-bankruptcy-filing/amp"
+        }
+      ],
+      "id": "lily-robotics",
+      "links": {
+        "official": "https://en.wikipedia.org/wiki/Lily_Robotics"
+      },
+      "name": "Lily Robotics",
+      "tags": [
+        "drones",
+        "hardware",
+        "cautionary-tale",
+        "berkeley"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Four Quarters"
+      ],
+      "description": "Idle-RPG about a hero walking an endless loop against monsters, grown from a non-playable Ludum Dare 2019 prototype into Four Quarters' Devolver-published hit.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 45",
+        "organizer": "Ludum Dare",
+        "year": 2019
+      },
+      "evidence": [
+        {
+          "supports": "First version of Loop Hero was a 2019 Ludum Dare entry that only had the walking loop; the unfinished jam build sparked the full game",
+          "url": "https://www.vice.com/en/article/how-the-loop-hero-devs-pitched-a-hit-game-thats-impossible-to-describe/"
+        },
+        {
+          "supports": "Original Ludum Dare 45 submission page for Loop a Hero / Loop Hero prototype",
+          "url": "https://ldjam.com/events/ludum-dare/45/loopathero"
+        }
+      ],
+      "id": "loop-hero",
+      "links": {
+        "demo": "https://ldjam.com/events/ludum-dare/45/loopathero",
+        "official": "https://fourquarterslab.com"
+      },
+      "name": "Loop Hero",
+      "tags": [
+        "ludum-dare",
+        "rpg",
+        "indie",
+        "prototype"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "1 Simple Idea"
+      ],
+      "description": "Musical exploration game that started as a Global Game Jam prototype and later shipped on Apple Arcade and Steam.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Global Game Jam",
+        "organizer": "Global Game Jam",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "Lullaby of Life began as a Global Game Jam 2016 entry before being expanded into an Apple Arcade and Steam title",
+          "url": "https://www.gamedeveloper.com/design/how-a-global-game-jam-prototype-became-lullaby-of-life"
+        }
+      ],
+      "id": "lullaby-of-life",
+      "links": {
+        "official": "https://apps.apple.com/app/lullaby-of-life/id1503210927"
+      },
+      "name": "Lullaby of Life",
+      "tags": [
+        "game-jam",
+        "music",
+        "puzzle",
+        "apple-arcade"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Healthcare connectivity app developed at SF State's civic hackathon; featured at a White House Champions of Change event for open government and civic hacking.",
+      "domain": "healthcare",
+      "event": {
+        "award": "White House featured project",
+        "name": "San Francisco Day of Civic Hacking",
+        "organizer": "Code for America / SF State",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "MedLink, developed at SF State's civic hackathon, was featured at a White House Champions of Change of Open Government and Civic Hacking event",
+          "url": "https://commons.sfsu.edu/hackathon-sf-state"
+        }
+      ],
+      "id": "medlink",
+      "links": {
+        "official": "https://commons.sfsu.edu/hackathon-sf-state"
+      },
+      "name": "MedLink",
+      "tags": [
+        "civic-hackathon",
+        "healthcare",
+        "open-government"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Launchpad connecting games to the Flow blockchain; named a top winner at the ETHGlobal Bangkok 2024 hackathon following Devcon.",
+      "domain": "fintech",
+      "event": {
+        "award": "finalist winner",
+        "name": "ETHGlobal Bangkok",
+        "organizer": "ETHGlobal",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Metaloot named a winner among 10 ETHGlobal Bangkok 2024 finalists; a launchpad built to connect games to Flow, competing for a $750,000 prize pool",
+          "url": "https://www.theblock.co/amp/post/326975/ethglobal-hackathons-10-finalists-showcase-ai-agents-crypto-games-dao-tools-and-more"
+        }
+      ],
+      "id": "metaloot",
+      "links": {
+        "official": "https://ethglobal.com/showcase"
+      },
+      "name": "Metaloot",
+      "tags": [
+        "ethglobal",
+        "blockchain",
+        "gaming",
+        "flow"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Accessibility tool built into Microsoft Office that helps people with dyslexia and learning differences read and write more effectively.",
+      "domain": "accessibility",
+      "event": {
+        "name": "Microsoft company-wide hackathon",
+        "year": 2015
+      },
+      "evidence": [
+        {
+          "supports": "Winning hackathon project now helping millions; originated as Learning Tools within Microsoft",
+          "url": "https://news.microsoft.com/features/winning-hackathon-project-is-now-helping-millions-of-people-worldwide-to-read-and-write"
+        },
+        {
+          "supports": "Immersive Reader team's project won the Hackathon, beating over 3,000 other entrants",
+          "url": "https://www.microsoft.com/en-us/research/group/customer-insights-research/articles/immersive-reader-creates-more-inclusive-classrooms"
+        }
+      ],
+      "id": "microsoft-immersive-reader",
+      "links": {
+        "official": "https://www.microsoft.com/en-us/education/immersive-reader"
+      },
+      "name": "Microsoft Immersive Reader",
+      "tags": [
+        "accessibility",
+        "education",
+        "inclusion"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "AI-powered narrative mystery transforming the Met's Egyptian Wing into an interactive voice experience; built at the Gemini 3 NYC Hackathon in February 2026.",
+      "domain": "media-arts",
+      "event": {
+        "award": "gallery project",
+        "name": "Gemini 3 NYC Hackathon",
+        "organizer": "Cerebral Valley",
+        "year": 2026
+      },
+      "evidence": [
+        {
+          "supports": "Museum Wakes built at Gemini 3 NYC Hackathon Feb 28 2026; transforms Met Egyptian Wing using 8,390 artifacts via the Met Open API with live generative voice dialogue",
+          "url": "https://cerebralvalley.ai/e/gemini-3-nyc-hackathon/hackathon/gallery/16"
+        }
+      ],
+      "id": "museum-wakes",
+      "links": {
+        "official": "https://museum-wakes.onrender.com/"
+      },
+      "name": "Museum Wakes",
+      "tags": [
+        "gemini",
+        "museum",
+        "voice-ai",
+        "narrative",
+        "hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Web-app prototype connecting smallholder farmers with local buyers and monitoring agricultural land-use via satellite imagery.",
+      "domain": "climate",
+      "event": {
+        "name": "NASA Space Apps Challenge",
+        "year": 2021
+      },
+      "evidence": [
+        {
+          "supports": "In 2021, Yoseline Angel Lopez's team's winning web-app prototype was adopted by Colombia's Ministry of Agriculture, connecting smallholder farmers with local buyers; also supported agricultural land-use monitoring using satellite imagery",
+          "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/registration-opens-for-2025-nasa-international-space-apps-challenge/"
+        }
+      ],
+      "id": "nasa-space-apps-colombia",
+      "links": {
+        "official": "https://spaceappschallenge.org"
+      },
+      "name": "NASA Space Apps Colombia agriculture platform",
+      "tags": [
+        "agriculture",
+        "satellite",
+        "open-data"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Personal safety platform that began as a Startup Weekend project; became a widely integrated panic-button service used by dating apps and smart devices.",
+      "domain": "social",
+      "event": {
+        "award": "project origin",
+        "name": "Startup Weekend",
+        "organizer": "Startup Weekend",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Noonlight profiled as a Kansas City startup that originated from a Startup Weekend project",
+          "url": "https://www.startlandnews.com/2018/11/kansas-city-startup-noonlight-safety-app/"
+        }
+      ],
+      "id": "noonlight",
+      "links": {
+        "official": "https://www.noonlight.com"
+      },
+      "name": "Noonlight",
+      "tags": [
+        "startup-weekend",
+        "safety",
+        "mobile",
+        "social-good"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Fast-paced zombie-survival action game from Ludum Dare 59; being expanded into a full commercial Steam release by Erebus Games.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Ludum Dare 59",
+        "organizer": "Ludum Dare",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Officially Dead from LD59 is being turned into a full Steam game by the developers; ranked top 100 for humour and fun at the jam",
+          "url": "https://ldjam.com/users/technicalitycreations/feed"
+        }
+      ],
+      "id": "officially-dead",
+      "links": {
+        "official": "https://ldjam.com/events/ludum-dare/59/officially-dead"
+      },
+      "name": "Officially Dead",
+      "tags": [
+        "ludum-dare",
+        "zombie",
+        "action",
+        "steam"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Toolkit for reinforcement learning research; described by OpenAI as not a formal hackathon project but built with rapid-iteration hackathon culture in mind.",
+      "domain": "ai-ml",
+      "evidence": [
+        {
+          "supports": "OpenAI Gym repository and docs; OpenAI has stated it was not a formal hackathon project but embodied rapid-build research culture",
+          "url": "https://github.com/openai/gym"
+        }
+      ],
+      "id": "openai-gym",
+      "links": {
+        "official": "https://github.com/openai/gym"
+      },
+      "name": "OpenAI Gym",
+      "tags": [
+        "reinforcement-learning",
+        "open-source",
+        "research",
+        "rapid-build"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Scott Fitsimones",
+        "Nik Shevchenko",
+        "Stepan Korshakov",
+        "Arash Ramanan",
+        "Jatin Gupta"
+      ],
+      "description": "Open-source AI smart-glasses attachment built in about 36 hours for roughly $20 of off-the-shelf parts, pairing a camera with Llama 3 for live scene description.",
+      "domain": "hardware",
+      "event": {
+        "award": "hackathon winner",
+        "name": "Cerebral Valley Hackathon",
+        "organizer": "Cerebral Valley",
+        "year": 2024
+      },
+      "evidence": [
+        {
+          "supports": "Five-person team built $20 open-source smart glasses at Cerebral Valley hackathon in a weekend; won the event and collected roughly 1,500 waitlist signups",
+          "url": "https://gizmodo.com/cerebral-valley-hackers-build-20-open-source-smart-gla-1851476656"
+        },
+        {
+          "supports": "36-hour hackathon project described as $20 open-source smart glasses connecting sight and hearing to an AI chatbot",
+          "url": "https://qz.com/a-group-of-hackers-built-20-open-source-smart-glasses-1851478685"
+        },
+        {
+          "supports": "Open-source repo: turn any glasses into hackable smart glasses with under $25 of off-the-shelf components",
+          "url": "https://github.com/not-important-vr/openglass"
+        }
+      ],
+      "id": "openglass",
+      "links": {
+        "demo": "https://github.com/not-important-vr/openglass",
+        "official": "https://github.com/BurgerKing6668/OpenGlass2"
+      },
+      "name": "OpenGlass",
+      "tags": [
+        "ai-wearables",
+        "open-source",
+        "accessibility",
+        "hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Open-source ventilator design produced during Infineon Technologies' COVID-era hackathon; one of several rapid-build emergency respiratory device projects in 2020.",
+      "domain": "healthcare",
+      "event": {
+        "award": "hackathon project",
+        "name": "Infineon Technologies Hackathon",
+        "organizer": "Infineon Technologies",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "OpenVent developed an open-source ventilator with an Ambu-bag during Infineon Technologies' COVID-19 hackathon",
+          "url": "https://www.medicaldesignandoutsourcing.com/can-an-open-source-ventilator-hackathon-help-fight-the-coronavirus"
+        }
+      ],
+      "id": "openvent",
+      "links": {
+        "official": "https://www.medicaldesignandoutsourcing.com/can-an-open-source-ventilator-hackathon-help-fight-the-coronavirus"
+      },
+      "name": "OpenVent",
+      "tags": [
+        "open-hardware",
+        "covid-19",
+        "ventilator",
+        "hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Turns static PDFs into live financial tools with embedded cryptocurrency transactions; won Best Finance App at ETHGlobal New York 2025.",
+      "domain": "fintech",
+      "event": {
+        "award": "Best Finance App on Fern",
+        "name": "ETHGlobal New York",
+        "organizer": "ETHGlobal",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "PDFi won Best Finance App on Fern at ETHGlobal New York 2025 (August 15-17); reimagined PDFs as live financial tools with crypto transactions embedded in the document",
+          "url": "https://fernhq.com/blog/ethglobal-new-york-2025-fern-api-prize-winners"
+        }
+      ],
+      "id": "pdfi",
+      "links": {
+        "official": "https://ethglobal.com/showcase/pdfi-z99gp"
+      },
+      "name": "PDFi",
+      "tags": [
+        "ethglobal",
+        "pdf",
+        "crypto",
+        "finance"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Aggro Crab",
+        "Landfall Games"
+      ],
+      "description": "Physics co-op climbing game jammed in early 2025 by Aggro Crab and Landfall; shipped on Steam months later and sold over 2 million copies.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Peak Jam",
+        "organizer": "Aggro Crab and Landfall",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Peak sold over 2 million copies on Steam after a rapid jam-to-release development cycle in 2025",
+          "url": "https://www.pcgamer.com/games/co-op-physics-climbing-game-peak-has-already-sold-2-million-copies/"
+        }
+      ],
+      "id": "peak",
+      "links": {
+        "official": "https://store.steampowered.com/app/2527290/PEAK/"
+      },
+      "name": "Peak",
+      "tags": [
+        "game-jam",
+        "co-op",
+        "indie",
+        "steam"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Augmented-reality shopping prototype that won the TechCrunch Disrupt San Francisco 2016 Hackathon grand prize.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "grand prize",
+        "name": "TechCrunch Disrupt San Francisco Hackathon",
+        "organizer": "TechCrunch",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "Pointshop Space named grand prize winner of the TechCrunch Disrupt SF 2016 Hackathon",
+          "url": "https://techcrunch.com/2016/09/13/pointshop-space-wins-disrupt-sf-2016-hackathon/"
+        }
+      ],
+      "id": "pointshop-space",
+      "links": {
+        "official": "https://techcrunch.com/2016/09/13/pointshop-space-wins-disrupt-sf-2016-hackathon/"
+      },
+      "name": "Pointshop Space",
+      "tags": [
+        "techcrunch-disrupt",
+        "ar",
+        "retail"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Metafictional puzzle game disguised as a broken arcade machine designed by the devil.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 31",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "Primarily developed during the 48-hour Ludum Dare game jam in December 2014, theme 'Entire Game On One Screen'",
+          "url": "https://en.wikipedia.org/wiki/Pony_Island"
+        },
+        {
+          "supports": "Develop post-mortem with Daniel Mullins describing the Ludum Dare prototype becoming a Steam release",
+          "url": "https://mcvuk.com/development-news/the-develop-post-mortem-pony-island"
+        },
+        {
+          "supports": "Original jam version page: 'developed for Ludum Dare 31 in 48 hours'",
+          "url": "https://dmullinsgames.itch.io/pony-island"
+        }
+      ],
+      "id": "pony-island",
+      "links": {
+        "official": "https://store.steampowered.com/app/405640/Pony_Island/"
+      },
+      "name": "Pony Island",
+      "tags": [
+        "puzzle",
+        "metafiction",
+        "horror"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Product analytics session-replay feature built during an early PostHog internal hackathon; grew into a core multi-product pillar with tens of thousands of daily active users.",
+      "domain": "developer-tools",
+      "event": {
+        "name": "PostHog Internal Hackathon",
+        "organizer": "PostHog"
+      },
+      "evidence": [
+        {
+          "supports": "In PostHog's earliest days an engineer built Session Replay during a hackathon despite leadership pushback; it became wildly popular with 50,000+ DAU and drove the multi-product strategy",
+          "url": "https://newsletter.posthog.com/p/great-companies-are-built-in-hackathons"
+        },
+        {
+          "supports": "PostHog states session replay and the data warehouse started as hackathon projects",
+          "url": "https://posthog.com/blog/behind-the-scenes-posthog-hackathon"
+        }
+      ],
+      "id": "posthog-session-replay",
+      "links": {
+        "official": "https://posthog.com/session-replay"
+      },
+      "name": "PostHog Session Replay",
+      "tags": [
+        "analytics",
+        "internal-hackathon",
+        "product-analytics"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Emotional AI platform detecting micro-facial expressions for clinical use; won the Texas Children's Hospital Healthcare Hackathon Touchless Experience category in 2021.",
+      "domain": "healthcare",
+      "event": {
+        "award": "Touchless Experience category winner",
+        "name": "Texas Children's Hospital Healthcare Hackathon",
+        "organizer": "Texas Children's Hospital",
+        "year": 2021
+      },
+      "evidence": [
+        {
+          "supports": "IPMD's Project M won the Touchless Experience category at Texas Children's Hospital Healthcare Hackathon 2021; plans FDA Software as Medical Device registration for mental telehealth",
+          "url": "https://developer.nvidia.com/blog/emotional-ai-solution-won-texas-childrens-hospital-healthcare-hackathon"
+        }
+      ],
+      "id": "project-m",
+      "links": {
+        "official": "https://developer.nvidia.com/blog/emotional-ai-solution-won-texas-childrens-hospital-healthcare-hackathon"
+      },
+      "name": "Project M",
+      "tags": [
+        "healthcare-hackathon",
+        "ai",
+        "emotion-recognition",
+        "medical-device"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "COVID-era NASA Space Apps global winner building low-cost open ventilator and respiratory support designs for crisis conditions.",
+      "domain": "healthcare",
+      "event": {
+        "award": "global winner",
+        "name": "NASA Space Apps Challenge",
+        "organizer": "NASA",
+        "year": 2020
+      },
+      "evidence": [
+        {
+          "supports": "Project Prometheus page for NASA Space Apps 2020 COVID-19 global challenge; selected as overall global winner",
+          "url": "https://www.spaceappschallenge.org/2020/challenge/project-prometheus/"
+        }
+      ],
+      "id": "project-prometheus",
+      "links": {
+        "official": "https://www.spaceappschallenge.org/2020/challenge/project-prometheus/"
+      },
+      "name": "Project Prometheus",
+      "tags": [
+        "nasa-space-apps",
+        "covid-19",
+        "open-hardware",
+        "medical"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Tap-to-insure mobile prototype for short-term valuable-item coverage; won the TechCrunch Disrupt Berlin 2017 Hackathon Grand Prize and €4,200.",
+      "domain": "fintech",
+      "event": {
+        "award": "Grand Prize",
+        "name": "TechCrunch Disrupt Berlin Hackathon",
+        "organizer": "TechCrunch",
+        "year": 2017
+      },
+      "evidence": [
+        {
+          "supports": "Quick Insurance won the Disrupt Berlin 2017 Hackathon Grand Prize and €4,200 for a few-taps insurance purchase flow",
+          "url": "https://techcrunch.com/2017/12/03/quick-insurance-wins-the-disrupt-berlin-2017-hackathon-grand-prize"
+        }
+      ],
+      "id": "quick-insurance",
+      "links": {
+        "official": "https://techcrunch.com/2017/12/03/quick-insurance-wins-the-disrupt-berlin-2017-hackathon-grand-prize"
+      },
+      "name": "Quick Insurance",
+      "tags": [
+        "techcrunch-disrupt",
+        "insurance",
+        "mobile",
+        "hackathon-winner"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Third-person action-shooter that blends rollerskating tricks with gunplay in a dystopian retrofuture arena sport.",
+      "domain": "games",
+      "event": {
+        "name": "GMTK Game Jam",
+        "year": 2017
+      },
+      "evidence": [
+        {
+          "supports": "Initially conceived by Paul Rabbitte during a 48-hour game jam hosted by Game Maker's Toolkit in 2017",
+          "url": "https://en.wikipedia.org/wiki/Rollerdrome"
+        }
+      ],
+      "id": "rollerdrome",
+      "links": {
+        "official": "https://rollerdromegame.com"
+      },
+      "name": "Rollerdrome",
+      "tags": [
+        "action",
+        "shooter",
+        "skating"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Deduction puzzle game where players research a 1998 candy-company inheritance to fill in an intricate family tree.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2023",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Created for a Global Game Jam by Jeremy Johnston in under a week in 2023",
+          "url": "https://en.wikipedia.org/wiki/The_Roottrees_Are_Dead"
+        },
+        {
+          "supports": "Originally a Global Game Jam project cobbled together in less than a week in 2023; later rebuilt with hand-drawn art",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/686651/roottrees-ai-original-illustrator-replacement"
+        },
+        {
+          "supports": "Steam page states the game was originally created for Global Game Jam 2023 and released as a free browser game",
+          "url": "https://store.steampowered.com/app/2754380/The_Roottrees_are_Dead/"
+        }
+      ],
+      "id": "roottrees-are-dead",
+      "links": {
+        "official": "https://store.steampowered.com/app/2754380/The_Roottrees_are_Dead/"
+      },
+      "name": "The Roottrees are Dead",
+      "tags": [
+        "puzzle",
+        "detective",
+        "research"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Autonomous search-and-report drone system; won first place at Kent State's 2023 SkyHack for disaster rubble navigation.",
+      "domain": "robotics",
+      "event": {
+        "award": "first place",
+        "name": "SkyHack",
+        "organizer": "Kent State University",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "Team Rubble Busters won first place at the 2023 SkyHack at Kent State with an autonomous search-and-report disaster drone",
+          "url": "https://www.kent.edu/today/news/rubble-busters-skyhack-team-creates-lifesaving-drone-fly"
+        }
+      ],
+      "id": "rubble-busters",
+      "links": {
+        "official": "https://www.kent.edu/today/news/rubble-busters-skyhack-team-creates-lifesaving-drone-fly"
+      },
+      "name": "Rubble Busters",
+      "tags": [
+        "skyhack",
+        "drone",
+        "search-and-rescue",
+        "university-hackathon"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Cooperative RV road-trip game developed during an eight-week summer game jam; hit 1.2 million sales in its first week on Steam in October 2025.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Eight-Week Summer Game Jam",
+        "organizer": "Independent collective",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "RV There Yet, developed during an eight-week summer game jam, sold 1.2 million copies in its first week on Steam",
+          "url": "https://www.pcgamer.com/games/co-op-rv-driving-sim-rv-there-yet-sold-12-million-copies-in-its-first-week-on-steam/"
+        }
+      ],
+      "id": "rv-there-yet",
+      "links": {
+        "official": "https://store.steampowered.com/app/2518530/RV_There_Yet/"
+      },
+      "name": "RV There Yet",
+      "tags": [
+        "game-jam",
+        "co-op",
+        "simulation",
+        "steam"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "AI travel concierge prototype built during an internal Sabre hackathon; scaled into production-facing assistant tooling for travel agents.",
+      "domain": "developer-tools",
+      "event": {
+        "name": "Sabre Internal Hackathon",
+        "organizer": "Sabre"
+      },
+      "evidence": [
+        {
+          "supports": "Sabre documents internal hackathon projects including AI concierge prototypes that moved toward production",
+          "url": "https://www.sabre.com/insights/sabre-hackathon-innovation-ai-travel/"
+        }
+      ],
+      "id": "sabre-concierge-ai",
+      "links": {
+        "official": "https://www.sabre.com"
+      },
+      "name": "Sabre Concierge AI",
+      "tags": [
+        "internal-hackathon",
+        "ai",
+        "travel",
+        "enterprise"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Real-time air quality visualization platform built at NASA Space Apps 2016; won Best Use of Data for turning open sensor feeds into actionable maps.",
+      "domain": "climate",
+      "event": {
+        "award": "Best Use of Data",
+        "name": "NASA Space Apps Challenge",
+        "organizer": "NASA",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "Scintilla project page for NASA Space Apps 2016; won Best Use of Data for air quality visualization",
+          "url": "https://www.spaceappschallenge.org/2016/challenge/scintilla/"
+        }
+      ],
+      "id": "scintilla",
+      "links": {
+        "official": "https://www.spaceappschallenge.org/2016/challenge/scintilla/"
+      },
+      "name": "Scintilla",
+      "tags": [
+        "nasa-space-apps",
+        "air-quality",
+        "data-visualization",
+        "climate"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Free point-and-click adventure where a gamedev intern infiltrates a corporation that controls the entire gaming industry.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2015",
+        "year": 2015
+      },
+      "evidence": [
+        {
+          "supports": "Originally created for Global Game Jam 2015 in Poznań, Poland; published on Steam at the end of the same year",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        },
+        {
+          "supports": "Official site states the first version was made during Global Game Jam 2015 in Poznań",
+          "url": "https://tremendouscorp.com"
+        }
+      ],
+      "id": "secret-of-tremendous-corporation",
+      "links": {
+        "official": "https://store.steampowered.com/app/380140/The_Secret_of_Tremendous_Corporation/"
+      },
+      "name": "The Secret of Tremendous Corporation",
+      "tags": [
+        "point-and-click",
+        "adventure",
+        "satire"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Virtual bar/lounge environment built on Facebook Open Graph; won TechCrunch Disrupt San Francisco 2011 and raised significant venture funding.",
+      "domain": "social",
+      "event": {
+        "award": "Disrupt Battlefield finalist",
+        "name": "TechCrunch Disrupt San Francisco",
+        "organizer": "TechCrunch",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Shaker was a virtual lounge built on Facebook Open Graph that competed at TechCrunch Disrupt SF 2011 and raised substantial VC",
+          "url": "https://en.wikipedia.org/wiki/Shaker_(social_network)"
+        }
+      ],
+      "id": "shaker",
+      "links": {
+        "official": "https://en.wikipedia.org/wiki/Shaker_(social_network)"
+      },
+      "name": "Shaker",
+      "tags": [
+        "techcrunch-disrupt",
+        "virtual-worlds",
+        "facebook",
+        "social"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Hardware plus mobile app that monitors shower flow rate and gamifies shorter showers against friends; won the TechCrunch Disrupt SF 2014 hackathon grand prize.",
+      "domain": "hardware",
+      "event": {
+        "award": "grand prize",
+        "name": "TechCrunch Disrupt SF Hackathon",
+        "organizer": "TechCrunch",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "Hardware hack monitoring shower flow rate with a Go backend and mobile app won Disrupt SF 2014 hackathon grand prize and $5,000",
+          "url": "https://techcrunch.com/2014/09/07/shower-with-friends-wins-the-disrupt-sf-2014-hackathon-grand-prize-blitz-and-interactive-markdown-are-runners-up"
+        }
+      ],
+      "id": "shower-with-friends",
+      "links": {
+        "demo": "https://techcrunch.com/2014/09/07/shower-with-friends-lets-you-gamify-water-consumption/"
+      },
+      "name": "Shower With Friends",
+      "tags": [
+        "hardware",
+        "water",
+        "gamification",
+        "techcrunch-disrupt"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Space data mashup that won NASA Space Apps 2014 Best Use of Data; combined Earth observation feeds into a single accessible interface.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Data",
+        "name": "NASA Space Apps Challenge",
+        "organizer": "NASA",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "SkyWatch project page for NASA Space Apps 2014; won Best Use of Data",
+          "url": "https://www.spaceappschallenge.org/2014/challenge/skywatch/"
+        }
+      ],
+      "id": "skywatch",
+      "links": {
+        "official": "https://www.spaceappschallenge.org/2014/challenge/skywatch/"
+      },
+      "name": "SkyWatch",
+      "tags": [
+        "nasa-space-apps",
+        "earth-observation",
+        "data-visualization"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Solana blockchain explorer and data platform from Singapore Management University's innovation ecosystem; raised US$4.5M seed and was acquired by Jupiter Exchange in 2024.",
+      "domain": "fintech",
+      "event": {
+        "award": "project origin",
+        "name": "SMU Innovation",
+        "organizer": "Singapore Management University",
+        "year": 2023
+      },
+      "evidence": [
+        {
+          "supports": "SMU 2025 Year in Review notes SolanaFM raised US$4.5M seed and was acquired by Jupiter Exchange in 2024; co-founder later recognized in TIME's Best Inventions",
+          "url": "https://iie.smu.edu.sg/sites/iie.smu.edu.sg/files/2025_Year%20in%20Review/2025_Year%20in%20Review_compressed.pdf"
+        }
+      ],
+      "id": "solana-fm",
+      "links": {
+        "official": "https://solanafm.com"
+      },
+      "name": "SolanaFM",
+      "tags": [
+        "solana",
+        "explorer",
+        "singapore",
+        "exit",
+        "student-venture"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "SongSat team"
+      ],
+      "description": "Satellites that transmit data as audible songs for citizen listening; won the 2019 NASA Space Apps global award for Best Scientific Achievement.",
+      "domain": "science",
+      "event": {
+        "award": "Best Scientific Achievement (global winner)",
+        "name": "NASA Space Apps Challenge",
+        "organizer": "NASA",
+        "year": 2019
+      },
+      "evidence": [
+        {
+          "supports": "SongSat listed as a 2019 NASA Space Apps Challenge project transmitting satellite data as audible songs",
+          "url": "https://www.spaceappschallenge.org/2019/challenge/songsat/"
+        },
+        {
+          "supports": "NASA Space Apps is an international hackathon producing citizen-science tools from space data",
+          "url": "https://www.nasa.gov/space-apps/"
+        }
+      ],
+      "id": "songsat",
+      "links": {
+        "official": "https://www.spaceappschallenge.org/2019/challenge/songsat/"
+      },
+      "name": "SongSat",
+      "tags": [
+        "nasa-space-apps",
+        "space",
+        "sonification",
+        "citizen-science"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Lunar Outpost"
+      ],
+      "description": "Radiation and environment sensor network originally developed at NASA Space Apps 2016 as Canaria; evolved into Lunar Outpost's Space Canary product line with NASA Spinoff recognition.",
+      "domain": "science",
+      "event": {
+        "award": "Best Use of Hardware",
+        "name": "NASA Space Apps Challenge",
+        "organizer": "NASA",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "NASA Spinoff 2020 profiles Lunar Outpost's Space Canary environmental sensor, noting its Canaria prototype began at a NASA Space Apps event",
+          "url": "https://spinoff.nasa.gov/Spinoff2020/ch_5.html"
+        }
+      ],
+      "id": "space-canary",
+      "links": {
+        "official": "https://spinoff.nasa.gov/Spinoff2020/ch_5.html"
+      },
+      "name": "Space Canary (Canaria)",
+      "tags": [
+        "nasa-space-apps",
+        "space",
+        "hardware",
+        "spinoff"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "RESP Biosensor wearable for real-time lung health monitoring; team formed at a 2016 Independence Blue Cross and Thomas Jefferson University health hackathon, later received FDA 510(k) clearance.",
+      "domain": "healthcare",
+      "event": {
+        "award": "project origin",
+        "name": "Independence Blue Cross Health Hackathon",
+        "organizer": "Independence Blue Cross and Thomas Jefferson University",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "Strados team formed at a 2016 Independence Blue Cross and Thomas Jefferson University health hackathon; RESP Biosensor later received FDA 510(k) clearance",
+          "url": "https://technical.ly/startups/wearable-device-lung-health-strados-labs"
+        }
+      ],
+      "id": "strados-labs",
+      "links": {
+        "official": "https://www.stradoslabs.com"
+      },
+      "name": "Strados Labs",
+      "tags": [
+        "wearable",
+        "health-hackathon",
+        "fda",
+        "lung-health"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Brad Menezes"
+      ],
+      "description": "AI-powered internal tools platform; co-founder Brad Menezes came through the Red Bull Basement student innovation program before scaling the company.",
+      "domain": "developer-tools",
+      "event": {
+        "award": "program alumnus",
+        "name": "Red Bull Basement",
+        "organizer": "Red Bull",
+        "year": 2021
+      },
+      "evidence": [
+        {
+          "supports": "Brad Menezes, Red Bull Basement alumnus, co-founded Superblocks in 2021 to help companies build internal tools and AI-powered software",
+          "url": "https://www.instagram.com/reel/DZJbWBgOkpt"
+        }
+      ],
+      "id": "superblocks",
+      "links": {
+        "official": "https://www.superblocks.com"
+      },
+      "name": "Superblocks",
+      "tags": [
+        "red-bull-basement",
+        "internal-tools",
+        "ai",
+        "enterprise"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "SUPERHOT Team"
+      ],
+      "description": "First-person shooter prototype where time moves only when the player moves, built during a seven-day game jam.",
+      "domain": "games",
+      "event": {
+        "name": "7 Day FPS",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Prototype created August 10-17, 2013 during the 7 Day First Person Shooter game jam",
+          "url": "https://superhotgame.com/our-story"
+        },
+        {
+          "supports": "Original 2013 prototype still playable on the official site",
+          "url": "https://superhotgame.com"
+        }
+      ],
+      "id": "superhot-prototype",
+      "links": {
+        "demo": "https://superhotgame.com/prototype.html",
+        "official": "https://superhotgame.com"
+      },
+      "name": "SUPERHOT Prototype",
+      "tags": [
+        "game-jam",
+        "fps",
+        "unity",
+        "prototype"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Bossa Studios"
+      ],
+      "description": "Darkly comic physics-based surgery simulator that started as a Global Game Jam 2013 prototype; became a multi-platform commercial hit.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Global Game Jam",
+        "organizer": "Global Game Jam",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Surgeon Simulator originated as a Global Game Jam 2013 prototype and expanded into a multi-platform Bossa Studios commercial release",
+          "url": "https://store.steampowered.com/app/233720/Surgeon_Simulator/"
+        }
+      ],
+      "id": "surgeon-simulator",
+      "links": {
+        "official": "https://store.steampowered.com/app/233720/Surgeon_Simulator/"
+      },
+      "name": "Surgeon Simulator",
+      "tags": [
+        "game-jam",
+        "physics",
+        "comedy",
+        "steam",
+        "ggj"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Game made in 48 hours at Global Game Jam 2021; the full polished version shipped on Steam in April 2023 with a positive review rating.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2021",
+        "organizer": "Global Game Jam",
+        "year": 2021
+      },
+      "evidence": [
+        {
+          "supports": "GGJ news: original Swirl W@tch made in 48 hours at Global Game Jam 2021; full polished game published on Steam April 2023 with positive reviews",
+          "url": "https://globalgamejam.org/news/jam-fame-global-game-jam-projects-became-successful-published-games"
+        }
+      ],
+      "id": "swirl-watch",
+      "name": "Swirl W@tch",
+      "tags": [
+        "global-game-jam",
+        "commercial",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Cloud-based contact center platform that lets businesses handle customer calls over the internet instead of traditional phone systems.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "TwilioCon hackathon",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Talkdesk began as a hackathon project",
+          "url": "https://www.talkdesk.com/about"
+        }
+      ],
+      "id": "talkdesk",
+      "links": {
+        "official": "https://www.talkdesk.com"
+      },
+      "name": "Talkdesk",
+      "tags": [
+        "saas",
+        "customer-service",
+        "cloud"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Smartphone museum exploration app; co-winner of the Walters Art Museum's first Art Bytes hackathon in 2012 with a $1,000 prize.",
+      "domain": "media-arts",
+      "event": {
+        "award": "co-winner ($1,000)",
+        "name": "Art Bytes",
+        "organizer": "Walters Art Museum",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "Tanzaku and Frame each took top $1,000 prizes at the first Walters Art Museum Art Bytes hackathon in 2012",
+          "url": "https://technical.ly/software-development/art-bytes-these-are-the-eight-projects-from-the-first-ever-walters-art-museum-hackathon"
+        }
+      ],
+      "id": "tanzaku",
+      "links": {
+        "official": "https://technical.ly/baltimore/2012/07/27/art-bytes-brings-technologists-others-to-walters-art-museum-for-art-inspired-hackathon/"
+      },
+      "name": "Tanzaku",
+      "tags": [
+        "museum-hackathon",
+        "mobile",
+        "art",
+        "walters"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Matteo Nitto",
+        "Dario Fazio"
+      ],
+      "description": "Typing-action game where you fight demons by typing scripture; born from a Global Game Jam 2016 prototype, later shipped on Steam and Switch.",
+      "domain": "games",
+      "event": {
+        "award": "jam prototype",
+        "name": "Global Game Jam",
+        "organizer": "Global Game Jam",
+        "year": 2016
+      },
+      "evidence": [
+        {
+          "supports": "The Textorcist began as a Global Game Jam 2016 prototype and was expanded into a full commercial release",
+          "url": "https://www.gamedeveloper.com/design/making-the-textorcist-how-one-jam-game-became-a-full-steam-release"
+        }
+      ],
+      "id": "textorcist",
+      "links": {
+        "official": "https://store.steampowered.com/app/774361/The_Textorcist/"
+      },
+      "name": "The Textorcist",
+      "tags": [
+        "game-jam",
+        "typing",
+        "action",
+        "ggj"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Puzzle platformer with a unique mechanic letting the player dive into and travel through the ground.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 29",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "Developer Daniel Linssen's own page: made for Ludum Dare #29",
+          "url": "https://managore.wordpress.com/games/the-sun-and-moon/"
+        },
+        {
+          "supports": "Development log for Ludum Dare #29 where The Sun And Moon was created",
+          "url": "https://managore.wordpress.com/2014/05/15/ludum-dare-29/"
+        }
+      ],
+      "id": "the-sun-and-moon",
+      "links": {
+        "official": "https://managore.itch.io/the-sun-and-moon"
+      },
+      "name": "The Sun and Moon",
+      "tags": [
+        "puzzle",
+        "platformer",
+        "precision"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Minimalist boss-rush action game where the player has one arrow and one life, inspired by Shadow of the Colossus and Dark Souls.",
+      "domain": "games",
+      "event": {
+        "name": "Ludum Dare 28",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Originally created for Ludum Dare 28 as TITAN SOULS; placed first in Overall, Audio, and Mood (Jam) categories",
+          "url": "https://en.wikipedia.org/wiki/Titan_Souls"
+        },
+        {
+          "supports": "Original jam prototype page by Acid Nerve, made for Ludum Dare 28 theme 'You Only Get One'",
+          "url": "https://clawmark.itch.io/titan-souls"
+        },
+        {
+          "supports": "Acid Nerve created Titan Souls during the weekend-long Ludum Dare game jam #28; shown at E3 six months later, published by Devolver Digital",
+          "url": "https://www.escapistmagazine.com/deaths-door-interview-acid-nerve-mark-foster-david-fenn/"
+        }
+      ],
+      "id": "titan-souls",
+      "links": {
+        "official": "https://store.steampowered.com/app/297130/Titan_Souls/"
+      },
+      "name": "Titan Souls",
+      "tags": [
+        "action",
+        "boss-rush",
+        "pixel-art"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Relaxing exploration-trading game where players fly an airship across a world discovering towns and trading goods.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam 2021",
+        "year": 2021
+      },
+      "evidence": [
+        {
+          "supports": "Townseek originally created for Global Game Jam 2021; listed as a GGJ success story",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        },
+        {
+          "supports": "Whales And Games: 'Townseek was first created for Global Game Jam 2021'",
+          "url": "https://whalesandgames.com/games/townseek"
+        }
+      ],
+      "id": "townseek",
+      "links": {
+        "official": "https://store.steampowered.com/app/1659360/Townseek/"
+      },
+      "name": "Townseek",
+      "tags": [
+        "exploration",
+        "trading",
+        "relaxing"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Visual collaboration tool that organizes projects into boards, lists, and cards.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Fog Creek Creek Week",
+        "organizer": "Fog Creek Software",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Originated in Fog Creek's internal Creek Weeks product explorations; prototype pitched January 2011",
+          "url": "https://www.trello.com/about"
+        },
+        {
+          "supports": "Fog Creek's internal product initiative that became Trello",
+          "url": "https://www.joelonsoftware.com/2011/09/13/announcing-trello"
+        }
+      ],
+      "id": "trello",
+      "links": {
+        "official": "https://trello.com"
+      },
+      "name": "Trello",
+      "tags": [
+        "project-management",
+        "collaboration",
+        "kanban"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Jack Dorsey",
+        "Florian Weber"
+      ],
+      "description": "Microblogging service for short public status updates, prototyped inside the podcasting company Odeo.",
+      "domain": "web-mobile",
+      "event": {
+        "name": "Odeo internal brainstorming session",
+        "organizer": "Odeo",
+        "year": 2006
+      },
+      "evidence": [
+        {
+          "supports": "Coding began March 13, 2006; first tweet March 21, 2006",
+          "url": "https://www.wired.com/2011/03/0321twitter-first-tweet"
+        },
+        {
+          "supports": "Started as a hobby project inside Odeo; Jack Dorsey wrote the first code",
+          "url": "https://www.latimes.com/archives/blogs/technology-blog/story/2011-03-13/twitter-came-to-life-five-years-ago-this-week-creator-jack-dorsey-remembers"
+        },
+        {
+          "supports": "Origins in a daylong brainstorming session at Odeo; first prototype by Dorsey and Weber",
+          "url": "https://en.wikipedia.org/wiki/History_of_Twitter"
+        }
+      ],
+      "id": "twitter",
+      "links": {
+        "official": "https://twitter.com"
+      },
+      "name": "Twitter",
+      "tags": [
+        "social",
+        "sms",
+        "status-updates"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Solana-native hardware wallet with companion app; crowned grand champion of the Colosseum Cypherpunk Hackathon at Breakpoint 2025 after four prior hackathon attempts.",
+      "domain": "fintech",
+      "event": {
+        "award": "grand champion",
+        "name": "Colosseum Cypherpunk Hackathon",
+        "organizer": "Colosseum",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Unrugable crowned grand champion of Colosseum's Cypherpunk Hackathon at Breakpoint 2025; top 10 winners receive Colosseum venture fund investment and accelerator participation",
+          "url": "https://solanacompass.com/learn/breakpoint-25/winners-of-the-colosseum-cypherpunk-hackathon"
+        }
+      ],
+      "id": "unrugable",
+      "links": {
+        "official": "https://solanacompass.com/learn/breakpoint-25/winners-of-the-colosseum-cypherpunk-hackathon"
+      },
+      "name": "Unrugable",
+      "tags": [
+        "solana",
+        "hardware-wallet",
+        "colosseum",
+        "hackathon-winner"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Ory Okolloh",
+        "Erik Hersman",
+        "Juliana Rotich",
+        "David Kobia"
+      ],
+      "description": "Open-source crisis-mapping platform that crowdsources and maps eyewitness reports via SMS and the web.",
+      "domain": "civic-tech",
+      "event": {
+        "award": "NetSquared Mashup Challenge winner",
+        "name": "Kenya post-election crisis rapid build",
+        "year": 2008
+      },
+      "evidence": [
+        {
+          "supports": "Born out of the 2008 Kenyan post-election violence as an ad hoc rapid software build",
+          "url": "https://www.theguardian.com/technology/2010/aug/11/ushahidi-crowdmap-crisis-mapping"
+        },
+        {
+          "supports": "Initial deployment January 2008; won the NetSquared mashup challenge May 2008",
+          "url": "https://www.ushahidi.com/about/blog/ushahidi-1-year-later"
+        },
+        {
+          "supports": "Founded in 2008; built in days by four technologists",
+          "url": "https://en.wikipedia.org/wiki/Ushahidi"
+        }
+      ],
+      "id": "ushahidi",
+      "links": {
+        "official": "https://www.ushahidi.com",
+        "source": "https://github.com/ushahidi/platform"
+      },
+      "name": "Ushahidi",
+      "tags": [
+        "crisis-mapping",
+        "crowdsourcing",
+        "open-source",
+        "maps"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Ricky Wong"
+      ],
+      "description": "Contextual search and discovery app that won the TechCrunch Disrupt 2014 Battlestage; later acquired by Rakuten for approximately $300 million.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "Battlestage winner",
+        "name": "TechCrunch Disrupt",
+        "organizer": "TechCrunch",
+        "year": 2014
+      },
+      "evidence": [
+        {
+          "supports": "Vurb won TechCrunch Disrupt 2014 Battlestage and was acquired by Rakuten for approximately $300 million",
+          "url": "https://en.wikipedia.org/wiki/Vurb"
+        }
+      ],
+      "id": "vurb",
+      "links": {
+        "official": "https://en.wikipedia.org/wiki/Vurb"
+      },
+      "name": "Vurb",
+      "tags": [
+        "techcrunch-disrupt",
+        "search",
+        "mobile",
+        "exit"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "AI-powered digital clone and sales strategy simulation system for ecommerce; won first place among 93 global teams at the OpenAI GPT-5 Hackathon 2025.",
+      "domain": "ai-ml",
+      "event": {
+        "award": "first place",
+        "name": "OpenAI GPT-5 Hackathon",
+        "organizer": "OpenAI and Cerebral Valley",
+        "year": 2025
+      },
+      "evidence": [
+        {
+          "supports": "Waddle won first place among 93 global teams at the OpenAI GPT-5 Hackathon in San Francisco, August 9-10 2025, with a GPT-5-powered digital clone and sales strategy simulation for ecommerce",
+          "url": "https://blog.gentooai.com/waddle-wins-first-place-at-the-openai-gpt-5-hackathon/"
+        }
+      ],
+      "id": "waddle",
+      "links": {
+        "official": "https://waddle.ai"
+      },
+      "name": "Waddle",
+      "tags": [
+        "openai",
+        "ai-agents",
+        "ecommerce",
+        "hackathon-winner"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Top-down roguelike shooter where mutants fight through procedurally generated levels to claim the Nuclear Throne.",
+      "domain": "games",
+      "event": {
+        "name": "Mojam 2013",
+        "year": 2013
+      },
+      "evidence": [
+        {
+          "supports": "Began as a game jam prototype called Wasteland Kings in February 2013; created during the 48-hour Mojam charity game jam run by Mojang and Humble Bundle",
+          "url": "https://en.wikipedia.org/wiki/Nuclear_Throne"
+        },
+        {
+          "supports": "Original prototype page: 'the prototype that Vlambeer created for the three day MOJAM charity build'",
+          "url": "https://vlambeer.itch.io/wasteland-kings"
+        },
+        {
+          "supports": "Rami Ismail interview confirming the Mojam 2013 origin of Wasteland Kings",
+          "url": "https://www.polygon.com/2013/8/15/4625784/vlambeers-wasteland-kings-rami-ismail-interview"
+        }
+      ],
+      "id": "wasteland-kings",
+      "links": {
+        "official": "https://vlambeer.itch.io/wasteland-kings"
+      },
+      "name": "Wasteland Kings (Nuclear Throne)",
+      "tags": [
+        "roguelike",
+        "shooter",
+        "procedural"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Browser-based quiz anti-cheat built during a Wayground internal hackathon; deployed across millions of quiz sessions to deter tab-switching and second-screen cheating.",
+      "domain": "education",
+      "event": {
+        "name": "Wayground Internal Hackathon",
+        "organizer": "Wayground"
+      },
+      "evidence": [
+        {
+          "supports": "Wayground internal hackathon produced the Eye See You anti-cheat feature later used across millions of quiz sessions",
+          "url": "https://wayground.com/blog/hackathon-anti-cheat"
+        }
+      ],
+      "id": "wayground-eye-see-you",
+      "links": {
+        "official": "https://www.wayground.com"
+      },
+      "name": "Wayground Anti-Cheat \"Eye See You\"",
+      "tags": [
+        "internal-hackathon",
+        "edtech",
+        "anti-cheat"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Marinos"
+      ],
+      "description": "Crisis-reporting mobile app built to win the TechCrunch Disrupt New York 2015 Hackathon; used Twilio and crowd-sourced field reports for real-time safety data.",
+      "domain": "civic-tech",
+      "event": {
+        "award": "winner",
+        "name": "TechCrunch Disrupt New York Hackathon",
+        "organizer": "TechCrunch",
+        "year": 2015
+      },
+      "evidence": [
+        {
+          "supports": "Witness wins the TechCrunch Disrupt NY 2015 Hackathon with a Twilio-powered crisis reporting app",
+          "url": "https://techcrunch.com/2015/05/06/witness-wins-the-techcrunch-disrupt-ny-2015-hackathon/"
+        }
+      ],
+      "id": "witness-disrupt",
+      "links": {
+        "official": "https://techcrunch.com/2015/05/06/witness-wins-the-techcrunch-disrupt-ny-2015-hackathon/"
+      },
+      "name": "Witness",
+      "tags": [
+        "techcrunch-disrupt",
+        "crisis",
+        "twilio",
+        "mobile"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "description": "Game that started as a Global Game Jam entry and was later developed into a Steam release.",
+      "domain": "games",
+      "event": {
+        "name": "Global Game Jam",
+        "organizer": "Global Game Jam"
+      },
+      "evidence": [
+        {
+          "supports": "GGJ success-stories page lists Yesterday's News as starting as a jam project before a Steam release",
+          "url": "https://globalgamejam.org/ggj-success-stories"
+        }
+      ],
+      "id": "yesterdays-news",
+      "links": {
+        "official": "https://store.steampowered.com/app/2850560/Yesterdays_News/"
+      },
+      "name": "Yesterday's News",
+      "tags": [
+        "global-game-jam",
+        "commercial",
+        "indie"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Art Agrawal",
+        "Dongyi Liao"
+      ],
+      "description": "Marketplace connecting car owners with mobile mechanics; won the TechCrunch Disrupt SF 2012 Startup Battlefield after pitching earlier as HiretoFix.",
+      "domain": "other",
+      "event": {
+        "award": "winner",
+        "name": "TechCrunch Disrupt SF Startup Battlefield",
+        "organizer": "TechCrunch",
+        "year": 2012
+      },
+      "evidence": [
+        {
+          "supports": "YourMechanic took the TechCrunch Disrupt Cup in September 2012; founders previously operated as HiretoFix",
+          "url": "https://www.bizjournals.com/sanjose/blog/2012/09/yourmechanic-takes-techcrunch-disrupt.html"
+        }
+      ],
+      "id": "your-mechanic",
+      "links": {
+        "official": "https://www.yourmechanic.com"
+      },
+      "name": "YourMechanic",
+      "tags": [
+        "marketplace",
+        "automotive",
+        "techcrunch-disrupt"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Bo Fishback",
+        "Eric Koester",
+        "Ian Hunter"
+      ],
+      "description": "Hyperlocal real-time buyer-powered marketplace; prototyped and pitched at Startup Weekend Los Angeles in 2011, then raised a $14M Series A led by Kleiner Perkins.",
+      "domain": "web-mobile",
+      "event": {
+        "award": "winner",
+        "name": "Startup Weekend Los Angeles",
+        "organizer": "Startup Weekend",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Within six hours of the 54-hour LA Startup Weekend in February 2011, the founders cooked up Zaarly and built the first prototype",
+          "url": "https://www.entrepreneur.com/leadership/from-business-idea-to-successful-startup-in-three-months/220019"
+        },
+        {
+          "supports": "Zaarly raised $14.1M Series A from Kleiner Perkins and Sands Capital; Ashton Kutcher seed investor; Meg Whitman joined board",
+          "url": "https://www.businessinsider.com/zaarly-raises-14-million-2011-10"
+        },
+        {
+          "supports": "Zaarly was little more than an idea when it won LA Startup Weekend three weeks prior to launch coverage",
+          "url": "https://techcrunch.com/2011/03/09/want-someone-to-bring-you-a-beer-get-that-and-anything-else-from-zaarly"
+        }
+      ],
+      "id": "zaarly",
+      "links": {
+        "official": "https://en.wikipedia.org/wiki/Zaarly"
+      },
+      "name": "Zaarly",
+      "tags": [
+        "marketplace",
+        "startup-weekend",
+        "sharing-economy"
+      ],
+      "verified_at": "2026-10-24"
+    },
+    {
+      "authors": [
+        "Wade Foster",
+        "Bryan Helmig",
+        "Mike Knoop"
+      ],
+      "description": "Workflow automation platform that connects web apps so users can move data between services without writing code.",
+      "domain": "developer-tools",
+      "event": {
+        "award": "Winner",
+        "name": "Startup Weekend Columbia",
+        "organizer": "Startup Weekend",
+        "year": 2011
+      },
+      "evidence": [
+        {
+          "supports": "Winner of the first Startup Weekend in Columbia, Missouri (October 2011)",
+          "url": "https://zapier.com/blog/zapier-100-connected-services-year-review/"
+        },
+        {
+          "supports": "Co-founded at the Missouri Startup Weekend",
+          "url": "https://www.ycombinator.com/companies/zapier"
+        },
+        {
+          "supports": "Listed as a Startup Weekend success story from Columbia",
+          "url": "https://www.techstars.com/for/partners/startup-weekend"
+        }
+      ],
+      "id": "zapier",
+      "links": {
+        "official": "https://zapier.com"
+      },
+      "name": "Zapier",
+      "tags": [
+        "automation",
+        "apis",
+        "saas"
+      ],
+      "verified_at": "2026-10-24"
+    }
+  ]
+}

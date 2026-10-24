@@ -9,6 +9,7 @@ from pathlib import Path
 from .export import export_json
 from .generate import check_readme, write_readme
 from .loader import load_repo, repo_root
+from .site import build_site, check_site
 from .validate import validate_repo
 
 
@@ -17,8 +18,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--root", type=Path, default=None, help="repository root (default: auto-detect)")
     sub = parser.add_subparsers(dest="command", required=True)
     sub.add_parser("validate", help="validate all project records")
-    sub.add_parser("generate", help="regenerate the README project index")
-    sub.add_parser("check", help="fail if README index is stale (read-only)")
+    sub.add_parser("generate", help="regenerate README stats and build the site")
+    sub.add_parser("check", help="fail if README or site is stale (read-only)")
     sub.add_parser("export", help="export project data as JSON")
 
     args = parser.parse_args(argv)
@@ -47,15 +48,24 @@ def main(argv: list[str] | None = None) -> int:
             print("\nrefusing to generate from invalid data", file=sys.stderr)
             return 1
         write_readme(repo)
+        site = build_site(repo)
         print("README.md updated")
+        print(f"site built at {site}/")
         return 0
 
     if args.command == "check":
-        error = check_readme(repo)
-        if error:
-            print(error, file=sys.stderr)
+        errors = []
+        err = check_readme(repo)
+        if err:
+            errors.append(err)
+        err = check_site(repo)
+        if err:
+            errors.append(err)
+        if errors:
+            for e in errors:
+                print(e, file=sys.stderr)
             return 1
-        print("OK: README.md is up to date")
+        print("OK: README.md and site/ are up to date")
         return 0
 
     if args.command == "export":
