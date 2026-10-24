@@ -58,6 +58,7 @@ python scripts/linkcheck.py  # optional, online, best-effort; failures ≠ delet
 3. After any data or generator change: `validate` → `generate` → `check` → `pytest`.
 4. Taxonomy changes: edit `data/taxonomy.json` only; the schema does not need redesign.
 5. No force-push, history rewrite, or destructive git operations without explicit user authorization.
+6. Commit messages carry no AI attribution: no "Generated with" line and no bot Co-Authored-By trailer.
 
 ## Session handoff
 
