@@ -518,7 +518,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nBioJS is a JavaScript library for visualizing biological data in the browser: sequences, alignments, trees, and interaction networks.\n\n## The problem\n\nBioinformatics tools were often desktop applications or Python scripts. Sharing a result meant sending a file and asking the reader to install something.\n\n## How the experience works\n\nA developer imports a component, passes it data, and gets an interactive view in the page. Components are small and composable, so a paper's supplementary page can show the data directly.\n\n## What makes it interesting\n\nIn the 2014 Google Summer of Code, all five students stayed on as core developers and designed version 2.0. A summer program became the maintainer pipeline.\n\n## What you can learn\n\nOpen-source projects die when the original author leaves. Funding contributors, not just code, keeps a library alive.\n\n## Limitations of this analysis\n\nThe record does not cover the component architecture or the current maintenance status.\n",
       "description": "Interactive biological data visualization library. In 2014 Google Summer of Code, all five students became core developers and designed version 2.0.",
       "domain": "science",
       "event": {
@@ -747,7 +747,7 @@
         "Lucas Ngoo",
         "Marcus Tan"
       ],
-      "body": "",
+      "body": "## What it is\n\nCarousell is a mobile-first marketplace for secondhand goods. A seller photographs an item, adds a price, and publishes a listing in about a minute.\n\n## The problem\n\nClassifieds sites were built for desktop browsers and long forms. Selling a used phone required a camera, a cable, and patience, when the phone in the seller's pocket was already the best tool for the job.\n\n## How the experience works\n\nThe listing flow starts with a photo and asks for the minimum: title, price, category. Buyers browse and message the seller. The short flow is the product.\n\n## What makes it interesting\n\nThe team built the working demo in 54 hours at Startup Weekend Singapore in 2012, under the name SnapSell, and won first place. The name changed; the one-minute listing stayed.\n\n## What you can learn\n\nRemoving steps from a listing flow increases supply, and supply is what makes a marketplace usable. The camera was the feature, not the form.\n\n## Limitations of this analysis\n\nThe record covers the origin and the demo, not the trust and safety system or the payment model.\n",
       "description": "Mobile-first classifieds marketplace where selling an item takes about a minute with a photo.",
       "domain": "web-mobile",
       "event": {
@@ -1085,7 +1085,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nDropifi was a customer communication platform, and the first African company accepted into the 500 Startups accelerator.\n\n## What makes it interesting\n\nIt started at Startup Weekend Accra in 2011. The accelerator acceptance is the milestone the record preserves: a weekend project in Ghana reaching a Silicon Valley program.\n\n## What you can learn\n\nA local startup scene needs a visible path out. One accepted application gives the next team a reference point.\n\n## Limitations of this analysis\n\nThe record covers the origin and the accelerator, not the product. Its features, customers, and eventual outcome are not documented in the linked source.\n",
       "description": "Customer communication platform. First African company accepted into 500 Startups.",
       "domain": "web-mobile",
       "event": {
@@ -1149,7 +1149,7 @@
         "Joanna Power",
         "Paramveer Bhachu"
       ],
-      "body": "A student water-saving appliance concept from Red Bull Basement 2020 progressed into a hardware startup via Imperial College London's Greenhouse accelerator, with TEDx follow-on.\n",
+      "body": "## What it is\n\nEco Laundry is a water-saving washing machine concept from Joanna Power and Paramveer Bhachu.\n\n## What makes it interesting\n\nIt won Red Bull Basement 2020 for the UK and reached the global final. The team joined Imperial College London's Greenhouse accelerator through the Grantham Institute, and the project led to TEDx talks.\n\n## What you can learn\n\nA student competition can turn a concept into a team with access to labs and mentors. The accelerator, not the prize, is the useful part.\n\n## Limitations of this analysis\n\nThe record documents the award and the accelerator, not the engineering. Water savings, prototype status, and commercial availability are not established by the linked source.\n",
       "description": "Water-saving washing machine concept by Joanna Power and Paramveer Bhachu; won Red Bull Basement 2020 for the UK and went on to a hardware accelerator and TEDx talks.",
       "domain": "climate",
       "event": {
@@ -1533,7 +1533,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "g0v started with a late-2012 hackathon producing a better national-budget visualization. It became Taiwan's flagship civic-tech community, spawning tools for legislative monitoring, referendum tracking, and epidemic data during COVID-19.\n",
+      "body": "## What it is\n\ng0v is a Taiwanese civic-tech community that builds open tools for government transparency: budget visualizations, legislative trackers, referendum monitors, and epidemic dashboards.\n\n## The problem\n\nGovernment data is published, but not in a form most people can read. Budgets arrive as documents; legislative activity arrives as records without a view.\n\n## How the experience works\n\nVolunteers take public data, clean it, and publish it as a browsable tool. Each project is independent, and the community meets at recurring hackathons rather than through a single organization.\n\n## What makes it interesting\n\nIt started with a late-2012 hackathon that produced a better national budget visualization. The portfolio grew to more than 40 hackathons, with tools for legislative monitoring, referendums, and COVID-19 data.\n\n## What you can learn\n\nCivic tech spreads through reusable artifacts. A budget parser or a data format lasts longer than a campaign, because the next team starts from it.\n\n## Limitations of this analysis\n\nThe record does not cover funding, project governance, or how volunteers maintain tools after the hackathon.\n",
       "description": "Taiwan civic-tech movement that builds  tools for government transparency, including crowd-sourced dashboards and legislative trackers.",
       "domain": "civic-tech",
       "event": {
@@ -1687,7 +1687,7 @@
         "Jessica Scorpio",
         "Elliot Kroo"
       ],
-      "body": "Getaround launched its iPhone-era peer-to-peer car sharing at Disrupt NYC 2011 and took the Battlefield cup the same day. It grew into a public company before announcing a wind-down in 2026.\n",
+      "body": "## What it is\n\nGetaround is a peer-to-peer car rental marketplace. Owners list cars by the hour or day; renters book and unlock them through the app.\n\n## The problem\n\nCar sharing usually requires a company fleet and a physical key handoff. Peer-to-peer rental has a trust problem and an access problem: the owner is not there to hand over the key.\n\n## How the experience works\n\nA hardware kit installed in the car connects the vehicle to the platform. After a booking, the renter unlocks the car from the phone, so the owner never has to meet them.\n\n## What makes it interesting\n\nThe company launched at TechCrunch Disrupt NYC 2011 and won the Startup Battlefield that day. It later listed on the NYSE, then announced a wind-down in 2026. That arc is unusually complete for an archive entry: weekend stage, public company, ending.\n\n## What you can learn\n\nMarketplaces with a physical access problem need hardware, not just software. The install and recovery path for that hardware is part of the product, not an accessory to it.\n\n## Limitations of this analysis\n\nThe record does not cover the kit's design, the insurance model, or the reasons behind the 2026 wind-down.\n",
       "description": "Peer-to-peer car-sharing marketplace with a hardware car-kit for phone unlock; won TechCrunch Disrupt NYC 2011, later NYSE-listed, wound down in 2026.",
       "domain": "other",
       "event": {
@@ -1756,7 +1756,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nGoogle News is an aggregator that groups articles by story and links readers to the publishers.\n\n## The problem\n\nFollowing a news event meant visiting many sites and comparing accounts. There was no index of who had covered what.\n\n## How the experience works\n\nThe service clusters articles about the same event, ranks the cluster, and presents the sources together. The reader chooses a story, then a publisher.\n\n## What makes it interesting\n\nIt grew out of a hobby project by Krishna Bharat and entered beta in September 2002, under Google's 20% time. The design has no editors: grouping and ranking are algorithmic, which is both the scale advantage and the recurring criticism.\n\n## What you can learn\n\nAutomation can cover a breadth no newsroom can. It also inherits every judgement the algorithm makes, so the ranking rule is an editorial policy whether or not anyone calls it one.\n\n## Limitations of this analysis\n\nThe record covers origin and launch, not the ranking system or publisher agreements.\n",
       "description": "News aggregator built from Krishna Bharat's hobby project. Entered beta September 2002.",
       "domain": "web-mobile",
       "event": {
@@ -1854,7 +1854,7 @@
         "Jared Hecht",
         "Steve Martocci"
       ],
-      "body": "",
+      "body": "## What it is\n\nGroupMe is group messaging for phones. You create a group, add people, and everyone sees the same thread. The app runs on smartphones, and members without one can join over SMS.\n\n## The problem\n\nGroup texting in 2010 was a patchwork. Carrier group MMS behaved differently across devices, and adding someone mid-thread often broke the thread. A group that mixed smartphones and basic phones had no shared space.\n\n## How the experience works\n\nA message sent from the app reaches every member as a message in the group, and replies return to the same thread. The SMS path matters because it removes the requirement that everyone installs the app before the conversation can start.\n\n## What makes it interesting\n\nJared Hecht and Steve Martocci built it at the TechCrunch Disrupt New York hackathon in 2010. The product decision that carried it was treating SMS as a first-class client rather than a fallback.\n\n## What you can learn\n\nA communication product is only as useful as its least-equipped member. Supporting the oldest channel in the group can be the feature that makes the rest work.\n\n## Limitations of this analysis\n\nThe record does not document the gateway architecture, carrier handling, or delivery guarantees.\n",
       "description": "Free group messaging app that works over SMS and smartphone apps, built as a hackathon project.",
       "domain": "web-mobile",
       "event": {
@@ -2283,7 +2283,7 @@
       "authors": [
         "Steel Crate Games"
       ],
-      "body": "The definitive jam-to-VR-classic story: a Global Game Jam 2015 prototype about asymmetric bomb defusal became one of VR's most recognizable party games.\n",
+      "body": "## What it is\n\nKeep Talking and Nobody Explodes is a cooperative bomb-defusal game. One player sees a bomb in VR; the others hold a manual and cannot see it.\n\n## The problem\n\nCo-op games usually give every player the same information, which makes coordination a matter of reflexes. This one makes coordination the entire game by splitting the information.\n\n## How the experience works\n\nThe defuser describes what is on the bomb: a serial number, a symbol, a colored wire. The experts find the matching rule in the manual and read back instructions. Neither side can finish alone.\n\n## What makes it interesting\n\nIt began as a Global Game Jam 2015 prototype and became one of the best-selling VR titles on Steam. The manual is printable paper, so the game supports any number of players without extra hardware.\n\n## What you can learn\n\nAsymmetric information is a cheap source of depth. Before adding mechanics, check whether splitting what players know creates the tension you want.\n\n## Limitations of this analysis\n\nThe record does not describe the bomb-generation logic or how the VR and non-VR versions differ.\n",
       "description": "Cooperative VR bomb-defusal game born from a Global Game Jam 2015 prototype; became one of the best-selling VR titles on Steam.",
       "domain": "games",
       "event": {
@@ -2700,7 +2700,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nMushroom 11 is a platformer where the player controls a spreading fungal organism instead of a character.\n\n## The problem\n\nPlatformers are built on a body with a fixed shape. It jumps, it fits through gaps, it takes damage. A blob with no fixed shape needs different verbs.\n\n## How the experience works\n\nYou shape the organism to move it through spaces, growing one side and losing the other. Progress comes from managing the mass rather than from timing a jump.\n\n## What makes it interesting\n\nIt started at Global Game Jam 2012 at NYU and was shortlisted for an IGF award for design. The jam constrained the team to a mechanic that could be understood without a character or a story.\n\n## What you can learn\n\nRemove the body and the genre's assumptions go with it. A single unusual verb can carry a whole game if the level design keeps asking new questions of it.\n\n## Limitations of this analysis\n\nThe sources establish the origin and the award shortlist. The growth and destruction rules, and how the team tuned them, are not documented in the linked material.\n",
       "description": "Fungal transformation platformer where the player is a growing, splitting organism. IGF Excellence in Design shortlist.",
       "domain": "games",
       "event": {
@@ -2806,7 +2806,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "One-tap emergency dispatch without needing to speak. Noonlight grew from a weekend build into a platform integrated with major dating apps and wearable devices.\n",
+      "body": "## What it is\n\nNoonlight is a personal safety service. A user triggers an alarm from a phone or a connected device, and a dispatch center responds.\n\n## The problem\n\nCalling emergency services requires speaking, knowing where you are, and having time. In a dangerous situation, none of those may be available.\n\n## How the experience works\n\nThe user raises an alarm from the app or a hardware button. The service contacts emergency responders with the user's location and details, without the user having to hold a call.\n\n## What makes it interesting\n\nIt began as a Startup Weekend project in 2013 and became a service integrated into dating apps and wearables. The integrations matter: safety is more useful when it sits inside the app where the risk happens.\n\n## What you can learn\n\nA safety feature that requires opening a separate app competes with panic. Putting it in the surface people already use removes that step.\n\n## Limitations of this analysis\n\nThe record does not describe the dispatch integration, false-alarm handling, or the hardware devices.\n",
       "description": "Personal safety platform that began as a Startup Weekend project; became a widely integrated panic-button service used by dating apps and smart devices.",
       "domain": "social",
       "event": {
@@ -2927,7 +2927,7 @@
         "Arash Ramanan",
         "Jatin Gupta"
       ],
-      "body": "Built as a Meta Llama hackathon entry under the Cerebral Valley banner in San Francisco, OpenGlass clipped an AI vision stack onto ordinary frames. The team later shipped a successor wearable called Friend.\n",
+      "body": "## What it is\n\nOpenGlass is an open-source attachment that turns ordinary glasses into smart glasses. A camera and a small computer clip onto the frame, and a model describes what the camera sees.\n\n## The problem\n\nSmart glasses were expensive and closed. Developers who wanted to experiment with wearable vision had to buy a finished product and work inside its limits.\n\n## How the experience works\n\nThe hardware mounts on existing frames. The camera captures a scene, and a vision model produces a description that is spoken or displayed to the wearer.\n\n## What makes it interesting\n\nA five-person team built it in about 36 hours at the Cerebral Valley hackathon in 2024 for roughly $20 in off-the-shelf parts, and won the event. The bill of materials is the point: a wearable anyone can rebuild.\n\n## What you can learn\n\nOpen hardware wins attention when the parts list is short and the result is recognizable. A $20 demo does more for adoption than a specification.\n\n## Limitations of this analysis\n\nThe record does not document the compute module, battery life, latency, or the split between on-device and remote inference.\n",
       "description": "Open-source AI smart-glasses attachment built in about 36 hours for roughly $20 of off-the-shelf parts, pairing a camera with Llama 3 for live scene description.",
       "domain": "hardware",
       "event": {
@@ -3177,7 +3177,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Session Replay was a classic \\\"code wins arguments\\\" hack: one engineer shipped a contested prototype in a company hackathon weekend. It reshaped PostHog from a single analytics tool into a multi-product platform.\n",
+      "body": "## What it is\n\nSession Replay records a user's clicks, scrolls, and page transitions so a product team can watch what happened without reproducing it.\n\n## The problem\n\nAnalytics showed that users dropped off; it did not show why. Watching a real session closes the gap between a funnel chart and a bug report.\n\n## What makes it interesting\n\nAn engineer built it during a PostHog hackathon in the company's early days, against leadership's scepticism. It grew to tens of thousands of daily active users and became one of the products that turned PostHog from an analytics tool into a multi-product platform.\n\n## What you can learn\n\nA hackathon prototype can settle a strategy argument that meetings cannot. The cost of being wrong is a weekend; the cost of debating is a quarter.\n\n## Limitations of this analysis\n\nThe record does not describe the recording format, the privacy controls, or how replay data is stored.\n",
       "description": "Product analytics session-replay feature built during an early PostHog internal hackathon; grew into a core multi-product pillar with tens of thousands of daily active users.",
       "domain": "developer-tools",
       "event": {
@@ -3208,7 +3208,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "A hospital-run hackathon category win turned micro-expression emotional AI into a planned SaMD registration for pediatric mental telehealth.\n",
+      "body": "## What it is\n\nProject M is an emotional AI system that reads micro-facial expressions and reports an emotional state. It targets clinical use, including pediatric mental telehealth.\n\n## The problem\n\nEmotional assessment in telehealth depends on self-report and clinician observation, both of which lose information over a video call.\n\n## What makes it interesting\n\nIt won the Touchless Experience category at the Texas Children's Hospital Healthcare Hackathon in 2021. The team planned FDA Software as a Medical Device registration, a much longer road than a hackathon.\n\n## What you can learn\n\nA clinical demo is the start of a regulatory process, not the end of development. The decision to pursue clearance is the part worth studying.\n\n## Limitations of this analysis\n\nThe record does not include accuracy results, training data, or current regulatory status. Claims about clinical validity cannot be checked from the linked source.\n",
       "description": "Emotional AI platform detecting micro-facial expressions for clinical use; won the Texas Children's Hospital Healthcare Hackathon Touchless Experience category in 2021.",
       "domain": "healthcare",
       "event": {
@@ -3662,7 +3662,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nScreencheat is a split-screen shooter where every player is invisible. You find opponents by looking at their quarter of the screen.\n\n## The problem\n\nSplit-screen shooters assume each player sees only their own view. Screen looking is treated as cheating, and games hide information to prevent it.\n\n## How the experience works\n\nFour players share one screen. Since no one is visible, the only way to locate a target is to read the other panels: map geometry, weapon fire, the position of the camera.\n\n## What makes it interesting\n\nIt was built at Global Game Jam 2014 in Melbourne, then released on Steam, PlayStation 4, and Xbox One. The design turns an unsolvable hardware constraint into the rule of the game. You cannot stop players from looking at each other's screens, so the game is built on it.\n\n## What you can learn\n\nWhen a limitation cannot be removed, make it the mechanic. The cheapest fix is often a rule change rather than a technical one.\n\n## Limitations of this analysis\n\nThe record does not describe the netcode or how the console versions handle four-player split-screen performance.\n",
       "description": "Split-screen first-person shooter where all players are invisible, so you must cheat by looking at their screens. Released on Steam, PS4, Xbox One.",
       "domain": "games",
       "event": {
@@ -4184,7 +4184,7 @@
       "authors": [
         "Brad Menezes"
       ],
-      "body": "Superblocks' path runs through the student-innovation circuit: co-founder Brad Menezes came out of Red Bull Basement before building an enterprise internal-tools platform.\n",
+      "body": "## What it is\n\nSuperblocks is a platform for building internal tools and AI-assisted internal software.\n\n## What makes it interesting\n\nCo-founder Brad Menezes came through Red Bull Basement, a student innovation program, before starting the company in 2021. The record follows that path from a student competition to an enterprise product.\n\n## What you can learn\n\nA student program is a low-cost way to find out whether an idea attracts anyone. It is not proof of a market, but it is a place to learn whether people care.\n\n## Limitations of this analysis\n\nThis record documents the founder's program history, not the product. Superblocks' architecture, pricing, and customer base are not covered by the linked source.\n",
       "description": "AI-powered internal tools platform; co-founder Brad Menezes came through the Red Bull Basement student innovation program before scaling the company.",
       "domain": "developer-tools",
       "event": {
@@ -4603,7 +4603,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "",
+      "body": "## What it is\n\nTowerFall is a local multiplayer archery game. Players fire arrows at each other in single-screen arenas, where one hit ends a round and arrows can be picked up after they land.\n\n## The problem\n\nLocal multiplayer in 2012 was mostly party games built for casual play. TowerFall aimed at something faster and more precise, with the tension of a fighting game and the readability of a platformer.\n\n## What makes it interesting\n\nIt started at the Vancouver Full Indie Game Jam in 2012. It became the first commercial release from Maddy Thorson, who later made Celeste.\n\n## What you can learn\n\nA jam build can be the whole design. TowerFall's rules fit on an index card: one hit, limited arrows, pick them up. The depth came from arena layout and movement, not from added systems.\n\n## Limitations of this analysis\n\nThe record documents the jam origin and the designer, not the netcode or the changes between the jam build and the commercial release.\n",
       "description": "Multiplayer archer combat game. First commercial release of Maddy Thorson, who later made Celeste.",
       "domain": "games",
       "event": {
@@ -4661,7 +4661,7 @@
       "verified_at": "2026-10-24"
     },
     {
-      "body": "Prototype work happened during Fog Creek's recurring internal hack-week format (\"Creek Weeks\"); the product later launched publicly at TechCrunch Disrupt in September 2011.\n",
+      "body": "## What it is\n\nTrello organizes work into boards, lists, and cards. A card is a task; moving it between lists shows progress. The board is a kanban wall that a team can read without training.\n\n## The problem\n\nProject tools of the time were built around fields, filters, and reports. A small team that wanted to see who was doing what had to configure a system before using it. Trello's bet was that the board metaphor already existed in offices, on walls and sticky notes.\n\n## What makes it interesting\n\nIt came out of Fog Creek's Creek Weeks, an internal hack-week format where employees pitched and prototyped products. The prototype was pitched in January 2011 and the product launched at TechCrunch Disrupt that September. Closing that gap is the part most hack-week projects never manage.\n\n## What you can learn\n\nA familiar physical object is a cheaper interface than a new vocabulary. If users can guess where to click, onboarding is mostly done.\n\n## Limitations of this analysis\n\nThe record documents the origin and launch, not the implementation. Trello's data model, sync approach, and early scaling work are not covered by the linked sources.\n",
       "description": "Visual collaboration tool that organizes projects into boards, lists, and cards.",
       "domain": "web-mobile",
       "event": {
@@ -4723,7 +4723,7 @@
         "Jack Dorsey",
         "Florian Weber"
       ],
-      "body": "The Odeo session is often described as a company hackathon. Dorsey and Weber built the first prototype in about two weeks.\n",
+      "body": "## What it is\n\nTwitter is a public microblogging service. A post is short, visible by default, and read in a timeline.\n\n## The problem\n\nBlogging required time and a title. Status updates existed inside social networks, but not as a public, followable stream.\n\n## How the experience works\n\nA user posts a short message, and followers see it in order. The service began as an SMS product, so a post had to fit a text message.\n\n## What makes it interesting\n\nIt came out of a daylong brainstorming session at Odeo in 2006, and Jack Dorsey and Florian Weber built the first prototype. The first tweet went out on March 21, 2006. The length limit was a carrier constraint that became the product's identity.\n\n## What you can learn\n\nA constraint imposed by infrastructure can become the feature users ask for. Removing it later is a product decision, not a cleanup.\n\n## Limitations of this analysis\n\nThe record covers the origin and the first tweet, not the architecture or later changes to the length limit.\n",
       "description": "Microblogging service for short public status updates, prototyped inside the podcasting company Odeo.",
       "domain": "web-mobile",
       "event": {
@@ -4795,7 +4795,7 @@
         "Juliana Rotich",
         "David Kobia"
       ],
-      "body": "Built in a few days by an ad hoc group of technologists - a crisis-response rapid build rather than a formally organized hackathon.\n",
+      "body": "## What it is\n\nUshahidi is an open-source platform for collecting eyewitness reports and placing them on a map. Reports arrive by SMS or the web and appear as points that responders can filter.\n\n## The problem\n\nDuring the 2008 post-election violence in Kenya, information was spread across blogs, news, and phone calls. There was no shared map of what was happening where.\n\n## How the experience works\n\nA report is sent by text message or submitted online. The platform geocodes it, adds it to the map, and lets moderators review and categorize it. The map is the interface; the reports are the data.\n\n## What makes it interesting\n\nFour technologists built it in days as an ad hoc response, not a planned product. It won the NetSquared Mashup Challenge in 2008 and became a platform used in later crises. The SMS input was the key choice: the people closest to an event often have the weakest connection.\n\n## What you can learn\n\nWhen the network is unreliable, the input channel decides whether the tool works at all. Design for the phone people have, not the one you wish they had.\n\n## Limitations of this analysis\n\nThe record does not cover the moderation workflow, verification methods, or later versions of the platform.\n",
       "description": "Open-source crisis-mapping platform that crowdsources and maps eyewitness reports via SMS and the web.",
       "domain": "civic-tech",
       "event": {

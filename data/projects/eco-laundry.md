@@ -20,4 +20,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-A student water-saving appliance concept from Red Bull Basement 2020 progressed into a hardware startup via Imperial College London's Greenhouse accelerator, with TEDx follow-on.
+## What it is
+
+Eco Laundry is a water-saving washing machine concept from Joanna Power and Paramveer Bhachu.
+
+## What makes it interesting
+
+It won Red Bull Basement 2020 for the UK and reached the global final. The team joined Imperial College London's Greenhouse accelerator through the Grantham Institute, and the project led to TEDx talks.
+
+## What you can learn
+
+A student competition can turn a concept into a team with access to labs and mentors. The accelerator, not the prize, is the useful part.
+
+## Limitations of this analysis
+
+The record documents the award and the accelerator, not the engineering. Water savings, prototype status, and commercial availability are not established by the linked source.

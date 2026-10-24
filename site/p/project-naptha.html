@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,7 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 <div class="links"><a href="https://www.projectnaptha.com/" target="_blank" rel="noopener">Official</a></div>
 <div class="callout"><div class="label">Key idea</div><p>Run OCR locally, then lay invisible text over the image so the recognized words behave like real text.</p></div>
 <div class="callout"><div class="label">Learn from this</div><p>The model is not the product. The product is making the output act like the interface people already know.</p></div>
-<div class="content"><h2>What it does</h2>
+<div class="content"><div class="kicker">Deep dive</div><h2>What it does</h2>
 <p>Project Naptha is a browser extension that makes text inside images selectable, copyable, editable, and translatable. You drag over a screenshot or a meme as if it were a document, and the words come out.</p>
 <h2>The key insight</h2>
 <p>Optical character recognition was not new in 2013. The insight was placement. Once the engine returns words with bounding boxes, the extension can position transparent text elements directly over the image. From that point, the browser's own selection, copy, and translation features do the rest.</p>

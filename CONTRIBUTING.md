@@ -57,7 +57,7 @@ verified_at: 2026-01-01   # optional, last time you checked the evidence
 ---
 ```
 
-3. Markdown after the frontmatter is notes. When `deep_dive: true`, that body is the published breakdown and must contain at least one section.
+3. Markdown after the frontmatter is published content. Every project gets a short profile; entries with enough sources also get a technical deep dive.
 
 ## Choosing a domain and tags
 
@@ -82,6 +82,23 @@ verified_at: 2026-01-01   # optional, last time you checked the evidence
 The two linked tags are validated: a record tagged `open-source` without a source link fails `validate`. The editorial tags are judgement calls, so back them in the `supports` text of an evidence entry when the claim is not obvious from the description.
 
 Free-form tags still cover technology and theme. The 12 tag limit counts both kinds.
+
+## Profiles
+
+Every record carries a short profile in its body. The profile is the baseline layer: it explains the project to someone who has never heard of it, using the description, event, links, and evidence already in the record.
+
+Use these headings where they add something, and skip the ones that would only repeat the frontmatter:
+
+- `## What it is`
+- `## The problem`
+- `## How the experience works`
+- `## What makes it interesting`
+- `## What you can learn`
+- `## Limitations of this analysis`
+
+The list is a menu, not a form. A record with one official link should not pretend to know the architecture. Write what the sources support, leave the rest out, and put the gap under Limitations. That section is not padding; it is what makes the rest trustworthy.
+
+A profile is not a deep dive. It describes the product, the problem, and the lesson. It does not describe internals unless the sources do.
 
 ## Deep dives
 

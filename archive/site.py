@@ -176,6 +176,7 @@ h1 {{ font-size: 1.75rem; margin-bottom: 0.5rem; }}
 .content pre {{ background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }}
 .content code {{ font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }}
 .content a {{ color: var(--accent); }}
+.kicker {{ font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }}
 .evidence {{ margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }}
 .evidence h2 {{ font-size: 1rem; color: var(--muted); }}
 .evidence li {{ font-size: 0.85rem; color: var(--muted); }}
@@ -265,7 +266,11 @@ def _build_detail_page(p: dict, domain_name: str, discovery_ids: set[str]) -> st
         )
     content = ""
     if p.get("body") and p.get("body").strip():
-        content = f'<div class="content">{render_markdown(p["body"])}</div>'
+        label = "Deep dive" if p.get("deep_dive") else "Profile"
+        content = (
+            f'<div class="content"><div class="kicker">{label}</div>'
+            f'{render_markdown(p["body"])}</div>'
+        )
     return _DETAIL_TEMPLATE.format(
         name=html.escape(p.get("name", "")),
         desc=html.escape(p.get("description", "")),

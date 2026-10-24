@@ -29,4 +29,26 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Built as a Meta Llama hackathon entry under the Cerebral Valley banner in San Francisco, OpenGlass clipped an AI vision stack onto ordinary frames. The team later shipped a successor wearable called Friend.
+## What it is
+
+OpenGlass is an open-source attachment that turns ordinary glasses into smart glasses. A camera and a small computer clip onto the frame, and a model describes what the camera sees.
+
+## The problem
+
+Smart glasses were expensive and closed. Developers who wanted to experiment with wearable vision had to buy a finished product and work inside its limits.
+
+## How the experience works
+
+The hardware mounts on existing frames. The camera captures a scene, and a vision model produces a description that is spoken or displayed to the wearer.
+
+## What makes it interesting
+
+A five-person team built it in about 36 hours at the Cerebral Valley hackathon in 2024 for roughly $20 in off-the-shelf parts, and won the event. The bill of materials is the point: a wearable anyone can rebuild.
+
+## What you can learn
+
+Open hardware wins attention when the parts list is short and the result is recognizable. A $20 demo does more for adoption than a specification.
+
+## Limitations of this analysis
+
+The record does not document the compute module, battery life, latency, or the split between on-device and remote inference.

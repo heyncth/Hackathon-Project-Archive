@@ -19,4 +19,26 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-The definitive jam-to-VR-classic story: a Global Game Jam 2015 prototype about asymmetric bomb defusal became one of VR's most recognizable party games.
+## What it is
+
+Keep Talking and Nobody Explodes is a cooperative bomb-defusal game. One player sees a bomb in VR; the others hold a manual and cannot see it.
+
+## The problem
+
+Co-op games usually give every player the same information, which makes coordination a matter of reflexes. This one makes coordination the entire game by splitting the information.
+
+## How the experience works
+
+The defuser describes what is on the bomb: a serial number, a symbol, a colored wire. The experts find the matching rule in the manual and read back instructions. Neither side can finish alone.
+
+## What makes it interesting
+
+It began as a Global Game Jam 2015 prototype and became one of the best-selling VR titles on Steam. The manual is printable paper, so the game supports any number of players without extra hardware.
+
+## What you can learn
+
+Asymmetric information is a cheap source of depth. Before adding mechanics, check whether splitting what players know creates the tension you want.
+
+## Limitations of this analysis
+
+The record does not describe the bomb-generation logic or how the VR and non-VR versions differ.

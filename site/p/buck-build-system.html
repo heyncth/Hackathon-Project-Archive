@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,7 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 
 <div class="callout"><div class="label">Key idea</div><p>Describe a build as a graph of declared targets, then execute and cache each node independently.</p></div>
 <div class="callout"><div class="label">Learn from this</div><p>Find the bottleneck you can measure, then remove the mechanism that causes it. Build tools win on correctness and speed, not features.</p></div>
-<div class="content"><h2>What it does</h2>
+<div class="content"><div class="kicker">Deep dive</div><h2>What it does</h2>
 <p>Buck is a build system for large codebases, built at Facebook for Android. It reads declarative build files, constructs a dependency graph, and executes independent work in parallel with caching.</p>
 <h2>The key insight</h2>
 <p>The prototype came out of a Facebook hackathon in 2012 because the Android build had become the slowest part of the developer loop. The fix was not a faster compiler. It was removing hidden dependencies so that work could be parallelized and reused.</p>

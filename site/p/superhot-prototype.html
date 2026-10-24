@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,7 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 <div class="links"><a href="https://superhotgame.com" target="_blank" rel="noopener">Official</a><a href="https://superhotgame.com/prototype.html" target="_blank" rel="noopener">Demo</a></div>
 <div class="callout"><div class="label">Key idea</div><p>Time advances only when the player moves, turning a first-person shooter into a puzzle game.</p></div>
 <div class="callout"><div class="label">Learn from this</div><p>One mechanical constraint can replace an entire design document. Find the constraint first.</p></div>
-<div class="content"><h2>What it does</h2>
+<div class="content"><div class="kicker">Deep dive</div><h2>What it does</h2>
 <p>SUPERHOT is a first-person shooter where time moves only when the player moves. Stand still and bullets hang in the air. Move and the world resumes. The 2013 jam prototype introduced this mechanic; the full game shipped in 2016.</p>
 <h2>The key insight</h2>
 <p>The team did not set out to build a shooter. They set out to make something in seven days. The time-movement mechanic emerged from a jam constraint: make one interesting rule and build everything around it.</p>

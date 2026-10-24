@@ -23,4 +23,26 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-The Odeo session is often described as a company hackathon. Dorsey and Weber built the first prototype in about two weeks.
+## What it is
+
+Twitter is a public microblogging service. A post is short, visible by default, and read in a timeline.
+
+## The problem
+
+Blogging required time and a title. Status updates existed inside social networks, but not as a public, followable stream.
+
+## How the experience works
+
+A user posts a short message, and followers see it in order. The service began as an SMS product, so a post had to fit a text message.
+
+## What makes it interesting
+
+It came out of a daylong brainstorming session at Odeo in 2006, and Jack Dorsey and Florian Weber built the first prototype. The first tweet went out on March 21, 2006. The length limit was a carrier constraint that became the product's identity.
+
+## What you can learn
+
+A constraint imposed by infrastructure can become the feature users ask for. Removing it later is a product decision, not a cleanup.
+
+## Limitations of this analysis
+
+The record covers the origin and the first tweet, not the architecture or later changes to the length limit.

@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Session Replay was a classic \"code wins arguments\" hack: one engineer shipped a contested prototype in a company hackathon weekend. It reshaped PostHog from a single analytics tool into a multi-product platform.
+## What it is
+
+Session Replay records a user's clicks, scrolls, and page transitions so a product team can watch what happened without reproducing it.
+
+## The problem
+
+Analytics showed that users dropped off; it did not show why. Watching a real session closes the gap between a funnel chart and a bug report.
+
+## What makes it interesting
+
+An engineer built it during a PostHog hackathon in the company's early days, against leadership's scepticism. It grew to tens of thousands of daily active users and became one of the products that turned PostHog from an analytics tool into a multi-product platform.
+
+## What you can learn
+
+A hackathon prototype can settle a strategy argument that meetings cannot. The cost of being wrong is a weekend; the cost of debating is a quarter.
+
+## Limitations of this analysis
+
+The record does not describe the recording format, the privacy controls, or how replay data is stored.

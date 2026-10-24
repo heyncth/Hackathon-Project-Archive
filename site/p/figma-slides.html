@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,7 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 <div class="links"><a href="https://www.figma.com/slides" target="_blank" rel="noopener">Official</a></div>
 <div class="callout"><div class="label">Key idea</div><p>Reuse the canvas, the document model, and the multiplayer engine, then add only the slide layer.</p></div>
 <div class="callout"><div class="label">Learn from this</div><p>The fastest new product borrows an existing engine. Ship the delta, not a second platform.</p></div>
-<div class="content"><h2>What it does</h2>
+<div class="content"><div class="kicker">Deep dive</div><h2>What it does</h2>
 <p>Figma Slides is a presentation tool built on Figma's design canvas. Teams design slides with the same tools they use for interfaces, then present them in the same file.</p>
 <h2>The key insight</h2>
 <p>The team did not build a presentation editor from scratch. It built a slide layer on top of the editor that already existed: same canvas, same document, same multiplayer session, same component system.</p>

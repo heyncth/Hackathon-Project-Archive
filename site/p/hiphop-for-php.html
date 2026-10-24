@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,7 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 
 <div class="callout"><div class="label">Key idea</div><p>Translate PHP into C++ ahead of time, so the same code runs without paying interpreter cost per request.</p></div>
 <div class="callout"><div class="label">Learn from this</div><p>A code generator plus a compatibility layer can buy years of headroom while you build the real runtime.</p></div>
-<div class="content"><h2>What it does</h2>
+<div class="content"><div class="kicker">Deep dive</div><h2>What it does</h2>
 <p>HipHop for PHP converts PHP source into C++ and compiles the result. Facebook ran its PHP web tier through it and reported roughly half the CPU usage for the same work.</p>
 <h2>The key insight</h2>
 <p>Facebook did not want to rewrite the site. The team wanted the existing PHP codebase to run faster without a language migration. HipHop keeps PHP as the source language and moves the cost from request time to build time.</p>

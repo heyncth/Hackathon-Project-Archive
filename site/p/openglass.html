@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,18 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 <div class="links"><a href="https://github.com/BurgerKing6668/OpenGlass2" target="_blank" rel="noopener">Official</a><a href="https://github.com/BurgerKing6668/OpenGlass2" target="_blank" rel="noopener">Source</a><a href="https://github.com/not-important-vr/openglass" target="_blank" rel="noopener">Demo</a></div>
 
 
-<div class="content"><p>Built as a Meta Llama hackathon entry under the Cerebral Valley banner in San Francisco, OpenGlass clipped an AI vision stack onto ordinary frames. The team later shipped a successor wearable called Friend.</p></div>
+<div class="content"><div class="kicker">Profile</div><h2>What it is</h2>
+<p>OpenGlass is an open-source attachment that turns ordinary glasses into smart glasses. A camera and a small computer clip onto the frame, and a model describes what the camera sees.</p>
+<h2>The problem</h2>
+<p>Smart glasses were expensive and closed. Developers who wanted to experiment with wearable vision had to buy a finished product and work inside its limits.</p>
+<h2>How the experience works</h2>
+<p>The hardware mounts on existing frames. The camera captures a scene, and a vision model produces a description that is spoken or displayed to the wearer.</p>
+<h2>What makes it interesting</h2>
+<p>A five-person team built it in about 36 hours at the Cerebral Valley hackathon in 2024 for roughly $20 in off-the-shelf parts, and won the event. The bill of materials is the point: a wearable anyone can rebuild.</p>
+<h2>What you can learn</h2>
+<p>Open hardware wins attention when the parts list is short and the result is recognizable. A $20 demo does more for adoption than a specification.</p>
+<h2>Limitations of this analysis</h2>
+<p>The record does not document the compute module, battery life, latency, or the split between on-device and remote inference.</p></div>
 <div class="evidence"><h2>Evidence</h2><ul><li><a href="https://gizmodo.com/cerebral-valley-hackers-build-20-open-source-smart-gla-1851476656" target="_blank" rel="noopener">Five-person team built $20 open-source smart glasses at Cerebral Valley hackathon in a weekend; won the event and collected roughly 1,500 waitlist signups: https://gizmodo.com/cerebral-valley-hackers-build-20-open-source-smart-gla-1851476656</a></li><li><a href="https://qz.com/a-group-of-hackers-built-20-open-source-smart-glasses-1851478685" target="_blank" rel="noopener">36-hour hackathon project described as $20 open-source smart glasses connecting sight and hearing to an AI chatbot: https://qz.com/a-group-of-hackers-built-20-open-source-smart-glasses-1851478685</a></li><li><a href="https://github.com/not-important-vr/openglass" target="_blank" rel="noopener">Open-source repo: turn any glasses into hackable smart glasses with under $25 of off-the-shelf components: https://github.com/not-important-vr/openglass</a></li></ul></div>
 <footer>
   <a href="../index.html">Archive</a> &middot;

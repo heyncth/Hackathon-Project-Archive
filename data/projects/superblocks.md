@@ -19,4 +19,18 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Superblocks' path runs through the student-innovation circuit: co-founder Brad Menezes came out of Red Bull Basement before building an enterprise internal-tools platform.
+## What it is
+
+Superblocks is a platform for building internal tools and AI-assisted internal software.
+
+## What makes it interesting
+
+Co-founder Brad Menezes came through Red Bull Basement, a student innovation program, before starting the company in 2021. The record follows that path from a student competition to an enterprise product.
+
+## What you can learn
+
+A student program is a low-cost way to find out whether an idea attracts anyone. It is not proof of a market, but it is a place to learn whether people care.
+
+## Limitations of this analysis
+
+This record documents the founder's program history, not the product. Superblocks' architecture, pricing, and customer base are not covered by the linked source.

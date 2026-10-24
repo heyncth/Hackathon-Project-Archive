@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,16 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 <div class="links"><a href="https://posthog.com/session-replay" target="_blank" rel="noopener">Official</a></div>
 
 
-<div class="content"><p>Session Replay was a classic \"code wins arguments\" hack: one engineer shipped a contested prototype in a company hackathon weekend. It reshaped PostHog from a single analytics tool into a multi-product platform.</p></div>
+<div class="content"><div class="kicker">Profile</div><h2>What it is</h2>
+<p>Session Replay records a user's clicks, scrolls, and page transitions so a product team can watch what happened without reproducing it.</p>
+<h2>The problem</h2>
+<p>Analytics showed that users dropped off; it did not show why. Watching a real session closes the gap between a funnel chart and a bug report.</p>
+<h2>What makes it interesting</h2>
+<p>An engineer built it during a PostHog hackathon in the company's early days, against leadership's scepticism. It grew to tens of thousands of daily active users and became one of the products that turned PostHog from an analytics tool into a multi-product platform.</p>
+<h2>What you can learn</h2>
+<p>A hackathon prototype can settle a strategy argument that meetings cannot. The cost of being wrong is a weekend; the cost of debating is a quarter.</p>
+<h2>Limitations of this analysis</h2>
+<p>The record does not describe the recording format, the privacy controls, or how replay data is stored.</p></div>
 <div class="evidence"><h2>Evidence</h2><ul><li><a href="https://newsletter.posthog.com/p/great-companies-are-built-in-hackathons" target="_blank" rel="noopener">In PostHog's earliest days an engineer built Session Replay during a hackathon despite leadership pushback; it became wildly popular with 50,000+ DAU and drove the multi-product strategy: https://newsletter.posthog.com/p/great-companies-are-built-in-hackathons</a></li><li><a href="https://posthog.com/blog/behind-the-scenes-posthog-hackathon" target="_blank" rel="noopener">PostHog states session replay and the data warehouse started as hackathon projects: https://posthog.com/blog/behind-the-scenes-posthog-hackathon</a></li></ul></div>
 <footer>
   <a href="../index.html">Archive</a> &middot;

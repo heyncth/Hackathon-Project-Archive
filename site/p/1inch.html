@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,7 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 <div class="links"><a href="https://1inch.io" target="_blank" rel="noopener">Official</a><a href="https://github.com/1inch" target="_blank" rel="noopener">Source</a></div>
 <div class="callout"><div class="label">Key idea</div><p>Split one swap across multiple exchanges to get a better average price than any single venue offers.</p></div>
 <div class="callout"><div class="label">Learn from this</div><p>A hackathon prototype that solves one measurable problem (price slippage) can become infrastructure when the measurement matters to everyone.</p></div>
-<div class="content"><h2>What it does</h2>
+<div class="content"><div class="kicker">Deep dive</div><h2>What it does</h2>
 <p>1inch is a decentralized exchange (DEX) aggregator. When you swap tokens, it splits the order across multiple liquidity sources to get a better average rate than any single exchange offers.</p>
 <h2>The key insight</h2>
 <p>Sergej Kunz and Anton Bukov built the first prototype in 56 hours at ETHGlobal New York in May 2019. The insight: on any single DEX, a large order moves the price against you (slippage). Splitting the same order across three DEXes with different liquidity pools produces a better average rate.</p>

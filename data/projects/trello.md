@@ -18,4 +18,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Prototype work happened during Fog Creek's recurring internal hack-week format ("Creek Weeks"); the product later launched publicly at TechCrunch Disrupt in September 2011.
+## What it is
+
+Trello organizes work into boards, lists, and cards. A card is a task; moving it between lists shows progress. The board is a kanban wall that a team can read without training.
+
+## The problem
+
+Project tools of the time were built around fields, filters, and reports. A small team that wanted to see who was doing what had to configure a system before using it. Trello's bet was that the board metaphor already existed in offices, on walls and sticky notes.
+
+## What makes it interesting
+
+It came out of Fog Creek's Creek Weeks, an internal hack-week format where employees pitched and prototyped products. The prototype was pitched in January 2011 and the product launched at TechCrunch Disrupt that September. Closing that gap is the part most hack-week projects never manage.
+
+## What you can learn
+
+A familiar physical object is a cheaper interface than a new vocabulary. If users can guess where to click, onboarding is mostly done.
+
+## Limitations of this analysis
+
+The record documents the origin and launch, not the implementation. Trello's data model, sync approach, and early scaling work are not covered by the linked sources.

@@ -46,6 +46,7 @@ h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
 .content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
 .content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
 .content a { color: var(--accent); }
+.kicker { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 0.75rem; }
 .evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .evidence h2 { font-size: 1rem; color: var(--muted); }
 .evidence li { font-size: 0.85rem; color: var(--muted); }
@@ -61,7 +62,7 @@ footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1
 <div class="links"><a href="https://zapier.com" target="_blank" rel="noopener">Official</a></div>
 <div class="callout"><div class="label">Key idea</div><p>Connect two apps that have no API integration by automating the steps a human would take in a browser.</p></div>
 <div class="callout"><div class="label">Learn from this</div><p>The Startup Weekend version was a demo of one integration. The product is the platform that lets anyone create the next thousand.</p></div>
-<div class="content"><h2>What it does</h2>
+<div class="content"><div class="kicker">Deep dive</div><h2>What it does</h2>
 <p>Zapier connects over 7,000 web applications. A Zap is a trigger (new email, new row, new file) paired with an action (create a task, send a message, add a row) in a different app. When the trigger fires, Zapier performs the action.</p>
 <h2>The key insight</h2>
 <p>Zapier started at a Startup Weekend in Columbia, Missouri in October 2011. Wade Foster, Mike Knoop, and Bryan Vance built a demo that connected two apps in a weekend. The insight that turned it into a company: every app has an API, but most app pairs do not have a direct integration. A middleware layer that translates between thousands of APIs is more valuable than building any single integration.</p>

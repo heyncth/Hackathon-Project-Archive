@@ -25,4 +25,26 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Getaround launched its iPhone-era peer-to-peer car sharing at Disrupt NYC 2011 and took the Battlefield cup the same day. It grew into a public company before announcing a wind-down in 2026.
+## What it is
+
+Getaround is a peer-to-peer car rental marketplace. Owners list cars by the hour or day; renters book and unlock them through the app.
+
+## The problem
+
+Car sharing usually requires a company fleet and a physical key handoff. Peer-to-peer rental has a trust problem and an access problem: the owner is not there to hand over the key.
+
+## How the experience works
+
+A hardware kit installed in the car connects the vehicle to the platform. After a booking, the renter unlocks the car from the phone, so the owner never has to meet them.
+
+## What makes it interesting
+
+The company launched at TechCrunch Disrupt NYC 2011 and won the Startup Battlefield that day. It later listed on the NYSE, then announced a wind-down in 2026. That arc is unusually complete for an archive entry: weekend stage, public company, ending.
+
+## What you can learn
+
+Marketplaces with a physical access problem need hardware, not just software. The install and recovery path for that hardware is part of the product, not an accessory to it.
+
+## Limitations of this analysis
+
+The record does not cover the kit's design, the insurance model, or the reasons behind the 2026 wind-down.

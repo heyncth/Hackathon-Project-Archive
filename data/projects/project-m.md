@@ -17,4 +17,22 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-A hospital-run hackathon category win turned micro-expression emotional AI into a planned SaMD registration for pediatric mental telehealth.
+## What it is
+
+Project M is an emotional AI system that reads micro-facial expressions and reports an emotional state. It targets clinical use, including pediatric mental telehealth.
+
+## The problem
+
+Emotional assessment in telehealth depends on self-report and clinician observation, both of which lose information over a video call.
+
+## What makes it interesting
+
+It won the Touchless Experience category at the Texas Children's Hospital Healthcare Hackathon in 2021. The team planned FDA Software as a Medical Device registration, a much longer road than a hackathon.
+
+## What you can learn
+
+A clinical demo is the start of a regulatory process, not the end of development. The decision to pursue clearance is the part worth studying.
+
+## Limitations of this analysis
+
+The record does not include accuracy results, training data, or current regulatory status. Claims about clinical validity cannot be checked from the linked source.
