@@ -1,0 +1,11 @@
+id: guide-prakriti-overview
+project_id: prakriti
+type: overview
+path: guides/overviews/prakriti.md
+status: published
+gate_reason: null
+evidence_ids:
+  - ev-prakriti-award-cornell-chronicle
+  - ev-prakriti-readme-award-claim
+  - ev-prakriti-repo-exists
+generated_at: 2026-10-24T08:30:00Z

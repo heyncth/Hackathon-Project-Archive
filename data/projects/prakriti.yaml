@@ -1,0 +1,48 @@
+id: prakriti
+name: Prakriti
+description: >-
+  Platform concept by "The Freshmen" to help farmers grow and sell mushrooms
+  from rice straw, addressing crop-residue burning and air pollution in India.
+  Grand challenge winner at Cornell's Digital Agriculture Hackathon 2024.
+categories:
+  - award-winning
+tags:
+  - agriculture
+  - sustainability
+  - hackathon
+status: active
+repository_ids:
+  - repo-prakriti
+official_url: https://prakriti-hack.netlify.app/
+demo_url: null
+participation_ids:
+  - part-prakriti-cornell-digital-ag-hackathon-2024
+technologies:
+  - CSS
+  - HTML
+  - JavaScript
+evidence_ids:
+  - ev-prakriti-award-cornell-chronicle
+  - ev-prakriti-repo-exists
+  - ev-prakriti-readme-award-claim
+metrics_ids:
+  - metrics-repo-prakriti
+popularity: limited
+documentation_quality: limited
+reproducibility: not-assessed
+verification_status: verified
+educational_value: unknown
+guide_ids:
+  - guide-prakriti-overview
+  - guide-prakriti-case-study
+  - guide-prakriti-reconstruction
+first_seen: 2026-10-24T08:30:00Z
+last_checked: 2026-10-24T08:30:00Z
+limitations:
+  - "Original repository has no detected license; reuse terms are unspecified."
+  - "Documentation is limited to a short README; architecture details beyond
+    the Cornell Chronicle summary are not documented."
+notes: >-
+  Award claim verified via Cornell Chronicle (official university news of the
+  organizing institution). Star count is 0 at capture time; popularity is
+  limited by metric, independent of the award.

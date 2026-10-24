@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/heyncth/Hackathon-Project-Archive/schemas/evidence.schema.json",
+  "title": "Evidence",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "claim", "url", "source_type", "reliability", "accessed_at", "notes"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "claim": { "type": "string", "minLength": 1 },
+    "url": { "type": "string", "format": "uri" },
+    "source_type": {
+      "enum": ["official-results", "repository", "blog", "video", "demo", "documentation", "other"]
+    },
+    "reliability": { "enum": ["primary", "secondary", "tertiary"] },
+    "accessed_at": { "type": "string", "format": "date-time" },
+    "notes": { "type": ["string", "null"] }
+  }
+}

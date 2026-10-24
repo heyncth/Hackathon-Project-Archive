@@ -1,0 +1,9 @@
+id: ev-open-yapper-repo-exists
+claim: The original repository Matinrahimik/open_yapper exists and is public.
+url: https://github.com/Matinrahimik/open_yapper
+source_type: repository
+reliability: primary
+accessed_at: 2026-10-24T08:30:00Z
+notes: >-
+  Verified via GitHub API; primary language Dart; 113 stars and 18 forks at
+  capture time; no license detected.

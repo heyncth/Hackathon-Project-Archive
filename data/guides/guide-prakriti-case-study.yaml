@@ -1,0 +1,10 @@
+id: guide-prakriti-case-study
+project_id: prakriti
+type: case-study
+path: guides/case-studies/prakriti.md
+status: blocked
+gate_reason: >-
+  Documentation quality is limited; insufficient architectural evidence for an
+  engineering case study.
+evidence_ids: []
+generated_at: 2026-10-24T08:30:00Z

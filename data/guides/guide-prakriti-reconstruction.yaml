@@ -1,0 +1,11 @@
+id: guide-prakriti-reconstruction
+project_id: prakriti
+type: reconstruction
+path: guides/rebuild/prakriti.md
+status: draft
+gate_reason: null
+evidence_ids:
+  - ev-prakriti-award-cornell-chronicle
+  - ev-prakriti-repo-exists
+  - ev-prakriti-readme-award-claim
+generated_at: 2026-10-24T08:30:00Z

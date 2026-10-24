@@ -1,0 +1,7 @@
+id: ev-prakriti-repo-exists
+claim: The original repository NicholasChanng/prakriti exists and is public.
+url: https://github.com/NicholasChanng/prakriti
+source_type: repository
+reliability: primary
+accessed_at: 2026-10-24T08:30:00Z
+notes: Verified via GitHub API; languages CSS/JavaScript/HTML; no license detected.

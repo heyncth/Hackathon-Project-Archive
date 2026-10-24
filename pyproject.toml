@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hackathon-project-archive"
+version = "0.1.0"
+description = "Structured, evidence-tracked archive of noteworthy hackathon projects"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "UNDECIDED — see LICENSE" }
+dependencies = [
+    "PyYAML>=6.0",
+    "jsonschema>=4.20",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+hpa = "hpa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+# -p no:fugue_test: the installed fugue library registers pytest plugins that
+# interfere with test isolation in this environment.
+addopts = "-q -p no:fugue_test -p no:fugue_test_fixtures"

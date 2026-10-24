@@ -1,0 +1,23 @@
+Licensing status: UNDECIDED
+
+This repository intentionally does not apply a single license to all of its
+contents. The following components will eventually be licensed separately,
+but no final licensing choice has been made yet:
+
+1. Pipeline source code (src/, scripts/, tests/)
+2. Curated structured data (data/, sources/)
+3. Authored documentation and guides (docs/, guides/, README.md, etc.)
+
+Until a decision is made:
+- Do not assume any permission to reuse, redistribute, or relicence the
+  contents of this repository beyond what default copyright law allows.
+- External projects linked from this archive remain under their own licenses;
+  this repository links to original sources and does not redistribute their
+  source code.
+
+To resolve this, the maintainers should:
+- Choose an approved open-source license for the code (e.g. MIT, Apache-2.0).
+- Choose a suitable license or public-domain dedication for curated data
+  (e.g. CC0, CC-BY-4.0).
+- Choose a suitable license for guides and documentation.
+- Record the decision in this file and in docs/source-policy.md.

@@ -1,0 +1,10 @@
+id: guide-open-yapper-case-study
+project_id: open-yapper
+type: case-study
+path: guides/case-studies/open-yapper.md
+status: blocked
+gate_reason: >-
+  Case study requires verified evidence status; project is
+  partially-verified (self-reported award only).
+evidence_ids: []
+generated_at: 2026-10-24T08:30:00Z

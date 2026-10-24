@@ -1,0 +1,11 @@
+id: guide-open-yapper-reconstruction
+project_id: open-yapper
+type: reconstruction
+path: guides/rebuild/open-yapper.md
+status: draft
+gate_reason: null
+evidence_ids:
+  - ev-open-yapper-repo-exists
+  - ev-open-yapper-website
+  - ev-open-yapper-readme-award-claim
+generated_at: 2026-10-24T08:30:00Z

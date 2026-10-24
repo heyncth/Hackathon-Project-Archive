@@ -1,0 +1,132 @@
+{
+  "_note": "SYNTHETIC TEST FIXTURES. Project names, events, awards, stars, and URLs in this file are fabricated for pipeline tests and offline demos. They are NOT real hackathon projects and must never be cited as real discoveries. example.invalid is a reserved TLD (RFC 2606).",
+  "candidates": [
+    {
+      "source_id": "local-fixtures",
+      "source_url": "https://example.invalid/fixtures/fixture-alpha",
+      "name": "Fixture Alpha",
+      "description": "A synthetic fixture project used to exercise award-winning ingestion.",
+      "repo_url": "https://github.com/hpa-fixture-org/fixture-alpha",
+      "stars": 1500,
+      "forks": 120,
+      "language": "Python",
+      "topics": ["developer-tools", "cli"],
+      "official_url": "https://example.invalid/fixture-alpha",
+      "demo_url": "https://example.invalid/fixture-alpha/demo",
+      "event_name": "Fake Hackathon",
+      "event_year": 2024,
+      "event_url": "https://example.invalid/events/fake-hackathon-2024/results",
+      "award_name": "Grand Prize",
+      "award_category": "overall",
+      "award_verified": true,
+      "documentation_quality": "strong",
+      "educational_value": "moderate",
+      "evidence": [
+        {
+          "claim": "Fixture Alpha won the Grand Prize at Fake Hackathon 2024.",
+          "url": "https://example.invalid/events/fake-hackathon-2024/results",
+          "source_type": "official-results",
+          "reliability": "primary",
+          "notes": "Synthetic fixture evidence."
+        },
+        {
+          "claim": "Fixture Alpha documents its architecture in the project documentation.",
+          "url": "https://example.invalid/fixture-alpha/docs",
+          "source_type": "documentation",
+          "reliability": "primary",
+          "notes": "Synthetic fixture evidence."
+        }
+      ]
+    },
+    {
+      "source_id": "local-fixtures",
+      "source_url": "https://example.invalid/fixtures/fixture-beta",
+      "name": "Fixture Beta",
+      "description": "A synthetic community-notable fixture with no original repository.",
+      "repo_url": null,
+      "stars": null,
+      "forks": null,
+      "language": null,
+      "topics": ["education"],
+      "official_url": "https://example.invalid/fixture-beta",
+      "demo_url": null,
+      "event_name": null,
+      "event_year": null,
+      "event_url": null,
+      "award_name": null,
+      "award_category": null,
+      "award_verified": false,
+      "documentation_quality": "partial",
+      "educational_value": "high",
+      "evidence": [
+        {
+          "claim": "Fixture Beta is described in an independent technical write-up.",
+          "url": "https://example.invalid/blogs/fixture-beta-writeup",
+          "source_type": "blog",
+          "reliability": "secondary",
+          "notes": "Synthetic fixture evidence."
+        }
+      ]
+    },
+    {
+      "source_id": "local-fixtures",
+      "source_url": "https://example.invalid/fixtures/alpha-fixture-again",
+      "name": "Alpha Fixture",
+      "description": "Duplicate listing of the same repository under a different name; used to test deduplication.",
+      "repo_url": "https://github.com/hpa-fixture-org/fixture-alpha",
+      "stars": 1500,
+      "forks": 120,
+      "language": "Python",
+      "topics": ["developer-tools"],
+      "official_url": null,
+      "demo_url": null,
+      "event_name": null,
+      "event_year": null,
+      "event_url": null,
+      "award_name": null,
+      "award_category": null,
+      "award_verified": false,
+      "documentation_quality": null,
+      "educational_value": null,
+      "evidence": [
+        {
+          "claim": "Alpha Fixture points to the same repository as Fixture Alpha.",
+          "url": "https://github.com/hpa-fixture-org/fixture-alpha",
+          "source_type": "repository",
+          "reliability": "primary",
+          "notes": "Synthetic fixture evidence for dedupe testing."
+        }
+      ]
+    },
+    {
+      "source_id": "local-fixtures",
+      "source_url": "https://example.invalid/fixtures/fixture-delta",
+      "name": "Fixture Delta",
+      "description": "A synthetic project with an unverified award claim; must not be labeled award-winning.",
+      "repo_url": "https://github.com/hpa-fixture-org/fixture-delta",
+      "stars": 45,
+      "forks": 3,
+      "language": "JavaScript",
+      "topics": ["web"],
+      "official_url": null,
+      "demo_url": null,
+      "event_name": "Rumor Hackathon",
+      "event_year": 2023,
+      "event_url": "https://example.invalid/events/rumor-hackathon-2023",
+      "award_name": "Best UI",
+      "award_category": "ui",
+      "award_verified": false,
+      "documentation_quality": "limited",
+      "educational_value": "low",
+      "evidence": [
+        {
+          "claim": "Fixture Delta repository exists.",
+          "url": "https://github.com/hpa-fixture-org/fixture-delta",
+          "source_type": "repository",
+          "reliability": "primary",
+          "notes": "Synthetic fixture evidence."
+        }
+      ]
+    }
+  ]
+}

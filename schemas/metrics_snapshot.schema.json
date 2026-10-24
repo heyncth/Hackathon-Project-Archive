@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/heyncth/Hackathon-Project-Archive/schemas/metrics_snapshot.schema.json",
+  "title": "MetricsSnapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "repository_id", "stars", "forks", "watchers", "captured_at", "source_url"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "repository_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "stars": { "type": ["integer", "null"], "minimum": 0 },
+    "forks": { "type": ["integer", "null"], "minimum": 0 },
+    "watchers": { "type": ["integer", "null"], "minimum": 0 },
+    "captured_at": { "type": "string", "format": "date-time" },
+    "source_url": { "type": "string", "format": "uri" }
+  }
+}

@@ -1,0 +1,50 @@
+id: open-yapper
+name: Open Yapper
+description: >-
+  Open-source voice dictation app (macOS, Flutter/Dart) that transcribes
+  speech, removes filler words, and pastes polished text into other
+  applications. Self-reported winner of Cursor Hackathon 2026 (Vancouver).
+categories:
+  - community-notable
+tags:
+  - voice
+  - dictation
+  - ai
+  - productivity
+  - hackathon
+status: active
+repository_ids:
+  - repo-open-yapper
+official_url: https://www.openyapper.com/
+demo_url: null
+participation_ids:
+  - part-open-yapper-cursor-hackathon-2026
+technologies:
+  - Dart
+  - Swift
+  - TypeScript
+evidence_ids:
+  - ev-open-yapper-repo-exists
+  - ev-open-yapper-readme-award-claim
+  - ev-open-yapper-website
+metrics_ids:
+  - metrics-repo-open-yapper
+popularity: moderate
+documentation_quality: partial
+reproducibility: not-assessed
+verification_status: partially-verified
+educational_value: unknown
+guide_ids:
+  - guide-open-yapper-overview
+  - guide-open-yapper-case-study
+  - guide-open-yapper-reconstruction
+first_seen: 2026-10-24T08:30:00Z
+last_checked: 2026-10-24T08:30:00Z
+limitations:
+  - "Award claim is self-reported in the repository README; no official
+    Cursor Hackathon 2026 results page has been recorded, so the award is
+    unverified and the project is not labeled award-winning."
+  - "Original repository has no detected license."
+notes: >-
+  Popularity label (moderate) reflects 113 stars captured 2026-10-24; metrics
+  are point-in-time, not current.

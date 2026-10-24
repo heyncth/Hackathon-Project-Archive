@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/heyncth/Hackathon-Project-Archive/schemas/guide.schema.json",
+  "title": "Guide",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "project_id", "type", "path", "status", "gate_reason", "evidence_ids", "generated_at"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "project_id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "type": { "enum": ["overview", "case-study", "reconstruction"] },
+    "path": { "type": "string", "minLength": 1 },
+    "status": { "enum": ["published", "draft", "blocked"] },
+    "gate_reason": { "type": ["string", "null"] },
+    "evidence_ids": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "generated_at": { "type": "string", "format": "date-time" }
+  }
+}

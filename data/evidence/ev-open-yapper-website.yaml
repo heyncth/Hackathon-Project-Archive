@@ -1,0 +1,7 @@
+id: ev-open-yapper-website
+claim: The project website www.openyapper.com is live and serves a product page.
+url: https://www.openyapper.com/
+source_type: demo
+reliability: primary
+accessed_at: 2026-10-24T08:30:00Z
+notes: HTTP 200 at capture time.

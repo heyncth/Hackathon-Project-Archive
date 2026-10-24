@@ -1,0 +1,43 @@
+# Discovery source registry. Editable; add sources here as they are found.
+# See docs/source-policy.md for field definitions and rules.
+# Never store secrets in this file.
+
+sources:
+  - id: github-search
+    name: GitHub Repository Search
+    type: github
+    base_url: https://api.github.com/search/repositories
+    adapter: github
+    discovery_method: "REST search: /search/repositories?q=<query>"
+    limitations:
+      - "Unauthenticated: 60 requests/hour per IP. Set GITHUB_TOKEN for higher limits."
+      - "Search indexes repositories, not award records; award claims need separate evidence."
+    requires_auth: false
+    auth_env_var: GITHUB_TOKEN
+    last_checked: null
+
+  - id: devpost-galleries
+    name: Devpost Public Galleries
+    type: devpost
+    base_url: https://devpost.com/software/search
+    adapter: devpost
+    discovery_method: "HTML scrape of public software search/gallery pages"
+    limitations:
+      - "No official public API; relies on public HTML markup that may change."
+      - "Access may be rate-limited or blocked; failures are recorded, not fatal."
+      - "Award claims must be confirmed on the specific hackathon's results page."
+    requires_auth: false
+    auth_env_var: null
+    last_checked: null
+
+  - id: local-fixtures
+    name: Local Test Fixtures
+    type: other
+    base_url: tests/fixtures/candidates.json
+    adapter: fixture
+    discovery_method: "Reads candidate JSON from a local file path"
+    limitations:
+      - "Synthetic/offline data for tests and deterministic demos. Not real discoveries."
+    requires_auth: false
+    auth_env_var: null
+    last_checked: null
