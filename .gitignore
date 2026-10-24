@@ -3,3 +3,8 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+
+# Local agent skills (installed per machine, not part of the archive)
+.agents/skills/
+.claude/skills/
+skills-lock.json
