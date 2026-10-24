@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SUPERHOT Prototype - Hackathon Project Archive</title>
+<meta name="description" content="First-person shooter prototype where time moves only when the player moves, built during a seven-day game jam.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>SUPERHOT Prototype</h1>
+<p class="desc">First-person shooter prototype where time moves only when the player moves, built during a seven-day game jam.</p>
+<div class="badges"><span class="badge">Games</span><span class="badge learn">Learn</span><span class="badge">game-jam</span><span class="badge">fps</span><span class="badge">unity</span><span class="badge">prototype</span><span class="badge discover">playable</span></div>
+<p class="meta">7 Day FPS - 2013</p>
+<div class="links"><a href="https://superhotgame.com" target="_blank" rel="noopener">Official</a><a href="https://superhotgame.com/prototype.html" target="_blank" rel="noopener">Demo</a></div>
+<div class="callout"><div class="label">Key idea</div><p>Time advances only when the player moves, turning a first-person shooter into a puzzle game.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>One mechanical constraint can replace an entire design document. Find the constraint first.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>SUPERHOT is a first-person shooter where time moves only when the player moves. Stand still and bullets hang in the air. Move and the world resumes. The 2013 jam prototype introduced this mechanic; the full game shipped in 2016.</p>
+<h2>The key insight</h2>
+<p>The team did not set out to build a shooter. They set out to make something in seven days. The time-movement mechanic emerged from a jam constraint: make one interesting rule and build everything around it.</p>
+<p>The mechanic does double duty. It is a puzzle rule (position yourself before time advances) and a difficulty dial (move less, survive longer). Every level design problem becomes "what does the player need to do while frozen?"</p>
+<h2>How it works</h2>
+<p>The simulation runs on a fixed timestep, but the timestep only advances when the player provides input. The engine has two states: frozen (delta time = 0) and running (delta time = normal).</p>
+<p>When frozen, physics does not integrate, AI does not tick, and particles pause. Bullets keep their positions because velocity integrates against delta time. Zero delta time freezes them in place.</p>
+<p>When the player moves (WASD or mouse look), the engine switches to running. One frame of input produces one frame of simulation. When the player stops, the engine drops back to frozen.</p>
+<p>The bullet freezing comes for free. No special-casing required: the mechanic falls out of the physics loop.</p>
+<p>Level design is the real work. Each arena is laid out so the optimal solution involves specific movement sequences: dodge here, shoot there, reposition. The levels teach the mechanic through geometry, not tutorials.</p>
+<h2>Build something similar</h2>
+<p>Start with a simple FPS scene: a player controller, a few enemies that shoot, and bullets that travel.</p>
+<p>Add a pause system. When the player is not pressing movement keys, set time scale to 0. When they press a key, set it back to 1.</p>
+<p>Test it: fire a shot, release all keys, watch the bullet stop mid-air.</p>
+<p>Then design three arenas around the mechanic. The first should be trivial (stand still, aim, move to shoot). The second should require repositioning between shots. The third should punish standing still (enemies close in over time).</p>
+<h2>Sources</h2>
+<p>Prototype origin and development timeline are documented at superhotgame.com/our-story, linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://superhotgame.com/our-story" target="_blank" rel="noopener">Prototype created August 10-17, 2013 during the 7 Day First Person Shooter game jam: https://superhotgame.com/our-story</a></li><li><a href="https://superhotgame.com" target="_blank" rel="noopener">Original 2013 prototype still playable on the official site: https://superhotgame.com</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>

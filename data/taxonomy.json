@@ -17,6 +17,16 @@
     { "id": "web-mobile", "name": "Web & Mobile" },
     { "id": "other", "name": "Other" }
   ],
+  "discovery_tags": [
+    { "id": "open-source", "name": "Open Source", "requires_link": "source" },
+    { "id": "playable", "name": "Playable", "requires_link": "demo" },
+    { "id": "free", "name": "Free" },
+    { "id": "beginner-friendly", "name": "Beginner Friendly" },
+    { "id": "starter-build", "name": "Starter Build" },
+    { "id": "became-startup", "name": "Became a Startup" },
+    { "id": "used-by-millions", "name": "Used by Millions" },
+    { "id": "weekend-build", "name": "Weekend Build" }
+  ],
   "tag_pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
-  "max_tags_per_project": 8
+  "max_tags_per_project": 12
 }

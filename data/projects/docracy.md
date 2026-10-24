@@ -3,7 +3,7 @@ id: docracy
 name: Docracy
 description: Open-source legal document platform billed as a GitHub for contracts; won a TechCrunch Disrupt hackathon and raised a $650K seed round.
 domain: web-mobile
-tags: [legaltech, open-source, techcrunch-disrupt, marketplace]
+tags: [legaltech, techcrunch-disrupt, marketplace]
 event:
   name: TechCrunch Disrupt Hackathon
   organizer: TechCrunch
@@ -22,4 +22,4 @@ evidence:
 verified_at: 2026-10-24
 ---
 
-Docracy treated legal templates like open-source code: community-submitted contracts you could fork, review and sign. The Disrupt hackathon win led to institutional seed funding.
+Docracy treated legal templates like  code: community-submitted contracts you could fork, review and sign. The Disrupt hackathon win led to institutional seed funding.

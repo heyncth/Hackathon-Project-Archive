@@ -186,3 +186,82 @@ def test_unknown_field(tmp_path):
 def test_empty_dataset_is_valid(tmp_path):
     make_repo(tmp_path, {})
     assert validate_repo(load(tmp_path)) == []
+
+
+DEEP_DIVE = textwrap.dedent(
+    """\
+    ---
+    id: deep-dive
+    name: Deep Dive
+    description: A project with a written breakdown.
+    domain: games
+    tags: [open-source]
+    links:
+      source: https://github.com/example/deep-dive
+    deep_dive: true
+    key_idea: One sentence about the idea.
+    learn_from: One sentence about the lesson.
+    evidence:
+      - url: https://example.com/deep-dive
+    ---
+
+    ## What it does
+
+    Body text.
+    """
+)
+
+
+def test_deep_dive_valid(tmp_path):
+    assert _errors(tmp_path, DEEP_DIVE, "deep-dive.md") == []
+
+
+def test_deep_dive_requires_body(tmp_path):
+    content = DEEP_DIVE.split("## What it does")[0].rstrip() + "\n"
+    errors = _errors(tmp_path, content, "deep-dive.md")
+    assert any("no body content" in e for e in errors)
+
+
+def test_deep_dive_requires_key_idea(tmp_path):
+    content = DEEP_DIVE.replace("key_idea: One sentence about the idea.\n", "")
+    errors = _errors(tmp_path, content, "deep-dive.md")
+    assert any("missing 'key_idea'" in e for e in errors)
+
+
+def test_deep_dive_requires_learn_from(tmp_path):
+    content = DEEP_DIVE.replace("learn_from: One sentence about the lesson.\n", "")
+    errors = _errors(tmp_path, content, "deep-dive.md")
+    assert any("missing 'learn_from'" in e for e in errors)
+
+
+def test_deep_dive_flag_must_be_boolean(tmp_path):
+    content = DEEP_DIVE.replace("deep_dive: true", "deep_dive: yes please")
+    errors = _errors(tmp_path, content, "deep-dive.md")
+    assert any("'deep_dive' must be a boolean" in e for e in errors)
+
+
+def test_key_idea_must_be_non_empty(tmp_path):
+    content = DEEP_DIVE.replace("key_idea: One sentence about the idea.", 'key_idea: ""')
+    errors = _errors(tmp_path, content, "deep-dive.md")
+    assert any("'key_idea' must be a non-empty string" in e for e in errors)
+
+
+def test_open_source_tag_requires_source_link(tmp_path):
+    content = DEEP_DIVE.replace("  source: https://github.com/example/deep-dive\n", "")
+    errors = _errors(tmp_path, content, "deep-dive.md")
+    assert any("requires links.source" in e for e in errors)
+
+
+def test_playable_tag_requires_demo_link(tmp_path):
+    content = DEEP_DIVE.replace("tags: [open-source]", "tags: [playable]").replace(
+        "  source: https://github.com/example/deep-dive\n", ""
+    )
+    errors = _errors(tmp_path, content, "deep-dive.md")
+    assert any("requires links.demo" in e for e in errors)
+
+
+def test_editorial_discovery_tag_needs_no_link(tmp_path):
+    content = DEEP_DIVE.replace("tags: [open-source]", "tags: [weekend-build]").replace(
+        "  source: https://github.com/example/deep-dive\n", ""
+    )
+    assert _errors(tmp_path, content, "deep-dive.md") == []

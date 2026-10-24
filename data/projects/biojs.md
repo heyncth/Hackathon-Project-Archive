@@ -10,6 +10,7 @@ event:
   year: 2014
 links:
   official: https://biojs.io/
+  source: https://github.com/biojs/biojs
 evidence:
   - url: https://opensource.googleblog.com/2016/08/from-google-summer-of-code-to-game-of.html
     supports: "GSoC 2014, five students became core devs, v2.0 design"

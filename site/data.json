@@ -1,4 +1,14 @@
 {
+  "discovery_tags": [
+    "open-source",
+    "playable",
+    "free",
+    "beginner-friendly",
+    "starter-build",
+    "became-startup",
+    "used-by-millions",
+    "weekend-build"
+  ],
   "domains": {
     "accessibility": "Accessibility",
     "ai-ml": "AI & Machine Learning",
@@ -23,6 +33,8 @@
         "Sergej Kunz",
         "Anton Bukov"
       ],
+      "body": "## What it does\n\n1inch is a decentralized exchange (DEX) aggregator. When you swap tokens, it splits the order across multiple liquidity sources to get a better average rate than any single exchange offers.\n\n## The key insight\n\nSergej Kunz and Anton Bukov built the first prototype in 56 hours at ETHGlobal New York in May 2019. The insight: on any single DEX, a large order moves the price against you (slippage). Splitting the same order across three DEXes with different liquidity pools produces a better average rate.\n\nThe math is simple. If exchange A holds 60% of the liquidity and exchange B holds 40%, sending 60% of your trade to A and 40% to B minimizes total slippage. The hard part is computing that split in real time across dozens of pools with changing reserves.\n\n## How it works\n\nThe system has three layers.\n\n**Routing.** Given a token pair and an amount, find all available pools (Uniswap, SushiSwap, Curve, and others). For each pool, compute the output amount given the input. Uniswap-style pools use a constant-product formula: x times y equals k.\n\n**Splitting.** Decide how to divide the input across pools. The original algorithm split the order iteratively, testing each split against the others. Later versions use on-chain optimization.\n\n**Execution.** Submit one transaction that performs all the sub-swaps atomically. If any leg fails, the whole transaction reverts. The user signs once; the contract handles the routing.\n\nThe aggregator takes a small fee (0.1% to 0.3%) from the price improvement it delivers. If it cannot beat the best single venue, it routes there instead.\n\n## Build something similar\n\nStart with two Uniswap V2-style pools for the same token pair, each with different reserves.\n\nWrite a function that, given an input amount, computes the output for pool A, pool B, and three split ratios (all A, 50/50, all B). Print the results.\n\nThe split that wins depends on the reserves. With equal reserves, 50/50 wins. With 80/20 reserves, the split roughly matches. This is the entire insight in ten lines of code.\n\nThen add a third pool. The number of split combinations grows, but the principle holds: more pools means more opportunities to beat any single venue.\n\n## Sources\n\nOrigin and prototype details are from the 1inch press room and blog posts linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Decentralized exchange aggregator that finds the best token swap rates across DEX liquidity sources.",
       "domain": "fintech",
       "event": {
@@ -44,7 +56,10 @@
           "url": "https://en.wikipedia.org/wiki/1inch"
         }
       ],
+      "hot": 36,
       "id": "1inch",
+      "key_idea": "Split one swap across multiple exchanges to get a better average price than any single venue offers.",
+      "learn_from": "A hackathon prototype that solves one measurable problem (price slippage) can become infrastructure when the measurement matters to everyone.",
       "links": {
         "official": "https://1inch.io",
         "source": "https://github.com/1inch"
@@ -54,11 +69,13 @@
         "defi",
         "ethereum",
         "dex",
-        "web3"
+        "web3",
+        "open-source"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "App using soil moisture and evapotranspiration data to manage farmer planting risk.",
       "domain": "climate",
       "event": {
@@ -72,6 +89,7 @@
           "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
         }
       ],
+      "hot": 25,
       "id": "2plant",
       "name": "2plant",
       "tags": [
@@ -82,6 +100,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Deep neural network that locates seismic events in time-series data.",
       "domain": "science",
       "event": {
@@ -95,6 +114,7 @@
           "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
         }
       ],
+      "hot": 25,
       "id": "42-quakeheroes",
       "name": "42 QuakeHeroes",
       "tags": [
@@ -108,6 +128,7 @@
       "authors": [
         "Max Inferno"
       ],
+      "body": "Anne Macmillan and Lukas Steinman's jam entry about putting things where they belong grew into a Max Inferno studio game published by Secret Mode across PC and consoles.\n",
       "description": "Cozy tidying puzzle game about sorting household messes; began as a GMTK Game Jam 2020 entry and became a multi-platform commercial release.",
       "domain": "games",
       "event": {
@@ -129,6 +150,7 @@
           "url": "https://www.maxinferno.com/press"
         }
       ],
+      "hot": 28,
       "id": "a-little-to-the-left",
       "links": {
         "demo": "https://maxinferno.itch.io/a-little-to-the-left",
@@ -139,11 +161,13 @@
         "gmtk-jam",
         "puzzle",
         "cozy",
-        "commercial"
+        "commercial",
+        "playable"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Narrative game where players explore a found phone to uncover a personal story. Released on iOS, Android, and Steam.",
       "domain": "games",
       "event": {
@@ -156,6 +180,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "a-normal-lost-phone",
       "links": {
         "official": "https://lostphonegame.com/"
@@ -169,6 +194,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Phone-number login verification without SMS. Achieved 97% success rate in early tests.",
       "domain": "developer-tools",
       "event": {
@@ -182,6 +208,7 @@
           "url": "https://engineering.fb.com/2016/12/29/developer-tools/favorite-hacks-of-2016/"
         }
       ],
+      "hot": 11,
       "id": "account-kit",
       "name": "Account Kit",
       "tags": [
@@ -192,6 +219,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nAdSense places contextual text and display ads on websites. Publishers paste a snippet of JavaScript; the script requests ads that match the page content and earns revenue when visitors click.\n\n## The key insight\n\nSusan Wojcicki proposed the idea in 2002 as a Google 20% project. The problem: Google had AdWords (advertisers bidding on keywords) but no way to place those ads on the millions of small websites that had content but no sales force. AdSense closed that gap by automating the match between page content and ad inventory.\n\nThe revenue number tells the story. Within two years of launch in June 2003, AdSense generated roughly 15% of Google's total revenue.\n\n## How it works\n\n**Content analysis.** The script sends the page URL (and sometimes extracted text) to Google's servers. An algorithm determines the page's topics: the words, the category, the context.\n\n**Ad selection.** Google matches those topics against keywords that advertisers are bidding on. Advertisers set bids per keyword in AdWords; AdSense surfaces the highest-bidding ads relevant to the page.\n\n**Auction.** Multiple ads compete for the slot. Google runs a second-price auction: the winner pays one cent more than the second-highest bidder. This keeps bids honest.\n\n**Rendering.** The script receives ad code (HTML and CSS) and injects it into the page. The publisher never sees the auction logic; they get a div that fills with ads.\n\n**Revenue share.** Google keeps a percentage (reported around 68%) and pays the publisher the rest (32%). The exact split is not public and has changed over time.\n\n## Build something similar\n\nBuild a page that displays a sponsored link based on the page's own content.\n\nStart with a static mapping: define five topics (cooking, finance, travel, fitness, technology) and one ad creative for each. Write a function that reads the page title and tags, scores each topic by word overlap, and picks the highest.\n\nThis gives you the core loop: analyze content, select an ad, render it. The difference between this and production AdSense is scale (millions of pages, real-time auction) and quality (advertisers actually paying).\n\nThen add a simple auction: two advertisers bidding on the same keyword, winner pays second-highest bid plus one cent. This is the AdWords mechanism.\n\n## Sources\n\nOrigin and revenue figures are documented in Wikipedia's 20% Project article, linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Contextual advertising platform for publishers. Generated approximately 15% of Google revenue within two years of launch.",
       "domain": "web-mobile",
       "event": {
@@ -205,7 +234,10 @@
           "url": "https://en.wikipedia.org/wiki/20%25_Project"
         }
       ],
+      "hot": 20,
       "id": "adsense",
+      "key_idea": "Match text ads to page content automatically, so publishers earn revenue without selling inventory themselves.",
+      "learn_from": "A 20% time project won because it solved a real distribution problem: thousands of small sites had content but no sales team.",
       "links": {
         "official": "https://adsense.google.com/"
       },
@@ -222,6 +254,7 @@
       "authors": [
         "Soj Gamayon"
       ],
+      "body": "Smallholder farmers in the Philippines struggle to access credit because lenders cannot verify on-farm income. Agriconnect's weekend prototype connected farmers to a transparent credit marketplace, enough to take the global Red Bull Basement title in 2024.\n",
       "description": "Startup addressing agricultural credit access in the Philippines; won Red Bull Basement 2024 with a blockchain-based farming credit marketplace prototype.",
       "domain": "fintech",
       "event": {
@@ -236,6 +269,7 @@
           "url": "https://www.redbull.com/us-en/event-series/basement/red-bull-basement-past-winners"
         }
       ],
+      "hot": 25,
       "id": "agriconnect",
       "links": {
         "official": "https://www.redbull.com/us-en/event-series/basement/red-bull-basement-past-winners"
@@ -250,6 +284,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Airocide adapted NASA's photocatalytic oxidation research into a consumer air purifier line, an example of rapid-build innovation culture bleeding from space programs into hardware products.\n",
       "description": "NASA-derived air purification technology commercialized after Space Apps-adjacent open innovation work; turned spacecraft-grade catalytic oxidation into consumer air cleaners.",
       "domain": "healthcare",
       "event": {
@@ -264,6 +299,7 @@
           "url": "https://www.nasa.gov/directorates/space-tech/technology-transfer/"
         }
       ],
+      "hot": 20,
       "id": "airocide",
       "links": {
         "official": "https://www.airocide.com"
@@ -278,6 +314,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "No expensive SDR rig required: this Space Apps 2014 entry turned an ordinary Android phone into a satellite ground station, earning Best Use of Hardware.\n",
       "description": "Smartphone turned into a satellite ground station at NASA Space Apps 2014; won Best Use of Hardware for turning commodity phones into radio receivers for open satellite data.",
       "domain": "science",
       "event": {
@@ -292,6 +329,7 @@
           "url": "https://www.spaceappschallenge.org/2014/challenge/android-base-station/"
         }
       ],
+      "hot": 20,
       "id": "android-base-station",
       "links": {
         "official": "https://www.spaceappschallenge.org/2014/challenge/android-base-station/"
@@ -309,6 +347,7 @@
       "authors": [
         "Nick Farquhar"
       ],
+      "body": "An unplanned weekend pitch about changing how property management shares profits became a funded startup. The founder left the University of Missouri to grow it after the win.\n",
       "description": "Profit-sharing property management platform for property owners that won Columbia Startup Weekend 2022 and raised a $750K seed round.",
       "domain": "web-mobile",
       "event": {
@@ -323,6 +362,7 @@
           "url": "https://startlandnews.com/2022/11/appreciate-columbia/"
         }
       ],
+      "hot": 33,
       "id": "appreciate",
       "links": {
         "official": "https://www.appreciate.io/"
@@ -336,6 +376,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Sonifies 2D and 3D astronomical images so blind users can experience space imagery through sound.",
       "domain": "accessibility",
       "event": {
@@ -349,6 +390,7 @@
           "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
         }
       ],
+      "hot": 23,
       "id": "arcobaleno",
       "name": "Arcobaleno",
       "tags": [
@@ -360,6 +402,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Interactive planetary tourism itinerary builder.",
       "domain": "web-mobile",
       "event": {
@@ -373,6 +416,7 @@
           "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
         }
       ],
+      "hot": 23,
       "id": "astrogenesis",
       "name": "Astrogenesis",
       "tags": [
@@ -383,6 +427,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Orbital debris cleanup concept for removing space junk.",
       "domain": "science",
       "event": {
@@ -396,6 +441,7 @@
           "url": "https://www.spaceappschallenge.org/2025/awards/global-winners/"
         }
       ],
+      "hot": 25,
       "id": "astrosweepers",
       "name": "AstroSweepers",
       "tags": [
@@ -410,6 +456,7 @@
         "Sophie Bolzer",
         "Nadine Szentivanyi"
       ],
+      "body": "Audvice is a full arc from student competition win to venture-backed company to acquisition, documented by Red Bull's own founder profile series.\n",
       "description": "Startup that won Red Bull Basement 2019; later raised more than $3 million in venture capital, worked with Fortune 500 companies, and was acquired.",
       "domain": "web-mobile",
       "event": {
@@ -428,6 +475,7 @@
           "url": "https://www.redbull.com/us-en/event-series/basement/red-bull-basement-past-winners"
         }
       ],
+      "hot": 21,
       "id": "audvice",
       "links": {
         "official": "https://www.redbull.com/us-en/red-bull-basement-2019-winner-audvice-interview"
@@ -441,6 +489,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Social fitness app that rewards exercise with NFTs. Described as BeReal for pushups.",
       "domain": "social",
       "event": {
@@ -454,6 +503,7 @@
           "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
         }
       ],
+      "hot": 25,
       "id": "befit",
       "links": {
         "official": "https://befit.xyz/"
@@ -468,6 +518,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Interactive biological data visualization library. In 2014 Google Summer of Code, all five students became core developers and designed version 2.0.",
       "domain": "science",
       "event": {
@@ -481,9 +532,11 @@
           "url": "https://opensource.googleblog.com/2016/08/from-google-summer-of-code-to-game-of.html"
         }
       ],
+      "hot": 15,
       "id": "biojs",
       "links": {
-        "official": "https://biojs.io/"
+        "official": "https://biojs.io/",
+        "source": "https://github.com/biojs/biojs"
       },
       "name": "BioJS",
       "tags": [
@@ -495,6 +548,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nCycles is a physically based render engine inside Blender. It traces light paths from the camera through the scene and produces images where reflections, shadows, and indirect light come from the same simulation instead of separate fakes.\n\n## The key insight\n\nRasterizers approximate light with shortcuts: shadow maps, reflection probes, ambient terms. Cycles does the opposite. It samples paths and averages them. Noise is not a bug, it is the visible cost of sampling, and it falls as the sample count rises.\n\nThat choice makes the engine predictable. A material that looks right in one scene tends to look right in another, because the same physical rules apply.\n\n## How it works\n\nA path tracer shoots rays from the camera. At each surface it chooses a bounce direction, weights the contribution, and continues. When a ray reaches a light or the background, the path contributes to the pixel. Many paths per pixel produce the estimate.\n\nImportance sampling decides where to send rays. Instead of sampling uniformly, the integrator samples directions that are likely to matter, such as toward a light or along a glossy lobe. Good sampling means fewer paths for the same noise level.\n\nAcceleration structures make ray traversal practical. A bounding volume hierarchy groups geometry so a ray can skip most of the scene. Without it, every bounce would test every triangle.\n\nMaterials are node graphs compiled into shader code. The graph describes the surface, and the renderer evaluates it at each hit. Because the description is procedural, the same material works in Cycles and, where supported, in the real-time engine.\n\nGPU rendering splits the same work across many cores. The integrator is data-parallel by design, which is why the same engine runs on CPU and GPU with different performance rather than different output.\n\n## Build something similar\n\nWrite a path tracer for spheres and a plane. Camera ray, intersect, bounce, accumulate. Render at one sample per pixel and look at the noise.\n\nAdd importance sampling for the light. The image should get cleaner without more samples.\n\nThen add one material property, such as roughness, and watch the highlight widen. The whole engine is an accumulation of these small physical decisions, which is why a minimal version teaches more than a feature-complete one.\n\n## Sources\n\nGSoC connection and project history are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Physically based render engine built into Blender. Creator Brecht Van Lommel worked on Blender via early Google Summer of Code.",
       "domain": "media-arts",
       "event": {
@@ -508,9 +563,13 @@
           "url": "https://www.blendernation.com/2019/09/30/see-the-neat-new-blender-features-from-google-summer-of-code-2019/"
         }
       ],
+      "hot": 35,
       "id": "blender-cycles",
+      "key_idea": "Simulate light transport instead of approximating it with shader tricks, and let samples trade time for accuracy.",
+      "learn_from": "A physically based core can ship inside an existing tool if the integration is one engine behind an existing interface.",
       "links": {
-        "official": "https://www.blender.org/features/rendering/"
+        "official": "https://www.blender.org/features/rendering/",
+        "source": "https://projects.blender.org/blender/blender"
       },
       "name": "Blender Cycles",
       "tags": [
@@ -525,6 +584,7 @@
       "authors": [
         "DANG!"
       ],
+      "body": "DANG! turned a weekend GMTK jam entry about throwing and chasing a boomerang into a full Devolver-published shooter. The studio later closed in 2023 after failing to fund its next game.\n",
       "description": "Momentum-based first-person shooter built around a single teleporting boomerang; started as a 48-hour GMTK Game Jam entry and shipped via Devolver Digital in 2021.",
       "domain": "games",
       "event": {
@@ -545,6 +605,7 @@
           "url": "https://www.rockpapershotgun.com/boomerang-x-developer-dang-is-closing-after-failing-to-find-funding"
         }
       ],
+      "hot": 25,
       "id": "boomerang-x",
       "links": {
         "demo": "https://dangstudios.itch.io/boomerang-x",
@@ -555,11 +616,13 @@
         "gmtk-jam",
         "fps",
         "indie",
-        "commercial"
+        "commercial",
+        "playable"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "The original Ludum Dare entry was titled Rambros. Developer Free Lives expanded it into a full commercial release with local and online co-op.\n",
       "description": "Side-scrolling run-and-gun action game starring hyper-masculine action movie homages, born from a Ludum Dare prototype called Rambros.",
       "domain": "games",
       "event": {
@@ -572,6 +635,7 @@
           "url": "https://en.wikipedia.org/wiki/Ludum_Dare"
         }
       ],
+      "hot": 10,
       "id": "broforce",
       "links": {
         "official": "https://www.broforcegame.com"
@@ -585,6 +649,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nBuck is a build system for large codebases, built at Facebook for Android. It reads declarative build files, constructs a dependency graph, and executes independent work in parallel with caching.\n\n## The key insight\n\nThe prototype came out of a Facebook hackathon in 2012 because the Android build had become the slowest part of the developer loop. The fix was not a faster compiler. It was removing hidden dependencies so that work could be parallelized and reused.\n\nA build that recompiles the world on every change cannot be made fast by optimizing the compiler. It has to be restructured.\n\n## How it works\n\nBuild files declare targets: a library, a binary, a test, each with sources, dependencies, and rules. The declarations are explicit, so the tool can compute the full graph without scanning the filesystem for implicit inputs.\n\nFrom the graph, Buck derives the work. Independent nodes run concurrently. A node whose inputs and rule have not changed is skipped entirely, which is why incremental builds are fast even when the graph is large.\n\nCaching extends the skip across machines. If a target's inputs hash to a known value, the output can be fetched instead of rebuilt. This turns a build into a lookup for most nodes and a compile for the few that changed.\n\nCorrectness depends on the dependency declarations being complete. An undeclared dependency produces a build that works locally and fails in a clean checkout, so the tool enforces strictness rather than tolerating implicit inputs.\n\nFor Android specifically, the system also split application packaging from code compilation. Resources and code can be updated independently, which shortens the install cycle during development.\n\n## Build something similar\n\nWrite a build file format with three fields: inputs, outputs, and a command. Parse it into a graph.\n\nRun the graph in topological order, skipping any node whose inputs are unchanged. Time a rebuild after touching one file. That number is the whole point of the tool.\n\nThen add a content hash for each output and a cache directory keyed by hash. If a clean build can reuse entries from a previous one, you have the core of a modern build system.\n\n## Sources\n\nFacebook engineering writeup and hackathon origin are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Fast modular Android build system used at Facebook. Prototype built in one hackathon.",
       "domain": "developer-tools",
       "event": {
@@ -598,7 +664,10 @@
           "url": "https://engineering.fb.com/2013/05/14/android/buck-how-we-build-android-apps-at-facebook/"
         }
       ],
+      "hot": 20,
       "id": "buck-build-system",
+      "key_idea": "Describe a build as a graph of declared targets, then execute and cache each node independently.",
+      "learn_from": "Find the bottleneck you can measure, then remove the mechanism that causes it. Build tools win on correctness and speed, not features.",
       "name": "Buck",
       "tags": [
         "android",
@@ -612,6 +681,7 @@
       "authors": [
         "Leda Entertainment"
       ],
+      "body": "Bullion is less about a single prototype and more about jam matchmaking: a 2016 Global Game Jam pairing that turned into a long-running studio project with outside recognition years later.\n",
       "description": "Project where a coder and a 3D artist met at Global Game Jam 2016 and later developed the concept with Leda Entertainment, recognized at Big Indie Pitch in 2022.",
       "domain": "games",
       "event": {
@@ -629,6 +699,7 @@
           "url": "https://globalgamejam.org/news/jam-fame-global-game-jam-projects-became-successful-published-games"
         }
       ],
+      "hot": 11,
       "id": "bullion",
       "name": "Bullion - The Curse of the Cut-Throat Cattle",
       "tags": [
@@ -643,6 +714,7 @@
       "authors": [
         "Giorgos Mendrinos"
       ],
+      "body": "Caius turned a hackathon pitch about reading road networks from satellite context into a company. It mapped uncharted forest trails for the Region of Epirus and spun out Druiter as its consumer-facing product.\n",
       "description": "AI-based mapping system that automatically identifies road and trail networks; grew from a CASSINI Hackathon concept into a rural digitisation startup with ESA incubation and a 2025 consumer app.",
       "domain": "other",
       "event": {
@@ -655,6 +727,7 @@
           "url": "https://www.euspa.europa.eu/newsroom-events/success-stories/caius-hackathon-idea-rural-digitisation-startup"
         }
       ],
+      "hot": 10,
       "id": "caius",
       "links": {
         "official": "https://www.euspa.europa.eu/newsroom-events/success-stories/caius-hackathon-idea-rural-digitisation-startup"
@@ -674,6 +747,7 @@
         "Lucas Ngoo",
         "Marcus Tan"
       ],
+      "body": "",
       "description": "Mobile-first classifieds marketplace where selling an item takes about a minute with a photo.",
       "domain": "web-mobile",
       "event": {
@@ -692,6 +766,7 @@
           "url": "https://enterprise.nus.edu.sg/startup-story/carousell/"
         }
       ],
+      "hot": 30,
       "id": "carousell",
       "links": {
         "official": "https://carousell.com"
@@ -705,6 +780,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nCelebrate Pride let Facebook users apply a rainbow filter to their profile picture. It shipped in 72 hours around a hackathon and reached roughly 26 million users in its first weekend.\n\n## The key insight\n\nThe feature is a filter, not a campaign site. It reused a surface every user already had, the profile photo, and changed one property of it. There was no new page to visit and no new account to create.\n\nThat is why it could spread in a weekend. The action was one tap, and the result was visible to everyone who looked at the profile.\n\n## How it works\n\nThe client offers a toggle on the existing profile picture flow. Choosing it sends the image reference to a service that composites the overlay and returns a new image. The original photo stays intact, so the change is reversible.\n\nThe image work is the bottleneck. Millions of users applying the same overlay within hours means the compositing step has to be cheap and the result has to be cacheable. The overlay is a fixed asset, so the output can be produced once per photo and served from cache rather than recomputed per view.\n\nClient support is the second constraint. The feature has to appear on every platform that shows a profile picture, which means the toggle and the result must be represented in the shared profile model rather than in one client's local state.\n\nTimeboxing shaped the architecture. A 72-hour window rules out new infrastructure, so the team built on existing image and profile services. The constraint produced a simpler design than a greenfield build would have.\n\n## Build something similar\n\nPick a surface every user already has, such as an avatar, a banner, or a display name. Add one reversible variant of it.\n\nPrecompute the variant as a static asset and serve it from cache. Then add the toggle to the shared user model so every client sees the same state.\n\nMeasure how long it takes a new user to reach the changed state. If it is more than a couple of taps, the feature is too expensive to spread.\n\n## Sources\n\nEngineering writeup, user count, and 72-hour timeline are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Rainbow profile picture filter. 26 million users in the first weekend. Intern hackathon project shipped globally in 72 hours.",
       "domain": "social",
       "event": {
@@ -718,7 +795,10 @@
           "url": "https://engineering.fb.com/2015/07/02/android/72-hours-to-launch-celebrate-pride/"
         }
       ],
+      "hot": 31,
       "id": "celebrate-pride",
+      "key_idea": "Ship one gesture, a rainbow overlay on a profile photo, and let users supply the meaning.",
+      "learn_from": "When the moment is the deadline, cut scope to a single action and make it work at full traffic.",
       "name": "Celebrate Pride",
       "tags": [
         "facebook",
@@ -728,6 +808,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Swift, the messaging network behind most international bank transfers, ran a hackathon to explore blockchain interoperability. Chainlink took the top business slot.\n",
       "description": "Blockchain oracle integration selected as winner of the Swift Hackathon 2025 Business Challenge; Chainlink co-founder showcased the work at Sibos.",
       "domain": "fintech",
       "event": {
@@ -742,6 +823,7 @@
           "url": "https://chain.link/blog/chainlink-wins-swift-hackathon"
         }
       ],
+      "hot": 35,
       "id": "chainlink-swift",
       "links": {
         "official": "https://chain.link/blog/chainlink-wins-swift-hackathon"
@@ -760,6 +842,7 @@
       "authors": [
         "Vasco Singh"
       ],
+      "body": "ChatEDU began as a cram-session tool for a Vanderbilt algorithms exam inside a Microsoft student AI hackathon. The team incorporated feedback from students across multiple universities, won several hackathons, and pursued it as a paid study product.\n",
       "description": "Study assistant that turns PDFs, slides, notes and lecture video into citation-grounded chat, practice sets and flashcards; built by Vanderbilt students for a Microsoft AI hackathon.",
       "domain": "education",
       "event": {
@@ -778,6 +861,7 @@
           "url": "https://info.devpost.com/customer-stories/ai-hackathons-on-devpost-2024"
         }
       ],
+      "hot": 33,
       "id": "chat-edu",
       "links": {
         "official": "https://www.sofarbot.com/stories/chatedu-vasco-singh-6704-mrr"
@@ -792,6 +876,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "AI-hosted immersive virtual climate museum with 3D and 2D visualizations.",
       "domain": "media-arts",
       "event": {
@@ -805,6 +890,7 @@
           "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
         }
       ],
+      "hot": 25,
       "id": "connected-earth-museum",
       "name": "Connected Earth Museum",
       "tags": [
@@ -816,6 +902,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "AI wearable that detects emergencies and secures funds and contacts when the wearer is in danger.",
       "domain": "hardware",
       "event": {
@@ -829,6 +916,7 @@
           "url": "https://www.recursive.so/hackathons"
         }
       ],
+      "hot": 25,
       "id": "deadass",
       "name": "DeadAss",
       "tags": [
@@ -843,6 +931,7 @@
       "authors": [
         "Team Gummy"
       ],
+      "body": "Jam entries often stall at the prototype. Die in Dungeon used its Spooktober entry as a vertical slice, then built out a full roguelike around it for Steam.\n",
       "description": "Roguelike built for the Spooktober game jam; expanded into a full Steam release with a demo that drew large wishlist numbers.",
       "domain": "games",
       "event": {
@@ -857,6 +946,7 @@
           "url": "https://store.steampowered.com/app/1898250/Die_in_Dungeon/"
         }
       ],
+      "hot": 33,
       "id": "die-in-dungeon",
       "links": {
         "official": "https://store.steampowered.com/app/1898250/Die_in_Dungeon/"
@@ -875,6 +965,7 @@
         "Matt Hall",
         "John Watkinson"
       ],
+      "body": "Docracy treated legal templates like  code: community-submitted contracts you could fork, review and sign. The Disrupt hackathon win led to institutional seed funding.\n",
       "description": "Open-source legal document platform billed as a GitHub for contracts; won a TechCrunch Disrupt hackathon and raised a $650K seed round.",
       "domain": "web-mobile",
       "event": {
@@ -893,6 +984,7 @@
           "url": "https://techcrunch.com/2011/11/03/docracy/"
         }
       ],
+      "hot": 30,
       "id": "docracy",
       "links": {
         "official": "https://www.docracy.com"
@@ -900,13 +992,13 @@
       "name": "Docracy",
       "tags": [
         "legaltech",
-        "open-source",
         "techcrunch-disrupt",
         "marketplace"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "The Ludum Dare prototype Dome Romantik won enough attention for Bippinbits to expand it into the full commercial release Dome Keeper.\n",
       "description": "Mining-and-defense roguelite where players dig for resources under a dome while defending against waves of enemies.",
       "domain": "games",
       "event": {
@@ -923,6 +1015,7 @@
           "url": "https://en.wikipedia.org/wiki/Ludum_Dare"
         }
       ],
+      "hot": 13,
       "id": "dome-keeper",
       "links": {
         "official": "https://domekeeper.com"
@@ -936,6 +1029,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Interactive ad-hoc analysis over big data. Became the foundation for Google BigQuery.",
       "domain": "developer-tools",
       "event": {
@@ -949,6 +1043,7 @@
           "url": "https://en.wikipedia.org/wiki/20%25_Project"
         }
       ],
+      "hot": 0,
       "id": "dremel",
       "name": "Dremel",
       "notes": "Built by Andrey Gubarev as a 20% project",
@@ -960,6 +1055,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Junction 2025's scale - 300 teams, 1,500 hackers - makes a top-5 finish a strong signal. DroneStalker tracked and predicted drone paths with live computer vision in one weekend.\n",
       "description": "Real-time drone tracking and prediction system; winner at Junction 2025, Europe's largest hackathon, placing top 5 of 300 teams and 1,500 participants in Espoo, Finland.",
       "domain": "robotics",
       "event": {
@@ -974,6 +1070,7 @@
           "url": "https://codya.dev/project/2511-junction"
         }
       ],
+      "hot": 25,
       "id": "dronestalker",
       "links": {
         "official": "https://github.com/takara-ai/DroneStalker"
@@ -988,6 +1085,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Customer communication platform. First African company accepted into 500 Startups.",
       "domain": "web-mobile",
       "event": {
@@ -1001,6 +1099,7 @@
           "url": "https://www.gengh.org/impact-stories/launched-at-startup-weekend-dropifi-takes-on-silicon-valley"
         }
       ],
+      "hot": 10,
       "id": "dropifi",
       "name": "Dropifi",
       "tags": [
@@ -1011,6 +1110,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Founder Tallis Gomes pivoted from a bus-tracking idea to a taxi-hailing app at Startup Weekend Rio 2011. The team won the event and later raised significant venture funding before acquisition by Cabify.\n",
       "description": "Mobile ride-hailing app that connected passengers with taxi drivers across Latin America and other emerging markets.",
       "domain": "web-mobile",
       "event": {
@@ -1031,6 +1131,7 @@
           "url": "https://www.bbc.com/news/business-27991612"
         }
       ],
+      "hot": 10,
       "id": "easy-taxi",
       "links": {
         "official": "https://en.wikipedia.org/wiki/Easy_Taxi"
@@ -1048,6 +1149,7 @@
         "Joanna Power",
         "Paramveer Bhachu"
       ],
+      "body": "A student water-saving appliance concept from Red Bull Basement 2020 progressed into a hardware startup via Imperial College London's Greenhouse accelerator, with TEDx follow-on.\n",
       "description": "Water-saving washing machine concept by Joanna Power and Paramveer Bhachu; won Red Bull Basement 2020 for the UK and went on to a hardware accelerator and TEDx talks.",
       "domain": "climate",
       "event": {
@@ -1062,6 +1164,7 @@
           "url": "https://www.redbull.com/za-en/red-bull-basement-winners-catch-up"
         }
       ],
+      "hot": 23,
       "id": "eco-laundry",
       "links": {
         "official": "https://www.redbull.com/za-en/red-bull-basement-winners-catch-up"
@@ -1076,6 +1179,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "City-building sustainability game that uses real environmental data.",
       "domain": "education",
       "event": {
@@ -1089,6 +1193,7 @@
           "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
         }
       ],
+      "hot": 25,
       "id": "eco-metropolis",
       "name": "Eco-Metropolis",
       "tags": [
@@ -1099,6 +1204,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Fast-paced action game. Named PC Gamer best free game of the week at the jam; later entered Steam Early Access.",
       "domain": "games",
       "event": {
@@ -1111,6 +1217,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "energy-shock",
       "links": {
         "official": "https://store.steampowered.com/app/852980/Energy_Shock/"
@@ -1124,6 +1231,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Automatically pins ENS-linked IPFS files for permanent persistence.",
       "domain": "developer-tools",
       "event": {
@@ -1137,6 +1245,7 @@
           "url": "https://apu.edu.my/news/apubccs-enspin-clinches-top-prize-ethglobal-taipei-2025"
         }
       ],
+      "hot": 25,
       "id": "enspin",
       "links": {
         "official": "https://enspin.dev/"
@@ -1155,6 +1264,7 @@
         "Jabbok Schlacks",
         "Willy Schlacks"
       ],
+      "body": "Brothers Jabbok and Willy Schlacks pitched a construction equipment sharing idea at Columbia Startup Weekend in 2014. The company later raised major venture rounds, went through Y Combinator, and completed a Nasdaq IPO as EQPT in January 2026.\n",
       "description": "Construction equipment rental and jobsite technology company that began as a Columbia Startup Weekend winning idea and later listed on Nasdaq.",
       "domain": "other",
       "event": {
@@ -1177,6 +1287,7 @@
           "url": "https://venturebeat.com/technology/equipmentshare-raises-20-million-for-construction-equipment-marketplace"
         }
       ],
+      "hot": 30,
       "id": "equipmentshare",
       "links": {
         "official": "https://www.equipmentshare.com"
@@ -1191,6 +1302,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "The 48-hour prototype won Ludum Dare 24. Developer Nicolas Cannasse co-founded Shiro Games and expanded it into a full commercial title released in 2013.\n",
       "description": "Action-adventure game where players unlock graphical and mechanical upgrades that evolve the game from monochrome Game Boy style to full 3D.",
       "domain": "games",
       "event": {
@@ -1211,6 +1323,7 @@
           "url": "https://www.pcgamesn.com/indie/evoland-trailer-shows-lifespan-action-adventure-games"
         }
       ],
+      "hot": 10,
       "id": "evoland",
       "links": {
         "official": "https://evoland.shirogames.com"
@@ -1224,6 +1337,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nThe Like button is a one-click signal of approval attached to posts, photos, pages, and eventually other sites. It turned a private bookmark-style action into a public, countable metric.\n\n## The key insight\n\nJustin Rosenstein built a prototype called \"Props\" at a Facebook internal hackathon in 2007. It sat unused for roughly two years. When it launched in 2009, the important decision was not the icon. It was scope: one bit of feedback, applied to everything, with the count visible to everyone.\n\nA five-point rating would have carried more information and spread less. One bit is cheap to give, cheap to display, and comparable across objects of different kinds.\n\n## How it works\n\nOn Facebook, a Like is a row in a social graph with a user, an object, and a type. Counting is a read over that edge set, which is why the number can be shown on every post without a separate counter to keep in sync.\n\nOff the main site, the button ships as a small snippet that renders a cross-origin frame. The frame isolates the host page's CSS from Facebook's, and it carries the session needed to attribute the click. That isolation is why the same few lines of embed code work on a blog, a news site, and a product page.\n\nAggregation is the hard part. A popular page can produce far more writes than reads, and the count has to survive that ratio. Caching and precomputed totals absorb most of the load, with the exact value reconciled in the background.\n\nThe visual language mattered as much as the mechanism. A thumb, a count, and a consistent position trained users across unrelated sites. The button became recognizable before it became useful on any particular page.\n\n## Build something similar\n\nAdd one-bit feedback to something you already run. A row with a user id, an object id, and a timestamp is enough.\n\nShow the count next to the control, and make the control work on a second surface, such as an embed or a second client. The moment two surfaces share the same edge table, you have the core of the system.\n\nThen measure the ratio of writes to reads on a popular item. That number decides whether you need a cache, a queue, or nothing at all.\n\n## Sources\n\nOrigin and prototype details are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "One-click social interaction feature that let users express approval of posts, photos, and pages across the web.",
       "domain": "social",
       "event": {
@@ -1236,7 +1351,10 @@
           "url": "https://www.fastcompany.com/90780140/the-full-story-of-the-like-button"
         }
       ],
+      "hot": 30,
       "id": "facebook-like-button",
+      "key_idea": "Reduce approval to one bit and one click, then make that click available on any page on the web.",
+      "learn_from": "The most portable interaction is the smallest one. A single bit can cross every surface you own.",
       "links": {
         "official": "https://en.wikipedia.org/wiki/Like_button"
       },
@@ -1249,6 +1367,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Live-streaming demo prototype that helped inspire the creation of Facebook Live.",
       "domain": "media-arts",
       "event": {
@@ -1262,6 +1381,7 @@
           "url": "https://www.fastcompany.com/40422805/the-story-behind-the-hackathon-project-that-helped-inspire-the-creation-of-facebook-live"
         }
       ],
+      "hot": 10,
       "id": "facebook-live-precursor",
       "name": "Live Faces (Facebook Live precursor)",
       "notes": "Precursor prototype, not the final Facebook Live product",
@@ -1273,6 +1393,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nFigma Slides is a presentation tool built on Figma's design canvas. Teams design slides with the same tools they use for interfaces, then present them in the same file.\n\n## The key insight\n\nThe team did not build a presentation editor from scratch. It built a slide layer on top of the editor that already existed: same canvas, same document, same multiplayer session, same component system.\n\nThat reuse set the schedule. The hackathon project at Figma's Maker Week in late 2023 became a shipped product in about two years, which is short for a new surface with its own editing model.\n\n## How it works\n\nA deck is a Figma document. Each slide is a frame, and the slide grid is a layout constraint over those frames rather than a separate data structure. Because slides are frames, every existing design tool works on them: auto layout, components, styles, images.\n\nEditing is shared state. Multiple cursors and selections already work because the multiplayer layer operates on the document, not on a screen. Adding a presenter view means adding a way to read the same document, not a new sync protocol.\n\nThe slide-specific parts are narrow: a grid that arranges frames in order, a presenter mode that advances through them, and transitions between them. Those are additions on top of the existing model rather than a parallel implementation.\n\nThe hard part is the constraint. A design canvas is free-form, and a slide deck is sequential. The grid has to enforce order and alignment without taking away the freedom that makes the canvas useful.\n\n## Build something similar\n\nTake an editor you already have, or a simple canvas with draggable rectangles. Add a grid that arranges frames in reading order.\n\nAdd a presenter mode that shows one frame at a time and advances on a key press. That is a slide deck.\n\nThen add one feature that only makes sense because the frames are editable, such as a shared component for a footer. The product becomes more than a slideshow at the point where the design tools carry over.\n\n## Sources\n\nHackathon origin and development timeline are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Presentation design tool built on Figma's collaborative canvas, letting teams create and present slide decks together in real time.",
       "domain": "web-mobile",
       "event": {
@@ -1289,7 +1411,10 @@
           "url": "https://review.firstround.com/how-to-make-your-product-idea-go-viral-inside-your-company-lessons-from-figma-slides"
         }
       ],
+      "hot": 23,
       "id": "figma-slides",
+      "key_idea": "Reuse the canvas, the document model, and the multiplayer engine, then add only the slide layer.",
+      "learn_from": "The fastest new product borrows an existing engine. Ship the delta, not a second platform.",
       "links": {
         "official": "https://www.figma.com/slides"
       },
@@ -1305,6 +1430,7 @@
       "authors": [
         "Alexa Andrzejewski"
       ],
+      "body": "Foodspotting treated dishes, not restaurants, as the unit of discovery. The Startup Weekend-born app was later acquired by OpenTable.\n",
       "description": "Visual food discovery app that emerged from the Startup Weekend ecosystem; became a widely covered example of hackathon-to-startup success.",
       "domain": "web-mobile",
       "event": {
@@ -1323,6 +1449,7 @@
           "url": "https://en.wikipedia.org/wiki/Foodspotting"
         }
       ],
+      "hot": 30,
       "id": "foodspotting",
       "links": {
         "official": "https://en.wikipedia.org/wiki/Foodspotting"
@@ -1337,6 +1464,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Museum hackathons are underrated media-arts venues. Frame turned a phone camera into an at-the-wall framing tool at the Walters Art Museum's first Art Bytes weekend.\n",
       "description": "Smartphone app that frames museum artworks by photo; co-winner of the first Walters Art Museum Art Bytes hackathon in 2012 with Tanzaku, taking a $1,000 prize.",
       "domain": "media-arts",
       "event": {
@@ -1351,6 +1479,7 @@
           "url": "https://technical.ly/software-development/art-bytes-these-are-the-eight-projects-from-the-first-ever-walters-art-museum-hackathon"
         }
       ],
+      "hot": 20,
       "id": "frame-walters",
       "links": {
         "official": "https://technical.ly/software-development/art-bytes-these-are-the-eight-projects-from-the-first-ever-walters-art-museum-hackathon"
@@ -1365,6 +1494,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nFriday Night Funkin' is a rhythm game where you press arrow keys in time with music while a opponent sings against you. It started as a Ludum Dare 47 entry in October 2020 and became a viral hit with a large modding scene.\n\n## The key insight\n\nRhythm games have a small mechanical core: notes arrive on a timeline, the player hits them within a timing window, and the game scores the difference. The jam build implemented that core and wrapped it in characters and music.\n\nThe team open-sourced the game. The chart format and the asset layout were readable, so modders could add songs and characters without reverse-engineering the engine. Most of the game's long tail came from that decision.\n\n## How it works\n\nAudio position is the clock. The game tracks the current playback time of the song and spawns notes whose timestamps fall inside the visible window. Judgement compares the time of the key press against the note's timestamp and assigns a rating from the offset.\n\nA chart is a sequence of notes with timestamps, lanes, and lengths for holds. Splitting the chart from the song file means a new track is data, not code.\n\nThe engine is written in Haxe and targets multiple platforms through OpenFL. That choice gives one codebase for desktop and web, which matters when the audience arrives through a browser game portal.\n\nModding works because assets and charts are loaded from a known directory structure. A mod is a folder with a song, a chart, and sprites. The game reads the folder and plays it, with no plugin API required.\n\n## Build something similar\n\nBuild the clock first. Load an audio file, display its playback time, and draw a marker that moves with it.\n\nAdd notes with timestamps. Spawn each note a fixed number of seconds before its time and move it toward a hit line. On a key press, compare the current time to the nearest note's timestamp and print the offset.\n\nThen move the notes into a JSON file. When you can add a song by editing data instead of code, you have the same extension point that made modding possible.\n\n## Sources\n\nLudum Dare origin, repository, and developer devlog are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Open-source rhythm game where a boyfriends battles ex-rockstar dads in rap-battle-style musical face-offs.",
       "domain": "games",
       "event": {
@@ -1385,9 +1516,13 @@
           "url": "https://ninja-muffin24.itch.io/friday-night-funkin/devlog/184825/friday-night-funkin-going-forward"
         }
       ],
+      "hot": 48,
       "id": "friday-night-funkin",
+      "key_idea": "A rhythm game is a chart plus a clock. Everything else is presentation, and presentation can be replaced.",
+      "learn_from": "Keep the core loop tiny and the content format open, and a community will build the rest.",
       "links": {
-        "official": "https://www.newgrounds.com/portal/view/770371"
+        "official": "https://www.newgrounds.com/portal/view/770371",
+        "source": "https://github.com/ninjamuffin99/Funkin"
       },
       "name": "Friday Night Funkin'",
       "tags": [
@@ -1398,7 +1533,8 @@
       "verified_at": "2026-10-24"
     },
     {
-      "description": "Taiwan civic-tech movement that builds open-source tools for government transparency, including crowd-sourced dashboards and legislative trackers.",
+      "body": "g0v started with a late-2012 hackathon producing a better national-budget visualization. It became Taiwan's flagship civic-tech community, spawning tools for legislative monitoring, referendum tracking, and epidemic data during COVID-19.\n",
+      "description": "Taiwan civic-tech movement that builds  tools for government transparency, including crowd-sourced dashboards and legislative trackers.",
       "domain": "civic-tech",
       "event": {
         "name": "g0v hackathon",
@@ -1410,19 +1546,20 @@
           "url": "https://g0v.tw/intl/en/portfolio"
         }
       ],
+      "hot": 10,
       "id": "g0v",
       "links": {
         "official": "https://g0v.tw"
       },
       "name": "g0v (g0v)",
       "tags": [
-        "open-source",
         "transparency",
         "taiwan"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Galaxiga took a jam-born space shooter and polished it into a full Steam and mobile release, keeping the arcade DNA intact.\n",
       "description": "Space shooter built during a Global Game Jam; expanded into a polished mobile and Steam release with retro arcade aesthetics.",
       "domain": "games",
       "event": {
@@ -1437,6 +1574,7 @@
           "url": "https://store.steampowered.com/app/875240/Galaxiga/"
         }
       ],
+      "hot": 31,
       "id": "galaxiga",
       "links": {
         "official": "https://store.steampowered.com/app/875240/Galaxiga/"
@@ -1451,6 +1589,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Phil Hassey won Ludum Dare 8 in 2006 with the prototype. It grew into a multiplatform series with iOS and web releases.\n",
       "description": "Real-time strategy game where players flood planets with fleets using a simple one-click interface.",
       "domain": "games",
       "event": {
@@ -1467,6 +1606,7 @@
           "url": "https://en.wikipedia.org/wiki/Galcon"
         }
       ],
+      "hot": 10,
       "id": "galcon",
       "links": {
         "official": "https://www.galcon.com"
@@ -1480,6 +1620,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Garden Buddies grew out of a specialized mental-health themed jam that Global Game Jam ran with DeepWell DTx rather than the main January event.\n",
       "description": "Cozy game made during the May Day Mental Health game jam run by Global Game Jam with DeepWell DTx in 2022; featured at Wholesome Direct 2023 and shipped on Steam in October 2023.",
       "domain": "games",
       "event": {
@@ -1493,6 +1634,7 @@
           "url": "https://globalgamejam.org/news/jam-fame-global-game-jam-projects-became-successful-published-games"
         }
       ],
+      "hot": 13,
       "id": "garden-buddies",
       "links": {
         "official": "https://store.steampowered.com"
@@ -1507,6 +1649,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nGephi is an open-source tool for exploring and visualizing graphs. You load a network, run a layout, color and size nodes by a metric, and filter the result interactively.\n\n## The key insight\n\nMost graph tools at the time produced static output: compute a layout, render an image, publish it. Gephi made layout interactive. You can start a force-directed layout, watch it settle, stop it, and change a parameter while looking at the result.\n\nThat changes the work. Exploration becomes a loop of adjusting and observing rather than a batch job with a preview at the end.\n\n## How it works\n\nThe data model is a graph with nodes, edges, and attributes, plus a separate attribute table. Metrics such as degree, betweenness, and modularity are computed into columns that can drive visual properties.\n\nLayout algorithms are iterative. Force-directed layouts treat edges as springs and nodes as repelling charges, then repeatedly move each node by the net force. The result is a position for every node, refined over many steps rather than solved once.\n\nRendering is the constraint. A graph with hundreds of thousands of edges cannot be drawn naively at interactive rates, so the view culls, batches, and uses the GPU for the heavy drawing. The layout runs in the background while the view stays responsive.\n\nImporters are the adoption path. Gephi reads edge lists, matrix formats, and database queries, because a visualization tool is only as useful as the data it can open. Google Summer of Code support from 2009 to 2011 funded much of that connector and plugin work.\n\n## Build something similar\n\nLoad a small edge list and compute a force-directed layout yourself. Springs for edges, repulsion for all pairs, and a damping factor. Run a hundred iterations and draw the result.\n\nThen make it interactive: a slider for repulsion, a button to stop and restart. The tool becomes useful when you can see the effect of a parameter without re-running a pipeline.\n\nAdd one metric, such as degree, and map it to node size. That single mapping turns a picture of a graph into an explanation of it.\n\n## Sources\n\nGSoC history and project description are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Open-source network analysis and visualization tool. Described as Photoshop for network data. Google Summer of Code from 2009 to 2011 accelerated its growth.",
       "domain": "science",
       "event": {
@@ -1520,7 +1664,10 @@
           "url": "https://opensource.googleblog.com/2012/03/gephi-how-3-years-of-google-summer-of.html"
         }
       ],
+      "hot": 35,
       "id": "gephi",
+      "key_idea": "Treat layout as the first operation on network data, not the last step of a report.",
+      "learn_from": "A visualization tool lives on its layout algorithms and its ability to open other people's data formats.",
       "links": {
         "official": "https://gephi.org/",
         "source": "https://github.com/gephi/gephi"
@@ -1540,6 +1687,7 @@
         "Jessica Scorpio",
         "Elliot Kroo"
       ],
+      "body": "Getaround launched its iPhone-era peer-to-peer car sharing at Disrupt NYC 2011 and took the Battlefield cup the same day. It grew into a public company before announcing a wind-down in 2026.\n",
       "description": "Peer-to-peer car-sharing marketplace with a hardware car-kit for phone unlock; won TechCrunch Disrupt NYC 2011, later NYSE-listed, wound down in 2026.",
       "domain": "other",
       "event": {
@@ -1562,6 +1710,7 @@
           "url": "https://en.wikipedia.org/wiki/Getaround"
         }
       ],
+      "hot": 20,
       "id": "getaround",
       "links": {
         "official": "https://www.getaround.com"
@@ -1576,6 +1725,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Deconstructeam built the original in the Ludum Dare jam window. The expanded commercial version launched on Steam, GOG, and Humble in June 2014.\n",
       "description": "Point-and-click thriller where a stranded crew faces impossible ethical choices with limited resources.",
       "domain": "games",
       "event": {
@@ -1592,6 +1742,7 @@
           "url": "https://www.theverge.com/2013/7/22/4545296/despair-is-a-game-in-gods-will-be-watching"
         }
       ],
+      "hot": 10,
       "id": "gods-will-be-watching",
       "links": {
         "official": "https://www.deconstructeam.com/games/gods-will-be-watching/"
@@ -1605,6 +1756,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "News aggregator built from Krishna Bharat's hobby project. Entered beta September 2002.",
       "domain": "web-mobile",
       "event": {
@@ -1618,6 +1770,7 @@
           "url": "https://en.wikipedia.org/wiki/20%25_Project"
         }
       ],
+      "hot": 0,
       "id": "google-news",
       "links": {
         "official": "https://news.google.com/"
@@ -1634,6 +1787,8 @@
       "authors": [
         "Torkel Ödegaard"
       ],
+      "body": "## What it does\n\nGrafana renders time-series data from multiple backends into dashboards. It connects to Prometheus, InfluxDB, Elasticsearch, and dozens of other data sources through a plugin model.\n\n## The key insight\n\nTorkel Odegaard built it during a Christmas hackathon in 2013 because he wanted to see his own metrics. The architectural decision that made it succeed: separate the visualization layer from the data source. Any backend can be a plugin.\n\n## How it works\n\nGrafana has three main pieces: the panel, the data source, and the dashboard.\n\nA **panel** is a single visualization (a graph, a table, a stat). It knows how to draw itself but not where the data comes from. It asks a data source for a query result, then renders whatever comes back.\n\nA **data source** is a plugin that knows how to talk to one backend. Prometheus has one, InfluxDB has one, and you can write your own. Each implements the same interface: take a query, return time-series data in a standard format.\n\nA **dashboard** is a collection of panels with shared time ranges and variables. Change the time picker and every panel re-queries its data source with the new range.\n\nThe plugin model is the leverage. Adding support for a new database does not require changing any visualization code. You write one adapter, and every panel type works with it.\n\n## Build something similar\n\nStart with a web app that renders a chart from one data source. Define a simple interface: `query(range)` returns a list of `(timestamp, value)` pairs.\n\nAdd a second data source behind the same interface. The moment you have two, you have the core of Grafana. The third and tenth take the same effort as the second.\n\nThe hard part is not the charting. It is designing the query interface wide enough that different backends can implement it without contorting their natural query language.\n\n## Sources\n\nOrigin story and architecture are described in the Grafana documentary and podcast interviews linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Open-source analytics and interactive visualization platform for metrics, logs, and dashboards.",
       "domain": "developer-tools",
       "event": {
@@ -1650,7 +1805,10 @@
           "url": "https://grafana.com/blog/the-story-of-grafana-documentary-from-one-developers-dream-to-20-million-users-worldwide"
         }
       ],
+      "hot": 60,
       "id": "grafana",
+      "key_idea": "Separate the visualization layer from the data source so any backend can plug in.",
+      "learn_from": "Solve your own pain point first, then abstract the interface when you add the second integration.",
       "links": {
         "demo": "https://play.grafana.org",
         "official": "https://grafana.com",
@@ -1661,11 +1819,13 @@
         "observability",
         "dashboards",
         "open-source",
-        "monitoring"
+        "monitoring",
+        "playable"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Interactive ocean-as-climate-garden visualization.",
       "domain": "climate",
       "event": {
@@ -1679,6 +1839,7 @@
           "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
         }
       ],
+      "hot": 23,
       "id": "greetings-from-earth",
       "name": "Greetings from Earth",
       "tags": [
@@ -1693,6 +1854,7 @@
         "Jared Hecht",
         "Steve Martocci"
       ],
+      "body": "",
       "description": "Free group messaging app that works over SMS and smartphone apps, built as a hackathon project.",
       "domain": "web-mobile",
       "event": {
@@ -1714,6 +1876,7 @@
           "url": "https://en.wikipedia.org/wiki/Hackathon"
         }
       ],
+      "hot": 10,
       "id": "groupme",
       "links": {
         "official": "https://groupme.com"
@@ -1727,6 +1890,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "User-friendly GIS mapping tool for wildfire recovery and observation.",
       "domain": "civic-tech",
       "event": {
@@ -1740,6 +1904,7 @@
           "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
         }
       ],
+      "hot": 25,
       "id": "grow-wildfire-recovery",
       "name": "G.R.O.W.",
       "tags": [
@@ -1750,6 +1915,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "TUM's robo.innovate 2025 crowned GROWBOT champion for turning tree care into a data-driven robotic workflow.\n",
       "description": "Robot-assisted tree growth optimization system; named Hackathon Champion at robo.innovate 2025 in Munich with a €2,500 prize.",
       "domain": "robotics",
       "event": {
@@ -1764,6 +1930,7 @@
           "url": "https://www.mirmi.tum.de/en/mirmi/news/article/roboinnovate-hackathon-2025-advancing-robotics-and-ai-solutions"
         }
       ],
+      "hot": 35,
       "id": "growbot",
       "links": {
         "official": "https://www.mirmi.tum.de/en/mirmi/news/article/roboinnovate-hackathon-2025-advancing-robotics-and-ai-solutions"
@@ -1778,6 +1945,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Space Apps 2025 winner in the Women/Space theme category.",
       "domain": "social",
       "event": {
@@ -1790,6 +1958,7 @@
           "url": "https://www.spaceappschallenge.org/2025/awards/global-winners/"
         }
       ],
+      "hot": 5,
       "id": "hercode-space",
       "name": "HerCode Space",
       "tags": [
@@ -1803,6 +1972,7 @@
       "authors": [
         "Team Innovortex, LPU"
       ],
+      "body": "From 1,305 national teams to one hardware grand-finale win: HEXDOC targets tunnel and cave excavation accidents with autonomous collision avoidance.\n",
       "description": "Collision-avoidance robot for construction and excavation in tunnels and caves; won Smart India Hackathon 2023 Hardware Edition Student Innovation in Robotics and Drones.",
       "domain": "robotics",
       "event": {
@@ -1817,6 +1987,7 @@
           "url": "https://happenings.lpu.in/lpu-innovortex-triumphs-smart-india-hackathon-2023"
         }
       ],
+      "hot": 33,
       "id": "hexdoc",
       "links": {
         "official": "https://happenings.lpu.in/lpu-innovortex-triumphs-smart-india-hackathon-2023"
@@ -1831,6 +2002,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nHipHop for PHP converts PHP source into C++ and compiles the result. Facebook ran its PHP web tier through it and reported roughly half the CPU usage for the same work.\n\n## The key insight\n\nFacebook did not want to rewrite the site. The team wanted the existing PHP codebase to run faster without a language migration. HipHop keeps PHP as the source language and moves the cost from request time to build time.\n\nThat trade is the whole idea. Compilation is slow and awkward, but it happens once. Interpretation happens on every request.\n\n## How it works\n\nThe compiler parses PHP, builds an abstract syntax tree, and generates C++ that calls a runtime library for dynamic behavior. PHP is dynamically typed, so the generated code cannot assume types. The runtime provides the operations that need them: array access, string conversion, method dispatch.\n\nStatic analysis recovers what it can. Where a variable's type is provable, the generated C++ uses a concrete type. Where it is not, the code falls back to a generic path. The ratio between the two determines how much speed the build actually buys.\n\nThe output is compiled with a normal C++ toolchain and linked against the HipHop runtime. Deployment ships a binary instead of a directory of scripts, which changes the release process as much as it changes performance.\n\nCompatibility is the long tail. PHP's behavior in edge cases is defined by its interpreter, and a reimplementation has to match it closely enough that production code does not change meaning. Each mismatch is a bug that only appears on a specific code path.\n\nThe project later gave way to HHVM, a virtual machine with a JIT. That design keeps the dynamic language and recovers speed at runtime, which removed the build step that made HipHop expensive to operate.\n\n## Build something similar\n\nTake a small language or a configuration format and compile it to a language you already run. Start with arithmetic, variables, and function calls.\n\nGenerate code, compile it, and compare the output against an interpreter for the same program. Then add one dynamic feature, such as a dictionary with mixed value types, and watch the generated code lose its static types.\n\nThat moment shows where the real work lives. The compiler is straightforward. Matching the dynamic semantics is the project.\n\n## Sources\n\nOrigin, author, and CPU savings are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "PHP to C++ compiler that reduced CPU usage by approximately 50%. Open-sourced in February 2010.",
       "domain": "developer-tools",
       "event": {
@@ -1844,7 +2017,10 @@
           "url": "https://techcrunch.com/2010/02/02/facebook-hiphop-presentation/"
         }
       ],
+      "hot": 30,
       "id": "hiphop-for-php",
+      "key_idea": "Translate PHP into C++ ahead of time, so the same code runs without paying interpreter cost per request.",
+      "learn_from": "A code generator plus a compatibility layer can buy years of headroom while you build the real runtime.",
       "name": "HipHop for PHP",
       "notes": "Built by Haiping Zhao",
       "tags": [
@@ -1856,6 +2032,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nHollow Knight is a metroidvania set in a ruined underground kingdom. You play a small knight with a nail, explore interconnected rooms, and unlock movement abilities that open routes you could see but not reach earlier.\n\n## The key insight\n\nThe project started as a Ludum Dare 27 entry in 2013, built in a weekend around the theme \"ten seconds.\" What survived from that build was not its content. It was the feel: a small figure moving through a dark, hand-drawn space.\n\nTeam Cherry kept that and rebuilt the rest over several years. The jam version proved the tone cheaply. The commercial game needed a much larger map, a combat system, and a save structure, and none of those fit in a weekend.\n\n## How it works\n\nThe map is a graph. Each room is a node, each exit is an edge, and most edges are gated by either an ability or a key item. Designers place gates so that the player passes a locked route early and remembers it. Later, a new ability turns the remembered route into progress.\n\nCombat is built on spacing and timing rather than combos. The nail has a short range, the dash moves a fixed distance, and healing takes time during which the player is vulnerable. Every fight is a negotiation between dealing damage and buying the moment to heal.\n\nThe charm system is a loadout constraint. Charms modify health, damage, movement, or summon behavior, but you can only equip as many as your notch count allows. The constraint turns a large set of upgrades into a build decision instead of a checklist.\n\nSaving happens at benches. A bench restores health and respawns enemies, so progress and risk are tied to a physical location rather than a menu.\n\n## Build something similar\n\nStart with one room and one movement verb. Make the character move, jump, and attack. Tune the acceleration, the jump arc, and the attack recovery until moving through an empty room feels good on its own.\n\nThen build three rooms with one gate. Put an item behind the gate that the player can see but not reach. Add the ability that opens it. If the return trip feels like a reward rather than a chore, the core loop works.\n\nAdd a bench before adding a boss. Saving is the pacing device that makes the rest tolerable.\n\n## Sources\n\nJam origin and development history are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Metroidvania set in a ruined insect kingdom. Team Cherry's jam prototype seeded the full game.",
       "domain": "games",
       "event": {
@@ -1869,7 +2047,10 @@
           "url": "https://gamemaker.io/en/blog/best-game-jam-games"
         }
       ],
+      "hot": 65,
       "id": "hollow-knight",
+      "key_idea": "Keep the tone and movement from the jam build, and rebuild everything around them at full scale.",
+      "learn_from": "A jam is a test of feel, not a test of content. Ship the smallest thing that proves the mood, then start over on systems.",
       "links": {
         "official": "https://hollowknightgame.com/",
         "source": "https://github.com/teamcherry/HollowKnight"
@@ -1879,11 +2060,13 @@
         "game-jam",
         "metroidvania",
         "indie",
-        "unity"
+        "unity",
+        "open-source"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "White-hat security marketplace for on-chain projects, connecting auditors with protocol teams.",
       "domain": "fintech",
       "event": {
@@ -1897,6 +2080,7 @@
           "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
         }
       ],
+      "hot": 25,
       "id": "honeypause",
       "name": "HoneyPause",
       "tags": [
@@ -1907,6 +2091,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Virtual reality rehabilitation platform for neurological conditions.",
       "domain": "healthcare",
       "event": {
@@ -1918,6 +2103,7 @@
           "url": "https://www.redbull.com/my-en/videos/soj-gamayon-in-la-and-silicon-valley"
         }
       ],
+      "hot": 0,
       "id": "immersive-rehab",
       "name": "Immersive Rehab",
       "tags": [
@@ -1928,6 +2114,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Immortal's Way is one of Global Game Jam's own spotlighted success stories: a 2024 jam prototype that survived the leap to a finished Steam release.\n",
       "description": "Game first created at Global Game Jam 2024 that was later expanded into a full commercial release on Steam.",
       "domain": "games",
       "event": {
@@ -1941,6 +2128,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 15,
       "id": "immortals-way",
       "links": {
         "official": "https://store.steampowered.com/app/2986350/Immortals_Way/"
@@ -1954,6 +2142,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Brothers Sowmay and Samyak Jain built a prototype that collapsed MakerDAO's 12-step loan process into one action. They won ETHIndia 2018 and grew the project into a major DeFi infrastructure platform.\n",
       "description": "Decentralized finance middleware platform that simplifies interactions with lending protocols like MakerDAO through a unified interface.",
       "domain": "fintech",
       "event": {
@@ -1974,6 +2163,7 @@
           "url": "https://www.globalindian.com/youth/samyak-and-sowmay-jain-disrupting-decentralised-finance-through-instadapp"
         }
       ],
+      "hot": 1,
       "id": "instadapp",
       "links": {
         "official": "https://instadapp.io"
@@ -1987,6 +2177,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Student teams pitched an AI programming tutor at Georgia Tech's Klaus Startup Challenge and walked away with a seven-figure valuation offer the same day.\n",
       "description": "Generative-AI programming tutor built by Georgia Tech students; won the 2024 Klaus Startup Challenge with a $100K seed offer at a $1M valuation.",
       "domain": "education",
       "event": {
@@ -2001,6 +2192,7 @@
           "url": "https://sci.cc.gatech.edu/external-news/students-win-klaus-startup-challenge-dive-5b-market-ai-driven-teaching-tool"
         }
       ],
+      "hot": 25,
       "id": "instructai",
       "links": {
         "official": "https://www.cc.gatech.edu/news/students-win-klaus-startup-challenge-dive-5b-market-ai-driven-teaching-tool"
@@ -2020,6 +2212,7 @@
         "Dhruv Roongta",
         "Sahibpreet Singh"
       ],
+      "body": "A team of first-year Georgia Tech CS majors built JARVIS over a Cal Hacks weekend after a visually impaired family member inspired the idea. The multi-award winning prototype describes nearby people and cues rather than only text.\n",
       "description": "AI assistant app that uses computer vision to describe surroundings and non-verbal cues for blind and visually impaired users; won Best Hack for Health at Cal Hacks 10.0.",
       "domain": "accessibility",
       "event": {
@@ -2038,6 +2231,7 @@
           "url": "https://www.cc.gatech.edu/news/cs-majors-win-best-hack-health-app-visually-impaired"
         }
       ],
+      "hot": 23,
       "id": "jarvis",
       "links": {
         "official": "https://news.gatech.edu/news/2023/12/11/cs-majors-win-best-hack-health-app-visually-impaired"
@@ -2056,6 +2250,7 @@
         "Brinlee Kidd",
         "Sylvia Lopez"
       ],
+      "body": "From 4,000+ applications down to one Global Final stage in Istanbul: Jotted's automated study tool took Red Bull Basement 2021's top student prize.\n",
       "description": "Automated study tool by Arizona State University students Brinlee Kidd and Sylvia Lopez; won the Red Bull Basement 2021 Global Final in Istanbul.",
       "domain": "education",
       "event": {
@@ -2070,6 +2265,7 @@
           "url": "https://www.prnewswire.com/news-releases/automated-study-tool-wins-best-idea-at-innovation-program-for-university-students-301513791.html"
         }
       ],
+      "hot": 23,
       "id": "jotted",
       "links": {
         "official": "https://www.prnewswire.com/news-releases/automated-study-tool-wins-best-idea-at-innovation-program-for-university-students-301513791.html"
@@ -2087,6 +2283,7 @@
       "authors": [
         "Steel Crate Games"
       ],
+      "body": "The definitive jam-to-VR-classic story: a Global Game Jam 2015 prototype about asymmetric bomb defusal became one of VR's most recognizable party games.\n",
       "description": "Cooperative VR bomb-defusal game born from a Global Game Jam 2015 prototype; became one of the best-selling VR titles on Steam.",
       "domain": "games",
       "event": {
@@ -2101,6 +2298,7 @@
           "url": "https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/"
         }
       ],
+      "hot": 31,
       "id": "keep-talking",
       "links": {
         "official": "https://store.steampowered.com/app/341800/Keep_Talking_and_Nobody_Explodes/"
@@ -2116,6 +2314,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Web app tracking Landsat satellites with surface reflectance data and pass notifications.",
       "domain": "science",
       "event": {
@@ -2129,6 +2328,7 @@
           "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
         }
       ],
+      "hot": 25,
       "id": "landsat-connect",
       "name": "Landsat Connect",
       "tags": [
@@ -2139,6 +2339,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Pre-launch landing page builder for collecting emails before product launch. Seed funded, acquired approximately three years after launch.",
       "domain": "web-mobile",
       "event": {
@@ -2152,6 +2353,7 @@
           "url": "https://www.inc.com/articles/201111/companies-that-launched-in-three-days-startup-weekend.html"
         }
       ],
+      "hot": 30,
       "id": "launchrock",
       "name": "LaunchRock",
       "tags": [
@@ -2162,6 +2364,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Portable electric washing machine designed for water conservation. Built by team LYLO.",
       "domain": "hardware",
       "event": {
@@ -2175,6 +2378,7 @@
           "url": "https://www.redbull.com/int-en/event-series/basement/red-bull-basement-past-winners"
         }
       ],
+      "hot": 23,
       "id": "lava-aqua-x",
       "name": "LAVA AQUA X",
       "tags": [
@@ -2189,6 +2393,7 @@
         "Antoine Balaresque",
         "Henry Bradlow"
       ],
+      "body": "Lily is a cautionary wild-idea entry: a garage/lab drone that captured imaginations with a slick pre-order video, took about $34 million in customer pre-orders, then failed to ship and filed for bankruptcy in 2017 while facing a San Francisco DA lawsuit over the promotional footage.\n",
       "description": "UC Berkeley robotics-lab prototype for a throw-and-shoot follow-me camera drone that drew huge pre-orders, then collapsed amid fraud allegations and bankruptcy.",
       "domain": "robotics",
       "evidence": [
@@ -2209,6 +2414,7 @@
           "url": "https://www.siliconvalley.com/2017/02/28/shuttered-drone-startup-lily-robotics-details-failure-refund-plans-bankruptcy-filing/amp"
         }
       ],
+      "hot": 0,
       "id": "lily-robotics",
       "links": {
         "official": "https://en.wikipedia.org/wiki/Lily_Robotics"
@@ -2226,6 +2432,7 @@
       "authors": [
         "Four Quarters"
       ],
+      "body": "The four-person Russian studio Four Quarters submitted a barely playable loop prototype to Ludum Dare 45 in 2019. They expanded it into Loop Hero, published by Devolver Digital in 2021 to strong sales and reviews.\n",
       "description": "Idle-RPG about a hero walking an endless loop against monsters, grown from a non-playable Ludum Dare 2019 prototype into Four Quarters' Devolver-published hit.",
       "domain": "games",
       "event": {
@@ -2243,6 +2450,7 @@
           "url": "https://ldjam.com/events/ludum-dare/45/loopathero"
         }
       ],
+      "hot": 26,
       "id": "loop-hero",
       "links": {
         "demo": "https://ldjam.com/events/ludum-dare/45/loopathero",
@@ -2253,11 +2461,13 @@
         "ludum-dare",
         "rpg",
         "indie",
-        "prototype"
+        "prototype",
+        "playable"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Geek and gamer subscription box service with millions of subscribers.",
       "domain": "web-mobile",
       "event": {
@@ -2270,6 +2480,7 @@
           "url": "https://medium.com/startup-weekend-derby/5-startups-who-used-startup-weekend-as-a-launchpad-for-success-fa380463177e"
         }
       ],
+      "hot": 10,
       "id": "loot-crate",
       "links": {
         "official": "https://www.lootcrate.com/"
@@ -2283,6 +2494,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Couch co-op space brawler where players man turrets on a circular ship. Released on all major consoles.",
       "domain": "games",
       "event": {
@@ -2295,6 +2507,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "lovers-in-a-dangerous-spacetime",
       "links": {
         "official": "https://loversinadangerousspacetime.com/"
@@ -2311,6 +2524,7 @@
       "authors": [
         "1 Simple Idea"
       ],
+      "body": "A game-jam music prototype grew into a multi-platform commercial puzzle-adventure, one of the cleaner jam-to-Arcade pipelines on record.\n",
       "description": "Musical exploration game that started as a Global Game Jam prototype and later shipped on Apple Arcade and Steam.",
       "domain": "games",
       "event": {
@@ -2325,6 +2539,7 @@
           "url": "https://www.gamedeveloper.com/design/how-a-global-game-jam-prototype-became-lullaby-of-life"
         }
       ],
+      "hot": 31,
       "id": "lullaby-of-life",
       "links": {
         "official": "https://apps.apple.com/app/lullaby-of-life/id1503210927"
@@ -2339,6 +2554,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Website and immersive game visualizing Apollo lunar seismic data.",
       "domain": "science",
       "event": {
@@ -2352,6 +2568,7 @@
           "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
         }
       ],
+      "hot": 23,
       "id": "lunartech-ensemble",
       "name": "LunarTech Ensemble",
       "tags": [
@@ -2362,6 +2579,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "MedLink is a rare civic-hackathon-to-White-House pipeline: a student build at SF State's Day of Civic Hacking earned national recognition for open government work.\n",
       "description": "Healthcare connectivity app developed at SF State's civic hackathon; featured at a White House Champions of Change event for open government and civic hacking.",
       "domain": "healthcare",
       "event": {
@@ -2376,6 +2594,7 @@
           "url": "https://commons.sfsu.edu/hackathon-sf-state"
         }
       ],
+      "hot": 20,
       "id": "medlink",
       "links": {
         "official": "https://commons.sfsu.edu/hackathon-sf-state"
@@ -2389,6 +2608,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "ETHGlobal Bangkok 2024 ran the largest prize pool in the event's history. Metaloot's Flow game launchpad made the top-10 cut from roughly 713 submissions.\n",
       "description": "Launchpad connecting games to the Flow blockchain; named a top winner at the ETHGlobal Bangkok 2024 hackathon following Devcon.",
       "domain": "fintech",
       "event": {
@@ -2403,6 +2623,7 @@
           "url": "https://www.theblock.co/amp/post/326975/ethglobal-hackathons-10-finalists-showcase-ai-agents-crypto-games-dao-tools-and-more"
         }
       ],
+      "hot": 25,
       "id": "metaloot",
       "links": {
         "official": "https://ethglobal.com/showcase"
@@ -2417,6 +2638,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Mike Tholfsen and team built the prototype at a Microsoft company-wide hackathon. After winning against 3,000+ entries, it became Immersive Reader, shipped in Word, OneNote, Outlook, Teams, and Edge, and now serves millions of students worldwide.\n",
       "description": "Accessibility tool built into Microsoft Office that helps people with dyslexia and learning differences read and write more effectively.",
       "domain": "accessibility",
       "event": {
@@ -2433,6 +2655,7 @@
           "url": "https://www.microsoft.com/en-us/research/group/customer-insights-research/articles/immersive-reader-creates-more-inclusive-classrooms"
         }
       ],
+      "hot": 11,
       "id": "microsoft-immersive-reader",
       "links": {
         "official": "https://www.microsoft.com/en-us/education/immersive-reader"
@@ -2446,6 +2669,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Museum Wakes samples thousands of real Met artifacts and weaves them into a unique four-act mystery where visitors talk to ancient gods in real-time voice - an unusually ambitious weekend media-arts build.\n",
       "description": "AI-powered narrative mystery transforming the Met's Egyptian Wing into an interactive voice experience; built at the Gemini 3 NYC Hackathon in February 2026.",
       "domain": "media-arts",
       "event": {
@@ -2460,6 +2684,7 @@
           "url": "https://cerebralvalley.ai/e/gemini-3-nyc-hackathon/hackathon/gallery/16"
         }
       ],
+      "hot": 35,
       "id": "museum-wakes",
       "links": {
         "official": "https://museum-wakes.onrender.com/"
@@ -2475,6 +2700,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Fungal transformation platformer where the player is a growing, splitting organism. IGF Excellence in Design shortlist.",
       "domain": "games",
       "event": {
@@ -2487,6 +2713,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "mushroom-11",
       "links": {
         "official": "https://mushroom11game.com/"
@@ -2500,6 +2727,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Built during the NASA Space Apps Challenge 2021 by a team led by Yoseline Angel Lopez. After winning, the prototype was adopted by Colombia's Ministry of Agriculture. Angel Lopez is now an assistant research scientist at NASA Goddard.\n",
       "description": "Web-app prototype connecting smallholder farmers with local buyers and monitoring agricultural land-use via satellite imagery.",
       "domain": "climate",
       "event": {
@@ -2512,6 +2740,7 @@
           "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/registration-opens-for-2025-nasa-international-space-apps-challenge/"
         }
       ],
+      "hot": 3,
       "id": "nasa-space-apps-colombia",
       "links": {
         "official": "https://spaceappschallenge.org"
@@ -2525,6 +2754,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Seizure monitoring smartwatch platform. Won the Pebble prize for best smartwatch app and continued development after the hackathon.",
       "domain": "healthcare",
       "event": {
@@ -2538,6 +2768,7 @@
           "url": "https://betakit.com/collaboration-trumps-competition-at-hackthenorth/"
         }
       ],
+      "hot": 20,
       "id": "neutun-labs",
       "name": "Neutun Labs",
       "tags": [
@@ -2548,6 +2779,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Extremely difficult multiplayer survival game. Over 20 million players across platforms.",
       "domain": "games",
       "event": {
@@ -2559,6 +2791,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "no-humanity",
       "links": {
         "official": "https://nohumanitygame.com/"
@@ -2573,6 +2806,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "One-tap emergency dispatch without needing to speak. Noonlight grew from a weekend build into a platform integrated with major dating apps and wearable devices.\n",
       "description": "Personal safety platform that began as a Startup Weekend project; became a widely integrated panic-button service used by dating apps and smart devices.",
       "domain": "social",
       "event": {
@@ -2587,6 +2821,7 @@
           "url": "https://www.startlandnews.com/2018/11/kansas-city-startup-noonlight-safety-app/"
         }
       ],
+      "hot": 30,
       "id": "noonlight",
       "links": {
         "official": "https://www.noonlight.com"
@@ -2601,6 +2836,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Smart contract circuit breaker marketplace bonded to EigenLayer for on-chain security.",
       "domain": "fintech",
       "event": {
@@ -2614,6 +2850,7 @@
           "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
         }
       ],
+      "hot": 25,
       "id": "odin",
       "name": "ODIN",
       "tags": [
@@ -2625,6 +2862,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Ludum Dare 59's Officially Dead is the classic jam-to-Steam pipeline: top-100 finishes, then a commercial expansion under Erebus Games.\n",
       "description": "Fast-paced zombie-survival action game from Ludum Dare 59; being expanded into a full commercial Steam release by Erebus Games.",
       "domain": "games",
       "event": {
@@ -2639,6 +2877,7 @@
           "url": "https://ldjam.com/users/technicalitycreations/feed"
         }
       ],
+      "hot": 35,
       "id": "officially-dead",
       "links": {
         "official": "https://ldjam.com/events/ludum-dare/59/officially-dead"
@@ -2653,6 +2892,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nOpenAI Gym is a standard interface for reinforcement learning environments. An agent sees an observation, picks an action, and receives a reward and a new observation. Gym defines the shape of that exchange so the same training loop can drive a cart-pole simulation, an Atari game, or a robot arm.\n\n## The key insight\n\nBefore Gym, most papers shipped their own environment code and their own training harness. Results were hard to compare because the loop itself differed between implementations. Gym standardized the environment side of the loop and left the algorithm side alone. That is a much smaller surface than a full framework, and it was enough.\n\n## How it works\n\nEvery environment implements the same contract:\n\n- `reset()` returns the first observation.\n- `step(action)` returns observation, reward, done, and an info dictionary.\n- `action_space` and `observation_space` describe legal actions and observations.\n\nSpaces are typed. `Discrete(4)` is a set of four actions. `Box(low, high, shape)` is a continuous array with bounds. Because the shapes are declared, an algorithm can build the right input and output layers without knowing which environment it is talking to.\n\nWrappers modify an environment while keeping the contract. Frame stacking, reward scaling, and time limits are all wrappers: they take an environment and return an environment. This is composition instead of configuration, and it is why third-party modifications do not require changes to the core.\n\nRegistration maps a string like `CartPole-v1` to a constructor. `gym.make` builds the environment and wraps it. Versioning in the name matters: `v0` and `v1` can differ in reward definition or episode length, and published results cite the version.\n\n## Build something similar\n\nDefine the contract first, in fewer than ten lines. Two methods and two space objects are enough.\n\nBuild one environment with a trivial dynamic, then write a random agent that samples from the action space and prints the episode return. If the agent can run without importing anything specific to that environment, the interface works.\n\nThen add a wrapper that changes one thing, such as stacking the last four observations. If the wrapper needs no change to the agent, the composition boundary is in the right place.\n\n## Sources\n\nThe interface and repository are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Toolkit for reinforcement learning research; described by OpenAI as not a formal hackathon project but built with rapid-iteration hackathon culture in mind.",
       "domain": "ai-ml",
       "evidence": [
@@ -2661,9 +2902,13 @@
           "url": "https://github.com/openai/gym"
         }
       ],
+      "hot": 35,
       "id": "openai-gym",
+      "key_idea": "Give every environment the same small interface, so one algorithm runs everywhere without adaptation.",
+      "learn_from": "A boring, fixed contract creates an ecosystem. Five methods beat a clever framework.",
       "links": {
-        "official": "https://github.com/openai/gym"
+        "official": "https://github.com/openai/gym",
+        "source": "https://github.com/openai/gym"
       },
       "name": "OpenAI Gym",
       "tags": [
@@ -2682,6 +2927,7 @@
         "Arash Ramanan",
         "Jatin Gupta"
       ],
+      "body": "Built as a Meta Llama hackathon entry under the Cerebral Valley banner in San Francisco, OpenGlass clipped an AI vision stack onto ordinary frames. The team later shipped a successor wearable called Friend.\n",
       "description": "Open-source AI smart-glasses attachment built in about 36 hours for roughly $20 of off-the-shelf parts, pairing a camera with Llama 3 for live scene description.",
       "domain": "hardware",
       "event": {
@@ -2704,21 +2950,25 @@
           "url": "https://github.com/not-important-vr/openglass"
         }
       ],
+      "hot": 65,
       "id": "openglass",
       "links": {
         "demo": "https://github.com/not-important-vr/openglass",
-        "official": "https://github.com/BurgerKing6668/OpenGlass2"
+        "official": "https://github.com/BurgerKing6668/OpenGlass2",
+        "source": "https://github.com/BurgerKing6668/OpenGlass2"
       },
       "name": "OpenGlass",
       "tags": [
         "ai-wearables",
         "open-source",
         "accessibility",
-        "hackathon"
+        "hackathon",
+        "playable"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "When ventilator supply chains broke in early 2020, hackathon teams worldwide built open emergency designs. OpenVent, from Infineon's hackathon, used a standard Ambu-bag as the actuator.\n",
       "description": "Open-source ventilator design produced during Infineon Technologies' COVID-era hackathon; one of several rapid-build emergency respiratory device projects in 2020.",
       "domain": "healthcare",
       "event": {
@@ -2733,6 +2983,7 @@
           "url": "https://www.medicaldesignandoutsourcing.com/can-an-open-source-ventilator-hackathon-help-fight-the-coronavirus"
         }
       ],
+      "hot": 33,
       "id": "openvent",
       "links": {
         "official": "https://www.medicaldesignandoutsourcing.com/can-an-open-source-ventilator-hackathon-help-fight-the-coronavirus"
@@ -2747,6 +2998,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "AI indoor navigation for vision-impaired users with voice guidance.",
       "domain": "accessibility",
       "event": {
@@ -2759,6 +3011,7 @@
           "url": "https://museum.hackthenorth.com/"
         }
       ],
+      "hot": 5,
       "id": "pathsense",
       "name": "PathSense",
       "tags": [
@@ -2770,6 +3023,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "A weekend ETHGlobal project made the humble PDF executable for payments, taking a sponsor track prize in the process.\n",
       "description": "Turns static PDFs into live financial tools with embedded cryptocurrency transactions; won Best Finance App at ETHGlobal New York 2025.",
       "domain": "fintech",
       "event": {
@@ -2784,6 +3038,7 @@
           "url": "https://fernhq.com/blog/ethglobal-new-york-2025-fern-api-prize-winners"
         }
       ],
+      "hot": 25,
       "id": "pdfi",
       "links": {
         "official": "https://ethglobal.com/showcase/pdfi-z99gp"
@@ -2802,6 +3057,7 @@
         "Aggro Crab",
         "Landfall Games"
       ],
+      "body": "Two indie studios jammed a co-op climbing game in February and shipped a multi-million seller the same year. Proof that the jam pipeline can still print hits.\n",
       "description": "Physics co-op climbing game jammed in early 2025 by Aggro Crab and Landfall; shipped on Steam months later and sold over 2 million copies.",
       "domain": "games",
       "event": {
@@ -2816,6 +3072,7 @@
           "url": "https://www.pcgamer.com/games/co-op-physics-climbing-game-peak-has-already-sold-2-million-copies/"
         }
       ],
+      "hot": 35,
       "id": "peak",
       "links": {
         "official": "https://store.steampowered.com/app/2527290/PEAK/"
@@ -2830,6 +3087,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Puzzle box game about a mysterious button and a forbidden console. Developed by Four Quarters after a jam prototype.",
       "domain": "games",
       "event": {
@@ -2841,6 +3099,7 @@
           "url": "https://www.vice.com/en/article/how-the-loop-hero-devs-pitched-a-hit-game-thats-impossible-to-describe/"
         }
       ],
+      "hot": 10,
       "id": "please-dont-touch-anything",
       "links": {
         "official": "https://store.steampowered.com/app/370310/Please_Dont_Touch_Anything/"
@@ -2854,6 +3113,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "A weekend AR retail demo took Disrupt SF 2016's hackathon grand prize, predating the mainstream AR shopping wave by years.\n",
       "description": "Augmented-reality shopping prototype that won the TechCrunch Disrupt San Francisco 2016 Hackathon grand prize.",
       "domain": "web-mobile",
       "event": {
@@ -2868,6 +3128,7 @@
           "url": "https://techcrunch.com/2016/09/13/pointshop-space-wins-disrupt-sf-2016-hackathon/"
         }
       ],
+      "hot": 31,
       "id": "pointshop-space",
       "links": {
         "official": "https://techcrunch.com/2016/09/13/pointshop-space-wins-disrupt-sf-2016-hackathon/"
@@ -2881,6 +3142,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Daniel Mullins turned the jam prototype into a full 2.5-hour commercial game released on Steam in January 2016.\n",
       "description": "Metafictional puzzle game disguised as a broken arcade machine designed by the devil.",
       "domain": "games",
       "event": {
@@ -2901,6 +3163,7 @@
           "url": "https://dmullinsgames.itch.io/pony-island"
         }
       ],
+      "hot": 10,
       "id": "pony-island",
       "links": {
         "official": "https://store.steampowered.com/app/405640/Pony_Island/"
@@ -2914,6 +3177,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Session Replay was a classic \\\"code wins arguments\\\" hack: one engineer shipped a contested prototype in a company hackathon weekend. It reshaped PostHog from a single analytics tool into a multi-product platform.\n",
       "description": "Product analytics session-replay feature built during an early PostHog internal hackathon; grew into a core multi-product pillar with tens of thousands of daily active users.",
       "domain": "developer-tools",
       "event": {
@@ -2930,6 +3194,7 @@
           "url": "https://posthog.com/blog/behind-the-scenes-posthog-hackathon"
         }
       ],
+      "hot": 10,
       "id": "posthog-session-replay",
       "links": {
         "official": "https://posthog.com/session-replay"
@@ -2943,6 +3208,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "A hospital-run hackathon category win turned micro-expression emotional AI into a planned SaMD registration for pediatric mental telehealth.\n",
       "description": "Emotional AI platform detecting micro-facial expressions for clinical use; won the Texas Children's Hospital Healthcare Hackathon Touchless Experience category in 2021.",
       "domain": "healthcare",
       "event": {
@@ -2957,6 +3223,7 @@
           "url": "https://developer.nvidia.com/blog/emotional-ai-solution-won-texas-childrens-hospital-healthcare-hackathon"
         }
       ],
+      "hot": 33,
       "id": "project-m",
       "links": {
         "official": "https://developer.nvidia.com/blog/emotional-ai-solution-won-texas-childrens-hospital-healthcare-hackathon"
@@ -2971,6 +3238,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nProject Naptha is a browser extension that makes text inside images selectable, copyable, editable, and translatable. You drag over a screenshot or a meme as if it were a document, and the words come out.\n\n## The key insight\n\nOptical character recognition was not new in 2013. The insight was placement. Once the engine returns words with bounding boxes, the extension can position transparent text elements directly over the image. From that point, the browser's own selection, copy, and translation features do the rest.\n\nThe interface is the trick. Users do not learn a new tool. They use the selection behavior they already have.\n\n## How it works\n\nThe extension captures the image, draws it to a canvas, and runs an OCR engine compiled to JavaScript. Running locally avoids uploading every image to a server, which matters for privacy and for latency.\n\nThe engine returns recognized words and their coordinates. The extension creates a layer above the image with one positioned element per word or line. The text is transparent, but it sits in the same place as the pixels, so a drag selects the words under the cursor.\n\nBecause the layer is real text, other features follow. Copy puts the words on the clipboard. A translation action sends the selected string to a translation service. An edit action hides the original region and draws a replacement.\n\nDetection is the weak point. OCR on low-resolution or stylized text produces garbage, so the extension scores confidence and only builds overlays where the result is plausible. Images without text get no layer.\n\n## Build something similar\n\nTake one screenshot with clear text. Run any OCR engine over it and print each word with its bounding box.\n\nDraw absolutely positioned spans over the image using those boxes, with transparent color. Select them with the mouse. If selection lands on the right words, the core mechanism works.\n\nThen handle failure. Rotate the image, blur it, and use a decorative font. Decide what confidence threshold means \"no text here\" rather than producing nonsense.\n\n## Sources\n\nHackMIT origin is linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Browser extension that lets users highlight, copy, edit, and translate text inside images.",
       "domain": "ai-ml",
       "event": {
@@ -2983,7 +3252,10 @@
           "url": "https://en.wikipedia.org/wiki/HackMIT"
         }
       ],
+      "hot": 20,
       "id": "project-naptha",
+      "key_idea": "Run OCR locally, then lay invisible text over the image so the recognized words behave like real text.",
+      "learn_from": "The model is not the product. The product is making the output act like the interface people already know.",
       "links": {
         "official": "https://www.projectnaptha.com/"
       },
@@ -2996,6 +3268,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "In the 2020 COVID-19 global Space Apps sprint, Project Prometheus took the top worldwide award for a low-cost open ventilator design aimed at crisis-strapped hospitals.\n",
       "description": "COVID-era NASA Space Apps global winner building low-cost open ventilator and respiratory support designs for crisis conditions.",
       "domain": "healthcare",
       "event": {
@@ -3010,6 +3283,7 @@
           "url": "https://www.spaceappschallenge.org/2020/challenge/project-prometheus/"
         }
       ],
+      "hot": 23,
       "id": "project-prometheus",
       "links": {
         "official": "https://www.spaceappschallenge.org/2020/challenge/project-prometheus/"
@@ -3024,6 +3298,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "C2PA-based detection of AI-generated images to combat news misinformation.",
       "domain": "social",
       "event": {
@@ -3037,6 +3312,7 @@
           "url": "https://www.recursive.so/hackathons"
         }
       ],
+      "hot": 23,
       "id": "proof-of-picture",
       "name": "Proof of Picture",
       "tags": [
@@ -3048,6 +3324,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "EMG-powered hand-closing motor assistive device for people with paralysis.",
       "domain": "accessibility",
       "event": {
@@ -3060,6 +3337,7 @@
           "url": "https://museum.hackthenorth.com/"
         }
       ],
+      "hot": 5,
       "id": "pulsegrip",
       "name": "PulseGrip",
       "tags": [
@@ -3071,6 +3349,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Decentralized push notification protocol for Web3 applications. Raised $10 million in funding.",
       "domain": "web-mobile",
       "event": {
@@ -3083,6 +3362,7 @@
           "url": "https://bizthon.hashnode.dev/from-hackathon-to-unicorn-real-stories-of-web3-projects-that-made-it-big"
         }
       ],
+      "hot": 3,
       "id": "push-protocol",
       "links": {
         "official": "https://push.org/"
@@ -3096,6 +3376,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Disrupt Berlin 2017's hackathon grand prize went to a frictionless insurance checkout: insure a camera for a ski week in a few phone taps.\n",
       "description": "Tap-to-insure mobile prototype for short-term valuable-item coverage; won the TechCrunch Disrupt Berlin 2017 Hackathon Grand Prize and €4,200.",
       "domain": "fintech",
       "event": {
@@ -3110,6 +3391,7 @@
           "url": "https://techcrunch.com/2017/12/03/quick-insurance-wins-the-disrupt-berlin-2017-hackathon-grand-prize"
         }
       ],
+      "hot": 31,
       "id": "quick-insurance",
       "links": {
         "official": "https://techcrunch.com/2017/12/03/quick-insurance-wins-the-disrupt-berlin-2017-hackathon-grand-prize"
@@ -3124,6 +3406,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Puzzle game featuring Apple Best New Game global feature and",
       "domain": "games",
       "event": {
@@ -3135,6 +3418,7 @@
           "url": "https://www.richardfu.net/dev-story-behind-rainmaker-the-beautiful-flood/"
         }
       ],
+      "hot": 10,
       "id": "rainmaker",
       "links": {
         "official": "https://www.richardfu.net/rainmaker/"
@@ -3148,6 +3432,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "AI-based exoplanet detection system.",
       "domain": "science",
       "event": {
@@ -3161,6 +3446,7 @@
           "url": "https://www.spaceappschallenge.org/2025/awards/global-winners/"
         }
       ],
+      "hot": 25,
       "id": "resonant-exoplanets",
       "name": "Resonant Exoplanets",
       "tags": [
@@ -3171,6 +3457,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Solo designer Paul Rabbitte prototyped the core skater-shooter concept at the GMTK Game Jam. Studio Roll7 (OlliOlli) turned it into a BAFTA-winning commercial release in August 2022.\n",
       "description": "Third-person action-shooter that blends rollerskating tricks with gunplay in a dystopian retrofuture arena sport.",
       "domain": "games",
       "event": {
@@ -3183,6 +3470,7 @@
           "url": "https://en.wikipedia.org/wiki/Rollerdrome"
         }
       ],
+      "hot": 11,
       "id": "rollerdrome",
       "links": {
         "official": "https://rollerdromegame.com"
@@ -3196,6 +3484,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Jeremy Johnston built the prototype during GGJ 2023 (theme: Roots). After eleven months of polish it shipped free on itch.io, then got a full Steam remake in January 2025.\n",
       "description": "Deduction puzzle game where players research a 1998 candy-company inheritance to fill in an intricate family tree.",
       "domain": "games",
       "event": {
@@ -3216,6 +3505,7 @@
           "url": "https://store.steampowered.com/app/2754380/The_Roottrees_are_Dead/"
         }
       ],
+      "hot": 13,
       "id": "roottrees-are-dead",
       "links": {
         "official": "https://store.steampowered.com/app/2754380/The_Roottrees_are_Dead/"
@@ -3229,6 +3519,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Art access tool for blind users that conveys visual content through touch, temperature, and sound.",
       "domain": "accessibility",
       "event": {
@@ -3241,6 +3532,7 @@
           "url": "https://museum.hackthenorth.com/"
         }
       ],
+      "hot": 5,
       "id": "ross-remote-operated-semantic-sketching",
       "name": "ROSS - Remote Operated Semantic Sketching",
       "tags": [
@@ -3252,6 +3544,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "SkyHack 2023's first-place drone used autonomous search and reporting to help find people in rubble - an example of a university hackathon aimed squarely at life-safety robotics.\n",
       "description": "Autonomous search-and-report drone system; won first place at Kent State's 2023 SkyHack for disaster rubble navigation.",
       "domain": "robotics",
       "event": {
@@ -3266,6 +3559,7 @@
           "url": "https://www.kent.edu/today/news/rubble-busters-skyhack-team-creates-lifesaving-drone-fly"
         }
       ],
+      "hot": 23,
       "id": "rubble-busters",
       "links": {
         "official": "https://www.kent.edu/today/news/rubble-busters-skyhack-team-creates-lifesaving-drone-fly"
@@ -3280,6 +3574,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Longer than a weekend, shorter than traditional development: eight weeks of jam production produced a first-week million-plus seller. A new data point for jam economics.\n",
       "description": "Cooperative RV road-trip game developed during an eight-week summer game jam; hit 1.2 million sales in its first week on Steam in October 2025.",
       "domain": "games",
       "event": {
@@ -3294,6 +3589,7 @@
           "url": "https://www.pcgamer.com/games/co-op-rv-driving-sim-rv-there-yet-sold-12-million-copies-in-its-first-week-on-steam/"
         }
       ],
+      "hot": 35,
       "id": "rv-there-yet",
       "links": {
         "official": "https://store.steampowered.com/app/2518530/RV_There_Yet/"
@@ -3308,6 +3604,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Enterprise hackathons often stall in demo purgatory. Sabre's concierge AI prototype crossed the gap into real travel-agent tooling.\n",
       "description": "AI travel concierge prototype built during an internal Sabre hackathon; scaled into production-facing assistant tooling for travel agents.",
       "domain": "developer-tools",
       "event": {
@@ -3320,6 +3617,7 @@
           "url": "https://www.sabre.com/insights/sabre-hackathon-innovation-ai-travel/"
         }
       ],
+      "hot": 10,
       "id": "sabre-concierge-ai",
       "links": {
         "official": "https://www.sabre.com"
@@ -3334,6 +3632,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Scintilla turned distributed air quality feeds into live maps, earning NASA Space Apps 2016's Best Use of Data title.\n",
       "description": "Real-time air quality visualization platform built at NASA Space Apps 2016; won Best Use of Data for turning open sensor feeds into actionable maps.",
       "domain": "climate",
       "event": {
@@ -3348,6 +3647,7 @@
           "url": "https://www.spaceappschallenge.org/2016/challenge/scintilla/"
         }
       ],
+      "hot": 21,
       "id": "scintilla",
       "links": {
         "official": "https://www.spaceappschallenge.org/2016/challenge/scintilla/"
@@ -3362,6 +3662,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Split-screen first-person shooter where all players are invisible, so you must cheat by looking at their screens. Released on Steam, PS4, Xbox One.",
       "domain": "games",
       "event": {
@@ -3374,6 +3675,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "screencheat",
       "links": {
         "official": "https://screencheatgame.com/"
@@ -3387,6 +3689,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Built by Sebastian Krzyszkowiak, Konrad Burandt, and Paweł Radej in the jam under the name \"The Game Jam Game About Games, Secrets and Stuff.\" Shipped on Steam October 2015 with three expansions.\n",
       "description": "Free point-and-click adventure where a gamedev intern infiltrates a corporation that controls the entire gaming industry.",
       "domain": "games",
       "event": {
@@ -3403,6 +3706,7 @@
           "url": "https://tremendouscorp.com"
         }
       ],
+      "hot": 11,
       "id": "secret-of-tremendous-corporation",
       "links": {
         "official": "https://store.steampowered.com/app/380140/The_Secret_of_Tremendous_Corporation/"
@@ -3416,6 +3720,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "AI-interactive story-building platform built on Story Protocol for IP licensing.",
       "domain": "media-arts",
       "event": {
@@ -3429,6 +3734,7 @@
           "url": "https://unchainedcrypto.com/ethdenvers-2024-hackathon-onchain-security-ai-and-gaming-fun-dominate-the-winning-projects/"
         }
       ],
+      "hot": 25,
       "id": "sekai",
       "links": {
         "official": "https://sekai.co/"
@@ -3443,6 +3749,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Interactive 3D moonquake mapping web application.",
       "domain": "science",
       "event": {
@@ -3456,6 +3763,7 @@
           "url": "https://www.spaceappschallenge.org/blog/2022-global-winners/"
         }
       ],
+      "hot": 23,
       "id": "selene",
       "name": "Selene",
       "tags": [
@@ -3466,6 +3774,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Shaker turned Facebook's social graph into walkable virtual rooms. Disrupt SF 2011 exposure helped it raise serious capital before the virtual-worlds hype cycle cooled.\n",
       "description": "Virtual bar/lounge environment built on Facebook Open Graph; won TechCrunch Disrupt San Francisco 2011 and raised significant venture funding.",
       "domain": "social",
       "event": {
@@ -3480,6 +3789,7 @@
           "url": "https://en.wikipedia.org/wiki/Shaker_(social_network)"
         }
       ],
+      "hot": 20,
       "id": "shaker",
       "links": {
         "official": "https://en.wikipedia.org/wiki/Shaker_(social_network)"
@@ -3494,6 +3804,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Chess variant roguelike where one side gets a shotgun. Top-rated entry at Ludum Dare 50.",
       "domain": "games",
       "event": {
@@ -3507,6 +3818,7 @@
           "url": "https://ldj.am/games"
         }
       ],
+      "hot": 33,
       "id": "shotgun-king",
       "links": {
         "official": "https://store.steampowered.com/app/1968320/Shotgun_King_The_Final_Checkmate/"
@@ -3520,6 +3832,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "A weekend Disrupt hackathon entry that put a flow sensor on a shower and a leaderboard on a phone. Judges awarded it the $5,000 grand prize over Blitz and Interactive Markdown.\n",
       "description": "Hardware plus mobile app that monitors shower flow rate and gamifies shorter showers against friends; won the TechCrunch Disrupt SF 2014 hackathon grand prize.",
       "domain": "hardware",
       "event": {
@@ -3534,6 +3847,7 @@
           "url": "https://techcrunch.com/2014/09/07/shower-with-friends-wins-the-disrupt-sf-2014-hackathon-grand-prize-blitz-and-interactive-markdown-are-runners-up"
         }
       ],
+      "hot": 45,
       "id": "shower-with-friends",
       "links": {
         "demo": "https://techcrunch.com/2014/09/07/shower-with-friends-lets-you-gamify-water-consumption/"
@@ -3543,11 +3857,13 @@
         "hardware",
         "water",
         "gamification",
-        "techcrunch-disrupt"
+        "techcrunch-disrupt",
+        "playable"
       ],
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Identifies satellite risk zones from near-Earth objects and meteor streams in real time.",
       "domain": "science",
       "event": {
@@ -3561,6 +3877,7 @@
           "url": "https://news.sciencex.in/nasa-international-space-apps-challenge-announces-2024-global-winners"
         }
       ],
+      "hot": 25,
       "id": "skyshield",
       "name": "SkyShield",
       "tags": [
@@ -3571,6 +3888,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "SkyWatch won Space Apps 2014 by making satellite Earth observation data easier to find and combine, years before similar consumer mapping products.\n",
       "description": "Space data mashup that won NASA Space Apps 2014 Best Use of Data; combined Earth observation feeds into a single accessible interface.",
       "domain": "science",
       "event": {
@@ -3585,6 +3903,7 @@
           "url": "https://www.spaceappschallenge.org/2014/challenge/skywatch/"
         }
       ],
+      "hot": 20,
       "id": "skywatch",
       "links": {
         "official": "https://www.spaceappschallenge.org/2014/challenge/skywatch/"
@@ -3598,6 +3917,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "SolanaFM rode Singapore Management University's startup pipeline from student project to $4.5M seed to a Jupiter Exchange acquisition inside two years.\n",
       "description": "Solana blockchain explorer and data platform from Singapore Management University's innovation ecosystem; raised US$4.5M seed and was acquired by Jupiter Exchange in 2024.",
       "domain": "fintech",
       "event": {
@@ -3612,6 +3932,7 @@
           "url": "https://iie.smu.edu.sg/sites/iie.smu.edu.sg/files/2025_Year%20in%20Review/2025_Year%20in%20Review_compressed.pdf"
         }
       ],
+      "hot": 23,
       "id": "solana-fm",
       "links": {
         "official": "https://solanafm.com"
@@ -3630,6 +3951,7 @@
       "authors": [
         "SongSat team"
       ],
+      "body": "Rather than dump telemetry into another dashboard, SongSat turned it into audio you can actually hear, earning a top global Space Apps 2019 title.\n",
       "description": "Satellites that transmit data as audible songs for citizen listening; won the 2019 NASA Space Apps global award for Best Scientific Achievement.",
       "domain": "science",
       "event": {
@@ -3648,6 +3970,7 @@
           "url": "https://www.nasa.gov/space-apps/"
         }
       ],
+      "hot": 21,
       "id": "songsat",
       "links": {
         "official": "https://www.spaceappschallenge.org/2019/challenge/songsat/"
@@ -3665,6 +3988,7 @@
       "authors": [
         "Lunar Outpost"
       ],
+      "body": "A 2016 Space Apps hardware entry became a commercial lunar-environment sensor family with formal NASA Spinoff status. One of the clearest jam-to-spaceflight-product pipelines.\n",
       "description": "Radiation and environment sensor network originally developed at NASA Space Apps 2016 as Canaria; evolved into Lunar Outpost's Space Canary product line with NASA Spinoff recognition.",
       "domain": "science",
       "event": {
@@ -3679,6 +4003,7 @@
           "url": "https://spinoff.nasa.gov/Spinoff2020/ch_5.html"
         }
       ],
+      "hot": 21,
       "id": "space-canary",
       "links": {
         "official": "https://spinoff.nasa.gov/Spinoff2020/ch_5.html"
@@ -3693,6 +4018,8 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "## What it does\n\nSphero makes connected rolling robots, including the BB-8 toy. The product is a sealed sphere that drives, lights up, and is controlled from a phone.\n\n## The key insight\n\nThe robot is deliberately dumb. It contains motors, a battery, a radio, and enough firmware to execute commands. The phone holds the interface, the games, and the behavior logic.\n\nThat split means new behavior ships as an app update. The hardware does not need to be redesigned when someone invents a new way to use it, and the bill of materials stays low because the device carries no display and no general-purpose compute.\n\n## How it works\n\nInside the sphere, two wheels drive against the inner shell. Steering comes from the difference in wheel speeds, and the center of mass sits low so the robot self-rights. A sphere with two driven wheels has no front, which is why the robot can move in any direction without turning first.\n\nAn inertial measurement unit reports orientation and acceleration. The firmware uses it to hold a heading and to report collisions. The phone uses it to render motion and to score games.\n\nThe radio link carries short commands: set speed, set color, play a sound, read sensors. The protocol is small because the device is not streaming video or running a language runtime. Latency matters more than bandwidth, since the user is steering.\n\nThe SDK exposes those commands to third-party developers. Sphero's educational line leans on the same idea: the robot is an output device, and the programming happens in an app or a block-based editor.\n\n## Build something similar\n\nBuild a two-wheeled robot in a clear sphere, or simulate one. Expose three commands over a wireless link: drive with a heading and speed, set an LED color, read the IMU.\n\nPut the control loop on the phone. Draw a joystick, map it to a heading and speed, and send the command at a fixed rate.\n\nThen add one behavior that lives entirely in the app, such as a patrol route or a reaction to being picked up. If you can change that behavior without touching firmware, the split is working.\n\n## Sources\n\nStartup Weekend origin and funding are linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Connected robot toys including the BB-8 droid. Raised over $120 million.",
       "domain": "hardware",
       "event": {
@@ -3705,7 +4032,10 @@
           "url": "https://startupweekend.boston/alumni"
         }
       ],
+      "hot": 30,
       "id": "sphero",
+      "key_idea": "Keep the robot simple and put the intelligence in the phone, so the hardware can stay cheap and the behavior can keep changing.",
+      "learn_from": "Split a hardware product at the boundary that changes fastest. Ship the update to the app, not the device.",
       "links": {
         "official": "https://www.sphero.com/"
       },
@@ -3718,6 +4048,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Tracks chemical dispersion of wildfire smoke using airborne data.",
       "domain": "climate",
       "event": {
@@ -3731,6 +4062,7 @@
           "url": "https://www.spaceappschallenge.org/blog/2022-global-winners/"
         }
       ],
+      "hot": 23,
       "id": "starflock",
       "name": "Starflock",
       "tags": [
@@ -3741,6 +4073,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Local multiplayer game where narwhals fight with space lances. Over 1 million plays across platforms.",
       "domain": "games",
       "event": {
@@ -3753,6 +4086,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "starwhal",
       "links": {
         "official": "https://starwhal.com/"
@@ -3766,6 +4100,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "LSTM model that predicts geomagnetic storm levels from DSCOVR satellite data.",
       "domain": "science",
       "event": {
@@ -3779,6 +4114,7 @@
           "url": "https://www.spaceappschallenge.org/blog/the-nasa-space-apps-challenge-live-global-winners-announcement/"
         }
       ],
+      "hot": 23,
       "id": "storm-prophet",
       "name": "Storm Prophet",
       "tags": [
@@ -3789,6 +4125,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "One of the cleanest medical-device pipelines: a weekend health hackathon idea became an FDA-cleared wearable lung monitor used by clinicians and researchers.\n",
       "description": "RESP Biosensor wearable for real-time lung health monitoring; team formed at a 2016 Independence Blue Cross and Thomas Jefferson University health hackathon, later received FDA 510(k) clearance.",
       "domain": "healthcare",
       "event": {
@@ -3803,6 +4140,7 @@
           "url": "https://technical.ly/startups/wearable-device-lung-health-strados-labs"
         }
       ],
+      "hot": 31,
       "id": "strados-labs",
       "links": {
         "official": "https://www.stradoslabs.com"
@@ -3817,6 +4155,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Pedicab camera rig for capturing Street View imagery in parks and cultural sites. Weekend build led to a full fleet.",
       "domain": "hardware",
       "event": {
@@ -3830,6 +4169,7 @@
           "url": "https://googleblog.blogspot.com/2011/04/google-workshops-place-for-googlers-to.html"
         }
       ],
+      "hot": 0,
       "id": "street-view-trike",
       "name": "Street View Trike",
       "notes": "Built by Dan Ratner in a 20% project and workshop weekend hack",
@@ -3844,6 +4184,7 @@
       "authors": [
         "Brad Menezes"
       ],
+      "body": "Superblocks' path runs through the student-innovation circuit: co-founder Brad Menezes came out of Red Bull Basement before building an enterprise internal-tools platform.\n",
       "description": "AI-powered internal tools platform; co-founder Brad Menezes came through the Red Bull Basement student innovation program before scaling the company.",
       "domain": "developer-tools",
       "event": {
@@ -3858,6 +4199,7 @@
           "url": "https://www.instagram.com/reel/DZJbWBgOkpt"
         }
       ],
+      "hot": 23,
       "id": "superblocks",
       "links": {
         "official": "https://www.superblocks.com"
@@ -3872,6 +4214,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Money streaming protocol for continuous payments, subscriptions, and salaries on-chain.",
       "domain": "fintech",
       "event": {
@@ -3884,6 +4227,7 @@
           "url": "https://bizthon.hashnode.dev/from-hackathon-to-unicorn-real-stories-of-web3-projects-that-made-it-big"
         }
       ],
+      "hot": 3,
       "id": "superfluid",
       "links": {
         "official": "https://www.superfluid.finance/"
@@ -3901,6 +4245,8 @@
       "authors": [
         "SUPERHOT Team"
       ],
+      "body": "## What it does\n\nSUPERHOT is a first-person shooter where time moves only when the player moves. Stand still and bullets hang in the air. Move and the world resumes. The 2013 jam prototype introduced this mechanic; the full game shipped in 2016.\n\n## The key insight\n\nThe team did not set out to build a shooter. They set out to make something in seven days. The time-movement mechanic emerged from a jam constraint: make one interesting rule and build everything around it.\n\nThe mechanic does double duty. It is a puzzle rule (position yourself before time advances) and a difficulty dial (move less, survive longer). Every level design problem becomes \"what does the player need to do while frozen?\"\n\n## How it works\n\nThe simulation runs on a fixed timestep, but the timestep only advances when the player provides input. The engine has two states: frozen (delta time = 0) and running (delta time = normal).\n\nWhen frozen, physics does not integrate, AI does not tick, and particles pause. Bullets keep their positions because velocity integrates against delta time. Zero delta time freezes them in place.\n\nWhen the player moves (WASD or mouse look), the engine switches to running. One frame of input produces one frame of simulation. When the player stops, the engine drops back to frozen.\n\nThe bullet freezing comes for free. No special-casing required: the mechanic falls out of the physics loop.\n\nLevel design is the real work. Each arena is laid out so the optimal solution involves specific movement sequences: dodge here, shoot there, reposition. The levels teach the mechanic through geometry, not tutorials.\n\n## Build something similar\n\nStart with a simple FPS scene: a player controller, a few enemies that shoot, and bullets that travel.\n\nAdd a pause system. When the player is not pressing movement keys, set time scale to 0. When they press a key, set it back to 1.\n\nTest it: fire a shot, release all keys, watch the bullet stop mid-air.\n\nThen design three arenas around the mechanic. The first should be trivial (stand still, aim, move to shoot). The second should require repositioning between shots. The third should punish standing still (enemies close in over time).\n\n## Sources\n\nPrototype origin and development timeline are documented at superhotgame.com/our-story, linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "First-person shooter prototype where time moves only when the player moves, built during a seven-day game jam.",
       "domain": "games",
       "event": {
@@ -3917,7 +4263,10 @@
           "url": "https://superhotgame.com"
         }
       ],
+      "hot": 45,
       "id": "superhot-prototype",
+      "key_idea": "Time advances only when the player moves, turning a first-person shooter into a puzzle game.",
+      "learn_from": "One mechanical constraint can replace an entire design document. Find the constraint first.",
       "links": {
         "demo": "https://superhotgame.com/prototype.html",
         "official": "https://superhotgame.com"
@@ -3927,7 +4276,8 @@
         "game-jam",
         "fps",
         "unity",
-        "prototype"
+        "prototype",
+        "playable"
       ],
       "verified_at": "2026-10-24"
     },
@@ -3935,6 +4285,7 @@
       "authors": [
         "Bossa Studios"
       ],
+      "body": "A Global Game Jam joke about clumsy surgery gloves became Bossa Studios' breakout brand, spawning sequels and ports across consoles and VR.\n",
       "description": "Darkly comic physics-based surgery simulator that started as a Global Game Jam 2013 prototype; became a multi-platform commercial hit.",
       "domain": "games",
       "event": {
@@ -3949,6 +4300,7 @@
           "url": "https://store.steampowered.com/app/233720/Surgeon_Simulator/"
         }
       ],
+      "hot": 30,
       "id": "surgeon-simulator",
       "links": {
         "official": "https://store.steampowered.com/app/233720/Surgeon_Simulator/"
@@ -3964,6 +4316,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Swirl W@tch is a straightforward jam-to-Steam case: a 48-hour 2021 prototype that got a multi-year polish pass before commercial release.\n",
       "description": "Game made in 48 hours at Global Game Jam 2021; the full polished version shipped on Steam in April 2023 with a positive review rating.",
       "domain": "games",
       "event": {
@@ -3977,6 +4330,7 @@
           "url": "https://globalgamejam.org/news/jam-fame-global-game-jam-projects-became-successful-published-games"
         }
       ],
+      "hot": 13,
       "id": "swirl-watch",
       "name": "Swirl W@tch",
       "tags": [
@@ -3987,6 +4341,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "AI-powered robotic film studio that plans shots, moves camera and lighting, and edits footage.",
       "domain": "media-arts",
       "event": {
@@ -3999,6 +4354,7 @@
           "url": "https://museum.hackthenorth.com/"
         }
       ],
+      "hot": 5,
       "id": "takeone",
       "name": "TakeOne",
       "tags": [
@@ -4010,6 +4366,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Tiago Paiva built the first version at a Twilio hackathon in 2011 after watching his mother struggle with traditional call-center software. It grew into a public company.\n",
       "description": "Cloud-based contact center platform that lets businesses handle customer calls over the internet instead of traditional phone systems.",
       "domain": "web-mobile",
       "event": {
@@ -4022,6 +4379,7 @@
           "url": "https://www.talkdesk.com/about"
         }
       ],
+      "hot": 10,
       "id": "talkdesk",
       "links": {
         "official": "https://www.talkdesk.com"
@@ -4035,6 +4393,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Tanzaku shared the top Art Bytes 2012 prize with Frame, showing how museum hackathons can yield multiple polished mobile experiences from one weekend.\n",
       "description": "Smartphone museum exploration app; co-winner of the Walters Art Museum's first Art Bytes hackathon in 2012 with a $1,000 prize.",
       "domain": "media-arts",
       "event": {
@@ -4049,6 +4408,7 @@
           "url": "https://technical.ly/software-development/art-bytes-these-are-the-eight-projects-from-the-first-ever-walters-art-museum-hackathon"
         }
       ],
+      "hot": 20,
       "id": "tanzaku",
       "links": {
         "official": "https://technical.ly/baltimore/2012/07/27/art-bytes-brings-technologists-others-to-walters-art-museum-for-art-inspired-hackathon/"
@@ -4063,6 +4423,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Reverse city builder about ecosystem restoration. Released on Netflix Games.",
       "domain": "games",
       "event": {
@@ -4075,6 +4436,7 @@
           "url": "https://itch.io/games/top-sellers/tag-ludum-dare"
         }
       ],
+      "hot": 11,
       "id": "terra-nil",
       "links": {
         "official": "https://www.terraformgame.com/"
@@ -4092,6 +4454,7 @@
         "Matteo Nitto",
         "Dario Fazio"
       ],
+      "body": "Most jam games stay jam games. The Textorcist's typing-bullet-hell hybrid survived the jump to a polished Steam and Nintendo Switch release, a rare jam-to-shelf path.\n",
       "description": "Typing-action game where you fight demons by typing scripture; born from a Global Game Jam 2016 prototype, later shipped on Steam and Switch.",
       "domain": "games",
       "event": {
@@ -4106,6 +4469,7 @@
           "url": "https://www.gamedeveloper.com/design/making-the-textorcist-how-one-jam-game-became-a-full-steam-release"
         }
       ],
+      "hot": 31,
       "id": "textorcist",
       "links": {
         "official": "https://store.steampowered.com/app/774361/The_Textorcist/"
@@ -4120,6 +4484,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Decentralized physical infrastructure for peer-to-peer package delivery with custom hardware.",
       "domain": "hardware",
       "event": {
@@ -4133,6 +4498,7 @@
           "url": "https://www.recursive.so/hackathons"
         }
       ],
+      "hot": 25,
       "id": "the-box",
       "name": "The Box",
       "tags": [
@@ -4144,6 +4510,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Roguelite where crops and miners produce only while the king watches. Sold 600k+ copies on Steam.",
       "domain": "games",
       "event": {
@@ -4156,6 +4523,7 @@
           "url": "https://gamemaker.io/en/blog/the-king-is-watching-tinybuild"
         }
       ],
+      "hot": 30,
       "id": "the-king-is-watching",
       "links": {
         "official": "https://store.steampowered.com/app/2401630/The_King_is_Watching/"
@@ -4169,6 +4537,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Daniel Linssen (Managore) won Ludum Dare 29 Overall with this prototype. The full version later shipped on Steam and other platforms.\n",
       "description": "Puzzle platformer with a unique mechanic letting the player dive into and travel through the ground.",
       "domain": "games",
       "event": {
@@ -4185,6 +4554,7 @@
           "url": "https://managore.wordpress.com/2014/05/15/ludum-dare-29/"
         }
       ],
+      "hot": 10,
       "id": "the-sun-and-moon",
       "links": {
         "official": "https://managore.itch.io/the-sun-and-moon"
@@ -4198,6 +4568,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Acid Nerve (Mark Foster and David Fenn) built the Flash prototype in a weekend. The full game expanded to sixteen titans and launched April 2015 via Devolver Digital.\n",
       "description": "Minimalist boss-rush action game where the player has one arrow and one life, inspired by Shadow of the Colossus and Dark Souls.",
       "domain": "games",
       "event": {
@@ -4218,6 +4589,7 @@
           "url": "https://www.escapistmagazine.com/deaths-door-interview-acid-nerve-mark-foster-david-fenn/"
         }
       ],
+      "hot": 10,
       "id": "titan-souls",
       "links": {
         "official": "https://store.steampowered.com/app/297130/Titan_Souls/"
@@ -4231,6 +4603,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Multiplayer archer combat game. First commercial release of Maddy Thorson, who later made Celeste.",
       "domain": "games",
       "event": {
@@ -4243,6 +4616,7 @@
           "url": "https://gamemaker.io/en/blog/best-game-jam-games"
         }
       ],
+      "hot": 10,
       "id": "towerfall",
       "links": {
         "official": "https://towerfall-game.com/"
@@ -4256,6 +4630,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Portuguese studio Whales And Games built the jam version during the pandemic-era digital GGJ 2021, then expanded it into a full commercial release.\n",
       "description": "Relaxing exploration-trading game where players fly an airship across a world discovering towns and trading goods.",
       "domain": "games",
       "event": {
@@ -4272,6 +4647,7 @@
           "url": "https://whalesandgames.com/games/townseek"
         }
       ],
+      "hot": 13,
       "id": "townseek",
       "links": {
         "official": "https://store.steampowered.com/app/1659360/Townseek/"
@@ -4285,6 +4661,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Prototype work happened during Fog Creek's recurring internal hack-week format (\"Creek Weeks\"); the product later launched publicly at TechCrunch Disrupt in September 2011.\n",
       "description": "Visual collaboration tool that organizes projects into boards, lists, and cards.",
       "domain": "web-mobile",
       "event": {
@@ -4302,6 +4679,7 @@
           "url": "https://www.joelonsoftware.com/2011/09/13/announcing-trello"
         }
       ],
+      "hot": 0,
       "id": "trello",
       "links": {
         "official": "https://trello.com"
@@ -4315,6 +4693,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Traveler translation app with phrasebooks, slang, and live translator features.",
       "domain": "web-mobile",
       "event": {
@@ -4326,6 +4705,7 @@
           "url": "https://www.inc.com/articles/201111/companies-that-launched-in-three-days-startup-weekend.html"
         }
       ],
+      "hot": 10,
       "id": "triplingo",
       "links": {
         "official": "https://www.triplingo.com/"
@@ -4343,6 +4723,7 @@
         "Jack Dorsey",
         "Florian Weber"
       ],
+      "body": "The Odeo session is often described as a company hackathon. Dorsey and Weber built the first prototype in about two weeks.\n",
       "description": "Microblogging service for short public status updates, prototyped inside the podcasting company Odeo.",
       "domain": "web-mobile",
       "event": {
@@ -4364,6 +4745,7 @@
           "url": "https://en.wikipedia.org/wiki/History_of_Twitter"
         }
       ],
+      "hot": 0,
       "id": "twitter",
       "links": {
         "official": "https://twitter.com"
@@ -4377,6 +4759,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Persistence pays: after four hackathon attempts, Unrugable's Solana hardware wallet took Colosseum's grand prize, which includes a direct venture-fund investment pathway.\n",
       "description": "Solana-native hardware wallet with companion app; crowned grand champion of the Colosseum Cypherpunk Hackathon at Breakpoint 2025 after four prior hackathon attempts.",
       "domain": "fintech",
       "event": {
@@ -4391,6 +4774,7 @@
           "url": "https://solanacompass.com/learn/breakpoint-25/winners-of-the-colosseum-cypherpunk-hackathon"
         }
       ],
+      "hot": 35,
       "id": "unrugable",
       "links": {
         "official": "https://solanacompass.com/learn/breakpoint-25/winners-of-the-colosseum-cypherpunk-hackathon"
@@ -4411,6 +4795,7 @@
         "Juliana Rotich",
         "David Kobia"
       ],
+      "body": "Built in a few days by an ad hoc group of technologists - a crisis-response rapid build rather than a formally organized hackathon.\n",
       "description": "Open-source crisis-mapping platform that crowdsources and maps eyewitness reports via SMS and the web.",
       "domain": "civic-tech",
       "event": {
@@ -4432,6 +4817,7 @@
           "url": "https://en.wikipedia.org/wiki/Ushahidi"
         }
       ],
+      "hot": 35,
       "id": "ushahidi",
       "links": {
         "official": "https://www.ushahidi.com",
@@ -4447,6 +4833,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "200G optical transponder prototype built by network engineers at a hackathon. Contributed to the Telecom Infra Project.",
       "domain": "hardware",
       "event": {
@@ -4460,6 +4847,7 @@
           "url": "https://engineering.fb.com/2016/12/29/developer-tools/favorite-hacks-of-2016/"
         }
       ],
+      "hot": 11,
       "id": "voyager-transponder",
       "name": "Voyager Transponder",
       "tags": [
@@ -4474,6 +4862,7 @@
       "authors": [
         "Ricky Wong"
       ],
+      "body": "Vurb's contextual mobile search won Disrupt's Battlestage and later fetched roughly $300M from Rakuten, one of the larger Disrupt-to-exit outcomes.\n",
       "description": "Contextual search and discovery app that won the TechCrunch Disrupt 2014 Battlestage; later acquired by Rakuten for approximately $300 million.",
       "domain": "web-mobile",
       "event": {
@@ -4488,6 +4877,7 @@
           "url": "https://en.wikipedia.org/wiki/Vurb"
         }
       ],
+      "hot": 20,
       "id": "vurb",
       "links": {
         "official": "https://en.wikipedia.org/wiki/Vurb"
@@ -4502,6 +4892,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Days after GPT-5's release, Waddle took the top slot at the OpenAI/Cerebral Valley weekend hackathon with an ecommerce digital clone system, then leveraged the win into enterprise traction.\n",
       "description": "AI-powered digital clone and sales strategy simulation system for ecommerce; won first place among 93 global teams at the OpenAI GPT-5 Hackathon 2025.",
       "domain": "ai-ml",
       "event": {
@@ -4516,6 +4907,7 @@
           "url": "https://blog.gentooai.com/waddle-wins-first-place-at-the-openai-gpt-5-hackathon/"
         }
       ],
+      "hot": 35,
       "id": "waddle",
       "links": {
         "official": "https://waddle.ai"
@@ -4530,6 +4922,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Vlambeer (Jan Willem Nijman and Rami Ismail) built the prototype in the Mojam charity jam with Notch and Humble Bundle. It was rebranded Nuclear Throne and shipped in 2014.\n",
       "description": "Top-down roguelike shooter where mutants fight through procedurally generated levels to claim the Nuclear Throne.",
       "domain": "games",
       "event": {
@@ -4550,6 +4943,7 @@
           "url": "https://www.polygon.com/2013/8/15/4625784/vlambeers-wasteland-kings-rami-ismail-interview"
         }
       ],
+      "hot": 10,
       "id": "wasteland-kings",
       "links": {
         "official": "https://vlambeer.itch.io/wasteland-kings"
@@ -4563,6 +4957,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "A weekend anti-cheat prototype became a real classroom signal, flagging students who left the quiz tab during assessments at Wayground scale.\n",
       "description": "Browser-based quiz anti-cheat built during a Wayground internal hackathon; deployed across millions of quiz sessions to deter tab-switching and second-screen cheating.",
       "domain": "education",
       "event": {
@@ -4575,6 +4970,7 @@
           "url": "https://wayground.com/blog/hackathon-anti-cheat"
         }
       ],
+      "hot": 10,
       "id": "wayground-eye-see-you",
       "links": {
         "official": "https://www.wayground.com"
@@ -4588,6 +4984,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Machine learning pipeline predicting the probability of a Carrington-class solar storm.",
       "domain": "science",
       "event": {
@@ -4601,6 +4998,7 @@
           "url": "https://www.spaceappschallenge.org/blog/2022-global-winners/"
         }
       ],
+      "hot": 23,
       "id": "whats-new-solar-storm",
       "name": "What's New?",
       "tags": [
@@ -4614,6 +5012,7 @@
       "authors": [
         "Marinos"
       ],
+      "body": "Disrupt NY 2015's hackathon prize went to Witness, a Twilio-powered crisis reporting app assembled over the event weekend.\n",
       "description": "Crisis-reporting mobile app built to win the TechCrunch Disrupt New York 2015 Hackathon; used Twilio and crowd-sourced field reports for real-time safety data.",
       "domain": "civic-tech",
       "event": {
@@ -4628,6 +5027,7 @@
           "url": "https://techcrunch.com/2015/05/06/witness-wins-the-techcrunch-disrupt-ny-2015-hackathon/"
         }
       ],
+      "hot": 31,
       "id": "witness-disrupt",
       "links": {
         "official": "https://techcrunch.com/2015/05/06/witness-wins-the-techcrunch-disrupt-ny-2015-hackathon/"
@@ -4642,6 +5042,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Visual automation app for iOS. Acquired by Apple in 2016 and became Shortcuts.",
       "domain": "web-mobile",
       "event": {
@@ -4655,6 +5056,7 @@
           "url": "https://medium.com/rough-draft-ventures/from-rough-draft-to-forbes-a-flashback-to-forbes-under-30-honorees-first-photos-products-e1a40589bce1"
         }
       ],
+      "hot": 0,
       "id": "workflow-shortcuts",
       "links": {
         "official": "https://apps.apple.com/app/shortcuts/id913512399"
@@ -4668,6 +5070,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "Yesterday's News appears on Global Game Jam's official success-stories list as a jam-to-Steam path. Exact jam year was not pinned in the sources reviewed.\n",
       "description": "Game that started as a Global Game Jam entry and was later developed into a Steam release.",
       "domain": "games",
       "event": {
@@ -4680,6 +5083,7 @@
           "url": "https://globalgamejam.org/ggj-success-stories"
         }
       ],
+      "hot": 10,
       "id": "yesterdays-news",
       "links": {
         "official": "https://store.steampowered.com/app/2850560/Yesterdays_News/"
@@ -4697,6 +5101,7 @@
         "Art Agrawal",
         "Dongyi Liao"
       ],
+      "body": "Art Agrawal and Dongyi Liao won TechCrunch Disrupt's Startup Battlefield in 2012 with an online auto repair referral service. The company branded as YourMechanic and scaled a mobile-mechanic marketplace.\n",
       "description": "Marketplace connecting car owners with mobile mechanics; won the TechCrunch Disrupt SF 2012 Startup Battlefield after pitching earlier as HiretoFix.",
       "domain": "other",
       "event": {
@@ -4711,6 +5116,7 @@
           "url": "https://www.bizjournals.com/sanjose/blog/2012/09/yourmechanic-takes-techcrunch-disrupt.html"
         }
       ],
+      "hot": 20,
       "id": "your-mechanic",
       "links": {
         "official": "https://www.yourmechanic.com"
@@ -4729,6 +5135,7 @@
         "Eric Koester",
         "Ian Hunter"
       ],
+      "body": "A last-minute pitch at Startup Weekend LA became a national talking-point startup in under a month, drawing celebrity investors and a board seat for a former eBay CEO.\n",
       "description": "Hyperlocal real-time buyer-powered marketplace; prototyped and pitched at Startup Weekend Los Angeles in 2011, then raised a $14M Series A led by Kleiner Perkins.",
       "domain": "web-mobile",
       "event": {
@@ -4751,6 +5158,7 @@
           "url": "https://techcrunch.com/2011/03/09/want-someone-to-bring-you-a-beer-get-that-and-anything-else-from-zaarly"
         }
       ],
+      "hot": 30,
       "id": "zaarly",
       "links": {
         "official": "https://en.wikipedia.org/wiki/Zaarly"
@@ -4769,6 +5177,8 @@
         "Bryan Helmig",
         "Mike Knoop"
       ],
+      "body": "## What it does\n\nZapier connects over 7,000 web applications. A Zap is a trigger (new email, new row, new file) paired with an action (create a task, send a message, add a row) in a different app. When the trigger fires, Zapier performs the action.\n\n## The key insight\n\nZapier started at a Startup Weekend in Columbia, Missouri in October 2011. Wade Foster, Mike Knoop, and Bryan Vance built a demo that connected two apps in a weekend. The insight that turned it into a company: every app has an API, but most app pairs do not have a direct integration. A middleware layer that translates between thousands of APIs is more valuable than building any single integration.\n\nThe product is not any one Zap. It is the platform that lets a non-developer create the next thousand without writing code.\n\n## How it works\n\n**Trigger.** Zapier polls an app's API (or receives a webhook) for new events. When a new Gmail arrives, a new row appears in Sheets, or a new file lands in Dropbox, the trigger fires.\n\n**Mapping.** The user defines which fields from the trigger map to which fields in the action. Gmail Subject becomes Slack Message Text. This is a simple key-value transformation.\n\n**Action.** Zapier calls the target app's API with the mapped data. If the API returns an error, Zapier retries with exponential backoff.\n\n**Polling vs webhooks.** Some apps support webhooks (push). Others only support polling (pull). Zapier handles both; the user does not know which is happening.\n\nThe engineering challenge is coverage. Each of the 7,000 apps has its own auth scheme, rate limits, pagination style, and error format. Zapier maintains an adapter for each. The platform value grows with every adapter added.\n\n## Build something similar\n\nBuild a mini-Zapier that connects two apps you use daily.\n\nPick a trigger app with a simple API (GitHub: new commit, or RSS feed: new item). Pick an action app with a simple API (Slack: post message, or Notion: create page).\n\nWrite a script that polls the trigger every 60 seconds, checks for new items since the last poll, and calls the action API for each new item. Store the last-seen timestamp in a file.\n\nThis is one Zap. The platform insight comes when you abstract the trigger and action behind interfaces and let users define the mapping. The second and third Zaps take the same code as the first.\n\n## Sources\n\nStartup Weekend origin is documented in Silicon Prairie News and Inc. articles linked in the evidence field.\n",
+      "deep_dive": true,
       "description": "Workflow automation platform that connects web apps so users can move data between services without writing code.",
       "domain": "developer-tools",
       "event": {
@@ -4791,7 +5201,10 @@
           "url": "https://www.techstars.com/for/partners/startup-weekend"
         }
       ],
+      "hot": 50,
       "id": "zapier",
+      "key_idea": "Connect two apps that have no API integration by automating the steps a human would take in a browser.",
+      "learn_from": "The Startup Weekend version was a demo of one integration. The product is the platform that lets anyone create the next thousand.",
       "links": {
         "official": "https://zapier.com"
       },
@@ -4804,6 +5217,7 @@
       "verified_at": "2026-10-24"
     },
     {
+      "body": "",
       "description": "Zero-knowledge proof system for selective disclosure of work reputation without revealing underlying data.",
       "domain": "fintech",
       "event": {
@@ -4817,6 +5231,7 @@
           "url": "https://www.recursive.so/hackathons"
         }
       ],
+      "hot": 23,
       "id": "zkpow",
       "name": "zkPow",
       "tags": [

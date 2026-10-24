@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sphero - Hackathon Project Archive</title>
+<meta name="description" content="Connected robot toys including the BB-8 droid. Raised over $120 million.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>Sphero</h1>
+<p class="desc">Connected robot toys including the BB-8 droid. Raised over $120 million.</p>
+<div class="badges"><span class="badge">Hardware</span><span class="badge learn">Learn</span><span class="badge">robotics</span><span class="badge">consumer</span><span class="badge">startup-weekend</span></div>
+<p class="meta">Startup Weekend Boulder - 2010</p>
+<div class="links"><a href="https://www.sphero.com/" target="_blank" rel="noopener">Official</a></div>
+<div class="callout"><div class="label">Key idea</div><p>Keep the robot simple and put the intelligence in the phone, so the hardware can stay cheap and the behavior can keep changing.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>Split a hardware product at the boundary that changes fastest. Ship the update to the app, not the device.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>Sphero makes connected rolling robots, including the BB-8 toy. The product is a sealed sphere that drives, lights up, and is controlled from a phone.</p>
+<h2>The key insight</h2>
+<p>The robot is deliberately dumb. It contains motors, a battery, a radio, and enough firmware to execute commands. The phone holds the interface, the games, and the behavior logic.</p>
+<p>That split means new behavior ships as an app update. The hardware does not need to be redesigned when someone invents a new way to use it, and the bill of materials stays low because the device carries no display and no general-purpose compute.</p>
+<h2>How it works</h2>
+<p>Inside the sphere, two wheels drive against the inner shell. Steering comes from the difference in wheel speeds, and the center of mass sits low so the robot self-rights. A sphere with two driven wheels has no front, which is why the robot can move in any direction without turning first.</p>
+<p>An inertial measurement unit reports orientation and acceleration. The firmware uses it to hold a heading and to report collisions. The phone uses it to render motion and to score games.</p>
+<p>The radio link carries short commands: set speed, set color, play a sound, read sensors. The protocol is small because the device is not streaming video or running a language runtime. Latency matters more than bandwidth, since the user is steering.</p>
+<p>The SDK exposes those commands to third-party developers. Sphero's educational line leans on the same idea: the robot is an output device, and the programming happens in an app or a block-based editor.</p>
+<h2>Build something similar</h2>
+<p>Build a two-wheeled robot in a clear sphere, or simulate one. Expose three commands over a wireless link: drive with a heading and speed, set an LED color, read the IMU.</p>
+<p>Put the control loop on the phone. Draw a joystick, map it to a heading and speed, and send the command at a fixed rate.</p>
+<p>Then add one behavior that lives entirely in the app, such as a patrol route or a reaction to being picked up. If you can change that behavior without touching firmware, the split is working.</p>
+<h2>Sources</h2>
+<p>Startup Weekend origin and funding are linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://startupweekend.boston/alumni" target="_blank" rel="noopener">Startup Weekend Boulder 2010 origin and funding: https://startupweekend.boston/alumni</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>

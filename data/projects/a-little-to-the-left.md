@@ -3,7 +3,7 @@ id: a-little-to-the-left
 name: A Little to the Left
 description: Cozy tidying puzzle game about sorting household messes; began as a GMTK Game Jam 2020 entry and became a multi-platform commercial release.
 domain: games
-tags: [gmtk-jam, puzzle, cozy, commercial]
+tags: [gmtk-jam, puzzle, cozy, commercial, playable]
 event:
   name: GMTK Game Jam 2020
   organizer: Game Maker's Toolkit

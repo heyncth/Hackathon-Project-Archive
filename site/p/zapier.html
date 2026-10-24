@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zapier - Hackathon Project Archive</title>
+<meta name="description" content="Workflow automation platform that connects web apps so users can move data between services without writing code.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>Zapier</h1>
+<p class="desc">Workflow automation platform that connects web apps so users can move data between services without writing code.</p>
+<div class="badges"><span class="badge">Developer Tools</span><span class="badge learn">Learn</span><span class="badge award">Winner</span><span class="badge">automation</span><span class="badge">apis</span><span class="badge">saas</span></div>
+<p class="meta">Startup Weekend Columbia - Startup Weekend - 2011</p>
+<div class="links"><a href="https://zapier.com" target="_blank" rel="noopener">Official</a></div>
+<div class="callout"><div class="label">Key idea</div><p>Connect two apps that have no API integration by automating the steps a human would take in a browser.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>The Startup Weekend version was a demo of one integration. The product is the platform that lets anyone create the next thousand.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>Zapier connects over 7,000 web applications. A Zap is a trigger (new email, new row, new file) paired with an action (create a task, send a message, add a row) in a different app. When the trigger fires, Zapier performs the action.</p>
+<h2>The key insight</h2>
+<p>Zapier started at a Startup Weekend in Columbia, Missouri in October 2011. Wade Foster, Mike Knoop, and Bryan Vance built a demo that connected two apps in a weekend. The insight that turned it into a company: every app has an API, but most app pairs do not have a direct integration. A middleware layer that translates between thousands of APIs is more valuable than building any single integration.</p>
+<p>The product is not any one Zap. It is the platform that lets a non-developer create the next thousand without writing code.</p>
+<h2>How it works</h2>
+<p><strong>Trigger.</strong> Zapier polls an app's API (or receives a webhook) for new events. When a new Gmail arrives, a new row appears in Sheets, or a new file lands in Dropbox, the trigger fires.</p>
+<p><strong>Mapping.</strong> The user defines which fields from the trigger map to which fields in the action. Gmail Subject becomes Slack Message Text. This is a simple key-value transformation.</p>
+<p><strong>Action.</strong> Zapier calls the target app's API with the mapped data. If the API returns an error, Zapier retries with exponential backoff.</p>
+<p><strong>Polling vs webhooks.</strong> Some apps support webhooks (push). Others only support polling (pull). Zapier handles both; the user does not know which is happening.</p>
+<p>The engineering challenge is coverage. Each of the 7,000 apps has its own auth scheme, rate limits, pagination style, and error format. Zapier maintains an adapter for each. The platform value grows with every adapter added.</p>
+<h2>Build something similar</h2>
+<p>Build a mini-Zapier that connects two apps you use daily.</p>
+<p>Pick a trigger app with a simple API (GitHub: new commit, or RSS feed: new item). Pick an action app with a simple API (Slack: post message, or Notion: create page).</p>
+<p>Write a script that polls the trigger every 60 seconds, checks for new items since the last poll, and calls the action API for each new item. Store the last-seen timestamp in a file.</p>
+<p>This is one Zap. The platform insight comes when you abstract the trigger and action behind interfaces and let users define the mapping. The second and third Zaps take the same code as the first.</p>
+<h2>Sources</h2>
+<p>Startup Weekend origin is documented in Silicon Prairie News and Inc. articles linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://zapier.com/blog/zapier-100-connected-services-year-review/" target="_blank" rel="noopener">Winner of the first Startup Weekend in Columbia, Missouri (October 2011): https://zapier.com/blog/zapier-100-connected-services-year-review/</a></li><li><a href="https://www.ycombinator.com/companies/zapier" target="_blank" rel="noopener">Co-founded at the Missouri Startup Weekend: https://www.ycombinator.com/companies/zapier</a></li><li><a href="https://www.techstars.com/for/partners/startup-weekend" target="_blank" rel="noopener">Listed as a Startup Weekend success story from Columbia: https://www.techstars.com/for/partners/startup-weekend</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>

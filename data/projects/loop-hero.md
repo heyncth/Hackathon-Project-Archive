@@ -3,7 +3,7 @@ id: loop-hero
 name: Loop Hero
 description: Idle-RPG about a hero walking an endless loop against monsters, grown from a non-playable Ludum Dare 2019 prototype into Four Quarters' Devolver-published hit.
 domain: games
-tags: [ludum-dare, rpg, indie, prototype]
+tags: [ludum-dare, rpg, indie, prototype, playable]
 event:
   name: Ludum Dare 45
   organizer: Ludum Dare

@@ -24,6 +24,9 @@ ALLOWED_TOP_LEVEL = {
     "evidence",
     "notes",
     "verified_at",
+    "deep_dive",
+    "key_idea",
+    "learn_from",
 }
 ALLOWED_EVENT_KEYS = {"name", "organizer", "year", "award"}
 ALLOWED_EVIDENCE_KEYS = {"url", "supports"}
@@ -91,6 +94,16 @@ def validate_project(doc: ProjectDoc, repo: RepoData) -> list[str]:
             for tag in tags:
                 if not isinstance(tag, str) or not re.match(pattern, tag):
                     errors.append(f"{where}: invalid tag {tag!r} (must match {pattern})")
+            # discovery tag rules: link requirements
+            links = data.get("links") if isinstance(data.get("links"), dict) else {}
+            for dt in repo.taxonomy.get("discovery_tags", []):
+                if dt["id"] not in tags:
+                    continue
+                req = dt.get("requires_link")
+                if req and not links.get(req):
+                    errors.append(
+                        f"{where}: discovery tag '{dt['id']}' requires links.{req}"
+                    )
 
     event = data.get("event")
     if event is not None:
@@ -143,6 +156,23 @@ def validate_project(doc: ProjectDoc, repo: RepoData) -> list[str]:
     notes = data.get("notes")
     if notes is not None and (not isinstance(notes, str) or not notes.strip()):
         errors.append(f"{where}: field 'notes' must be a non-empty string")
+
+    deep_dive = data.get("deep_dive")
+    if deep_dive is not None and not isinstance(deep_dive, bool):
+        errors.append(f"{where}: field 'deep_dive' must be a boolean, got {deep_dive!r}")
+
+    for field in ("key_idea", "learn_from"):
+        value = data.get(field)
+        if value is not None and (not isinstance(value, str) or not value.strip()):
+            errors.append(f"{where}: field '{field}' must be a non-empty string")
+
+    if deep_dive is True:
+        if not (doc.body or "").strip():
+            errors.append(f"{where}: deep_dive is true but file has no body content")
+        if not data.get("key_idea"):
+            errors.append(f"{where}: deep_dive is true but missing 'key_idea'")
+        if not data.get("learn_from"):
+            errors.append(f"{where}: deep_dive is true but missing 'learn_from'")
 
     verified_at = data.get("verified_at")
     if verified_at is not None:

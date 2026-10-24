@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Friday Night Funkin&#x27; - Hackathon Project Archive</title>
+<meta name="description" content="Open-source rhythm game where a boyfriends battles ex-rockstar dads in rap-battle-style musical face-offs.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>Friday Night Funkin&#x27;</h1>
+<p class="desc">Open-source rhythm game where a boyfriends battles ex-rockstar dads in rap-battle-style musical face-offs.</p>
+<div class="badges"><span class="badge">Games</span><span class="badge learn">Learn</span><span class="badge">rhythm</span><span class="badge discover">open-source</span><span class="badge">viral</span></div>
+<p class="meta">Ludum Dare 47 - 2020</p>
+<div class="links"><a href="https://www.newgrounds.com/portal/view/770371" target="_blank" rel="noopener">Official</a><a href="https://github.com/ninjamuffin99/Funkin" target="_blank" rel="noopener">Source</a></div>
+<div class="callout"><div class="label">Key idea</div><p>A rhythm game is a chart plus a clock. Everything else is presentation, and presentation can be replaced.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>Keep the core loop tiny and the content format open, and a community will build the rest.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>Friday Night Funkin' is a rhythm game where you press arrow keys in time with music while a opponent sings against you. It started as a Ludum Dare 47 entry in October 2020 and became a viral hit with a large modding scene.</p>
+<h2>The key insight</h2>
+<p>Rhythm games have a small mechanical core: notes arrive on a timeline, the player hits them within a timing window, and the game scores the difference. The jam build implemented that core and wrapped it in characters and music.</p>
+<p>The team open-sourced the game. The chart format and the asset layout were readable, so modders could add songs and characters without reverse-engineering the engine. Most of the game's long tail came from that decision.</p>
+<h2>How it works</h2>
+<p>Audio position is the clock. The game tracks the current playback time of the song and spawns notes whose timestamps fall inside the visible window. Judgement compares the time of the key press against the note's timestamp and assigns a rating from the offset.</p>
+<p>A chart is a sequence of notes with timestamps, lanes, and lengths for holds. Splitting the chart from the song file means a new track is data, not code.</p>
+<p>The engine is written in Haxe and targets multiple platforms through OpenFL. That choice gives one codebase for desktop and web, which matters when the audience arrives through a browser game portal.</p>
+<p>Modding works because assets and charts are loaded from a known directory structure. A mod is a folder with a song, a chart, and sprites. The game reads the folder and plays it, with no plugin API required.</p>
+<h2>Build something similar</h2>
+<p>Build the clock first. Load an audio file, display its playback time, and draw a marker that moves with it.</p>
+<p>Add notes with timestamps. Spawn each note a fixed number of seconds before its time and move it toward a hit line. On a key press, compare the current time to the nearest note's timestamp and print the offset.</p>
+<p>Then move the notes into a JSON file. When you can add a song by editing data instead of code, you have the same extension point that made modding possible.</p>
+<h2>Sources</h2>
+<p>Ludum Dare origin, repository, and developer devlog are linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://en.wikipedia.org/wiki/Friday_Night_Funkin%27" target="_blank" rel="noopener">Initially created for the Ludum Dare 47 game jam on October 5, 2020: https://en.wikipedia.org/wiki/Friday_Night_Funkin%27</a></li><li><a href="https://github.com/FunkinCrew/Funkin/blob/v0.2.7.1/README.md" target="_blank" rel="noopener">Official repo states the game was originally made for Ludum Dare 47 'Stuck In a Loop': https://github.com/FunkinCrew/Funkin/blob/v0.2.7.1/README.md</a></li><li><a href="https://ninja-muffin24.itch.io/friday-night-funkin/devlog/184825/friday-night-funkin-going-forward" target="_blank" rel="noopener">Developer ninjamuffin99's devlog describing the Ludum Dare 47 release and its rapid viral spread: https://ninja-muffin24.itch.io/friday-night-funkin/devlog/184825/friday-night-funkin-going-forward</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>

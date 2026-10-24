@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Celebrate Pride - Hackathon Project Archive</title>
+<meta name="description" content="Rainbow profile picture filter. 26 million users in the first weekend. Intern hackathon project shipped globally in 72 hours.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>Celebrate Pride</h1>
+<p class="desc">Rainbow profile picture filter. 26 million users in the first weekend. Intern hackathon project shipped globally in 72 hours.</p>
+<div class="badges"><span class="badge">Social Impact</span><span class="badge learn">Learn</span><span class="badge">facebook</span><span class="badge">lgbtq</span><span class="badge">internal-hack-week</span></div>
+<p class="meta">Facebook Hackathon - Facebook - 2015</p>
+
+<div class="callout"><div class="label">Key idea</div><p>Ship one gesture, a rainbow overlay on a profile photo, and let users supply the meaning.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>When the moment is the deadline, cut scope to a single action and make it work at full traffic.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>Celebrate Pride let Facebook users apply a rainbow filter to their profile picture. It shipped in 72 hours around a hackathon and reached roughly 26 million users in its first weekend.</p>
+<h2>The key insight</h2>
+<p>The feature is a filter, not a campaign site. It reused a surface every user already had, the profile photo, and changed one property of it. There was no new page to visit and no new account to create.</p>
+<p>That is why it could spread in a weekend. The action was one tap, and the result was visible to everyone who looked at the profile.</p>
+<h2>How it works</h2>
+<p>The client offers a toggle on the existing profile picture flow. Choosing it sends the image reference to a service that composites the overlay and returns a new image. The original photo stays intact, so the change is reversible.</p>
+<p>The image work is the bottleneck. Millions of users applying the same overlay within hours means the compositing step has to be cheap and the result has to be cacheable. The overlay is a fixed asset, so the output can be produced once per photo and served from cache rather than recomputed per view.</p>
+<p>Client support is the second constraint. The feature has to appear on every platform that shows a profile picture, which means the toggle and the result must be represented in the shared profile model rather than in one client's local state.</p>
+<p>Timeboxing shaped the architecture. A 72-hour window rules out new infrastructure, so the team built on existing image and profile services. The constraint produced a simpler design than a greenfield build would have.</p>
+<h2>Build something similar</h2>
+<p>Pick a surface every user already has, such as an avatar, a banner, or a display name. Add one reversible variant of it.</p>
+<p>Precompute the variant as a static asset and serve it from cache. Then add the toggle to the shared user model so every client sees the same state.</p>
+<p>Measure how long it takes a new user to reach the changed state. If it is more than a couple of taps, the feature is too expensive to spread.</p>
+<h2>Sources</h2>
+<p>Engineering writeup, user count, and 72-hour timeline are linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://engineering.fb.com/2015/07/02/android/72-hours-to-launch-celebrate-pride/" target="_blank" rel="noopener">Facebook hackathon origin, 26M users, 72-hour ship: https://engineering.fb.com/2015/07/02/android/72-hours-to-launch-celebrate-pride/</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>

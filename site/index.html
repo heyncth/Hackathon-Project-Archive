@@ -9,7 +9,7 @@
 :root {
   --bg: #0d1117; --surface: #161b22; --border: #30363d;
   --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
-  --badge: #1f6feb; --badge-bg: #1f6feb22;
+  --badge-bg: #1f6feb22; --green: #3fb950;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -31,7 +31,7 @@ input[type="search"], select {
   border-radius: 6px; padding: 0.5rem 0.75rem; font-size: 0.9rem;
 }
 input[type="search"] { flex: 1; min-width: 200px; }
-select { min-width: 140px; }
+select { min-width: 130px; }
 label.chk {
   display: flex; align-items: center; gap: 0.35rem; font-size: 0.85rem;
   color: var(--muted); cursor: pointer; white-space: nowrap; padding: 0 0.25rem;
@@ -39,12 +39,18 @@ label.chk {
 .count { color: var(--muted); font-size: 0.85rem; margin-bottom: 0.75rem; }
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
-  padding: 1rem 1.25rem; margin-bottom: 0.75rem;
+  padding: 1rem 1.25rem; margin-bottom: 0.75rem; cursor: pointer;
+  transition: border-color 0.15s;
 }
+.card:hover { border-color: var(--accent); }
 .card h2 { font-size: 1.1rem; margin-bottom: 0.35rem; }
 .card h2 a { color: var(--accent); text-decoration: none; }
 .card h2 a:hover { text-decoration: underline; }
-.card .desc { font-size: 0.9rem; margin-bottom: 0.5rem; }
+.card .desc { font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--muted); }
+.card .idea {
+  font-size: 0.85rem; color: var(--text); margin-bottom: 0.5rem;
+  padding-left: 0.6rem; border-left: 2px solid var(--accent);
+}
 .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.4rem; }
 .badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.4rem; }
 .badge {
@@ -52,6 +58,8 @@ label.chk {
   background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
 }
 .badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: var(--green); border-color: #23863655; }
+.badge.hot-badge { background: #da363322; color: #f85149; border-color: #da363355; }
 .links { font-size: 0.8rem; }
 .links a { color: var(--accent); text-decoration: none; margin-right: 0.75rem; }
 .links a:hover { text-decoration: underline; }
@@ -68,38 +76,46 @@ footer a { color: var(--accent); text-decoration: none; }
 </header>
 
 <div class="controls">
-  <input type="search" id="q" placeholder="Search name, description, tags…" autocomplete="off">
+  <input type="search" id="q" placeholder="Search name, description, tags..." autocomplete="off">
   <select id="domain"><option value="">All domains</option></select>
+  <select id="discovery"><option value="">All tags</option></select>
   <select id="sort">
+    <option value="hot">Sort: Hot</option>
     <option value="name">Sort: Name</option>
     <option value="year-desc">Sort: Newest</option>
     <option value="year-asc">Sort: Oldest</option>
     <option value="domain">Sort: Domain</option>
   </select>
-  <label class="chk"><input type="checkbox" id="awarded"> Awarded only</label>
+  <label class="chk"><input type="checkbox" id="awarded"> Awarded</label>
+  <label class="chk"><input type="checkbox" id="deeponly"> Deep dives</label>
 </div>
 
 <p class="count" id="count"></p>
 <main id="results"></main>
 
 <footer>
-  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> ·
-  <a href="https://github.com/heyncth/Hackathon-Project-Archive/blob/main/CONTRIBUTING.md">Contribute</a> ·
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive/blob/main/CONTRIBUTING.md">Contribute</a> &middot;
   Data <a href="data.json">JSON</a>
 </footer>
 
 <script>
 let DATA = null;
+let DISCOVERY = new Set();
 
 async function init() {
   const res = await fetch('data.json');
   DATA = await res.json();
+  DISCOVERY = new Set(DATA.discovery_tags || []);
   populateDomains();
+  populateDiscovery();
   render();
   document.getElementById('q').addEventListener('input', render);
   document.getElementById('domain').addEventListener('change', render);
+  document.getElementById('discovery').addEventListener('change', render);
   document.getElementById('sort').addEventListener('change', render);
   document.getElementById('awarded').addEventListener('change', render);
+  document.getElementById('deeponly').addEventListener('change', render);
 }
 
 function populateDomains() {
@@ -115,37 +131,60 @@ function populateDomains() {
   for (const id of ids) {
     const opt = document.createElement('option');
     opt.value = id;
-    opt.textContent = `${DATA.domains[id] || id} (${counts[id]})`;
+    opt.textContent = (DATA.domains[id] || id) + ' (' + counts[id] + ')';
     sel.appendChild(opt);
   }
   const n = DATA.projects.length;
   const awarded = DATA.projects.filter(p => p.event && p.event.award).length;
+  const deep = DATA.projects.filter(p => p.deep_dive).length;
   document.getElementById('stats').textContent =
-    `${n} projects · ${awarded} with documented awards`;
+    n + ' projects / ' + awarded + ' awarded / ' + deep + ' deep dives';
+}
+
+function populateDiscovery() {
+  const sel = document.getElementById('discovery');
+  const counts = {};
+  for (const p of DATA.projects) {
+    for (const t of (p.tags || [])) {
+      if (DISCOVERY.has(t)) counts[t] = (counts[t] || 0) + 1;
+    }
+  }
+  for (const id of Array.from(DISCOVERY).sort()) {
+    if (!counts[id]) continue;
+    const opt = document.createElement('option');
+    opt.value = id;
+    opt.textContent = id + ' (' + counts[id] + ')';
+    sel.appendChild(opt);
+  }
 }
 
 function render() {
   const q = document.getElementById('q').value.toLowerCase();
   const domain = document.getElementById('domain').value;
+  const disc = document.getElementById('discovery').value;
   const sort = document.getElementById('sort').value;
   const awardedOnly = document.getElementById('awarded').checked;
+  const deepOnly = document.getElementById('deeponly').checked;
 
   let items = DATA.projects.filter(p => {
     if (domain && (p.domain || 'other') !== domain) return false;
     if (awardedOnly && !(p.event && p.event.award)) return false;
+    if (deepOnly && !p.deep_dive) return false;
+    if (disc && (p.tags || []).indexOf(disc) === -1) return false;
     if (q) {
       const hay = [
-        p.name, p.description, ...(p.tags || []),
+        p.name, p.description, p.key_idea, ...(p.tags || []),
         p.event && p.event.name, p.event && p.event.organizer,
       ].filter(Boolean).join(' ').toLowerCase();
-      if (!hay.includes(q)) return false;
+      if (hay.indexOf(q) === -1) return false;
     }
     return true;
   });
 
   items.sort((a, b) => {
-    if (sort === 'year-desc') return (b.event?.year || 0) - (a.event?.year || 0);
-    if (sort === 'year-asc') return (a.event?.year || 9999) - (b.event?.year || 9999);
+    if (sort === 'hot') return (b.hot || 0) - (a.hot || 0) || (a.name || '').localeCompare(b.name || '');
+    if (sort === 'year-desc') return ((b.event && b.event.year) || 0) - ((a.event && a.event.year) || 0);
+    if (sort === 'year-asc') return ((a.event && a.event.year) || 9999) - ((b.event && b.event.year) || 9999);
     if (sort === 'domain') {
       const da = DATA.domains[a.domain] || a.domain || '';
       const db = DATA.domains[b.domain] || b.domain || '';
@@ -155,7 +194,7 @@ function render() {
   });
 
   document.getElementById('count').textContent =
-    `${items.length} of ${DATA.projects.length} projects`;
+    items.length + ' of ' + DATA.projects.length + ' projects';
 
   const main = document.getElementById('results');
   if (!items.length) {
@@ -166,15 +205,20 @@ function render() {
   main.innerHTML = items.map(p => {
     const links = [];
     if (p.links) {
-      if (p.links.official) links.push(`<a href="${esc(p.links.official)}" target="_blank" rel="noopener">Official</a>`);
-      if (p.links.source) links.push(`<a href="${esc(p.links.source)}" target="_blank" rel="noopener">Source</a>`);
-      if (p.links.demo) links.push(`<a href="${esc(p.links.demo)}" target="_blank" rel="noopener">Demo</a>`);
-      if (p.links.video) links.push(`<a href="${esc(p.links.video)}" target="_blank" rel="noopener">Video</a>`);
+      if (p.links.official) links.push('<a href="' + esc(p.links.official) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">Official</a>');
+      if (p.links.source) links.push('<a href="' + esc(p.links.source) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">Source</a>');
+      if (p.links.demo) links.push('<a href="' + esc(p.links.demo) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">Demo</a>');
+      if (p.links.video) links.push('<a href="' + esc(p.links.video) + '" target="_blank" rel="noopener" onclick="event.stopPropagation()">Video</a>');
     }
     const domainName = DATA.domains[p.domain] || p.domain || '';
-    const badges = [`<span class="badge">${esc(domainName)}</span>`];
-    if (p.event && p.event.award) badges.push(`<span class="badge award">🏆 ${esc(p.event.award)}</span>`);
-    if (p.tags) for (const t of p.tags) badges.push(`<span class="badge">${esc(t)}</span>`);
+    const badges = ['<span class="badge">' + esc(domainName) + '</span>'];
+    if (p.deep_dive) badges.push('<span class="badge learn">Learn</span>');
+    if (p.hot >= 60) badges.push('<span class="badge hot-badge">Hot ' + p.hot + '</span>');
+    if (p.event && p.event.award) badges.push('<span class="badge award">' + esc(p.event.award) + '</span>');
+    for (const t of (p.tags || [])) {
+      const cls = DISCOVERY.has(t) ? 'badge discover' : 'badge';
+      badges.push('<span class="' + cls + '">' + esc(t) + '</span>');
+    }
 
     let meta = '';
     if (p.event) {
@@ -182,17 +226,17 @@ function render() {
       meta = bits.map(esc).join(' - ');
     }
 
-    const official = p.links && p.links.official
-      ? `<h2><a href="${esc(p.links.official)}" target="_blank" rel="noopener">${esc(p.name)}</a></h2>`
-      : `<h2>${esc(p.name)}</h2>`;
+    const idea = p.key_idea ? '<p class="idea">' + esc(p.key_idea) + '</p>' : '';
+    const detail = 'p/' + esc(p.id) + '.html';
 
-    return `<div class="card">
-      ${official}
-      <p class="desc">${esc(p.description || '')}</p>
-      ${meta ? `<p class="meta">${meta}</p>` : ''}
-      <div class="badges">${badges.join('')}</div>
-      ${links.length ? `<div class="links">${links.join('')}</div>` : ''}
-    </div>`;
+    return '<div class="card" onclick="location.href=\'' + detail + '\'">' +
+      '<h2><a href="' + detail + '" onclick="event.stopPropagation()">' + esc(p.name) + '</a></h2>' +
+      '<p class="desc">' + esc(p.description || '') + '</p>' +
+      idea +
+      (meta ? '<p class="meta">' + meta + '</p>' : '') +
+      '<div class="badges">' + badges.join('') + '</div>' +
+      (links.length ? '<div class="links">' + links.join('') + '</div>' : '') +
+      '</div>';
   }).join('');
 }
 

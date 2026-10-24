@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Naptha - Hackathon Project Archive</title>
+<meta name="description" content="Browser extension that lets users highlight, copy, edit, and translate text inside images.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>Project Naptha</h1>
+<p class="desc">Browser extension that lets users highlight, copy, edit, and translate text inside images.</p>
+<div class="badges"><span class="badge">AI &amp; Machine Learning</span><span class="badge learn">Learn</span><span class="badge">browser-extension</span><span class="badge">ocr</span><span class="badge">college-hackathon</span></div>
+<p class="meta">HackMIT - 2013</p>
+<div class="links"><a href="https://www.projectnaptha.com/" target="_blank" rel="noopener">Official</a></div>
+<div class="callout"><div class="label">Key idea</div><p>Run OCR locally, then lay invisible text over the image so the recognized words behave like real text.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>The model is not the product. The product is making the output act like the interface people already know.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>Project Naptha is a browser extension that makes text inside images selectable, copyable, editable, and translatable. You drag over a screenshot or a meme as if it were a document, and the words come out.</p>
+<h2>The key insight</h2>
+<p>Optical character recognition was not new in 2013. The insight was placement. Once the engine returns words with bounding boxes, the extension can position transparent text elements directly over the image. From that point, the browser's own selection, copy, and translation features do the rest.</p>
+<p>The interface is the trick. Users do not learn a new tool. They use the selection behavior they already have.</p>
+<h2>How it works</h2>
+<p>The extension captures the image, draws it to a canvas, and runs an OCR engine compiled to JavaScript. Running locally avoids uploading every image to a server, which matters for privacy and for latency.</p>
+<p>The engine returns recognized words and their coordinates. The extension creates a layer above the image with one positioned element per word or line. The text is transparent, but it sits in the same place as the pixels, so a drag selects the words under the cursor.</p>
+<p>Because the layer is real text, other features follow. Copy puts the words on the clipboard. A translation action sends the selected string to a translation service. An edit action hides the original region and draws a replacement.</p>
+<p>Detection is the weak point. OCR on low-resolution or stylized text produces garbage, so the extension scores confidence and only builds overlays where the result is plausible. Images without text get no layer.</p>
+<h2>Build something similar</h2>
+<p>Take one screenshot with clear text. Run any OCR engine over it and print each word with its bounding box.</p>
+<p>Draw absolutely positioned spans over the image using those boxes, with transparent color. Select them with the mouse. If selection lands on the right words, the core mechanism works.</p>
+<p>Then handle failure. Rotate the image, blur it, and use a decorative font. Decide what confidence threshold means "no text here" rather than producing nonsense.</p>
+<h2>Sources</h2>
+<p>HackMIT origin is linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://en.wikipedia.org/wiki/HackMIT" target="_blank" rel="noopener">HackMIT 2013 origin: https://en.wikipedia.org/wiki/HackMIT</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>

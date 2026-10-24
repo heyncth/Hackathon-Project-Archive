@@ -3,7 +3,7 @@ id: boomerang-x
 name: Boomerang X
 description: Momentum-based first-person shooter built around a single teleporting boomerang; started as a 48-hour GMTK Game Jam entry and shipped via Devolver Digital in 2021.
 domain: games
-tags: [gmtk-jam, fps, indie, commercial]
+tags: [gmtk-jam, fps, indie, commercial, playable]
 event:
   name: GMTK Game Jam
   organizer: Game Maker's Toolkit

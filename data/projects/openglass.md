@@ -3,7 +3,7 @@ id: openglass
 name: OpenGlass
 description: Open-source AI smart-glasses attachment built in about 36 hours for roughly $20 of off-the-shelf parts, pairing a camera with Llama 3 for live scene description.
 domain: hardware
-tags: [ai-wearables, open-source, accessibility, hackathon]
+tags: [ai-wearables, open-source, accessibility, hackathon, playable]
 event:
   name: Cerebral Valley Hackathon
   organizer: Cerebral Valley
@@ -11,6 +11,7 @@ event:
   award: hackathon winner
 links:
   official: https://github.com/BurgerKing6668/OpenGlass2
+  source: https://github.com/BurgerKing6668/OpenGlass2
   demo: https://github.com/not-important-vr/openglass
 authors:
   - Scott Fitsimones

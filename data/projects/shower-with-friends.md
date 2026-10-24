@@ -3,7 +3,7 @@ id: shower-with-friends
 name: Shower With Friends
 description: Hardware plus mobile app that monitors shower flow rate and gamifies shorter showers against friends; won the TechCrunch Disrupt SF 2014 hackathon grand prize.
 domain: hardware
-tags: [hardware, water, gamification, techcrunch-disrupt]
+tags: [hardware, water, gamification, techcrunch-disrupt, playable]
 event:
   name: TechCrunch Disrupt SF Hackathon
   organizer: TechCrunch

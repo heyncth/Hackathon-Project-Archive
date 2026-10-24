@@ -14,6 +14,11 @@ TAXONOMY = {
         {"id": "web-mobile", "name": "Web & Mobile"},
         {"id": "other", "name": "Other"},
     ],
+    "discovery_tags": [
+        {"id": "open-source", "name": "Open Source", "requires_link": "source"},
+        {"id": "playable", "name": "Playable", "requires_link": "demo"},
+        {"id": "weekend-build", "name": "Weekend Build"},
+    ],
     "tag_pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
     "max_tags_per_project": 8,
 }

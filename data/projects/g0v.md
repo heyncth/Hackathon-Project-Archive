@@ -1,9 +1,9 @@
 ---
 id: g0v
 name: g0v (g0v)
-description: Taiwan civic-tech movement that builds open-source tools for government transparency, including crowd-sourced dashboards and legislative trackers.
+description: Taiwan civic-tech movement that builds  tools for government transparency, including crowd-sourced dashboards and legislative trackers.
 domain: civic-tech
-tags: [open-source, transparency, taiwan]
+tags: [transparency, taiwan]
 event:
   name: g0v hackathon
   year: 2012

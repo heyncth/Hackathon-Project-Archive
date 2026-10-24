@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1inch - Hackathon Project Archive</title>
+<meta name="description" content="Decentralized exchange aggregator that finds the best token swap rates across DEX liquidity sources.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>1inch</h1>
+<p class="desc">Decentralized exchange aggregator that finds the best token swap rates across DEX liquidity sources.</p>
+<div class="badges"><span class="badge">Fintech</span><span class="badge learn">Learn</span><span class="badge">defi</span><span class="badge">ethereum</span><span class="badge">dex</span><span class="badge">web3</span><span class="badge discover">open-source</span></div>
+<p class="meta">ETHGlobal New York - ETHGlobal - 2019</p>
+<div class="links"><a href="https://1inch.io" target="_blank" rel="noopener">Official</a><a href="https://github.com/1inch" target="_blank" rel="noopener">Source</a></div>
+<div class="callout"><div class="label">Key idea</div><p>Split one swap across multiple exchanges to get a better average price than any single venue offers.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>A hackathon prototype that solves one measurable problem (price slippage) can become infrastructure when the measurement matters to everyone.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>1inch is a decentralized exchange (DEX) aggregator. When you swap tokens, it splits the order across multiple liquidity sources to get a better average rate than any single exchange offers.</p>
+<h2>The key insight</h2>
+<p>Sergej Kunz and Anton Bukov built the first prototype in 56 hours at ETHGlobal New York in May 2019. The insight: on any single DEX, a large order moves the price against you (slippage). Splitting the same order across three DEXes with different liquidity pools produces a better average rate.</p>
+<p>The math is simple. If exchange A holds 60% of the liquidity and exchange B holds 40%, sending 60% of your trade to A and 40% to B minimizes total slippage. The hard part is computing that split in real time across dozens of pools with changing reserves.</p>
+<h2>How it works</h2>
+<p>The system has three layers.</p>
+<p><strong>Routing.</strong> Given a token pair and an amount, find all available pools (Uniswap, SushiSwap, Curve, and others). For each pool, compute the output amount given the input. Uniswap-style pools use a constant-product formula: x times y equals k.</p>
+<p><strong>Splitting.</strong> Decide how to divide the input across pools. The original algorithm split the order iteratively, testing each split against the others. Later versions use on-chain optimization.</p>
+<p><strong>Execution.</strong> Submit one transaction that performs all the sub-swaps atomically. If any leg fails, the whole transaction reverts. The user signs once; the contract handles the routing.</p>
+<p>The aggregator takes a small fee (0.1% to 0.3%) from the price improvement it delivers. If it cannot beat the best single venue, it routes there instead.</p>
+<h2>Build something similar</h2>
+<p>Start with two Uniswap V2-style pools for the same token pair, each with different reserves.</p>
+<p>Write a function that, given an input amount, computes the output for pool A, pool B, and three split ratios (all A, 50/50, all B). Print the results.</p>
+<p>The split that wins depends on the reserves. With equal reserves, 50/50 wins. With 80/20 reserves, the split roughly matches. This is the entire insight in ten lines of code.</p>
+<p>Then add a third pool. The number of split combinations grows, but the principle holds: more pools means more opportunities to beat any single venue.</p>
+<h2>Sources</h2>
+<p>Origin and prototype details are from the 1inch press room and blog posts linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://1inch.io/press-room" target="_blank" rel="noopener">History began at the ETHGlobal hackathon in New York, May 2019; 56-hour prototype: https://1inch.io/press-room</a></li><li><a href="https://1inch.com/blog/post/looking-back-on-5-years-of-innovation-1inch-in-2019-2" target="_blank" rel="noopener">Built the first DEX aggregation protocol prototype at ETHGlobal NYC, May 19, 2019: https://1inch.com/blog/post/looking-back-on-5-years-of-innovation-1inch-in-2019-2</a></li><li><a href="https://en.wikipedia.org/wiki/1inch" target="_blank" rel="noopener">Founded May 2019 at the ETHGlobal hackathon in New York City: https://en.wikipedia.org/wiki/1inch</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>

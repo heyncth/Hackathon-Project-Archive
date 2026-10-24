@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buck - Hackathon Project Archive</title>
+<meta name="description" content="Fast modular Android build system used at Facebook. Prototype built in one hackathon.">
+<style>
+:root {
+  --bg: #0d1117; --surface: #161b22; --border: #30363d;
+  --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff;
+  --badge-bg: #1f6feb22;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+  max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.back { font-size: 0.9rem; margin-bottom: 1.5rem; display: inline-block; }
+h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+.desc { font-size: 1.05rem; color: var(--muted); margin-bottom: 1rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 1rem; }
+.badge {
+  font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;
+  background: var(--badge-bg); color: var(--accent); border: 1px solid var(--border);
+}
+.badge.award { background: #d2992222; color: #d29922; }
+.badge.learn { background: #23863622; color: #3fb950; }
+.meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+.links { font-size: 0.9rem; margin-bottom: 1.5rem; }
+.links a { margin-right: 1rem; }
+.callout {
+  background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent);
+  border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.callout .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 0.25rem; }
+.callout p { font-size: 0.95rem; }
+.content h2 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+.content h3 { font-size: 1.1rem; margin: 1.25rem 0 0.4rem; }
+.content p { margin-bottom: 0.75rem; font-size: 0.95rem; }
+.content ul { margin: 0 0 0.75rem 1.25rem; }
+.content li { font-size: 0.95rem; margin-bottom: 0.25rem; }
+.content pre { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.75rem; overflow-x: auto; margin-bottom: 0.75rem; }
+.content code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.85rem; }
+.content a { color: var(--accent); }
+.evidence { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.evidence h2 { font-size: 1rem; color: var(--muted); }
+.evidence li { font-size: 0.85rem; color: var(--muted); }
+footer { margin-top: 2rem; font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+</style>
+</head>
+<body>
+<a class="back" href="../index.html">&larr; Back to archive</a>
+<h1>Buck</h1>
+<p class="desc">Fast modular Android build system used at Facebook. Prototype built in one hackathon.</p>
+<div class="badges"><span class="badge">Developer Tools</span><span class="badge learn">Learn</span><span class="badge">android</span><span class="badge">build-tools</span><span class="badge">facebook</span><span class="badge">internal-hack-week</span></div>
+<p class="meta">Camp Hack-a-Thona - Facebook - 2012</p>
+
+<div class="callout"><div class="label">Key idea</div><p>Describe a build as a graph of declared targets, then execute and cache each node independently.</p></div>
+<div class="callout"><div class="label">Learn from this</div><p>Find the bottleneck you can measure, then remove the mechanism that causes it. Build tools win on correctness and speed, not features.</p></div>
+<div class="content"><h2>What it does</h2>
+<p>Buck is a build system for large codebases, built at Facebook for Android. It reads declarative build files, constructs a dependency graph, and executes independent work in parallel with caching.</p>
+<h2>The key insight</h2>
+<p>The prototype came out of a Facebook hackathon in 2012 because the Android build had become the slowest part of the developer loop. The fix was not a faster compiler. It was removing hidden dependencies so that work could be parallelized and reused.</p>
+<p>A build that recompiles the world on every change cannot be made fast by optimizing the compiler. It has to be restructured.</p>
+<h2>How it works</h2>
+<p>Build files declare targets: a library, a binary, a test, each with sources, dependencies, and rules. The declarations are explicit, so the tool can compute the full graph without scanning the filesystem for implicit inputs.</p>
+<p>From the graph, Buck derives the work. Independent nodes run concurrently. A node whose inputs and rule have not changed is skipped entirely, which is why incremental builds are fast even when the graph is large.</p>
+<p>Caching extends the skip across machines. If a target's inputs hash to a known value, the output can be fetched instead of rebuilt. This turns a build into a lookup for most nodes and a compile for the few that changed.</p>
+<p>Correctness depends on the dependency declarations being complete. An undeclared dependency produces a build that works locally and fails in a clean checkout, so the tool enforces strictness rather than tolerating implicit inputs.</p>
+<p>For Android specifically, the system also split application packaging from code compilation. Resources and code can be updated independently, which shortens the install cycle during development.</p>
+<h2>Build something similar</h2>
+<p>Write a build file format with three fields: inputs, outputs, and a command. Parse it into a graph.</p>
+<p>Run the graph in topological order, skipping any node whose inputs are unchanged. Time a rebuild after touching one file. That number is the whole point of the tool.</p>
+<p>Then add a content hash for each output and a cache directory keyed by hash. If a clean build can reuse entries from a previous one, you have the core of a modern build system.</p>
+<h2>Sources</h2>
+<p>Facebook engineering writeup and hackathon origin are linked in the evidence field.</p></div>
+<div class="evidence"><h2>Evidence</h2><ul><li><a href="https://engineering.fb.com/2013/05/14/android/buck-how-we-build-android-apps-at-facebook/" target="_blank" rel="noopener">Hack-a-Thona July 2012 prototype origin: https://engineering.fb.com/2013/05/14/android/buck-how-we-build-android-apps-at-facebook/</a></li></ul></div>
+<footer>
+  <a href="../index.html">Archive</a> &middot;
+  <a href="https://github.com/heyncth/Hackathon-Project-Archive">GitHub</a> &middot;
+  <a href="../data.json">JSON</a>
+</footer>
+</body>
+</html>
