@@ -126,7 +126,7 @@ Set `deep_dive: true`, add `key_idea` and `learn_from`, and write the body with 
 
 Keep every technical claim traceable to the `evidence` list or a source named in the body. If a mechanism is not documented, describe it at the level the sources support or leave it out. A thin deep dive is worse than none, because it looks authoritative.
 
-`key_idea` appears on the card in the index. `learn_from` and the body appear on the project's detail page.
+`key_idea`, `learn_from` and the body appear on the project's detail page. `key_idea` is also searchable from the index list.
 
 ## Running the tools
 

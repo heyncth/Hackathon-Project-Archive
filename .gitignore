@@ -8,3 +8,6 @@ venv/
 .agents/skills/
 .claude/skills/
 skills-lock.json
+
+# Taste skill working files
+.taste-skill/

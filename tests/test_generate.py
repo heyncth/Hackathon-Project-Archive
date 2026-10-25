@@ -175,7 +175,7 @@ def test_detail_page_renders_deep_dive(tmp_path):
     text = (site / "p" / "example-project.html").read_text(encoding="utf-8")
     assert "Rendered fixture text." in text
     assert "<h2>What it does</h2>" in text
-    assert '<div class="kicker">Deep dive</div>' in text
+    assert '<span class="pill">Deep dive</span>' in text
     assert "The one idea that made it work." in text
     assert "The lesson worth copying." in text
 
@@ -185,7 +185,7 @@ def test_detail_page_labels_profile(tmp_path):
     repo = _repo(tmp_path, {"example-project.md": content})
     site = build_site(repo)
     text = (site / "p" / "example-project.html").read_text(encoding="utf-8")
-    assert '<div class="kicker">Profile</div>' in text
+    assert '<span class="pill">Profile</span>' in text
     assert "A profile fixture." in text
 
 
